@@ -1,0 +1,55 @@
+#ifndef OTHER_H
+#define OTHER_H
+
+
+#include "vector3D.h"
+#include <vector>
+#include <SDL_stdinc.h>
+#include <SDL.h>
+
+struct PRISM_Triangle
+{
+	PRISM_Vector3d a;
+	PRISM_Vector3d b;
+	PRISM_Vector3d c;
+	PRISM_Triangle(PRISM_Vector3d a_ = {0.0f, 0.0f, 0.0f}, PRISM_Vector3d b_ = {0.0f, 0.0f, 0.0f}, PRISM_Vector3d c_ = {0.0f, 0.0f, 0.0f}) : a(a_), b(b_), c(c_) {}
+	void print();
+};
+
+struct Mesh
+{
+	std::vector<PRISM_Triangle> tris;
+	void print();
+};
+
+
+struct Color {
+	unsigned char r;
+	unsigned char g;
+	unsigned char b;
+	unsigned char a=255;
+	void print();
+};
+
+struct Light {
+	PRISM_Vector3d position;
+	Color color = {255, 255, 255};
+	void print();
+};
+
+struct RenderMode {
+	bool DisplayDimming1 = true; //затемнения
+	bool DisplayDimming2 = false; //затемнения
+	bool DisplayTriangleContours = false; //контуры
+	bool Z_Buffer = true;
+	bool ShowBackMesh = false;
+	bool FillMesh = true;
+	int ContourWidth = 5;
+	void print();
+};
+
+inline float degToRad(float degrees);
+
+void save_texture(const char* file_name, SDL_Renderer* renderer, SDL_Texture* texture);
+
+#endif // OTHER_H
