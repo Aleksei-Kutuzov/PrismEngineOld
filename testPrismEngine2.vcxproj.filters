@@ -19,6 +19,24 @@
     <Filter Include="Файлы заголовков\PRISM_math">
       <UniqueIdentifier>{0fa5e8fa-10c5-4cf8-b0c5-5be89ea2f370}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\PRISM_UI">
+      <UniqueIdentifier>{6342738f-2fc1-49a5-8bc9-71966db5d2b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PRISM_UI">
+      <UniqueIdentifier>{7041d354-73c1-4cdc-b636-bfb1936c7eb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PRISM_objects3D">
+      <UniqueIdentifier>{5e0e5645-7817-4e99-8c31-2d59f98c4f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\PRISM_objects3D">
+      <UniqueIdentifier>{4cc51fab-51ba-439b-8c21-9b08888e0bef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\PRISM_rendering">
+      <UniqueIdentifier>{e28e8e16-f77c-405a-8936-e34953feaea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\PRISM_rendering">
+      <UniqueIdentifier>{5931e0df-a443-4e92-8cde-3f974ba06f04}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PrismEngine.cpp">
@@ -33,6 +51,21 @@
     <ClCompile Include="src\PRISM_math\other.cpp">
       <Filter>Исходные файлы\PRISM_math</Filter>
     </ClCompile>
+    <ClCompile Include="src\PRISM_UI\button.cpp">
+      <Filter>Исходные файлы\PRISM_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PRISM_objects3D\AbstractCamera3D.cpp">
+      <Filter>Исходные файлы\PRISM_objects3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PRISM_objects3D\AbstractObject3D.cpp">
+      <Filter>Исходные файлы\PRISM_objects3D</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PRISM_rendering\render.cpp">
+      <Filter>Исходные файлы\PRISM_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PRISM_rendering\zbuffer.cpp">
+      <Filter>Исходные файлы\PRISM_rendering</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\PRISM_math\vector3D.h">
@@ -43,6 +76,24 @@
     </ClInclude>
     <ClInclude Include="src\PRISM_math\other.h">
       <Filter>Файлы заголовков\PRISM_math</Filter>
+    </ClInclude>
+    <ClInclude Include="PrismEngine.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PRISM_UI\button.h">
+      <Filter>Файлы заголовков\PRISM_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PRISM_objects3D\AbstractCamera3D.h">
+      <Filter>Файлы заголовков\PRISM_objects3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PRISM_objects3D\AbstractObject3D.h">
+      <Filter>Файлы заголовков\PRISM_objects3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PRISM_rendering\render.h">
+      <Filter>Файлы заголовков\PRISM_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PRISM_rendering\zbuffer.h">
+      <Filter>Файлы заголовков\PRISM_rendering</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

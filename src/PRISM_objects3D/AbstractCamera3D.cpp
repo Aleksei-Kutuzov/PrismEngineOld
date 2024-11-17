@@ -1,7 +1,7 @@
 #include "AbstractCamera3D.h"
 
 
-void AbstractCamera3D::MultiplyMatrixVector(Vector3d &i, Vector3d &o, Matrix_4X4 &m) {
+void AbstractCamera3D::MultiplyMatrixVector(PRISM_Vector3d &i, PRISM_Vector3d &o, PRISM_Matrix_4X4 &m) {
 	o.x = i.x * m.m[0][0] + i.y * m.m[1][0] + i.z * m.m[2][0] + m.m[3][0];
 	o.y = i.x * m.m[0][1] + i.y * m.m[1][1] + i.z * m.m[2][1] + m.m[3][1];
 	o.z = i.x * m.m[0][2] + i.y * m.m[1][2] + i.z * m.m[2][2] + m.m[3][2];
@@ -12,11 +12,11 @@ void AbstractCamera3D::MultiplyMatrixVector(Vector3d &i, Vector3d &o, Matrix_4X4
 	}
 }
 
-void AbstractCamera3D::SetPosition(struct Vector3d Coord, struct Vector3d Rot, struct Vector3d viewDir_) {
+void AbstractCamera3D::SetPosition(struct PRISM_Vector3d Coord, struct PRISM_Vector3d Rot, struct PRISM_Vector3d viewDir_) {
 	viewDir = viewDir_;
-	Matrix_4X4 matRX = Matrix_MakeRotationX(Rot.x);
-	Matrix_4X4 matRY = Matrix_MakeRotationY(Rot.y);
-	Matrix_4X4 matRZ = Matrix_MakeRotationZ(Rot.z);
+	PRISM_Matrix_4X4 matRX = Matrix_MakeRotationX(Rot.x);
+	PRISM_Matrix_4X4 matRY = Matrix_MakeRotationY(Rot.y);
+	PRISM_Matrix_4X4 matRZ = Matrix_MakeRotationZ(Rot.z);
 
 	MultiplyMatrixVector(viewDir, viewDir, matRX);
 	MultiplyMatrixVector(viewDir, viewDir, matRY);
@@ -29,9 +29,9 @@ void AbstractCamera3D::SetPosition(struct Vector3d Coord, struct Vector3d Rot, s
 	SetView(viewDir, {0, 1, 0});
 }
 
-void AbstractCamera3D::SetView(struct Vector3d viewDirVect, struct Vector3d upDirVect) {
-	struct Vector3d viewDirTarget = Coordinate + viewDirVect;
-	Matrix_4X4 matrixCamera = Matrix_PointAt(Coordinate, viewDirTarget, upDirVect);
+void AbstractCamera3D::SetView(struct PRISM_Vector3d viewDirVect, struct PRISM_Vector3d upDirVect) {
+	struct PRISM_Vector3d viewDirTarget = Coordinate + viewDirVect;
+	PRISM_Matrix_4X4 matrixCamera = Matrix_PointAt(Coordinate, viewDirTarget, upDirVect);
 	matrixView = Matrix_QuickInverse(matrixCamera);
 }
 

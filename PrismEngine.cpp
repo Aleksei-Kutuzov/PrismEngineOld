@@ -1,6 +1,4 @@
-﻿#include "src/PRISM_math/vector3D.h"
-#include "src/PRISM_math/matrix.h"
-#include "src/PRISM_math/other.h"
+﻿#include "PrismEngine.h"
 #include "SDL.h"
 
 

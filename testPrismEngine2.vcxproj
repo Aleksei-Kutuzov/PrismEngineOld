@@ -135,11 +135,22 @@
     <ClCompile Include="src\PRISM_math\matrix.cpp" />
     <ClCompile Include="src\PRISM_math\other.cpp" />
     <ClCompile Include="src\PRISM_math\vector3D.cpp" />
+    <ClCompile Include="src\PRISM_objects3D\AbstractCamera3D.cpp" />
+    <ClCompile Include="src\PRISM_objects3D\AbstractObject3D.cpp" />
+    <ClCompile Include="src\PRISM_rendering\render.cpp" />
+    <ClCompile Include="src\PRISM_rendering\zbuffer.cpp" />
+    <ClCompile Include="src\PRISM_UI\button.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PrismEngine.h" />
     <ClInclude Include="src\PRISM_math\matrix.h" />
     <ClInclude Include="src\PRISM_math\other.h" />
     <ClInclude Include="src\PRISM_math\vector3D.h" />
+    <ClInclude Include="src\PRISM_objects3D\AbstractCamera3D.h" />
+    <ClInclude Include="src\PRISM_objects3D\AbstractObject3D.h" />
+    <ClInclude Include="src\PRISM_rendering\render.h" />
+    <ClInclude Include="src\PRISM_rendering\zbuffer.h" />
+    <ClInclude Include="src\PRISM_UI\button.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,11 +1,7 @@
 #include "render.h"
 
 std::string getInternalStoragePath() {
-    const char* home = getenv("HOME");
-    if (home) {
-        return std::string(home) + "/files"; // Стандартный путь к директории файлов приложения
-    }
-    return "/data/data/rocks.georgik.sdlapp/files";
+    return "files";
 }
 
 bool saveTexture(SDL_Renderer* renderer, SDL_Texture* texture, const std::string& filePath) {
@@ -44,7 +40,7 @@ void PRISME_Render::AddInRender(AbstractObject3D object3d) {
 	Object3DList.push_back(object3d);
 }
 //RemInRender(AbstractObject3D object3d);
-SDL_Texture * PRISME_Render::ReturnFrameTexture(int DWidth, int DHeight, RenderMode rm) {
+SDL_Texture * PRISME_Render::ReturnFrameTexture(int DWidth, int DHeight, PRISM_RenderMode rm) {
 	SDL_Texture *target = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, DWidth, DHeight);
 	
 	SDL_SetRenderTarget(renderer, target);
@@ -66,7 +62,7 @@ SDL_Texture * PRISME_Render::ReturnFrameTexture(int DWidth, int DHeight, RenderM
 		
 	return target;
 }
-void PRISME_Render::RenderFrameSurfase(int DWidth, int DHeight, RenderMode rm = {true, false, false, true, false, true, 5}) {
+void PRISME_Render::RenderFrameSurfase(int DWidth, int DHeight, PRISM_RenderMode rm = {true, false, false, true, false, true, 5}) {
 	for (auto Object3D : Object3DList) {
 		Object3D.DrawMeshTriangles(renderer, rm);
 	}

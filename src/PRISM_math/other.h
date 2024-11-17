@@ -9,7 +9,7 @@
 
 class Math {
 	public:
-		inline float degToRad(float degrees);
+		float degToRad(float degrees);
 };
 
 struct PRISM_Triangle

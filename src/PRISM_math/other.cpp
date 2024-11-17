@@ -5,7 +5,7 @@
 
 
 
-inline float Math::degToRad(float degrees) {
+float Math::degToRad(float degrees) {
 	return degrees * M_PI / 180.0f;
 }
 

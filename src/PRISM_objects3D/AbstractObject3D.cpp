@@ -1,15 +1,15 @@
 #include "AbstractObject3D.h"
+#include "/PrismEngine/src/PRISM_math/other.h"
 
-
-void AbstractObject3D::SetMesh(struct Mesh m) {
+void AbstractObject3D::SetMesh(struct PRISM_Mesh m) {
 	mesh = m;
 }
 
-struct Mesh AbstractObject3D::GetMesh() {
+struct PRISM_Mesh AbstractObject3D::GetMesh() {
 	return mesh;
 }
 
-void AbstractObject3D::MultiplyMatrixVector(Vector3d &i, Vector3d &o, Matrix_4X4 &m) {
+void AbstractObject3D::MultiplyMatrixVector(PRISM_Vector3d &i, PRISM_Vector3d &o, PRISM_Matrix_4X4 &m) {
 	o.x = i.x * m.m[0][0] + i.y * m.m[1][0] + i.z * m.m[2][0] + m.m[3][0];
 	o.y = i.x * m.m[0][1] + i.y * m.m[1][1] + i.z * m.m[2][1] + m.m[3][1];
 	o.z = i.x * m.m[0][2] + i.y * m.m[1][2] + i.z * m.m[2][2] + m.m[3][2];
@@ -55,12 +55,12 @@ void AbstractObject3D::InitProjection(AbstractCamera3D camera) {
 	Camera = camera;
 }
 
-void AbstractObject3D::SetRotateXYZ(struct Vector3d rotVect) {
+void AbstractObject3D::SetRotateXYZ(struct PRISM_Vector3d rotVect) {
     Rotation = rotVect;
-	
-	rotVect.x = degToRad(rotVect.x);
-	rotVect.y = degToRad(rotVect.y);
-	rotVect.z = degToRad(rotVect.z);
+	Math m;
+	rotVect.x = m.degToRad(rotVect.x);
+	rotVect.y = m.degToRad(rotVect.y);
+	rotVect.z = m.degToRad(rotVect.z);
 	
 	// Rotation X
 	matrixRotX = Matrix_MakeRotationX(rotVect.x);
@@ -72,18 +72,18 @@ void AbstractObject3D::SetRotateXYZ(struct Vector3d rotVect) {
 	matrixRotZ = Matrix_MakeRotationZ(rotVect.z);
 }
 
-void AbstractObject3D::SetMoveXYZ(struct Vector3d moveVect) {
+void AbstractObject3D::SetMoveXYZ(struct PRISM_Vector3d moveVect) {
     Coordinate = moveVect;
 	matrixTranslate = Matrix_MakeTranslation(moveVect.x, moveVect.y, moveVect.z);
 }
 
-void AbstractObject3D::SetScaleXYZ(struct Vector3d scaleVect) {
+void AbstractObject3D::SetScaleXYZ(struct PRISM_Vector3d scaleVect) {
 	Scale = scaleVect;
 	matrixScale = Matrix_MakeScale(scaleVect.x, scaleVect.y, scaleVect.z);
 }
 
-Triangle AbstractObject3D::RotateTriangle(struct Triangle Triangle_) {
-	struct Triangle TriangleRotatedZ, TriangleRotatedZX, TriangleRotatedZXY;
+PRISM_Triangle AbstractObject3D::RotateTriangle(struct PRISM_Triangle Triangle_) {
+	struct PRISM_Triangle TriangleRotatedZ, TriangleRotatedZX, TriangleRotatedZXY;
 	// Rotate in Z-Axis
 	MultiplyMatrixVector(Triangle_.a, TriangleRotatedZ.a, matrixRotZ);
 	MultiplyMatrixVector(Triangle_.b, TriangleRotatedZ.b, matrixRotZ);
@@ -101,8 +101,8 @@ Triangle AbstractObject3D::RotateTriangle(struct Triangle Triangle_) {
 	return TriangleRotatedZXY;
 }
 
-Triangle AbstractObject3D::TranslateTriangle(struct Triangle Triangle_) {
-    struct Triangle TriangleTranslated;
+PRISM_Triangle AbstractObject3D::TranslateTriangle(struct PRISM_Triangle Triangle_) {
+    struct PRISM_Triangle TriangleTranslated;
 	MultiplyMatrixVector(Triangle_.a, TriangleTranslated.a, matrixTranslate);
 	MultiplyMatrixVector(Triangle_.b, TriangleTranslated.b, matrixTranslate);
 	MultiplyMatrixVector(Triangle_.c, TriangleTranslated.c, matrixTranslate);
@@ -110,8 +110,8 @@ Triangle AbstractObject3D::TranslateTriangle(struct Triangle Triangle_) {
 	return TriangleTranslated;
 }
 
-Triangle AbstractObject3D::ScaleTriangle(struct Triangle Triangle_) {
-	struct Triangle TriangleScaled;
+PRISM_Triangle AbstractObject3D::ScaleTriangle(struct PRISM_Triangle Triangle_) {
+	struct PRISM_Triangle TriangleScaled;
 	MultiplyMatrixVector(Triangle_.a, TriangleScaled.a, matrixScale);
 	MultiplyMatrixVector(Triangle_.b, TriangleScaled.b, matrixScale);
 	MultiplyMatrixVector(Triangle_.c, TriangleScaled.c, matrixScale);
@@ -119,8 +119,8 @@ Triangle AbstractObject3D::ScaleTriangle(struct Triangle Triangle_) {
 	return TriangleScaled;
 }
 
-Triangle AbstractObject3D::ViewTriangle(struct Triangle Triangle_) {
-	struct Triangle TriangleViewed;
+PRISM_Triangle AbstractObject3D::ViewTriangle(struct PRISM_Triangle Triangle_) {
+	struct PRISM_Triangle TriangleViewed;
 	MultiplyMatrixVector(Triangle_.a, TriangleViewed.a, Camera.matrixView);
 	MultiplyMatrixVector(Triangle_.b, TriangleViewed.b, Camera.matrixView);
 	MultiplyMatrixVector(Triangle_.c, TriangleViewed.c, Camera.matrixView);
@@ -128,49 +128,49 @@ Triangle AbstractObject3D::ViewTriangle(struct Triangle Triangle_) {
 	return TriangleViewed;
 }
 
-Vector3d AbstractObject3D::CalculateNormals(struct Triangle triang) {
-	Vector3d normal, lineAB, lineAC;
+PRISM_Vector3d AbstractObject3D::CalculateNormals(struct PRISM_Triangle triang) {
+	PRISM_Vector3d normal, lineAB, lineAC;
 	lineAB = triang.b - triang.a;
 	lineAC = triang.c - triang.a;
 	
 	normal = Vector_CrossProduct(lineAB, lineAC);
-	Vector3d r = Vector_Normalise(normal);
+	PRISM_Vector3d r = Vector_Normalise(normal);
 	return r;
 }
 
-Color AbstractObject3D::CalculatePhongShadingColor(const Vector3d& normal, const Vector3d& viewDir,
-												   const Light& light, const Vector3d& fragPos) {
+PRISM_Color AbstractObject3D::CalculatePhongShadingColor(const PRISM_Vector3d& normal, const PRISM_Vector3d& viewDir,
+												         const PRISM_Light& light, const PRISM_Vector3d& fragPos) {
 	// Ambient component
 	float ambientStrength = 0.1f;
-	Color ambient = { static_cast<Uint8>(light.color.r * ambientStrength),
+	PRISM_Color ambient = { static_cast<Uint8>(light.color.r * ambientStrength),
 	                  static_cast<Uint8>(light.color.g * ambientStrength),
 	                  static_cast<Uint8>(light.color.b * ambientStrength),
 	                  light.color.a };
 	
 	// Light direction (from fragment position to light position)
-	Vector3d lightDir = { light.position.x - fragPos.x, light.position.y - fragPos.y, light.position.z - fragPos.z };
+	PRISM_Vector3d lightDir = { light.position.x - fragPos.x, light.position.y - fragPos.y, light.position.z - fragPos.z };
 	float lightLen = sqrt(lightDir.x * lightDir.x + lightDir.y * lightDir.y + lightDir.z * lightDir.z);
 	lightDir = { lightDir.x / lightLen, lightDir.y / lightLen, lightDir.z / lightLen };
 	
 	// Diffuse component
 	float diff = std::max(0.0f, lightDir.x * normal.x + lightDir.y * normal.y + lightDir.z * normal.z);
-	Color diffuse = { static_cast<Uint8>(light.color.r * diff),
+	PRISM_Color diffuse = { static_cast<Uint8>(light.color.r * diff),
 	                  static_cast<Uint8>(light.color.g * diff),
 	                  static_cast<Uint8>(light.color.b * diff),
 	                  light.color.a };
 	
 	// Reflect direction
-	Vector3d reflectDir = { lightDir.x - 2 * normal.x * diff,
+	PRISM_Vector3d reflectDir = { lightDir.x - 2 * normal.x * diff,
 	                        lightDir.y - 2 * normal.y * diff,
 	                        lightDir.z - 2 * normal.z * diff };
 	float spec = std::pow(std::max(0.0f, reflectDir.x * viewDir.x + reflectDir.y * viewDir.y + reflectDir.z * viewDir.z), 32);
-	Color specular = { static_cast<Uint8>(light.color.r * spec),
+	PRISM_Color specular = { static_cast<Uint8>(light.color.r * spec),
 	                   static_cast<Uint8>(light.color.g * spec),
 	                   static_cast<Uint8>(light.color.b * spec),
 	                   light.color.a };
 	
 	// Final color
-	Color result = { static_cast<Uint8>(std::min(255, ambient.r + diffuse.r + specular.r)),
+	PRISM_Color result = { static_cast<Uint8>(std::min(255, ambient.r + diffuse.r + specular.r)),
 	                 static_cast<Uint8>(std::min(255, ambient.g + diffuse.g + specular.g)),
 	                 static_cast<Uint8>(std::min(255, ambient.b + diffuse.b + specular.b)),
 	                 light.color.a };
@@ -189,11 +189,11 @@ void AbstractObject3D::DownloadFromOBJ(const char* filename) {
 	buffer[fileSize] = '\0';
 	std::string line;
 	std::istringstream fileContent(buffer);
-	std::vector<Vector3d> Vertex;
-	std::vector<Vector3d> Triangles;
+	std::vector<PRISM_Vector3d> Vertex;
+	std::vector<PRISM_Vector3d> Triangles;
 	mesh.tris = {};
 	while(getline(fileContent, line)) {
-		struct Vector3d v;
+		struct PRISM_Vector3d v;
 		std::string identifier;
 		std::istringstream iss(line);
 		if (line.c_str()[0] == 'v') {
@@ -203,7 +203,7 @@ void AbstractObject3D::DownloadFromOBJ(const char* filename) {
 		if (line[0] == 'f') {
 			int f[3];
 			iss >> identifier >> f[0] >> f[1] >> f[2];
-			Triangle tri = {Vertex[f[0] - 1], Vertex[f[1] - 1], Vertex[f[2] - 1]};
+			PRISM_Triangle tri = {Vertex[f[0] - 1], Vertex[f[1] - 1], Vertex[f[2] - 1]};
 			
 			mesh.tris.push_back(tri);
 		}
@@ -267,16 +267,16 @@ void AbstractObject3D::DownloadFromOBJ(const char* filename) {
 //				return normalSum;
 //		}
 
-void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, RenderMode rm) {
+void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, PRISM_RenderMode rm) {
 	for (auto Triangle_ : mesh.tris) {
-		struct Triangle TriangleRotated, TriangleTranslated, TriangleScaled, TriangleProjected, TriangleViewed;
+		struct PRISM_Triangle TriangleRotated, TriangleTranslated, TriangleScaled, TriangleProjected, TriangleViewed;
 
 		TriangleScaled = ScaleTriangle(Triangle_);
 		TriangleRotated = RotateTriangle(TriangleScaled);
 		TriangleTranslated = TranslateTriangle(TriangleRotated);
 		TriangleViewed = ViewTriangle(TriangleTranslated);
 		
-		Vector3d normal = CalculateNormals(TriangleViewed);
+		PRISM_Vector3d normal = CalculateNormals(TriangleViewed);
 		if (normal.x * (TriangleViewed.a.x - Camera.Coordinate.x) +
 		    normal.y * (TriangleViewed.a.y - Camera.Coordinate.y) +
 		    normal.z * (TriangleViewed.a.z - Camera.Coordinate.z) < 0.0f | rm.ShowBackMesh) {
@@ -302,8 +302,8 @@ void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, RenderMode rm) 
 			TriangleProjected.c.x *= 0.5f * (float) ScreenW;
 			TriangleProjected.c.y *= 0.5f * (float) ScreenH;
 			
-			Light light = { { 0, 5, -10}, { 0, 0, 255, 255 }};
-			Color color = light.color;
+			PRISM_Light light = { { 0, 5, -10}, { 0, 0, 255, 255 }};
+			PRISM_Color color = light.color;
 			
 			if (rm.DisplayDimming1){
 				
@@ -363,7 +363,7 @@ void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, RenderMode rm) 
 }
 
 // Функция для вычисления барицентрических координат
-bool AbstractObject3D::ComputeBarycentricCoords(float x, float y, const Vector3d& v0, const Vector3d& v1, const Vector3d& v2, float& u, float& v, float& w) {
+bool AbstractObject3D::ComputeBarycentricCoords(float x, float y, const PRISM_Vector3d& v0, const PRISM_Vector3d& v1, const PRISM_Vector3d& v2, float& u, float& v, float& w) {
 	float denom = (v1.y - v2.y)*(v0.x - v2.x) + (v2.x - v1.x)*(v0.y - v2.y);
 	u = ((v1.y - v2.y)*(x - v2.x) + (v2.x - v1.x)*(y - v2.y)) / denom;
 	v = ((v2.y - v0.y)*(x - v2.x) + (v0.x - v2.x)*(y - v2.y)) / denom;
@@ -372,15 +372,15 @@ bool AbstractObject3D::ComputeBarycentricCoords(float x, float y, const Vector3d
 }
 
 void AbstractObject3D::OldRasterisation(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3,
-				   SDL_Renderer* SDL_renderer, Light light, short rgba[4], RenderMode RendMode) {
-	Vector3d v0 = {static_cast<float>(x1), static_cast<float>(y1), static_cast<float>(z1)};
-	Vector3d v1 = {static_cast<float>(x2), static_cast<float>(y2), static_cast<float>(z2)};
-	Vector3d v2 = {static_cast<float>(x3), static_cast<float>(y3), static_cast<float>(z3)};
+				   SDL_Renderer* SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode) {
+	PRISM_Vector3d v0 = {static_cast<float>(x1), static_cast<float>(y1), static_cast<float>(z1)};
+	PRISM_Vector3d v1 = {static_cast<float>(x2), static_cast<float>(y2), static_cast<float>(z2)};
+	PRISM_Vector3d v2 = {static_cast<float>(x3), static_cast<float>(y3), static_cast<float>(z3)};
 	
-	Vector3d normal = CalculateNormals({v0, v1, v2});
-	Vector3d viewDir = {0, 0, 1};  // Assuming the camera looks along the negative Z axis
+	PRISM_Vector3d normal = CalculateNormals({v0, v1, v2});
+	PRISM_Vector3d viewDir = {0, 0, 1};  // Assuming the camera looks along the negative Z axis
 	
-	Color color0, color1, color2;
+	PRISM_Color color0, color1, color2;
 	if(RendMode.DisplayDimming2) {
 		;
 	}
@@ -428,10 +428,10 @@ void AbstractObject3D::OldRasterisation(int x1, int y1, int x2, int y2, int x3, 
 }
 
 void AbstractObject3D::OptimizedEdgeRasterization(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3,
-                                                  SDL_Renderer* SDL_renderer, Light light, short rgba[4], RenderMode RendMode) {
-	Vector3d v0 = {static_cast<float>(x1), static_cast<float>(y1), static_cast<float>(z1)};
-	Vector3d v1 = {static_cast<float>(x2), static_cast<float>(y2), static_cast<float>(z2)};
-	Vector3d v2 = {static_cast<float>(x3), static_cast<float>(y3), static_cast<float>(z3)};
+                                                  SDL_Renderer* SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode) {
+	PRISM_Vector3d v0 = {static_cast<float>(x1), static_cast<float>(y1), static_cast<float>(z1)};
+	PRISM_Vector3d v1 = {static_cast<float>(x2), static_cast<float>(y2), static_cast<float>(z2)};
+	PRISM_Vector3d v2 = {static_cast<float>(x3), static_cast<float>(y3), static_cast<float>(z3)};
 	// Сортировка вершин по y (v0.y <= v1.y <= v2.y)
 	if (v1.y < v0.y) std::swap(v0, v1);
 	if (v2.y < v0.y) std::swap(v0, v2);
@@ -443,7 +443,7 @@ void AbstractObject3D::OptimizedEdgeRasterization(int x1, int y1, int x2, int y2
 	};
 	
 	// Инкрементальная растеризация: делим треугольник на два части (верхняя и нижняя)
-	auto rasterize_half = [&](Vector3d v0, Vector3d v1, Vector3d v2) {
+	auto rasterize_half = [&](PRISM_Vector3d v0, PRISM_Vector3d v1, PRISM_Vector3d v2) {
 		for (int y = static_cast<int>(std::ceil(v0.y)); y <= static_cast<int>(std::floor(v2.y)); ++y) {
 			float xStart = interpolateX(v0.x, v0.y, v2.x, v2.y, y);
 			float xEnd = interpolateX(v1.x, v1.y, v2.x, v2.y, y);
@@ -474,9 +474,9 @@ void AbstractObject3D::OptimizedEdgeRasterization(int x1, int y1, int x2, int y2
 
 // Обертка для вызова растеризации в отдельном потоке
 void AbstractObject3D::RasterizeTile(int minX, int maxX, int minY, int maxY,
-				   const Vector3d& v0, const Vector3d& v1, const Vector3d& v2,
-				   SDL_Renderer* SDL_renderer, Light light, short rgba[4],
-				   RenderMode RendMode, std::vector<SDL_Surface*>& surfaces) {
+				   const PRISM_Vector3d& v0, const PRISM_Vector3d& v1, const PRISM_Vector3d& v2,
+				   SDL_Renderer* SDL_renderer, PRISM_Light light, short rgba[4],
+	               PRISM_RenderMode RendMode, std::vector<SDL_Surface*>& surfaces) {
 	
 	std::mutex render_mutex;
 	// Создание поверхности для текущего тайла
@@ -524,12 +524,12 @@ void AbstractObject3D::RasterizeTile(int minX, int maxX, int minY, int maxY,
 
 
 void AbstractObject3D::Rasterisation(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3,
-				   SDL_Renderer* SDL_renderer, Light light, short rgba[4], RenderMode RendMode) {
-	Vector3d v0 = {static_cast<float>(x1), static_cast<float>(y1), static_cast<float>(z1)};
-	Vector3d v1 = {static_cast<float>(x2), static_cast<float>(y2), static_cast<float>(z2)};
-	Vector3d v2 = {static_cast<float>(x3), static_cast<float>(y3), static_cast<float>(z3)};
-	Vector3d normal = CalculateNormals({v0, v1, v2});
-	Vector3d viewDir = {0, 0, 1};  // Предполагается, что камера смотрит вдоль отрицательной оси Z
+				   SDL_Renderer* SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode) {
+	PRISM_Vector3d v0 = {static_cast<float>(x1), static_cast<float>(y1), static_cast<float>(z1)};
+	PRISM_Vector3d v1 = {static_cast<float>(x2), static_cast<float>(y2), static_cast<float>(z2)};
+	PRISM_Vector3d v2 = {static_cast<float>(x3), static_cast<float>(y3), static_cast<float>(z3)};
+	PRISM_Vector3d normal = CalculateNormals({v0, v1, v2});
+	PRISM_Vector3d viewDir = {0, 0, 1};  // Предполагается, что камера смотрит вдоль отрицательной оси Z
 	
 	// Вычисление ограничивающего прямоугольника треугольника
 	float minX = std::min({v0.x, v1.x, v2.x});
@@ -593,14 +593,14 @@ void AbstractObject3D::Rasterisation(int x1, int y1, int x2, int y2, int x3, int
 
 void AbstractObject3D::TileRasterisation(int x1, int y1, int x2, int y2, int x3, int y3,
                                         float z1, float z2, float z3, SDL_Renderer* SDL_renderer,
-                                        Light light, short rgba[4], RenderMode RendMode) {
-    Vector3d v0 = {static_cast<float>(x1), static_cast<float>(y1), static_cast<float>(z1)};
-    Vector3d v1 = {static_cast<float>(x2), static_cast<float>(y2), static_cast<float>(z2)};
-    Vector3d v2 = {static_cast<float>(x3), static_cast<float>(y3), static_cast<float>(z3)};
+										PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode) {
+	PRISM_Vector3d v0 = {static_cast<float>(x1), static_cast<float>(y1), static_cast<float>(z1)};
+	PRISM_Vector3d v1 = {static_cast<float>(x2), static_cast<float>(y2), static_cast<float>(z2)};
+	PRISM_Vector3d v2 = {static_cast<float>(x3), static_cast<float>(y3), static_cast<float>(z3)};
     
     // Calculate the normal and other necessary values
-    Vector3d normal = CalculateNormals({v0, v1, v2});
-    Vector3d viewDir = {0, 0, 1};  // Assuming the camera looks along the negative Z axis
+	PRISM_Vector3d normal = CalculateNormals({v0, v1, v2});
+	PRISM_Vector3d viewDir = {0, 0, 1};  // Assuming the camera looks along the negative Z axis
 
     // Compute bounding box of the triangle
     float minX = std::min({v0.x, v1.x, v2.x});
