@@ -1,5 +1,5 @@
 #include "AbstractObject3D.h"
-#include "/PrismEngine/src/PRISM_math/other.h"
+
 
 void AbstractObject3D::SetMesh(struct PRISM_Mesh m) {
 	mesh = m;
