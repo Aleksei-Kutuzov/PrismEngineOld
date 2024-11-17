@@ -7,6 +7,11 @@
 #include <SDL_stdinc.h>
 #include <SDL.h>
 
+class Math {
+	public:
+		inline float degToRad(float degrees);
+};
+
 struct PRISM_Triangle
 {
 	PRISM_Vector3d a;
@@ -48,7 +53,6 @@ struct PRISM_RenderMode {
 	void print();
 };
 
-inline float degToRad(float degrees);
 
 void save_texture(const char* file_name, SDL_Renderer* renderer, SDL_Texture* texture);
 
