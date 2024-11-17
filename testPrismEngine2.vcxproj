@@ -132,14 +132,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="PrismEngine.cpp" />
-    <ClCompile Include="src\math\matrix.cpp" />
-    <ClCompile Include="src\math\other.cpp" />
-    <ClCompile Include="src\math\vector3D.cpp" />
+    <ClCompile Include="src\PRISM_math\matrix.cpp" />
+    <ClCompile Include="src\PRISM_math\other.cpp" />
+    <ClCompile Include="src\PRISM_math\vector3D.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\math\matrix.h" />
-    <ClInclude Include="src\math\other.h" />
-    <ClInclude Include="src\math\vector3D.h" />
+    <ClInclude Include="src\PRISM_math\matrix.h" />
+    <ClInclude Include="src\PRISM_math\other.h" />
+    <ClInclude Include="src\PRISM_math\vector3D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

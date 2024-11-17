@@ -14,20 +14,20 @@ void PRISM_Triangle::print() {
 		a.x, a.y, a.z, a.w, b.x, b.y, b.z, b.w, c.x, c.y, c.z, c.w);
 }
 
-void Mesh::print() {
-	SDL_Log("PRISM_ENGINE::PRISM_math::Mesh(tris.size: %d)", tris.size());
+void PRISM_Mesh::print() {
+	SDL_Log("PRISM_ENGINE::PRISM_math::PRISM_Mesh(tris.size: %d)", tris.size());
 }
 
-void Color::print() {
-	SDL_Log("PRISM_ENGINE::PRISM_math::Color(r: %d, g: %d, b: %d, a: %d)", r, g, b, a);
+void PRISM_Color::print() {
+	SDL_Log("PRISM_ENGINE::PRISM_math::PRISM_Color(r: %d, g: %d, b: %d, a: %d)", r, g, b, a);
 }
 
-void Light::print() {
-	SDL_Log("PRISM_ENGINE::PRISM_math::Light(position: %d, %d, %d, %d\n\t\t\t\t      color: %d, %d, %d, %d)",
+void PRISM_Light::print() {
+	SDL_Log("PRISM_ENGINE::PRISM_math::PRISM_Light(position: %d, %d, %d, %d\n\t\t\t\t\t    color: %d, %d, %d, %d)",
 		position.x, position.y, position.z, position.w, color.r, color.g, color.b, color.a);
 }
 
-void RenderMode::print() {
-	SDL_Log("PRISM_ENGINE::PRISM_math::RenderMode(boolFlags: |%d|%d|%d|%d|%d|%d|, ContourWidth: %d)",
+void PRISM_RenderMode::print() {
+	SDL_Log("PRISM_ENGINE::PRISM_math::PRISM_RenderMode(boolFlags: |%d|%d|%d|%d|%d|%d|, ContourWidth: %d)",
 		DisplayDimming1, DisplayDimming2, DisplayTriangleContours, Z_Buffer, ShowBackMesh, FillMesh, ContourWidth);
 }

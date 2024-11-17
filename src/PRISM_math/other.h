@@ -16,14 +16,14 @@ struct PRISM_Triangle
 	void print();
 };
 
-struct Mesh
+struct PRISM_Mesh
 {
 	std::vector<PRISM_Triangle> tris;
 	void print();
 };
 
 
-struct Color {
+struct PRISM_Color {
 	unsigned char r;
 	unsigned char g;
 	unsigned char b;
@@ -31,13 +31,13 @@ struct Color {
 	void print();
 };
 
-struct Light {
+struct PRISM_Light {
 	PRISM_Vector3d position;
-	Color color = {255, 255, 255};
+	PRISM_Color color = {255, 255, 255};
 	void print();
 };
 
-struct RenderMode {
+struct PRISM_RenderMode {
 	bool DisplayDimming1 = true; //затемнения
 	bool DisplayDimming2 = false; //затемнения
 	bool DisplayTriangleContours = false; //контуры
