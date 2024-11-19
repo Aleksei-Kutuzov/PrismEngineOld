@@ -26,7 +26,7 @@ void AbstractObject3D::DrawThickLine(SDL_Renderer* renderer, int x1, int y1, int
 	int dy = y2 - y1;
 	
 	// Вычисление нормализованного вектора перпендикулярного линии
-	float length = sqrtf(dx * dx + dy * dy);
+	float length = (float)sqrtf(dx * dx + dy * dy);
 	float nx = -dy / length;
 	float ny = dx / length;
 	
@@ -49,7 +49,7 @@ short rgba[4], int thickness = 1) {
 }
 
 void AbstractObject3D::InitProjection(AbstractCamera3D camera) {
-	ProjectionMatrix = Matrix_MakeProjection(camera.FFovRad, camera.FAspectRatio, camera.FNear, camera.FFar);
+	ProjectionMatrix = Math::Matrix_MakeProjection(camera.FFovRad, camera.FAspectRatio, camera.FNear, camera.FFar);
 	ScreenW = (float)camera.ScreenW;
 	ScreenH = (float)camera.ScreenH;
 	Camera = camera;
@@ -63,23 +63,23 @@ void AbstractObject3D::SetRotateXYZ(struct PRISM_Vector3d rotVect) {
 	rotVect.z = m.degToRad(rotVect.z);
 	
 	// Rotation X
-	matrixRotX = Matrix_MakeRotationX(rotVect.x);
+	matrixRotX = Math::Matrix_MakeRotationX(rotVect.x);
 
 	// Rotation Y
-	matrixRotY = Matrix_MakeRotationY(rotVect.y);
+	matrixRotY = Math::Matrix_MakeRotationY(rotVect.y);
 	
 	// Rotation Z
-	matrixRotZ = Matrix_MakeRotationZ(rotVect.z);
+	matrixRotZ = Math::Matrix_MakeRotationZ(rotVect.z);
 }
 
 void AbstractObject3D::SetMoveXYZ(struct PRISM_Vector3d moveVect) {
     Coordinate = moveVect;
-	matrixTranslate = Matrix_MakeTranslation(moveVect.x, moveVect.y, moveVect.z);
+	matrixTranslate = Math::Matrix_MakeTranslation(moveVect.x, moveVect.y, moveVect.z);
 }
 
 void AbstractObject3D::SetScaleXYZ(struct PRISM_Vector3d scaleVect) {
 	Scale = scaleVect;
-	matrixScale = Matrix_MakeScale(scaleVect.x, scaleVect.y, scaleVect.z);
+	matrixScale = Math::Matrix_MakeScale(scaleVect.x, scaleVect.y, scaleVect.z);
 }
 
 PRISM_Triangle AbstractObject3D::RotateTriangle(struct PRISM_Triangle Triangle_) {
@@ -133,8 +133,8 @@ PRISM_Vector3d AbstractObject3D::CalculateNormals(struct PRISM_Triangle triang) 
 	lineAB = triang.b - triang.a;
 	lineAC = triang.c - triang.a;
 	
-	normal = Vector_CrossProduct(lineAB, lineAC);
-	PRISM_Vector3d r = Vector_Normalise(normal);
+	normal = Math::Vector_CrossProduct(lineAB, lineAC);
+	PRISM_Vector3d r = Math::Vector_Normalise(normal);
 	return r;
 }
 
@@ -279,7 +279,7 @@ void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, PRISM_RenderMod
 		PRISM_Vector3d normal = CalculateNormals(TriangleViewed);
 		if (normal.x * (TriangleViewed.a.x - Camera.Coordinate.x) +
 		    normal.y * (TriangleViewed.a.y - Camera.Coordinate.y) +
-		    normal.z * (TriangleViewed.a.z - Camera.Coordinate.z) < 0.0f | rm.ShowBackMesh) {
+			normal.z * (TriangleViewed.a.z - Camera.Coordinate.z) < 0.0f || rm.ShowBackMesh) {
 			
 			MultiplyMatrixVector(TriangleViewed.a, TriangleProjected.a,
 			                     ProjectionMatrix);
@@ -302,7 +302,7 @@ void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, PRISM_RenderMod
 			TriangleProjected.c.x *= 0.5f * (float) ScreenW;
 			TriangleProjected.c.y *= 0.5f * (float) ScreenH;
 			
-			PRISM_Light light = { { 0, 5, -10}, { 0, 0, 255, 255 }};
+			PRISM_Light light = { { 0, 5, -10}, { 255, 255, 255, 255 }};
 			PRISM_Color color = light.color;
 			
 			if (rm.DisplayDimming1){
@@ -336,16 +336,16 @@ void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, PRISM_RenderMod
 			short rgba[4] = {color.r, color.g, color.b, color.a};
 			
 			if (rm.FillMesh) {
-//				OldRasterisation(TriangleProjected.a.x, TriangleProjected.a.y,
-//				                 TriangleProjected.b.x, TriangleProjected.b.y,
-//				                 TriangleProjected.c.x, TriangleProjected.c.y,
-//				                 TriangleTranslated.a.z, TriangleTranslated.b.z, TriangleTranslated.c.z,
-//							     renderer, light, rgba, rm);
-				TileRasterisation(TriangleProjected.a.x, TriangleProjected.a.y,
+				OldRasterisation(TriangleProjected.a.x, TriangleProjected.a.y,
 				                 TriangleProjected.b.x, TriangleProjected.b.y,
 				                 TriangleProjected.c.x, TriangleProjected.c.y,
 				                 TriangleTranslated.a.z, TriangleTranslated.b.z, TriangleTranslated.c.z,
 							     renderer, light, rgba, rm);
+//				TileRasterisation(TriangleProjected.a.x, TriangleProjected.a.y,
+//				                 TriangleProjected.b.x, TriangleProjected.b.y,
+//				                 TriangleProjected.c.x, TriangleProjected.c.y,
+//				                 TriangleTranslated.a.z, TriangleTranslated.b.z, TriangleTranslated.c.z,
+//							     renderer, light, rgba, rm);
 			}
 			if (rm.DisplayTriangleContours) {
 				short nullColor[4] = {0x00, 0xFF, 0x00, 0xFF};

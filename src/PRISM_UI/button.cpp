@@ -1,19 +1,4 @@
-#include "SDL.h"
-#include "SDL_image.h"
-#include <SDL_ttf.h>
-#include <string>
-#include <SDL2_gfxPrimitives.h>
-
-// Структура для хранения состояния кнопки
-struct ToggleButton {
-	SDL_Texture *image;
-	SDL_Renderer *renderer;
-	SDL_Rect rect;
-	std::string text;
-	bool active;
-	bool FD;
-	
-};
+#include "button.h"
 
 
 void InitToggleButton(ToggleButton &toggle_button, int x, int y, int w, int h,

@@ -8,6 +8,7 @@
 #include "/PrismEngine/src/PRISM_math/vector3D.h"
 #include "/PrismEngine/src/PRISM_math/matrix.h"
 #include "/PrismEngine/src/PRISM_math/other.h"
+#include "/PrismEngine/src/PRISM_math/math.h"
 #include "/PrismEngine/src/PRISM_UI/joystick.h"
 #include "/PrismEngine/src/PRISM_rendering/zbuffer.h"
 #include "/PrismEngine/src/PRISM_objects3D/AbstractCamera3D.h"

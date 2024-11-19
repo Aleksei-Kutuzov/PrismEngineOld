@@ -5,10 +5,6 @@
 
 
 
-float Math::degToRad(float degrees) {
-	return degrees * M_PI / 180.0f;
-}
-
 void PRISM_Triangle::print() {
 	SDL_Log("PRISM_ENGINE::PRISM_math::PRISM_Triangle(a:(%f, %f, %f, %f),\n\t\t\t\t\t       b:(%f, %f, %f, %f)\n\t\t\t\t\t       c:(%f, %f, %f, %f))",
 		a.x, a.y, a.z, a.w, b.x, b.y, b.z, b.w, c.x, c.y, c.z, c.w);

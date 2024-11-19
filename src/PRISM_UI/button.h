@@ -2,6 +2,7 @@
 #define BUTTON_H
 #include "SDL.h"
 #include "SDL_image.h"
+#include <SDL_ttf.h>
 #include <string>
 #include <SDL2_gfxPrimitives.h>
 
@@ -11,6 +12,7 @@ struct ToggleButton {
 	SDL_Renderer *renderer;
 	SDL_Rect rect;
 	std::string text;
+	bool FD;
 	bool active;
 	
 };

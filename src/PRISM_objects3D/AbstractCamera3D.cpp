@@ -14,9 +14,9 @@ void AbstractCamera3D::MultiplyMatrixVector(PRISM_Vector3d &i, PRISM_Vector3d &o
 
 void AbstractCamera3D::SetPosition(struct PRISM_Vector3d Coord, struct PRISM_Vector3d Rot, struct PRISM_Vector3d viewDir_) {
 	viewDir = viewDir_;
-	PRISM_Matrix_4X4 matRX = Matrix_MakeRotationX(Rot.x);
-	PRISM_Matrix_4X4 matRY = Matrix_MakeRotationY(Rot.y);
-	PRISM_Matrix_4X4 matRZ = Matrix_MakeRotationZ(Rot.z);
+	PRISM_Matrix_4X4 matRX = Math::Matrix_MakeRotationX(Rot.x);
+	PRISM_Matrix_4X4 matRY = Math::Matrix_MakeRotationY(Rot.y);
+	PRISM_Matrix_4X4 matRZ = Math::Matrix_MakeRotationZ(Rot.z);
 
 	MultiplyMatrixVector(viewDir, viewDir, matRX);
 	MultiplyMatrixVector(viewDir, viewDir, matRY);
@@ -31,8 +31,8 @@ void AbstractCamera3D::SetPosition(struct PRISM_Vector3d Coord, struct PRISM_Vec
 
 void AbstractCamera3D::SetView(struct PRISM_Vector3d viewDirVect, struct PRISM_Vector3d upDirVect) {
 	struct PRISM_Vector3d viewDirTarget = Coordinate + viewDirVect;
-	PRISM_Matrix_4X4 matrixCamera = Matrix_PointAt(Coordinate, viewDirTarget, upDirVect);
-	matrixView = Matrix_QuickInverse(matrixCamera);
+	PRISM_Matrix_4X4 matrixCamera = Math::Matrix_PointAt(Coordinate, viewDirTarget, upDirVect);
+	matrixView = Math::Matrix_QuickInverse(matrixCamera);
 }
 
 void AbstractCamera3D::ClearZ_Buffer(SDL_Renderer * renderer) {

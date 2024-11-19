@@ -1,7 +1,7 @@
 #include "render.h"
 
 std::string getInternalStoragePath() {
-    return "files";
+    return "output_files";
 }
 
 bool saveTexture(SDL_Renderer* renderer, SDL_Texture* texture, const std::string& filePath) {
@@ -63,7 +63,11 @@ SDL_Texture * PRISME_Render::ReturnFrameTexture(int DWidth, int DHeight, PRISM_R
 	return target;
 }
 void PRISME_Render::RenderFrameSurfase(int DWidth, int DHeight, PRISM_RenderMode rm = {true, false, false, true, false, true, 5}) {
+
+	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+	SDL_RenderClear(renderer);
 	for (auto Object3D : Object3DList) {
-		Object3D.DrawMeshTriangles(renderer, rm);
+		Object3D.DrawMeshTriangles(renderer, { true, false, false, true, false, true, 5 });
 	}
+	SDL_RenderPresent(renderer);
 }

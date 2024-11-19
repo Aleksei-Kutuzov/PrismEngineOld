@@ -3,6 +3,7 @@
 
 #include "/PrismEngine/src/PRISM_math/vector3D.h"
 #include "/PrismEngine/src/PRISM_math/matrix.h"
+#include "/PrismEngine/src/PRISM_math/math.h"
 #include "/PrismEngine/src/PRISM_rendering/zbuffer.h"
 
 

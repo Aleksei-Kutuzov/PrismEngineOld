@@ -66,6 +66,12 @@
     <ClCompile Include="src\PRISM_rendering\zbuffer.cpp">
       <Filter>Исходные файлы\PRISM_rendering</Filter>
     </ClCompile>
+    <ClCompile Include="src\PRISM_UI\joystick.cpp">
+      <Filter>Исходные файлы\PRISM_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PRISM_math\math.cpp">
+      <Filter>Исходные файлы\PRISM_math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\PRISM_math\vector3D.h">
@@ -95,5 +101,22 @@
     <ClInclude Include="src\PRISM_rendering\zbuffer.h">
       <Filter>Файлы заголовков\PRISM_rendering</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PRISM_UI\joystick.h">
+      <Filter>Файлы заголовков\PRISM_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PRISM_math\math.h">
+      <Filter>Файлы заголовков\PRISM_math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PrismEngine.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

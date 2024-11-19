@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="PrismEngine.cpp" />
+    <ClCompile Include="src\PRISM_math\math.cpp" />
     <ClCompile Include="src\PRISM_math\matrix.cpp" />
     <ClCompile Include="src\PRISM_math\other.cpp" />
     <ClCompile Include="src\PRISM_math\vector3D.cpp" />
@@ -140,9 +141,13 @@
     <ClCompile Include="src\PRISM_rendering\render.cpp" />
     <ClCompile Include="src\PRISM_rendering\zbuffer.cpp" />
     <ClCompile Include="src\PRISM_UI\button.cpp" />
+    <ClCompile Include="src\PRISM_UI\joystick.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PrismEngine.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="src\PRISM_math\math.h" />
     <ClInclude Include="src\PRISM_math\matrix.h" />
     <ClInclude Include="src\PRISM_math\other.h" />
     <ClInclude Include="src\PRISM_math\vector3D.h" />
@@ -151,6 +156,10 @@
     <ClInclude Include="src\PRISM_rendering\render.h" />
     <ClInclude Include="src\PRISM_rendering\zbuffer.h" />
     <ClInclude Include="src\PRISM_UI\button.h" />
+    <ClInclude Include="src\PRISM_UI\joystick.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PrismEngine.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

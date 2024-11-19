@@ -7,10 +7,6 @@
 #include <SDL_stdinc.h>
 #include <SDL.h>
 
-class Math {
-	public:
-		float degToRad(float degrees);
-};
 
 struct PRISM_Triangle
 {
@@ -29,9 +25,9 @@ struct PRISM_Mesh
 
 
 struct PRISM_Color {
-	unsigned char r;
-	unsigned char g;
-	unsigned char b;
+	unsigned char r=0;
+	unsigned char g=0;
+	unsigned char b=0;
 	unsigned char a=255;
 	void print();
 };
