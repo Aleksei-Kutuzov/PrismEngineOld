@@ -1,0 +1,132 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "a texture pack that turns a normal joystick into a circle joystick. by §aAyem mc",
+    "name": "Circle Joystick",
+    "uuid": "fc0c1b89-c446-4126-a1f3-cf667eaee56f",
+    "version": [
+      0,
+      2,
+      5
+    ],
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "a texture pack that turns a normal joystick into a circle joystick. by §aAyem mc",
+      "type": "resources",
+      "uuid": "35cba8d5-5f17-46ef-81dd-fb8116017637",
+      "version": [
+        0,
+        2,
+        5
+      ]
+    }
+  ],
+  "subpacks": [
+   {
+      "folder_name": "Type1",
+      "name": "Type I",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type2",
+      "name": "Oak plank texture",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type3",
+      "name": "Type II",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type4",
+      "name": "Lime wool",
+      "memory_tier": 1
+      },
+   {  
+      "folder_name": "Type5",
+      "name": "Sculk",
+      "memory_tier": 1
+      },
+    {
+      "folder_name": "Type6",
+      "name": "Blue",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type7",
+      "name": "Green",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type8",
+      "name": "Dark purple",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type9",
+      "name": "Red & orange",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type10",
+      "name": "Yellow",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type11",
+      "name": "White wool",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type12",
+      "name": "Amethyst",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type13",
+      "name": "Bee",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type14",
+      "name": "Ice",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type15",
+      "name": "Type III",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type16",
+      "name": "Type IV",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type17",
+      "name": "Type V",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type18",
+      "name": "Creeper",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type19",
+      "name": "Type VI",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "Type20",
+      "name": "Type VII",
+      "memory_tier": 1
+      }
+   ]
+}

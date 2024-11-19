@@ -364,3 +364,5 @@ FodyWeavers.xsd
 /resource1.h
 /resource.h
 /PrismEngine.rc
+/output_files
+/.gitignore
