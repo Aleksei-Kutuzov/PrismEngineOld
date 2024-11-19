@@ -52,8 +52,6 @@ class AbstractObject3D {
 		void SetMesh(struct PRISM_Mesh m);
 		struct PRISM_Mesh GetMesh();
 		
-		void MultiplyMatrixVector(PRISM_Vector3d &i, PRISM_Vector3d &o, PRISM_Matrix_4X4 &m);
-		
 		void DrawThickLine(SDL_Renderer* renderer, int x1, int y1, int x2, int y2, int thickness);
 		void DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3,
 						  SDL_Renderer* SDL_renderer, short rgba[4], int thickness);

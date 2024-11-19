@@ -9,17 +9,6 @@ struct PRISM_Mesh AbstractObject3D::GetMesh() {
 	return mesh;
 }
 
-void AbstractObject3D::MultiplyMatrixVector(PRISM_Vector3d &i, PRISM_Vector3d &o, PRISM_Matrix_4X4 &m) {
-	o.x = i.x * m.m[0][0] + i.y * m.m[1][0] + i.z * m.m[2][0] + m.m[3][0];
-	o.y = i.x * m.m[0][1] + i.y * m.m[1][1] + i.z * m.m[2][1] + m.m[3][1];
-	o.z = i.x * m.m[0][2] + i.y * m.m[1][2] + i.z * m.m[2][2] + m.m[3][2];
-	float w = i.x * m.m[0][3] + i.y * m.m[1][3] + i.z * m.m[2][3] + m.m[3][3];
-	
-	if (w != 0.0f) {
-		o.x /= w; o.y /= w; o.z /= w;
-	}
-}
-
 void AbstractObject3D::DrawThickLine(SDL_Renderer* renderer, int x1, int y1, int x2, int y2, int thickness) {
 	// Вычисление разности координат
 	int dx = x2 - x1;
@@ -85,45 +74,45 @@ void AbstractObject3D::SetScaleXYZ(struct PRISM_Vector3d scaleVect) {
 PRISM_Triangle AbstractObject3D::RotateTriangle(struct PRISM_Triangle Triangle_) {
 	struct PRISM_Triangle TriangleRotatedZ, TriangleRotatedZX, TriangleRotatedZXY;
 	// Rotate in Z-Axis
-	MultiplyMatrixVector(Triangle_.a, TriangleRotatedZ.a, matrixRotZ);
-	MultiplyMatrixVector(Triangle_.b, TriangleRotatedZ.b, matrixRotZ);
-	MultiplyMatrixVector(Triangle_.c, TriangleRotatedZ.c, matrixRotZ);
+	Math::MultiplyMatrixVector(Triangle_.a, TriangleRotatedZ.a, matrixRotZ);
+	Math::MultiplyMatrixVector(Triangle_.b, TriangleRotatedZ.b, matrixRotZ);
+	Math::MultiplyMatrixVector(Triangle_.c, TriangleRotatedZ.c, matrixRotZ);
 	
 	// Rotate in X-Axis
-	MultiplyMatrixVector(TriangleRotatedZ.a, TriangleRotatedZX.a, matrixRotX);
-	MultiplyMatrixVector(TriangleRotatedZ.b, TriangleRotatedZX.b, matrixRotX);
-	MultiplyMatrixVector(TriangleRotatedZ.c, TriangleRotatedZX.c, matrixRotX);
+	Math::MultiplyMatrixVector(TriangleRotatedZ.a, TriangleRotatedZX.a, matrixRotX);
+	Math::MultiplyMatrixVector(TriangleRotatedZ.b, TriangleRotatedZX.b, matrixRotX);
+	Math::MultiplyMatrixVector(TriangleRotatedZ.c, TriangleRotatedZX.c, matrixRotX);
 	
 	// Rotate in Y-Axis
-	MultiplyMatrixVector(TriangleRotatedZX.a, TriangleRotatedZXY.a, matrixRotY);
-	MultiplyMatrixVector(TriangleRotatedZX.b, TriangleRotatedZXY.b, matrixRotY);
-	MultiplyMatrixVector(TriangleRotatedZX.c, TriangleRotatedZXY.c, matrixRotY);
+	Math::MultiplyMatrixVector(TriangleRotatedZX.a, TriangleRotatedZXY.a, matrixRotY);
+	Math::MultiplyMatrixVector(TriangleRotatedZX.b, TriangleRotatedZXY.b, matrixRotY);
+	Math::MultiplyMatrixVector(TriangleRotatedZX.c, TriangleRotatedZXY.c, matrixRotY);
 	return TriangleRotatedZXY;
 }
 
 PRISM_Triangle AbstractObject3D::TranslateTriangle(struct PRISM_Triangle Triangle_) {
     struct PRISM_Triangle TriangleTranslated;
-	MultiplyMatrixVector(Triangle_.a, TriangleTranslated.a, matrixTranslate);
-	MultiplyMatrixVector(Triangle_.b, TriangleTranslated.b, matrixTranslate);
-	MultiplyMatrixVector(Triangle_.c, TriangleTranslated.c, matrixTranslate);
+	Math::MultiplyMatrixVector(Triangle_.a, TriangleTranslated.a, matrixTranslate);
+	Math::MultiplyMatrixVector(Triangle_.b, TriangleTranslated.b, matrixTranslate);
+	Math::MultiplyMatrixVector(Triangle_.c, TriangleTranslated.c, matrixTranslate);
 	
 	return TriangleTranslated;
 }
 
 PRISM_Triangle AbstractObject3D::ScaleTriangle(struct PRISM_Triangle Triangle_) {
 	struct PRISM_Triangle TriangleScaled;
-	MultiplyMatrixVector(Triangle_.a, TriangleScaled.a, matrixScale);
-	MultiplyMatrixVector(Triangle_.b, TriangleScaled.b, matrixScale);
-	MultiplyMatrixVector(Triangle_.c, TriangleScaled.c, matrixScale);
+	Math::MultiplyMatrixVector(Triangle_.a, TriangleScaled.a, matrixScale);
+	Math::MultiplyMatrixVector(Triangle_.b, TriangleScaled.b, matrixScale);
+	Math::MultiplyMatrixVector(Triangle_.c, TriangleScaled.c, matrixScale);
 	
 	return TriangleScaled;
 }
 
 PRISM_Triangle AbstractObject3D::ViewTriangle(struct PRISM_Triangle Triangle_) {
 	struct PRISM_Triangle TriangleViewed;
-	MultiplyMatrixVector(Triangle_.a, TriangleViewed.a, Camera.matrixView);
-	MultiplyMatrixVector(Triangle_.b, TriangleViewed.b, Camera.matrixView);
-	MultiplyMatrixVector(Triangle_.c, TriangleViewed.c, Camera.matrixView);
+	Math::MultiplyMatrixVector(Triangle_.a, TriangleViewed.a, Camera.matrixView);
+	Math::MultiplyMatrixVector(Triangle_.b, TriangleViewed.b, Camera.matrixView);
+	Math::MultiplyMatrixVector(Triangle_.c, TriangleViewed.c, Camera.matrixView);
 	
 	return TriangleViewed;
 }
@@ -281,11 +270,11 @@ void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, PRISM_RenderMod
 		    normal.y * (TriangleViewed.a.y - Camera.Coordinate.y) +
 			normal.z * (TriangleViewed.a.z - Camera.Coordinate.z) < 0.0f || rm.ShowBackMesh) {
 			
-			MultiplyMatrixVector(TriangleViewed.a, TriangleProjected.a,
+			Math::MultiplyMatrixVector(TriangleViewed.a, TriangleProjected.a,
 			                     ProjectionMatrix);
-			MultiplyMatrixVector(TriangleViewed.b, TriangleProjected.b,
+			Math::MultiplyMatrixVector(TriangleViewed.b, TriangleProjected.b,
 			                     ProjectionMatrix);
-			MultiplyMatrixVector(TriangleViewed.c, TriangleProjected.c,
+			Math::MultiplyMatrixVector(TriangleViewed.c, TriangleProjected.c,
 			                     ProjectionMatrix);
 			
 			TriangleProjected.a.x += 1.0f;

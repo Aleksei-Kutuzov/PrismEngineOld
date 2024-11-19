@@ -39,7 +39,6 @@ public:
 		ScreenW(displW), ScreenH(displH),
 		z_buffer(ScreenW, ScreenH){}
 	
-	void MultiplyMatrixVector(PRISM_Vector3d &i, PRISM_Vector3d &o, PRISM_Matrix_4X4 &m);
 	void SetPosition(struct PRISM_Vector3d Coord, struct PRISM_Vector3d Rot, struct PRISM_Vector3d viewDir_);
 	void SetView(struct PRISM_Vector3d viewDirVect, struct PRISM_Vector3d upDirVect);
 	void ClearZ_Buffer(SDL_Renderer * renderer);

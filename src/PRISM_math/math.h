@@ -27,6 +27,7 @@ public:
 	static PRISM_Matrix_4X4 Matrix_MultiplyMatrix(PRISM_Matrix_4X4& m1, PRISM_Matrix_4X4& m2);
 	static PRISM_Matrix_4X4 Matrix_PointAt(PRISM_Vector3d& pos, PRISM_Vector3d& target, PRISM_Vector3d& up);
 	static PRISM_Matrix_4X4 Matrix_QuickInverse(PRISM_Matrix_4X4& m);
+	static void MultiplyMatrixVector(PRISM_Vector3d& i, PRISM_Vector3d& o, PRISM_Matrix_4X4& m);
 };
 
 #endif // PRISM_MATH_H
