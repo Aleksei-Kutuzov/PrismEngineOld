@@ -284,12 +284,162 @@ void main_() {
 }
 
 
+class AbstractObject3D_ {
+private:
+    struct PRISM_Vector3d Coordinate = {0, 0, 0};
+    struct PRISM_Vector3d Rotation = { 0, 0, 0 };
+    struct PRISM_Vector3d Scale = { 1, 1, 1 };
+public:
+    AbstractObject3D_(int i) {}
+
+
+    PRISM_Vector3d getCoordinate() {
+        return Coordinate;
+    }
+    float getCoordinate(char cordChar) {
+        if (cordChar == 'X' || cordChar == 'x') {
+            return getCoordinate().x;
+        }
+        else if (cordChar == 'Y' || cordChar == 'y') {
+            return getCoordinate().y;
+        }
+        else if (cordChar == 'Z' || cordChar == 'z') {
+            return getCoordinate().z;
+        }
+        else if (cordChar == 'W' || cordChar == 'w') {
+            return getCoordinate().w;
+        }
+        else {
+            SDL_Log("the 'Coordinate' field does not have the '%c' component called", cordChar);
+        }
+    }
+
+    void setCoordinate(PRISM_Vector3d v) {
+        Coordinate = v;
+    }
+
+    void setCoordinate(char cordChar, float v) {
+        if (cordChar == 'X' || cordChar == 'x') {
+            setCoordinate({ v, Coordinate.y, Coordinate.z });
+        }
+        else if (cordChar == 'Y' || cordChar == 'y') {
+            setCoordinate({ Coordinate.x, v, Coordinate.z });
+        }
+        else if (cordChar == 'Z' || cordChar == 'z') {
+            setCoordinate({ Coordinate.x, Coordinate.y, v });
+        }
+        else if (cordChar == 'W' || cordChar == 'w') {
+            setCoordinate({ Coordinate.x, Coordinate.y, Coordinate.z, v });
+        }
+        else {
+            SDL_Log("the 'Coordinate' field does not have the '%c' component called", cordChar);
+        }
+    }
+
+
+    PRISM_Vector3d getRotation() {
+        return Rotation;
+    }
+    float getRotation(char rotChar) {
+        if (rotChar == 'X' || rotChar == 'x') {
+            return getRotation().x;
+        }
+        else if (rotChar == 'Y' || rotChar == 'y') {
+            return getRotation().y;
+        }
+        else if (rotChar == 'Z' || rotChar == 'z') {
+            return getRotation().z;
+        }
+        else if (rotChar == 'W' || rotChar == 'w') {
+            return getRotation().w;
+        }
+        else {
+            SDL_Log("the 'Rotation' field does not have the '%c' component called", rotChar);
+        }
+    }
+    void setRotation(PRISM_Vector3d v) {
+        Rotation = v;
+    }
+    void setRotation(char cordChar, float v) {
+        if (cordChar == 'X' || cordChar == 'x') {
+            setRotation({ v, Rotation.y, Rotation.z });
+        }
+        else if (cordChar == 'Y' || cordChar == 'y') {
+            setRotation({ Rotation.x, v, Rotation.z });
+        }
+        else if (cordChar == 'Z' || cordChar == 'z') {
+            setRotation({ Rotation.x, Rotation.y, v });
+        }
+        else if (cordChar == 'W' || cordChar == 'w') {
+            setRotation({ Rotation.x, Rotation.y, Rotation.z, v });
+        }
+        else {
+            SDL_Log("the 'Rotation' field does not have the '%c' component called", cordChar);
+        }
+    }
+
+    PRISM_Vector3d getScale() {
+        return Scale;
+    }
+    float getScale(char sclChar) {
+        if (sclChar == 'X' || sclChar == 'x') {
+            return getScale().x;
+        }
+        else if (sclChar == 'Y' || sclChar == 'y') {
+            return getScale().y;
+        }
+        else if (sclChar == 'Z' || sclChar == 'z') {
+            return getScale().z;
+        }
+        else if (sclChar == 'W' || sclChar == 'w') {
+            return getScale().w;
+        }
+        else {
+            SDL_Log("the 'Scale' field does not have the '%c' component called", sclChar);
+        }
+    }
+    void setScale(PRISM_Vector3d v) {
+        Scale = v;
+    }
+    void setScale(char cordChar, float v) {
+        if (cordChar == 'X' || cordChar == 'x') {
+            setScale({ v, Scale.y, Scale.z });
+        }
+        else if (cordChar == 'Y' || cordChar == 'y') {
+            setScale({ Scale.x, v, Scale.z });
+        }
+        else if (cordChar == 'Z' || cordChar == 'z') {
+            setScale({ Scale.x, Scale.y, v });
+        }
+        else if (cordChar == 'W' || cordChar == 'w') {
+            setScale({ Scale.x, Scale.y, Scale.z, v });
+        }
+        else {
+            SDL_Log("the 'Scale' field does not have the '%c' component called", cordChar);
+        }
+    }
+
+};
+
 
 int main(int argc, char* argv[])
 {
     //    test_Zbuff();
-    main_();
+    //main_();
+    AbstractObject3D_ t(1);
+    t.setCoordinate({ 1, 1, 1 });
+    t.setCoordinate('X', 52);
+    t.setRotation({ 2, 2, 2 });
+    t.setRotation('Y', 52);
+    t.setScale({ 3, 3, 3 });
+    t.setScale('Z', 52);
+    t.getCoordinate().print();
+    t.getRotation().print();
+    t.getScale().print();
+    SDL_Log("==========================");
+    SDL_Log("X %f", t.getScale('X'));
+    SDL_Log("Y %f", t.getScale('y'));
+    SDL_Log("Z %f", t.getScale('z'));
     // GL_test();
     return(0);
 }
-

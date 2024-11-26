@@ -1,10 +1,10 @@
 #ifndef ABSTRACTCAMERA3D_H
 #define ABSTRACTCAMERA3D_H
 
-#include "/PrismEngine/src/PRISM_math/vector3D.h"
-#include "/PrismEngine/src/PRISM_math/matrix.h"
-#include "/PrismEngine/src/PRISM_math/math.h"
-#include "/PrismEngine/src/PRISM_rendering/zbuffer.h"
+#include "../PRISM_math/vector3D.h"
+#include "../PRISM_math/matrix.h"
+#include "../PRISM_math/math.h"
+#include "../PRISM_rendering/zbuffer.h"
 
 
 class AbstractCamera3D {

@@ -5,13 +5,13 @@
 //
 #include "SDL.h"
 #include "SDL_image.h"
-#include "/PrismEngine/src/PRISM_math/vector3D.h"
-#include "/PrismEngine/src/PRISM_math/matrix.h"
-#include "/PrismEngine/src/PRISM_math/other.h"
-#include "/PrismEngine/src/PRISM_math/math.h"
-#include "/PrismEngine/src/PRISM_UI/joystick.h"
-#include "/PrismEngine/src/PRISM_rendering/zbuffer.h"
-#include "/PrismEngine/src/PRISM_objects3D/AbstractCamera3D.h"
+#include "../PRISM_math/vector3D.h"
+#include "../PRISM_math/matrix.h"
+#include "../PRISM_math/other.h"
+#include "../PRISM_math/math.h"
+#include "../PRISM_UI/joystick.h"
+#include "../PRISM_rendering/zbuffer.h"
+#include "../PRISM_objects3D/AbstractCamera3D.h"
 #include <string>
 #include <fstream>
 #include <sstream>

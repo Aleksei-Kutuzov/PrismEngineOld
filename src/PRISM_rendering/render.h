@@ -4,7 +4,7 @@
 #include <vector>
 #include "SDL.h"
 #include "SDL_image.h"
-#include "/PrismEngine/src/PRISM_objects3D/AbstractObject3D.h"
+#include "../PRISM_objects3D/AbstractObject3D.h"
 #include <string>
 std::string getInternalStoragePath();
 

@@ -1,5 +1,7 @@
 #pragma once
-
+#include <iostream>
+#define LOG_FILE_LINE() \
+    std::cout << "Файл: " << __FILE__ << ", строка: " << __LINE__ << std::endl;
 
 #include "src/PRISM_math/vector3D.h"
 #include "src/PRISM_math/matrix.h"
