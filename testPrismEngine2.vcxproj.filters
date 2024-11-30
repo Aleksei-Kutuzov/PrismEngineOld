@@ -66,11 +66,14 @@
     <ClCompile Include="src\PRISM_rendering\zbuffer.cpp">
       <Filter>Исходные файлы\PRISM_rendering</Filter>
     </ClCompile>
-    <ClCompile Include="src\PRISM_UI\joystick.cpp">
-      <Filter>Исходные файлы\PRISM_rendering</Filter>
-    </ClCompile>
     <ClCompile Include="src\PRISM_math\math.cpp">
       <Filter>Исходные файлы\PRISM_math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PRISM_UI\joystick.cpp">
+      <Filter>Исходные файлы\PRISM_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PRISM_rendering\painter.cpp">
+      <Filter>Исходные файлы\PRISM_rendering</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +109,9 @@
     </ClInclude>
     <ClInclude Include="src\PrismEngine.h">
       <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PRISM_rendering\painter.h">
+      <Filter>Файлы заголовков\PRISM_rendering</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

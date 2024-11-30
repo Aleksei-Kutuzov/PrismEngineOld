@@ -9,34 +9,6 @@ struct PRISM_Mesh AbstractObject3D::GetMesh() {
 	return mesh;
 }
 
-void AbstractObject3D::DrawThickLine(SDL_Renderer* renderer, int x1, int y1, int x2, int y2, int thickness) {
-	// Вычисление разности координат
-	int dx = x2 - x1;
-	int dy = y2 - y1;
-	
-	// Вычисление нормализованного вектора перпендикулярного линии
-	float length = (float)sqrtf(dx * dx + dy * dy);
-	float nx = -dy / length;
-	float ny = dx / length;
-	
-	// Рисование параллельных линий
-	for (int i = -thickness / 2; i <= thickness / 2; ++i) {
-		int offsetX = (int)(nx * i);
-		int offsetY = (int)(ny * i);
-		SDL_RenderDrawLine(renderer, x1 + offsetX, y1 + offsetY, x2 + offsetX, y2 + offsetY);
-	}
-}
-
-// отрисовываем треугольники
-void AbstractObject3D::DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3, SDL_Renderer* SDL_renderer,
-short rgba[4], int thickness = 1) {
-	clock_t start = clock();
-	SDL_SetRenderDrawColor(SDL_renderer, rgba[0], rgba[1], rgba[2], rgba[3]);
-	DrawThickLine(SDL_renderer, x1, y1, x2, y2, thickness);
-	DrawThickLine(SDL_renderer, x2, y2, x3, y3, thickness);
-	DrawThickLine(SDL_renderer, x3, y3, x1, y1, thickness);
-}
-
 void AbstractObject3D::InitProjection(AbstractCamera3D camera) {
 	ProjectionMatrix = Math::Matrix_MakeProjection(camera.FFovRad, camera.FAspectRatio, camera.FNear, camera.FFar);
 	ScreenW = (float)camera.ScreenW;
@@ -46,10 +18,9 @@ void AbstractObject3D::InitProjection(AbstractCamera3D camera) {
 
 void AbstractObject3D::SetRotateXYZ(struct PRISM_Vector3d rotVect) {
     Rotation = rotVect;
-	Math m;
-	rotVect.x = m.degToRad(rotVect.x);
-	rotVect.y = m.degToRad(rotVect.y);
-	rotVect.z = m.degToRad(rotVect.z);
+	rotVect.x = Math::degToRad(rotVect.x);
+	rotVect.y = Math::degToRad(rotVect.y);
+	rotVect.z = Math::degToRad(rotVect.z);
 	
 	// Rotation X
 	matrixRotX = Math::Matrix_MakeRotationX(rotVect.x);
@@ -117,15 +88,7 @@ PRISM_Triangle AbstractObject3D::ViewTriangle(struct PRISM_Triangle Triangle_) {
 	return TriangleViewed;
 }
 
-PRISM_Vector3d AbstractObject3D::CalculateNormals(struct PRISM_Triangle triang) {
-	PRISM_Vector3d normal, lineAB, lineAC;
-	lineAB = triang.b - triang.a;
-	lineAC = triang.c - triang.a;
-	
-	normal = Math::Vector_CrossProduct(lineAB, lineAC);
-	PRISM_Vector3d r = Math::Vector_Normalise(normal);
-	return r;
-}
+
 
 PRISM_Color AbstractObject3D::CalculatePhongShadingColor(const PRISM_Vector3d& normal, const PRISM_Vector3d& viewDir,
 												         const PRISM_Light& light, const PRISM_Vector3d& fragPos) {
@@ -265,7 +228,7 @@ void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, PRISM_RenderMod
 		TriangleTranslated = TranslateTriangle(TriangleRotated);
 		TriangleViewed = ViewTriangle(TriangleTranslated);
 		
-		PRISM_Vector3d normal = CalculateNormals(TriangleViewed);
+		PRISM_Vector3d normal = Math::CalculateNormals(TriangleViewed);
 		if (normal.x * (TriangleViewed.a.x - Camera.Coordinate.x) +
 		    normal.y * (TriangleViewed.a.y - Camera.Coordinate.y) +
 			normal.z * (TriangleViewed.a.z - Camera.Coordinate.z) < 0.0f || rm.ShowBackMesh) {
@@ -338,7 +301,7 @@ void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, PRISM_RenderMod
 			}
 			if (rm.DisplayTriangleContours) {
 				short nullColor[4] = {0x00, 0xFF, 0x00, 0xFF};
-				DrawTriangle(TriangleProjected.a.x, TriangleProjected.a.y,
+				PRISM_Painter::DrawTriangle(TriangleProjected.a.x, TriangleProjected.a.y,
 				             TriangleProjected.b.x, TriangleProjected.b.y,
 				             TriangleProjected.c.x, TriangleProjected.c.y, renderer,
 				             nullColor, rm.ContourWidth);
@@ -366,7 +329,7 @@ void AbstractObject3D::OldRasterisation(int x1, int y1, int x2, int y2, int x3, 
 	PRISM_Vector3d v1 = {static_cast<float>(x2), static_cast<float>(y2), static_cast<float>(z2)};
 	PRISM_Vector3d v2 = {static_cast<float>(x3), static_cast<float>(y3), static_cast<float>(z3)};
 	
-	PRISM_Vector3d normal = CalculateNormals({v0, v1, v2});
+	PRISM_Vector3d normal = Math::CalculateNormals({v0, v1, v2});
 	PRISM_Vector3d viewDir = {0, 0, 1};  // Assuming the camera looks along the negative Z axis
 	
 	PRISM_Color color0, color1, color2;
@@ -517,7 +480,7 @@ void AbstractObject3D::Rasterisation(int x1, int y1, int x2, int y2, int x3, int
 	PRISM_Vector3d v0 = {static_cast<float>(x1), static_cast<float>(y1), static_cast<float>(z1)};
 	PRISM_Vector3d v1 = {static_cast<float>(x2), static_cast<float>(y2), static_cast<float>(z2)};
 	PRISM_Vector3d v2 = {static_cast<float>(x3), static_cast<float>(y3), static_cast<float>(z3)};
-	PRISM_Vector3d normal = CalculateNormals({v0, v1, v2});
+	PRISM_Vector3d normal = Math::CalculateNormals({v0, v1, v2});
 	PRISM_Vector3d viewDir = {0, 0, 1};  // Предполагается, что камера смотрит вдоль отрицательной оси Z
 	
 	// Вычисление ограничивающего прямоугольника треугольника
@@ -588,7 +551,7 @@ void AbstractObject3D::TileRasterisation(int x1, int y1, int x2, int y2, int x3,
 	PRISM_Vector3d v2 = {static_cast<float>(x3), static_cast<float>(y3), static_cast<float>(z3)};
     
     // Calculate the normal and other necessary values
-	PRISM_Vector3d normal = CalculateNormals({v0, v1, v2});
+	PRISM_Vector3d normal = Math::CalculateNormals({v0, v1, v2});
 	PRISM_Vector3d viewDir = {0, 0, 1};  // Assuming the camera looks along the negative Z axis
 
     // Compute bounding box of the triangle

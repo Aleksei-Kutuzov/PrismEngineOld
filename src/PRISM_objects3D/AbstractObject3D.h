@@ -9,6 +9,7 @@
 #include "../PRISM_math/matrix.h"
 #include "../PRISM_math/other.h"
 #include "../PRISM_math/math.h"
+#include "../PRISM_rendering/painter.h"
 #include "../PRISM_UI/joystick.h"
 #include "../PRISM_rendering/zbuffer.h"
 #include "../PRISM_objects3D/AbstractCamera3D.h"
@@ -52,9 +53,6 @@ class AbstractObject3D {
 		void SetMesh(struct PRISM_Mesh m);
 		struct PRISM_Mesh GetMesh();
 		
-		void DrawThickLine(SDL_Renderer* renderer, int x1, int y1, int x2, int y2, int thickness);
-		void DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3,
-						  SDL_Renderer* SDL_renderer, short rgba[4], int thickness);
 		
 		void InitProjection(AbstractCamera3D camera);
 		
@@ -67,7 +65,6 @@ class AbstractObject3D {
 		PRISM_Triangle ScaleTriangle(struct PRISM_Triangle Triangle_);
 		PRISM_Triangle ViewTriangle(struct PRISM_Triangle Triangle_);
 		
-		PRISM_Vector3d CalculateNormals(struct PRISM_Triangle triang);
 		PRISM_Color CalculatePhongShadingColor(const PRISM_Vector3d& normal, const PRISM_Vector3d& viewDir, const PRISM_Light& light, const PRISM_Vector3d& fragPos);
 		
 		void DownloadFromOBJ(const char* filename);

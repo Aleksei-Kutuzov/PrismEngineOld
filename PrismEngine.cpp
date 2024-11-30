@@ -284,13 +284,17 @@ void main_() {
 }
 
 
-class AbstractObject3D_ {
+class AbstractObject3D_demo {
 private:
+    //TRANSFORM
     struct PRISM_Vector3d Coordinate = {0, 0, 0};
     struct PRISM_Vector3d Rotation = { 0, 0, 0 };
     struct PRISM_Vector3d Scale = { 1, 1, 1 };
+
+    //MESH
+    struct PRISM_Mesh mesh;
 public:
-    AbstractObject3D_(int i) {}
+    AbstractObject3D_demo(int i) {}
 
 
     PRISM_Vector3d getCoordinate() {
@@ -315,6 +319,7 @@ public:
     }
 
     void setCoordinate(PRISM_Vector3d v) {
+        // @@@
         Coordinate = v;
     }
 
@@ -358,6 +363,7 @@ public:
         }
     }
     void setRotation(PRISM_Vector3d v) {
+        // @@@
         Rotation = v;
     }
     void setRotation(char cordChar, float v) {
@@ -399,6 +405,7 @@ public:
         }
     }
     void setScale(PRISM_Vector3d v) {
+        // @@@
         Scale = v;
     }
     void setScale(char cordChar, float v) {
@@ -419,6 +426,14 @@ public:
         }
     }
 
+    void SetMesh(struct PRISM_Mesh m) {
+        mesh = m;
+    }
+
+    PRISM_Mesh GetMesh() {
+        return mesh;
+    }
+
 };
 
 
@@ -426,7 +441,7 @@ int main(int argc, char* argv[])
 {
     //    test_Zbuff();
     //main_();
-    AbstractObject3D_ t(1);
+    AbstractObject3D_demo t(1);
     t.setCoordinate({ 1, 1, 1 });
     t.setCoordinate('X', 52);
     t.setRotation({ 2, 2, 2 });
@@ -440,6 +455,9 @@ int main(int argc, char* argv[])
     SDL_Log("X %f", t.getScale('X'));
     SDL_Log("Y %f", t.getScale('y'));
     SDL_Log("Z %f", t.getScale('z'));
+
+    t.SetMesh({ { { {1, 1, 1}, {1, 1, 1}, {1, 1, 1} }, PRISM_Triangle(),    PRISM_Triangle() } });
+    t.GetMesh().print();
     // GL_test();
     return(0);
 }

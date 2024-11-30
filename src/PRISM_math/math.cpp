@@ -185,3 +185,12 @@ void Math::MultiplyMatrixVector(PRISM_Vector3d& i, PRISM_Vector3d& o, PRISM_Matr
 		o.x /= w; o.y /= w; o.z /= w;
 	}
 }
+PRISM_Vector3d Math::CalculateNormals(PRISM_Triangle triang) {
+	PRISM_Vector3d normal, lineAB, lineAC;
+	lineAB = triang.b - triang.a;
+	lineAC = triang.c - triang.a;
+
+	normal = Math::Vector_CrossProduct(lineAB, lineAC);
+	PRISM_Vector3d r = Math::Vector_Normalise(normal);
+	return r;
+}

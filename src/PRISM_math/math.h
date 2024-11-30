@@ -8,6 +8,7 @@
 #include <SDL.h>
 #include "vector3D.h"
 #include "matrix.h"
+#include "other.h"
 
 class Math {
 public:
@@ -28,6 +29,7 @@ public:
 	static PRISM_Matrix_4X4 Matrix_PointAt(PRISM_Vector3d& pos, PRISM_Vector3d& target, PRISM_Vector3d& up);
 	static PRISM_Matrix_4X4 Matrix_QuickInverse(PRISM_Matrix_4X4& m);
 	static void MultiplyMatrixVector(PRISM_Vector3d& i, PRISM_Vector3d& o, PRISM_Matrix_4X4& m);
+	static PRISM_Vector3d CalculateNormals(struct PRISM_Triangle triang);
 };
 
 #endif // PRISM_MATH_H
