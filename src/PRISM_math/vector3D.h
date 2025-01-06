@@ -19,9 +19,7 @@ struct PRISM_Vector3d
 	PRISM_Vector3d operator/(float k);
 	float operator[](int index);
 	bool operator==(PRISM_Vector3d& other);
-
 };
-
 
 
 

@@ -6,27 +6,29 @@
 #include "SDL_image.h"
 #include "../PRISM_objects3D/AbstractObject3D.h"
 #include <string>
-std::string getInternalStoragePath();
 
-bool saveTexture(SDL_Renderer* renderer, SDL_Texture* texture, const std::string& filePath);
 
-enum RasterizationMode {
-	ZBufferComparison,
-	AverageZFigureComparison
-};
+//enum RasterizationMode {
+//	ZBufferComparison,
+//	AverageZFigureComparison
+//};
 
-class PRISME_Render {
+class PRISM_Render {
 public:
-	PRISME_Render(SDL_Renderer *rend);
-	void AddInRender(AbstractObject3D object3d);
-//	RemInRender(AbstractObject3D object3d);
-	SDL_Texture * ReturnFrameTexture(int DWidth, int DHeight, PRISM_RenderMode rm);
-	void RenderFrameSurfase(int DWidth, int DHeight, PRISM_RenderMode rm);
+	PRISM_Vector3d cameraCoordinate = {0, 0, 0};
+	PRISM_Vector3d lightAmbient = { 0.1f, 0.1f, 0.1f }; // интенсивность окружающего света в сцене(задаётся для всего пространства).
+
+	PRISM_Color CalculatePixelAmbient(PRISM_Color originalСolor, AbstractObject3D obj) const; // Окружающее освещение (ambient lighting) симулирует свет, равномерно распространяющийся в пространстве. Оно добавляет объекту базовую освещённость, даже если на него напрямую не падает свет.
+	PRISM_Color CalculatePixelDiffuse(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle); // Диффузное освещение моделирует рассеивание света на матовой поверхности.
+	PRISM_Color CalculatePixelSpecular(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle, PRISM_Vector3d cameraCoordinate);
 	
+	
+
+	void Rendering(PRISM_Window* window, AbstractObject3D* obj);
+	void SetScreenSize(int w, int h);
 	
 private:
-	std::vector <AbstractObject3D> Object3DList;
-	SDL_Renderer *renderer;
+	int ScreenW, ScreenH;
 };
 
 #endif // RENDER_H

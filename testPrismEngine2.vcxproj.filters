@@ -75,6 +75,12 @@
     <ClCompile Include="src\PRISM_rendering\painter.cpp">
       <Filter>Исходные файлы\PRISM_rendering</Filter>
     </ClCompile>
+    <ClCompile Include="src\PRISM_rendering\PRISM_Window.cpp">
+      <Filter>Исходные файлы\PRISM_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PRISM_objects3D\Scene.cpp">
+      <Filter>Исходные файлы\PRISM_objects3D</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\PRISM_math\vector3D.h">
@@ -112,6 +118,12 @@
     </ClInclude>
     <ClInclude Include="src\PRISM_rendering\painter.h">
       <Filter>Файлы заголовков\PRISM_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PRISM_rendering\PRISM_Window.h">
+      <Filter>Файлы заголовков\PRISM_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PRISM_objects3D\Scene.h">
+      <Filter>Файлы заголовков\PRISM_objects3D</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

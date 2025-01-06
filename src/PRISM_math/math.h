@@ -10,6 +10,7 @@
 #include "matrix.h"
 #include "other.h"
 
+
 class Math {
 public:
 	static float degToRad(float degrees);
@@ -30,6 +31,7 @@ public:
 	static PRISM_Matrix_4X4 Matrix_QuickInverse(PRISM_Matrix_4X4& m);
 	static void MultiplyMatrixVector(PRISM_Vector3d& i, PRISM_Vector3d& o, PRISM_Matrix_4X4& m);
 	static PRISM_Vector3d CalculateNormals(struct PRISM_Triangle triang);
+	static PRISM_GL_fColor convertToGlColor(const PRISM_Color& color);
 };
 
 #endif // PRISM_MATH_H

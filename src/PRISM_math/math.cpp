@@ -1,5 +1,5 @@
 #include "math.h"
-
+#define useHardwareZbuffer true
 
 
 float Math::degToRad(float degrees) {
@@ -193,4 +193,12 @@ PRISM_Vector3d Math::CalculateNormals(PRISM_Triangle triang) {
 	normal = Math::Vector_CrossProduct(lineAB, lineAC);
 	PRISM_Vector3d r = Math::Vector_Normalise(normal);
 	return r;
+}
+
+PRISM_GL_fColor Math::convertToGlColor(const PRISM_Color& color) {
+	return {
+		(float)color.r / 255.0f,
+		(float)color.g / 255.0f,
+		(float)color.b / 255.0f
+	};
 }

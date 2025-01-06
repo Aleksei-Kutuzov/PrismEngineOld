@@ -11,6 +11,8 @@ struct PRISM_Matrix_4X4
 	void print();
 	float* operator[](int index);
 	bool operator==(PRISM_Matrix_4X4& other);
+
 };
+
 
 #endif // MATRIX_H

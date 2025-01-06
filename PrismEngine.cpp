@@ -1,78 +1,6 @@
 ﻿#include "src/PrismEngine.h"
 
 
-void test_Zbuff() {
-    SDL_Window* window;
-    SDL_Renderer* renderer;
-    SDL_Surface* surface;
-    SDL_Texture* texture;
-    bool done;
-    SDL_Event event;
-
-
-    if (SDL_CreateWindowAndRenderer(800, 480, SDL_WINDOW_FULLSCREEN_DESKTOP, &window, &renderer) < 0) {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-            "SDL_CreateWindowAndRenderer() failed: %s", SDL_GetError());
-        return;
-    }
-
-    if ((IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG) != IMG_INIT_PNG)
-    {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "IMG_Init() failed :%s", SDL_GetError());
-        SDL_Quit();
-        return;
-    }
-
-    if (TTF_Init() < 0)
-    {
-        printf("Couldn't initialize SDL TTF: %s\n", SDL_GetError());
-        exit(1);
-    }
-
-    SDL_DisplayMode mode;
-    SDL_GetDisplayMode(0, 0, &mode);
-    SDL_SetWindowSize(window, 480, 800);
-
-    AbstractCamera3D MainCamera(0.1, 1000.0f, 90.0f,
-        mode.w, mode.h);
-    AbstractObject3D o({ 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, MainCamera);
-    short rgba[4] = { 200, 200, 200, 255 };
-    short rgba2[4] = { 200, 0, 20, 255 };
-    int ftimeline = 1;
-    done = false;
-    while (!done) {
-        while (SDL_PollEvent(&event)) {
-            if (event.type == SDL_QUIT)
-            {
-                done = true;
-            }
-
-        }
-        SDL_SetRenderDrawColor(renderer, 255, 255, 0, 255);
-        SDL_RenderClear(renderer);
-        // Замер времени
-        auto start = std::chrono::high_resolution_clock::now();
-        o.OptimizedEdgeRasterization(0, 500,
-            500, 1000,
-            1000, 500,
-            0, 0, -2,
-            renderer, { 0, 0, 1 }, rgba, { true, false, false, true, false, true, 5 });
-        o.OptimizedEdgeRasterization(0, 200,
-            300, 2000,
-            700, 400,
-            -1, -1, -1,
-            renderer, { 0, 0, 0 }, rgba2, { true, false, false, true, false, true, 5 });
-        auto end = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double, std::milli> duration = end - start;
-
-        //Вывод времени через SDL_Log
-        SDL_Log("Время выполнения: %.3f мс", duration.count());
-        SDL_RenderPresent(renderer);
-        MainCamera.ClearZ_Buffer(renderer);
-    }
-
-    SDL_Quit();
-}
 
 void main_() {
     SDL_Window* window;
@@ -102,7 +30,7 @@ void main_() {
         exit(1);
     }
 
-    PRISME_Render PrismRender(renderer);
+    //PRISM_Render PrismRender(renderer);
 
 
     SDL_DisplayMode mode;
@@ -147,8 +75,8 @@ void main_() {
     InitJoystick(joysticks[0], 300, mode.h - 300, 300, 150, renderer); // Инициализация первого джойстика
     InitJoystick(joysticks[1], mode.w - 300, mode.h - 300, 300, 150, renderer); // Инициализация второго джойстика
 
-    PrismRender.AddInRender(Obj1);
-    PrismRender.AddInRender(Obj2);
+    //PrismRender.AddInRender(Obj1);
+    //PrismRender.AddInRender(Obj2);
 
     ToggleButton DisplayTriangleContours;
     ToggleButton DisplayDimming1;
@@ -261,7 +189,7 @@ void main_() {
         //        Obj1.DrawMeshTriangles(renderer, {DisplayDimming1.active, DisplayDimming2.active, DisplayTriangleContours.active, Zbuffer.active, false, true, 5});
         //		Obj2.DrawMeshTriangles(renderer, {DisplayDimming1.active, DisplayDimming2.active, DisplayTriangleContours.active, Zbuffer.active, false, true, 5});
         //
-        PrismRender.RenderFrameSurfase(mode.w, mode.h, { DisplayDimming1.active, DisplayDimming2.active, DisplayTriangleContours.active, Zbuffer.active, false, true, 5 });
+        //PrismRender.RenderFrameSurfase(mode.w, mode.h, { DisplayDimming1.active, DisplayDimming2.active, DisplayTriangleContours.active, Zbuffer.active, false, true, 5 });
 
 
         RenderToggleButton(DisplayDimming1);
@@ -439,7 +367,7 @@ public:
 
 int main(int argc, char* argv[])
 {
-    //    test_Zbuff();
+    //test_Zbuff();
     //main_();
     AbstractObject3D_demo t(1);
     t.setCoordinate({ 1, 1, 1 });
@@ -458,6 +386,74 @@ int main(int argc, char* argv[])
 
     t.SetMesh({ { { {1, 1, 1}, {1, 1, 1}, {1, 1, 1} }, PRISM_Triangle(),    PRISM_Triangle() } });
     t.GetMesh().print();
+    SDL_Log("==========================");
+    AbstractCamera3D cam(0.1, 1000.0f, 90.0f, 1, 1);
+    AbstractObject3D o({ 1, 1, 1 }, { 1, 1, 1 }, { 1, 1, 1 }, cam);
+
+    Scene c = Scene();
+    c.PrintInfo();
+    c.AddObject(&o);
+    c.PrintInfo();
+    c.DelObject(&o);
+    SDL_Log("==========================");
+    c.PrintInfo();
+
+    // Создаем окно
+    PRISM_Window window(600, 400, u8"♦PRISME♦");
+
+    // Проверяем, удалось ли создать окно
+    if (!window.isRunning()) {
+        return -1;
+    }
+
+    Scene scene;
+    AbstractCamera3D MainCamera(0.1, 1000.0f, 90.0f,
+        window.GetW(), window.GetH());
+    MainCamera.SetPosition({ 0, 0, -5 }, { 0, 0, 0 }, { 0, 0, 1 });
+    AbstractObject3D object({0, 0, 0}, {0, 0, 0}, {1, 1, 1}, MainCamera);
+    object.DownloadFromOBJ("Sphere.obj");
+    
+    object.materialAmbient = { 0.247f, 0.199f, 0.074f }; //золото
+    object.kSpecular = 0.1f;
+    scene.AddObject(&object);
+    scene.SetCamera(&MainCamera);
+
+    clock_t start, end;
+    // Главный цикл
+    while (window.isRunning()) {
+        clock_t start, end;
+        start = clock();
+        // Обработка событий
+        window.handleEvents();
+        PRISM_Painter painter;
+        
+         //Отрисовка сцены
+        window.clear();
+        scene.Render(&window);
+        object.Rotation.x += 0.1;
+        object.Rotation.y += 0.1;
+        object.SetRotateXYZ(object.Rotation);
+        //painter.DrawTriangle3D(&window,
+        //    0, 100, 0, 
+        //    100, 200, 0,
+        //    200, 100, 0.2f, 1.0f, 0.0f, 0.0f);  // Красный
+        //painter.DrawTriangle3D(&window,
+        //    0, 40, 0.1,
+        //    60, 400, 0.1,
+        //    140, 80, 0.1, 0.0f, 1.0f, 0.0f);  // Зеленый
+        //painter.DrawRectangle(&window, 0, 0, 100, 100);
+
+        end = clock();
+        double time_taken = double(end - start) / double(CLOCKS_PER_SEC);
+        SDL_Log("Time taken by program is : %f sec", time_taken);
+
+        window.update();
+        Sleep(1);
+        
+    }
+
+    return 0;
+
     // GL_test();
     return(0);
 }

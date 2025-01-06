@@ -42,6 +42,13 @@ void AbstractObject3D::SetScaleXYZ(struct PRISM_Vector3d scaleVect) {
 	matrixScale = Math::Matrix_MakeScale(scaleVect.x, scaleVect.y, scaleVect.z);
 }
 
+void AbstractObject3D::PrintInfo()
+{
+	SDL_Log("PRISM_ENGINE::PRISM_objects::AbstractObject3D\n\tMoveXYZ: %f, %f, %f\n\tRotateXYZ: %f, %f, %f\n\tScaleXYZ: %f, %f, %f", Coordinate.x, Coordinate.y, Coordinate.z,
+																																	 Rotation.x, Rotation.y, Rotation.z,
+																																	 Scale.x, Scale.y, Scale.z);
+}
+
 PRISM_Triangle AbstractObject3D::RotateTriangle(struct PRISM_Triangle Triangle_) {
 	struct PRISM_Triangle TriangleRotatedZ, TriangleRotatedZX, TriangleRotatedZXY;
 	// Rotate in Z-Axis
@@ -322,6 +329,7 @@ bool AbstractObject3D::ComputeBarycentricCoords(float x, float y, const PRISM_Ve
 	w = 1.0f - u - v;
 	return u >= 0 && v >= 0 && w >= 0;
 }
+
 
 void AbstractObject3D::OldRasterisation(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3,
 				   SDL_Renderer* SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode) {
