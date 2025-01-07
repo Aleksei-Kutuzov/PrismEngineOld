@@ -41,6 +41,7 @@ class AbstractObject3D {
 		float ScreenW;
 		float ScreenH;
 		AbstractCamera3D &Camera;
+
 		AbstractObject3D(struct PRISM_Vector3d Coord, struct PRISM_Vector3d Rot, struct PRISM_Vector3d Sc, AbstractCamera3D &camera):Camera(camera) {
 			Coordinate = Coord;
 			Rotation = Rot;
@@ -75,9 +76,6 @@ class AbstractObject3D {
 		
 
 		PRISM_Color CalculatePhongShadingColor(const PRISM_Vector3d& normal, const PRISM_Vector3d& viewDir, const PRISM_Light& light, const PRISM_Vector3d& fragPos);
-		
-		void DownloadFromOBJ(const char* filename);
-		
 		
 		bool ComputeBarycentricCoords(float x, float y,
 									  const PRISM_Vector3d& v0, const PRISM_Vector3d& v1, const PRISM_Vector3d& v2,

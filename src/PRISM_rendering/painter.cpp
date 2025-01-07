@@ -337,6 +337,7 @@ void PRISM_Painter::DrawTriangle3D(PRISM_Window* window, PRISM_Triangle triangle
 	glColor3f(gl_color.r, gl_color.g, gl_color.b);
 	glVertex3f(triangle.c.x, triangle.c.y, triangle.c.z);
 	
+	//SDL_Log("@@@@@###$$$$^^^^^: %f, %f, %f, %f", triangle.a.x, triangle.a.y, triangle.b.x, triangle.b.y);
 	//DrawThickLine(window, triangle.a.x, triangle.a.y, triangle.b.x, triangle.b.y, 2, 0, 255, 0);
 	//DrawThickLine(window, triangle.b.x, triangle.b.y, triangle.c.x, triangle.c.y, 2, 0, 255, 0);
 	//DrawThickLine(window, triangle.c.x, triangle.c.y, triangle.a.x, triangle.a.y, 2, 0, 255, 0);

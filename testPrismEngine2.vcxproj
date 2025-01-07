@@ -141,6 +141,7 @@
     <ClCompile Include="src\PRISM_math\vector3D.cpp" />
     <ClCompile Include="src\PRISM_objects3D\AbstractCamera3D.cpp" />
     <ClCompile Include="src\PRISM_objects3D\AbstractObject3D.cpp" />
+    <ClCompile Include="src\PRISM_objects3D\MeshLoader.cpp" />
     <ClCompile Include="src\PRISM_objects3D\Scene.cpp" />
     <ClCompile Include="src\PRISM_rendering\painter.cpp" />
     <ClCompile Include="src\PRISM_rendering\PRISM_Window.cpp" />
@@ -157,6 +158,7 @@
     <ClInclude Include="src\PRISM_math\vector3D.h" />
     <ClInclude Include="src\PRISM_objects3D\AbstractCamera3D.h" />
     <ClInclude Include="src\PRISM_objects3D\AbstractObject3D.h" />
+    <ClInclude Include="src\PRISM_objects3D\MeshLoader.h" />
     <ClInclude Include="src\PRISM_objects3D\Scene.h" />
     <ClInclude Include="src\PRISM_rendering\painter.h" />
     <ClInclude Include="src\PRISM_rendering\PRISM_Window.h" />

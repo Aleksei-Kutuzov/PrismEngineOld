@@ -136,40 +136,6 @@ PRISM_Color AbstractObject3D::CalculatePhongShadingColor(const PRISM_Vector3d& n
 	return result;
 }
 
-void AbstractObject3D::DownloadFromOBJ(const char* filename) {
-	SDL_RWops* file = SDL_RWFromFile(filename, "r");
-	if (!file) {
-		SDL_Log("Could not open file: %s", SDL_GetError());
-		return;
-	}
-	Sint64 fileSize = SDL_RWsize(file);
-	char* buffer = new char[fileSize + 1];
-	SDL_RWread(file, buffer, fileSize, 1);
-	buffer[fileSize] = '\0';
-	std::string line;
-	std::istringstream fileContent(buffer);
-	std::vector<PRISM_Vector3d> Vertex;
-	std::vector<PRISM_Vector3d> Triangles;
-	mesh.tris = {};
-	while(getline(fileContent, line)) {
-		struct PRISM_Vector3d v;
-		std::string identifier;
-		std::istringstream iss(line);
-		if (line.c_str()[0] == 'v') {
-			iss >> identifier >> v.x >> v.y >> v.z;
-			Vertex.push_back(v);
-		}
-		if (line[0] == 'f') {
-			int f[3];
-			iss >> identifier >> f[0] >> f[1] >> f[2];
-			PRISM_Triangle tri = {Vertex[f[0] - 1], Vertex[f[1] - 1], Vertex[f[2] - 1]};
-			
-			mesh.tris.push_back(tri);
-		}
-	}
-	delete[] buffer;
-	SDL_RWclose(file);
-};
 
 //		Vector3d CalculateVertexNormal(std::vector<Vector3d>& normals, Vector3d vertex, SDL_Renderer* renderer) {
 //			SDL_Log("normals vector SIZE: %d", normals.size());

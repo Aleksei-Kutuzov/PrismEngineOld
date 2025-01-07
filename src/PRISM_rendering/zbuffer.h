@@ -19,6 +19,9 @@ public:
     // Метод для очистки Z-буфера
     void clear(SDL_Renderer* renderer);
 
+    ~Z_Buffer() {
+    }
+
 private:
     int ScreenW, ScreenH;
     std::vector<int> zMatrix;

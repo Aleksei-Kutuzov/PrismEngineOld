@@ -32,6 +32,7 @@ public:
 	Z_Buffer z_buffer;
 	//
 	PRISM_Matrix_4X4 matrixView;
+
 	AbstractCamera3D(float Near = 0.1f, float Far = 1000.0f, float Fov = 90.0f, int displW = 800, int displH = 480):
 		FNear(Near), FFar(Far), FFov(Fov),
 		FAspectRatio(static_cast<float>(displH) / static_cast<float>(displW)),
@@ -39,10 +40,26 @@ public:
 		ScreenW(displW), ScreenH(displH),
 		z_buffer(ScreenW, ScreenH){}
 	
+	~AbstractCamera3D() {
+	}
 	void SetPosition(struct PRISM_Vector3d Coord, struct PRISM_Vector3d Rot, struct PRISM_Vector3d viewDir_);
 	void SetView(struct PRISM_Vector3d viewDirVect, struct PRISM_Vector3d upDirVect);
 	void ClearZ_Buffer(SDL_Renderer * renderer);
 	
+	void operator=(AbstractCamera3D camera) {
+		this->Coordinate = camera.Coordinate;
+		this->Rotation = camera.Rotation;
+		this->FNear = camera.FNear;
+		this->FFar = camera.FFar;
+		this->FFov = camera.FFov;
+		this->FAspectRatio = camera.FAspectRatio;
+		this->FFovRad = camera.FFovRad;
+		this->ScreenW = camera.ScreenW;
+		this->ScreenH = camera.ScreenH;
+		this->viewDir = camera.viewDir;
+		//this->z_buffer = camera.z_buffer;
+		this->matrixView = camera.matrixView;
+	}
 };
 
 

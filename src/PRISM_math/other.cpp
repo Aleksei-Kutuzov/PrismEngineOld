@@ -12,6 +12,9 @@ void PRISM_Triangle::print() {
 
 void PRISM_Mesh::print() {
 	SDL_Log("PRISM_ENGINE::PRISM_math::PRISM_Mesh(tris.size: %d)", tris.size());
+	for (auto tri : tris) {
+		tri.print();
+	}
 }
 
 void PRISM_Color::print() {

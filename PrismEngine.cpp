@@ -69,7 +69,6 @@ void main_() {
         { {1.0f, 0.0f, 1.0f},    {0.0f, 0.0f, 0.0f},    {1.0f, 0.0f, 0.0f} },
     };
     //    Obj1.SetMesh(meshObj1);
-    Obj1.DownloadFromOBJ("hause2.obj");
     //    Obj2.DownloadFromOBJ("hause2.obj");
     std::vector<Joystick> joysticks(2); // Для двух джойстиков
     InitJoystick(joysticks[0], 300, mode.h - 300, 300, 150, renderer); // Инициализация первого джойстика
@@ -410,8 +409,14 @@ int main(int argc, char* argv[])
     AbstractCamera3D MainCamera(0.1, 1000.0f, 90.0f,
         window.GetW(), window.GetH());
     MainCamera.SetPosition({ 0, 0, -5 }, { 0, 0, 0 }, { 0, 0, 1 });
-    AbstractObject3D object({0, 0, 0}, {0, 0, 0}, {1, 1, 1}, MainCamera);
-    object.DownloadFromOBJ("Sphere.obj");
+    
+    AbstractObject3D object{ {0,0,0},{0,0,0},{1,1,1},MainCamera };
+
+    object.SetMesh(MeshLoader::LoadOBJ("Sphere.obj", MainCamera)); 
+
+    
+    object.mesh.print();
+
     
     object.materialAmbient = { 0.247f, 0.199f, 0.074f }; //золото
     object.kSpecular = 0.1f;
