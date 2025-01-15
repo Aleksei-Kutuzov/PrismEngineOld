@@ -1,0 +1,91 @@
+\doxysection{SDL\+\_\+\+GLRenderer.\+cpp}
+\hypertarget{_s_d_l___g_l_renderer_8cpp_source}{}\label{_s_d_l___g_l_renderer_8cpp_source}\index{C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM\_rendering/SDL\_GLRenderer.cpp@{C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM\_rendering/SDL\_GLRenderer.cpp}}
+\mbox{\hyperlink{_s_d_l___g_l_renderer_8cpp}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_s_d_l___g_l_renderer_8h}{SDL\_GLRenderer.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00005}\mbox{\hyperlink{_s_d_l___g_l_renderer_8cpp_abe3051b82756a48b48a38a1ff2e8789d}{00005}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_s_d_l___g_l_renderer_8cpp_abe3051b82756a48b48a38a1ff2e8789d}{initOpenGL}}(GLuint\ shaderProgram,\ GLuint\ vbo)\ \{}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00006}00006\ \ \ \ \ \textcolor{comment}{//\ Шейдеры\ вершин\ и\ фрагментов}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00007}00007\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ vertexShaderSource\ =\ R\textcolor{stringliteral}{"{}(}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00008}00008\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ attribute\ vec4\ aPosition;}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00009}00009\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ uniform\ mat4\ uMVPMatrix;}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00010}00010\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ void\ main()\ \{}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00011}00011\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ gl\_Position\ =\ uMVPMatrix\ *\ aPosition;}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00012}00012\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00013}00013\ \textcolor{stringliteral}{\ \ \ \ )"{};}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00014}00014\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00015}00015\ \textcolor{stringliteral}{\ \ \ \ }\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ fragmentShaderSource\ =\ R\textcolor{stringliteral}{"{}(}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00016}00016\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ precision\ mediump\ float;}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00017}00017\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ void\ main()\ \{}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00018}00018\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ gl\_FragColor\ =\ vec4(1.0,\ 0.0,\ 0.0,\ 1.0);\ \ //\ Красный\ цвет}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00019}00019\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00020}00020\ \textcolor{stringliteral}{\ \ \ \ )"{};}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00021}00021\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00022}00022\ \textcolor{stringliteral}{\ \ \ \ }\textcolor{comment}{//\ Компиляция\ и\ привязка\ шейдеров}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00023}00023\ \ \ \ \ GLuint\ vertexShader\ =\ glCreateShader(GL\_VERTEX\_SHADER);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00024}00024\ \ \ \ \ glShaderSource(vertexShader,\ 1,\ \&vertexShaderSource,\ NULL);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00025}00025\ \ \ \ \ glCompileShader(vertexShader);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00027}00027\ \ \ \ \ GLuint\ fragmentShader\ =\ glCreateShader(GL\_FRAGMENT\_SHADER);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00028}00028\ \ \ \ \ glShaderSource(fragmentShader,\ 1,\ \&fragmentShaderSource,\ NULL);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00029}00029\ \ \ \ \ glCompileShader(fragmentShader);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00031}00031\ \ \ \ \ shaderProgram\ =\ glCreateProgram();}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00032}00032\ \ \ \ \ glAttachShader(shaderProgram,\ vertexShader);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00033}00033\ \ \ \ \ glAttachShader(shaderProgram,\ fragmentShader);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00034}00034\ \ \ \ \ glLinkProgram(shaderProgram);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00036}00036\ \ \ \ \ glDeleteShader(vertexShader);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00037}00037\ \ \ \ \ glDeleteShader(fragmentShader);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{comment}{//\ Создаем\ VBO\ для\ хранения\ вершин}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00040}00040\ \ \ \ \ glGenBuffers(1,\ \&vbo);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00043}00043\ \}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00047}00047\ \textcolor{comment}{//void\ cleanUp()\ \{}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00048}00048\ \textcolor{comment}{//\ \ \ \ SDL\_GL\_DeleteContext(glContext);}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00049}00049\ \textcolor{comment}{//\ \ \ \ SDL\_DestroyWindow(window);}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00050}00050\ \textcolor{comment}{//\ \ \ \ SDL\_Quit();}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00051}00051\ \textcolor{comment}{//\}}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00053}\mbox{\hyperlink{_s_d_l___g_l_renderer_8cpp_ae7dab1843865a8aee7e85bc972d68b9f}{00053}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_s_d_l___g_l_renderer_8cpp_ae7dab1843865a8aee7e85bc972d68b9f}{drawTriangleWithOpenGL}}(Vector3d\ v1,\ Vector3d\ v2,\ Vector3d\ v3,\ GLuint\ shaderProgram,\ GLuint\ vbo)\ \{}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{comment}{//\ Активация\ шейдерной\ программы}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00055}00055\ \ \ \ \ glUseProgram(shaderProgram);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{comment}{//\ Передача\ матрицы\ преобразования\ (единичная\ матрица\ для\ примера)}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{keywordtype}{float}\ mvpMatrix[16]\ =\ \{}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ 1,\ 0,\ 0,\ 0,}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ 0,\ 1,\ 0,\ 0,}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ 0,\ 0,\ 1,\ 0,}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ 0,\ 0,\ 0,\ 1}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00063}00063\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00064}00064\ \ \ \ \ GLuint\ mvpLoc\ =\ glGetUniformLocation(shaderProgram,\ \textcolor{stringliteral}{"{}uMVPMatrix"{}});}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00065}00065\ \ \ \ \ glUniformMatrix4fv(mvpLoc,\ 1,\ GL\_FALSE,\ mvpMatrix);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{comment}{//\ Передача\ вершин\ в\ VBO}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00068}00068\ \ \ \ \ Vector3d\ vertices[3]\ =\ \{\ v1,\ v2,\ v3\ \};}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00069}00069\ \ \ \ \ glBindBuffer(GL\_ARRAY\_BUFFER,\ vbo);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00070}00070\ \ \ \ \ glBufferData(GL\_ARRAY\_BUFFER,\ \textcolor{keyword}{sizeof}(vertices),\ vertices,\ GL\_DYNAMIC\_DRAW);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{comment}{//\ Настройка\ атрибута\ позиции}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00073}00073\ \ \ \ \ GLuint\ positionLoc\ =\ glGetAttribLocation(shaderProgram,\ \textcolor{stringliteral}{"{}aPosition"{}});}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00074}00074\ \ \ \ \ glEnableVertexAttribArray(positionLoc);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00075}00075\ \ \ \ \ glVertexAttribPointer(positionLoc,\ 4,\ GL\_FLOAT,\ GL\_FALSE,\ \textcolor{keyword}{sizeof}(Vector3d),\ (\textcolor{keywordtype}{void}*)0);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00077}00077\ \ \ \ \ \textcolor{comment}{//\ Рисуем\ треугольник}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00078}00078\ \ \ \ \ glDrawArrays(GL\_TRIANGLES,\ 0,\ 3);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00080}00080\ \ \ \ \ \textcolor{comment}{//\ Отключаем\ атрибуты\ после\ отрисовки}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00081}00081\ \ \ \ \ glDisableVertexAttribArray(positionLoc);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00083}00083\ \ \ \ \ \textcolor{comment}{//\ Отключение\ шейдера}}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00084}00084\ \ \ \ \ glUseProgram(0);}
+\DoxyCodeLine{\Hypertarget{_s_d_l___g_l_renderer_8cpp_source_l00085}00085\ \}}
+
+\end{DoxyCode}

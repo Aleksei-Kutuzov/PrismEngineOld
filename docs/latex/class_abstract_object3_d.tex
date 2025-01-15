@@ -1,0 +1,406 @@
+\doxysection{Класс Abstract\+Object3D}
+\hypertarget{class_abstract_object3_d}{}\label{class_abstract_object3_d}\index{AbstractObject3D@{AbstractObject3D}}
+
+
+{\ttfamily \#include $<$Abstract\+Object3\+D.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_object3_d_ad61479c28632698d4c682374d81c91f0}{Abstract\+Object3D}} (struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} Coord, struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} Rot, struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} Sc, \mbox{\hyperlink{class_abstract_camera3_d}{Abstract\+Camera3D}} \&camera)
+\item 
+\mbox{\hyperlink{class_abstract_object3_d_a27e02eb8c2f2684cfb7e80cbfe3d48cb}{\texorpdfstring{$\sim$}{\string~}\+Abstract\+Object3D}} ()
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_a7f14d00efaf40da5c8043c79ed98fb3a}{Set\+Mesh}} (struct \mbox{\hyperlink{struct_p_r_i_s_m___mesh}{PRISM\+\_\+\+Mesh}} m)
+\item 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___mesh}{PRISM\+\_\+\+Mesh}} \mbox{\hyperlink{class_abstract_object3_d_a68d647bcabda18f6d7b26b36b311933b}{Get\+Mesh}} ()
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_a04fcc82bc4f28822ff74b59fe1a6f4ba}{Init\+Projection}} (\mbox{\hyperlink{class_abstract_camera3_d}{Abstract\+Camera3D}} camera)
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_a4715d4206facdace0d0ffe1efc81ae96}{Set\+Rotate\+XYZ}} (struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} rot\+Vect)
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_a57c9fd28f17b11451e6c5d36db536bfb}{Set\+Move\+XYZ}} (struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} move\+Vect)
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_acde3b9eb0b43bfd343a18f444526bc15}{Set\+Scale\+XYZ}} (struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} scale\+Vect)
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_a41d0a75667c7fe1e67defd8689fc4e73}{Print\+Info}} ()
+\item 
+\mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} \mbox{\hyperlink{class_abstract_object3_d_a9371debf5f3a1c8e5c72503c1c173e64}{Rotate\+Triangle}} (struct \mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} Triangle\+\_\+)
+\item 
+\mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} \mbox{\hyperlink{class_abstract_object3_d_a33ee4ea92fb858c1e19a5a420ac13441}{Translate\+Triangle}} (struct \mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} Triangle\+\_\+)
+\item 
+\mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} \mbox{\hyperlink{class_abstract_object3_d_a4b37b8ef005ab4f79090c4d87b326801}{Scale\+Triangle}} (struct \mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} Triangle\+\_\+)
+\item 
+\mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} \mbox{\hyperlink{class_abstract_object3_d_ab9373b601dba85585b99518343d302ef}{View\+Triangle}} (struct \mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} Triangle\+\_\+)
+\item 
+\mbox{\hyperlink{struct_p_r_i_s_m___color}{PRISM\+\_\+\+Color}} \mbox{\hyperlink{class_abstract_object3_d_af3834cbcf99a19ee555b0acbdfe334bc}{Calculate\+Phong\+Shading\+Color}} (const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&normal, const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&view\+Dir, const \mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}} \&light, const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&frag\+Pos)
+\item 
+bool \mbox{\hyperlink{class_abstract_object3_d_a25b5a3ebd7fc24c26bb519aa2ed68c4b}{Compute\+Barycentric\+Coords}} (float x, float y, const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&v0, const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&v1, const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&v2, float \&u, float \&v, float \&w)
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_a3b7636e18a1f5624d8882da0c47458da}{Draw\+Mesh\+Triangles}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, \mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}} rm)
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_a27f9f71f5648aa4d40f3f76f831d0ac6}{Old\+Rasterisation}} (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}SDL\+\_\+renderer, \mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}} light, short rgba\mbox{[}4\mbox{]}, \mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}} Rend\+Mode)
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_aa45a8a5bb80b410f2fbd28f15e3f477e}{Optimized\+Edge\+Rasterization}} (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}SDL\+\_\+renderer, \mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}} light, short rgba\mbox{[}4\mbox{]}, \mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}} Rend\+Mode)
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_a4e726fabc7e6a8c043a91c8b573a26cd}{Rasterize\+Tile}} (int minX, int maxX, int minY, int maxY, const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&v0, const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&v1, const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&v2, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}SDL\+\_\+renderer, \mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}} light, short rgba\mbox{[}4\mbox{]}, \mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}} Rend\+Mode, std\+::vector$<$ SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} $>$ \&surfaces)
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_ac9ea7e204516960688ab4458ef1b7253}{Rasterisation}} (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}SDL\+\_\+renderer, \mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}} light, short rgba\mbox{[}4\mbox{]}, \mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}} Rend\+Mode)
+\item 
+void \mbox{\hyperlink{class_abstract_object3_d_a76994705915683e5dabc53a835b04af1}{Tile\+Rasterisation}} (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}SDL\+\_\+renderer, \mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}} light, short rgba\mbox{[}4\mbox{]}, \mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}} Rend\+Mode)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Поля данных}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___matrix__4_x4}{PRISM\+\_\+\+Matrix\+\_\+4\+X4}} \mbox{\hyperlink{class_abstract_object3_d_a4a0043af98800a2c0517cfe81c9423c6}{Projection\+Matrix}}
+\item 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \mbox{\hyperlink{class_abstract_object3_d_ae2a63d044e2f5ebcacde18dd6edf8ef1}{Coordinate}}
+\item 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \mbox{\hyperlink{class_abstract_object3_d_accfed9da2d822544527e3a911ff58616}{Rotation}}
+\item 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \mbox{\hyperlink{class_abstract_object3_d_a314c8b4cf5c683fc6b2dab2d65ace32a}{Scale}}
+\item 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___mesh}{PRISM\+\_\+\+Mesh}} \mbox{\hyperlink{class_abstract_object3_d_a4707653e32d90b220c3c6321f2666576}{mesh}}
+\item 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \mbox{\hyperlink{class_abstract_object3_d_a97c2d95d9572e2dd9408c6a4816ce055}{material\+Ambient}} =\{0.\+5f, 0.\+5f, 0.\+5f\}
+\item 
+float \mbox{\hyperlink{class_abstract_object3_d_aaf5630e64e53279641322fa6fd8a981d}{k\+Specular}} = 0.\+5
+\item 
+float \mbox{\hyperlink{class_abstract_object3_d_a62a770b3680bca1269d59b9992144650}{ScreenW}}
+\item 
+float \mbox{\hyperlink{class_abstract_object3_d_af273480bb7b551fe2359b8f4b23a084b}{ScreenH}}
+\item 
+\mbox{\hyperlink{class_abstract_camera3_d}{Abstract\+Camera3D}} \& \mbox{\hyperlink{class_abstract_object3_d_a1320848696d06579795689c5e5ee4db9}{Camera}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00029}{29}}
+
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_abstract_object3_d_ad61479c28632698d4c682374d81c91f0}\index{AbstractObject3D@{AbstractObject3D}!AbstractObject3D@{AbstractObject3D}}
+\index{AbstractObject3D@{AbstractObject3D}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{AbstractObject3D()}{AbstractObject3D()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_ad61479c28632698d4c682374d81c91f0} 
+\mbox{\hyperlink{class_abstract_object3_d}{Abstract\+Object3D}} (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}}}]{Coord}{, }\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}}}]{Rot}{, }\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}}}]{Sc}{, }\item[{\mbox{\hyperlink{class_abstract_camera3_d}{Abstract\+Camera3D}} \&}]{camera}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00045}{45}}
+
+\Hypertarget{class_abstract_object3_d_a27e02eb8c2f2684cfb7e80cbfe3d48cb}\index{AbstractObject3D@{AbstractObject3D}!````~AbstractObject3D@{\texorpdfstring{$\sim$}{\string~}AbstractObject3D}}
+\index{````~AbstractObject3D@{\texorpdfstring{$\sim$}{\string~}AbstractObject3D}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AbstractObject3D()}{\string~AbstractObject3D()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a27e02eb8c2f2684cfb7e80cbfe3d48cb} 
+\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_abstract_object3_d}{Abstract\+Object3D}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00056}{56}}
+
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_abstract_object3_d_af3834cbcf99a19ee555b0acbdfe334bc}\index{AbstractObject3D@{AbstractObject3D}!CalculatePhongShadingColor@{CalculatePhongShadingColor}}
+\index{CalculatePhongShadingColor@{CalculatePhongShadingColor}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{CalculatePhongShadingColor()}{CalculatePhongShadingColor()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_af3834cbcf99a19ee555b0acbdfe334bc} 
+\mbox{\hyperlink{struct_p_r_i_s_m___color}{PRISM\+\_\+\+Color}} Calculate\+Phong\+Shading\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&}]{normal}{, }\item[{const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&}]{view\+Dir}{, }\item[{const \mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}} \&}]{light}{, }\item[{const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&}]{frag\+Pos}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00100}{100}}
+
+\Hypertarget{class_abstract_object3_d_a25b5a3ebd7fc24c26bb519aa2ed68c4b}\index{AbstractObject3D@{AbstractObject3D}!ComputeBarycentricCoords@{ComputeBarycentricCoords}}
+\index{ComputeBarycentricCoords@{ComputeBarycentricCoords}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{ComputeBarycentricCoords()}{ComputeBarycentricCoords()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a25b5a3ebd7fc24c26bb519aa2ed68c4b} 
+bool Compute\+Barycentric\+Coords (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&}]{v0}{, }\item[{const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&}]{v1}{, }\item[{const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&}]{v2}{, }\item[{float \&}]{u}{, }\item[{float \&}]{v}{, }\item[{float \&}]{w}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00291}{291}}
+
+\Hypertarget{class_abstract_object3_d_a3b7636e18a1f5624d8882da0c47458da}\index{AbstractObject3D@{AbstractObject3D}!DrawMeshTriangles@{DrawMeshTriangles}}
+\index{DrawMeshTriangles@{DrawMeshTriangles}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{DrawMeshTriangles()}{DrawMeshTriangles()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a3b7636e18a1f5624d8882da0c47458da} 
+void Draw\+Mesh\+Triangles (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{\mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}}}]{rm}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00195}{195}}
+
+\Hypertarget{class_abstract_object3_d_a68d647bcabda18f6d7b26b36b311933b}\index{AbstractObject3D@{AbstractObject3D}!GetMesh@{GetMesh}}
+\index{GetMesh@{GetMesh}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{GetMesh()}{GetMesh()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a68d647bcabda18f6d7b26b36b311933b} 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___mesh}{PRISM\+\_\+\+Mesh}} Get\+Mesh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00008}{8}}
+
+\Hypertarget{class_abstract_object3_d_a04fcc82bc4f28822ff74b59fe1a6f4ba}\index{AbstractObject3D@{AbstractObject3D}!InitProjection@{InitProjection}}
+\index{InitProjection@{InitProjection}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{InitProjection()}{InitProjection()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a04fcc82bc4f28822ff74b59fe1a6f4ba} 
+void Init\+Projection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_camera3_d}{Abstract\+Camera3D}}}]{camera}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00012}{12}}
+
+\Hypertarget{class_abstract_object3_d_a27f9f71f5648aa4d40f3f76f831d0ac6}\index{AbstractObject3D@{AbstractObject3D}!OldRasterisation@{OldRasterisation}}
+\index{OldRasterisation@{OldRasterisation}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{OldRasterisation()}{OldRasterisation()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a27f9f71f5648aa4d40f3f76f831d0ac6} 
+void Old\+Rasterisation (\begin{DoxyParamCaption}\item[{int}]{x1}{, }\item[{int}]{y1}{, }\item[{int}]{x2}{, }\item[{int}]{y2}{, }\item[{int}]{x3}{, }\item[{int}]{y3}{, }\item[{float}]{z1}{, }\item[{float}]{z2}{, }\item[{float}]{z3}{, }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{SDL\+\_\+renderer}{, }\item[{\mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}}}]{light}{, }\item[{short}]{rgba}{\mbox{[}4\mbox{]}, }\item[{\mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}}}]{Rend\+Mode}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00300}{300}}
+
+\Hypertarget{class_abstract_object3_d_aa45a8a5bb80b410f2fbd28f15e3f477e}\index{AbstractObject3D@{AbstractObject3D}!OptimizedEdgeRasterization@{OptimizedEdgeRasterization}}
+\index{OptimizedEdgeRasterization@{OptimizedEdgeRasterization}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{OptimizedEdgeRasterization()}{OptimizedEdgeRasterization()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_aa45a8a5bb80b410f2fbd28f15e3f477e} 
+void Optimized\+Edge\+Rasterization (\begin{DoxyParamCaption}\item[{int}]{x1}{, }\item[{int}]{y1}{, }\item[{int}]{x2}{, }\item[{int}]{y2}{, }\item[{int}]{x3}{, }\item[{int}]{y3}{, }\item[{float}]{z1}{, }\item[{float}]{z2}{, }\item[{float}]{z3}{, }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{SDL\+\_\+renderer}{, }\item[{\mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}}}]{light}{, }\item[{short}]{rgba}{\mbox{[}4\mbox{]}, }\item[{\mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}}}]{Rend\+Mode}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00356}{356}}
+
+\Hypertarget{class_abstract_object3_d_a41d0a75667c7fe1e67defd8689fc4e73}\index{AbstractObject3D@{AbstractObject3D}!PrintInfo@{PrintInfo}}
+\index{PrintInfo@{PrintInfo}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{PrintInfo()}{PrintInfo()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a41d0a75667c7fe1e67defd8689fc4e73} 
+void Print\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00045}{45}}
+
+\Hypertarget{class_abstract_object3_d_ac9ea7e204516960688ab4458ef1b7253}\index{AbstractObject3D@{AbstractObject3D}!Rasterisation@{Rasterisation}}
+\index{Rasterisation@{Rasterisation}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{Rasterisation()}{Rasterisation()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_ac9ea7e204516960688ab4458ef1b7253} 
+void Rasterisation (\begin{DoxyParamCaption}\item[{int}]{x1}{, }\item[{int}]{y1}{, }\item[{int}]{x2}{, }\item[{int}]{y2}{, }\item[{int}]{x3}{, }\item[{int}]{y3}{, }\item[{float}]{z1}{, }\item[{float}]{z2}{, }\item[{float}]{z3}{, }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{SDL\+\_\+renderer}{, }\item[{\mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}}}]{light}{, }\item[{short}]{rgba}{\mbox{[}4\mbox{]}, }\item[{\mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}}}]{Rend\+Mode}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00452}{452}}
+
+\Hypertarget{class_abstract_object3_d_a4e726fabc7e6a8c043a91c8b573a26cd}\index{AbstractObject3D@{AbstractObject3D}!RasterizeTile@{RasterizeTile}}
+\index{RasterizeTile@{RasterizeTile}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{RasterizeTile()}{RasterizeTile()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a4e726fabc7e6a8c043a91c8b573a26cd} 
+void Rasterize\+Tile (\begin{DoxyParamCaption}\item[{int}]{minX}{, }\item[{int}]{maxX}{, }\item[{int}]{minY}{, }\item[{int}]{maxY}{, }\item[{const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&}]{v0}{, }\item[{const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&}]{v1}{, }\item[{const \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \&}]{v2}{, }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{SDL\+\_\+renderer}{, }\item[{\mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}}}]{light}{, }\item[{short}]{rgba}{\mbox{[}4\mbox{]}, }\item[{\mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}}}]{Rend\+Mode}{, }\item[{std\+::vector$<$ SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} $>$ \&}]{surfaces}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00402}{402}}
+
+\Hypertarget{class_abstract_object3_d_a9371debf5f3a1c8e5c72503c1c173e64}\index{AbstractObject3D@{AbstractObject3D}!RotateTriangle@{RotateTriangle}}
+\index{RotateTriangle@{RotateTriangle}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{RotateTriangle()}{RotateTriangle()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a9371debf5f3a1c8e5c72503c1c173e64} 
+\mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} Rotate\+Triangle (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}}}]{Triangle\+\_\+}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00052}{52}}
+
+\Hypertarget{class_abstract_object3_d_a4b37b8ef005ab4f79090c4d87b326801}\index{AbstractObject3D@{AbstractObject3D}!ScaleTriangle@{ScaleTriangle}}
+\index{ScaleTriangle@{ScaleTriangle}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{ScaleTriangle()}{ScaleTriangle()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a4b37b8ef005ab4f79090c4d87b326801} 
+\mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} Scale\+Triangle (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}}}]{Triangle\+\_\+}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00080}{80}}
+
+\Hypertarget{class_abstract_object3_d_a7f14d00efaf40da5c8043c79ed98fb3a}\index{AbstractObject3D@{AbstractObject3D}!SetMesh@{SetMesh}}
+\index{SetMesh@{SetMesh}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{SetMesh()}{SetMesh()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a7f14d00efaf40da5c8043c79ed98fb3a} 
+void Set\+Mesh (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___mesh}{PRISM\+\_\+\+Mesh}}}]{m}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00004}{4}}
+
+\Hypertarget{class_abstract_object3_d_a57c9fd28f17b11451e6c5d36db536bfb}\index{AbstractObject3D@{AbstractObject3D}!SetMoveXYZ@{SetMoveXYZ}}
+\index{SetMoveXYZ@{SetMoveXYZ}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{SetMoveXYZ()}{SetMoveXYZ()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a57c9fd28f17b11451e6c5d36db536bfb} 
+void Set\+Move\+XYZ (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}}}]{move\+Vect}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00035}{35}}
+
+\Hypertarget{class_abstract_object3_d_a4715d4206facdace0d0ffe1efc81ae96}\index{AbstractObject3D@{AbstractObject3D}!SetRotateXYZ@{SetRotateXYZ}}
+\index{SetRotateXYZ@{SetRotateXYZ}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{SetRotateXYZ()}{SetRotateXYZ()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a4715d4206facdace0d0ffe1efc81ae96} 
+void Set\+Rotate\+XYZ (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}}}]{rot\+Vect}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00019}{19}}
+
+\Hypertarget{class_abstract_object3_d_acde3b9eb0b43bfd343a18f444526bc15}\index{AbstractObject3D@{AbstractObject3D}!SetScaleXYZ@{SetScaleXYZ}}
+\index{SetScaleXYZ@{SetScaleXYZ}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{SetScaleXYZ()}{SetScaleXYZ()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_acde3b9eb0b43bfd343a18f444526bc15} 
+void Set\+Scale\+XYZ (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}}}]{scale\+Vect}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00040}{40}}
+
+\Hypertarget{class_abstract_object3_d_a76994705915683e5dabc53a835b04af1}\index{AbstractObject3D@{AbstractObject3D}!TileRasterisation@{TileRasterisation}}
+\index{TileRasterisation@{TileRasterisation}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{TileRasterisation()}{TileRasterisation()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a76994705915683e5dabc53a835b04af1} 
+void Tile\+Rasterisation (\begin{DoxyParamCaption}\item[{int}]{x1}{, }\item[{int}]{y1}{, }\item[{int}]{x2}{, }\item[{int}]{y2}{, }\item[{int}]{x3}{, }\item[{int}]{y3}{, }\item[{float}]{z1}{, }\item[{float}]{z2}{, }\item[{float}]{z3}{, }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{SDL\+\_\+renderer}{, }\item[{\mbox{\hyperlink{struct_p_r_i_s_m___light}{PRISM\+\_\+\+Light}}}]{light}{, }\item[{short}]{rgba}{\mbox{[}4\mbox{]}, }\item[{\mbox{\hyperlink{struct_p_r_i_s_m___render_mode}{PRISM\+\_\+\+Render\+Mode}}}]{Rend\+Mode}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00520}{520}}
+
+\Hypertarget{class_abstract_object3_d_a33ee4ea92fb858c1e19a5a420ac13441}\index{AbstractObject3D@{AbstractObject3D}!TranslateTriangle@{TranslateTriangle}}
+\index{TranslateTriangle@{TranslateTriangle}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{TranslateTriangle()}{TranslateTriangle()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a33ee4ea92fb858c1e19a5a420ac13441} 
+\mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} Translate\+Triangle (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}}}]{Triangle\+\_\+}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00071}{71}}
+
+\Hypertarget{class_abstract_object3_d_ab9373b601dba85585b99518343d302ef}\index{AbstractObject3D@{AbstractObject3D}!ViewTriangle@{ViewTriangle}}
+\index{ViewTriangle@{ViewTriangle}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{ViewTriangle()}{ViewTriangle()}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_ab9373b601dba85585b99518343d302ef} 
+\mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} View\+Triangle (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}}}]{Triangle\+\_\+}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8cpp_source}{Abstract\+Object3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_object3_d_8cpp_source_l00089}{89}}
+
+
+
+\doxysubsection{Поля}
+\Hypertarget{class_abstract_object3_d_a1320848696d06579795689c5e5ee4db9}\index{AbstractObject3D@{AbstractObject3D}!Camera@{Camera}}
+\index{Camera@{Camera}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{Camera}{Camera}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a1320848696d06579795689c5e5ee4db9} 
+\mbox{\hyperlink{class_abstract_camera3_d}{Abstract\+Camera3D}}\& Camera}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00043}{43}}
+
+\Hypertarget{class_abstract_object3_d_ae2a63d044e2f5ebcacde18dd6edf8ef1}\index{AbstractObject3D@{AbstractObject3D}!Coordinate@{Coordinate}}
+\index{Coordinate@{Coordinate}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{Coordinate}{Coordinate}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_ae2a63d044e2f5ebcacde18dd6edf8ef1} 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} Coordinate}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00035}{35}}
+
+\Hypertarget{class_abstract_object3_d_aaf5630e64e53279641322fa6fd8a981d}\index{AbstractObject3D@{AbstractObject3D}!kSpecular@{kSpecular}}
+\index{kSpecular@{kSpecular}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{kSpecular}{kSpecular}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_aaf5630e64e53279641322fa6fd8a981d} 
+float k\+Specular = 0.\+5}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00040}{40}}
+
+\Hypertarget{class_abstract_object3_d_a97c2d95d9572e2dd9408c6a4816ce055}\index{AbstractObject3D@{AbstractObject3D}!materialAmbient@{materialAmbient}}
+\index{materialAmbient@{materialAmbient}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{materialAmbient}{materialAmbient}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a97c2d95d9572e2dd9408c6a4816ce055} 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} material\+Ambient =\{0.\+5f, 0.\+5f, 0.\+5f\}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00039}{39}}
+
+\Hypertarget{class_abstract_object3_d_a4707653e32d90b220c3c6321f2666576}\index{AbstractObject3D@{AbstractObject3D}!mesh@{mesh}}
+\index{mesh@{mesh}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{mesh}{mesh}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a4707653e32d90b220c3c6321f2666576} 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___mesh}{PRISM\+\_\+\+Mesh}} mesh}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00038}{38}}
+
+\Hypertarget{class_abstract_object3_d_a4a0043af98800a2c0517cfe81c9423c6}\index{AbstractObject3D@{AbstractObject3D}!ProjectionMatrix@{ProjectionMatrix}}
+\index{ProjectionMatrix@{ProjectionMatrix}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{ProjectionMatrix}{ProjectionMatrix}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a4a0043af98800a2c0517cfe81c9423c6} 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___matrix__4_x4}{PRISM\+\_\+\+Matrix\+\_\+4\+X4}} Projection\+Matrix}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00034}{34}}
+
+\Hypertarget{class_abstract_object3_d_accfed9da2d822544527e3a911ff58616}\index{AbstractObject3D@{AbstractObject3D}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{Rotation}{Rotation}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_accfed9da2d822544527e3a911ff58616} 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} Rotation}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00036}{36}}
+
+\Hypertarget{class_abstract_object3_d_a314c8b4cf5c683fc6b2dab2d65ace32a}\index{AbstractObject3D@{AbstractObject3D}!Scale@{Scale}}
+\index{Scale@{Scale}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{Scale}{Scale}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a314c8b4cf5c683fc6b2dab2d65ace32a} 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} Scale}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00037}{37}}
+
+\Hypertarget{class_abstract_object3_d_af273480bb7b551fe2359b8f4b23a084b}\index{AbstractObject3D@{AbstractObject3D}!ScreenH@{ScreenH}}
+\index{ScreenH@{ScreenH}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{ScreenH}{ScreenH}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_af273480bb7b551fe2359b8f4b23a084b} 
+float ScreenH}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00042}{42}}
+
+\Hypertarget{class_abstract_object3_d_a62a770b3680bca1269d59b9992144650}\index{AbstractObject3D@{AbstractObject3D}!ScreenW@{ScreenW}}
+\index{ScreenW@{ScreenW}!AbstractObject3D@{AbstractObject3D}}
+\doxysubsubsection{\texorpdfstring{ScreenW}{ScreenW}}
+{\footnotesize\ttfamily \label{class_abstract_object3_d_a62a770b3680bca1269d59b9992144650} 
+float ScreenW}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_object3_d_8h_source}{Abstract\+Object3\+D.\+h}} строка \mbox{\hyperlink{_abstract_object3_d_8h_source_l00041}{41}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Admin/\+Desktop/\+Prism\+Engine/\+Prism\+Engine/src/\+PRISM\+\_\+objects3\+D/\mbox{\hyperlink{_abstract_object3_d_8h}{Abstract\+Object3\+D.\+h}}\item 
+C\+:/\+Users/\+Admin/\+Desktop/\+Prism\+Engine/\+Prism\+Engine/src/\+PRISM\+\_\+objects3\+D/\mbox{\hyperlink{_abstract_object3_d_8cpp}{Abstract\+Object3\+D.\+cpp}}\end{DoxyCompactItemize}

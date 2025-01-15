@@ -50,7 +50,7 @@ void Scene::PrintInfo()
 {
 	for (const auto& object : objects) {
 		SDL_Log("objects in Scene:");
-		object->PrintInfo();  // Вызов метода рендеринга для каждого элемента
+		object->PrintInfo();  // Р’С‹Р·РѕРІ РјРµС‚РѕРґР° СЂРµРЅРґРµСЂРёРЅРіР° РґР»СЏ РєР°Р¶РґРѕРіРѕ СЌР»РµРјРµРЅС‚Р°
 	}
 }
 

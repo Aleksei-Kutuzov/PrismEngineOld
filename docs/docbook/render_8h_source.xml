@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_render_8h_source" xml:lang="ru">
+<title>render.h</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/render.h</primary></indexterm>
+См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="_render_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;RENDER_H</emphasis>
+<anchor xml:id="_render_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;RENDER_H</emphasis>
+<anchor xml:id="_render_8h_source_1l00003"/>00003 
+<anchor xml:id="_render_8h_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+<anchor xml:id="_render_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&quot;SDL.h&quot;</emphasis>
+<anchor xml:id="_render_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&quot;SDL_image.h&quot;</emphasis>
+<anchor xml:id="_render_8h_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__abstract_object3_d_8h">../PRISM_objects3D/AbstractObject3D.h</link>&quot;</emphasis>
+<anchor xml:id="_render_8h_source_1l00008"/>00008 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+<anchor xml:id="_render_8h_source_1l00009"/>00009 
+<anchor xml:id="_render_8h_source_1l00010"/>00010 
+<anchor xml:id="_render_8h_source_1l00011"/>00011 <emphasis role="comment">//enum&#32;RasterizationMode&#32;{</emphasis>
+<anchor xml:id="_render_8h_source_1l00012"/>00012 <emphasis role="comment">//&#32;&#32;ZBufferComparison,</emphasis>
+<anchor xml:id="_render_8h_source_1l00013"/>00013 <emphasis role="comment">//&#32;&#32;AverageZFigureComparison</emphasis>
+<anchor xml:id="_render_8h_source_1l00014"/>00014 <emphasis role="comment">//};</emphasis>
+<anchor xml:id="_render_8h_source_1l00015"/>00015 
+<anchor xml:id="_render_8h_source_1l00016"/><link linkend="_class_p_r_i_s_m___render">00016</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_p_r_i_s_m___render">PRISM_Render</link>&#32;{
+<anchor xml:id="_render_8h_source_1l00017"/>00017 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_render_8h_source_1l00018"/><link linkend="_class_p_r_i_s_m___render_1aadcdf339262ba7e6274d5695634c5b5f">00018</link> &#32;&#32;&#32;&#32;<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link>&#32;<link linkend="_class_p_r_i_s_m___render_1aadcdf339262ba7e6274d5695634c5b5f">cameraCoordinate</link>&#32;=&#32;{0,&#32;0,&#32;0};
+<anchor xml:id="_render_8h_source_1l00019"/><link linkend="_class_p_r_i_s_m___render_1aae1eaaa76fb0cea54f764c0fd1e1f820">00019</link> &#32;&#32;&#32;&#32;<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link>&#32;<link linkend="_class_p_r_i_s_m___render_1aae1eaaa76fb0cea54f764c0fd1e1f820">lightAmbient</link>&#32;=&#32;{&#32;0.1f,&#32;0.1f,&#32;0.1f&#32;};&#32;<emphasis role="comment">//&#32;интенсивность&#32;окружающего&#32;света&#32;в&#32;сцене(задаётся&#32;для&#32;всего&#32;пространства).</emphasis>
+<anchor xml:id="_render_8h_source_1l00020"/>00020 
+<anchor xml:id="_render_8h_source_1l00021"/>00021 &#32;&#32;&#32;&#32;<link linkend="_struct_p_r_i_s_m___color">PRISM_Color</link>&#32;<link linkend="_class_p_r_i_s_m___render_1a44df9b94b16fb1df310c02257c125490">CalculatePixelAmbient</link>(<link linkend="_struct_p_r_i_s_m___color">PRISM_Color</link>&#32;originalСolor,&#32;<link linkend="_class_abstract_object3_d">AbstractObject3D</link>&#32;obj)&#32;<emphasis role="keyword">const</emphasis>;&#32;<emphasis role="comment">//&#32;Окружающее&#32;освещение&#32;(ambient&#32;lighting)&#32;симулирует&#32;свет,&#32;равномерно&#32;распространяющийся&#32;в&#32;пространстве.&#32;Оно&#32;добавляет&#32;объекту&#32;базовую&#32;освещённость,&#32;даже&#32;если&#32;на&#32;него&#32;напрямую&#32;не&#32;падает&#32;свет.</emphasis>
+<anchor xml:id="_render_8h_source_1l00022"/>00022 &#32;&#32;&#32;&#32;<link linkend="_struct_p_r_i_s_m___color">PRISM_Color</link>&#32;<link linkend="_class_p_r_i_s_m___render_1a31b9c243cb644531d85af023366e50d4">CalculatePixelDiffuse</link>(<link linkend="_struct_p_r_i_s_m___color">PRISM_Color</link>&#32;originalСolor,&#32;<link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link>&#32;light,&#32;<link linkend="_class_abstract_object3_d">AbstractObject3D</link>&#32;obj,&#32;<link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link>&#32;triangle);&#32;<emphasis role="comment">//&#32;Диффузное&#32;освещение&#32;моделирует&#32;рассеивание&#32;света&#32;на&#32;матовой&#32;поверхности.</emphasis>
+<anchor xml:id="_render_8h_source_1l00023"/>00023 &#32;&#32;&#32;&#32;<link linkend="_struct_p_r_i_s_m___color">PRISM_Color</link>&#32;<link linkend="_class_p_r_i_s_m___render_1a4baae358af056a50be03ace21ff0883d">CalculatePixelSpecular</link>(<link linkend="_struct_p_r_i_s_m___color">PRISM_Color</link>&#32;originalСolor,&#32;<link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link>&#32;light,&#32;<link linkend="_class_abstract_object3_d">AbstractObject3D</link>&#32;obj,&#32;<link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link>&#32;triangle,&#32;<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link>&#32;<link linkend="_class_p_r_i_s_m___render_1aadcdf339262ba7e6274d5695634c5b5f">cameraCoordinate</link>);
+<anchor xml:id="_render_8h_source_1l00024"/>00024 &#32;&#32;&#32;&#32;
+<anchor xml:id="_render_8h_source_1l00025"/>00025 &#32;&#32;&#32;&#32;
+<anchor xml:id="_render_8h_source_1l00026"/>00026 
+<anchor xml:id="_render_8h_source_1l00027"/>00027 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_p_r_i_s_m___render_1a49a493a4aba911acb932c66030f15a90">Rendering</link>(<link linkend="_class_p_r_i_s_m___window">PRISM_Window</link>*&#32;window,&#32;<link linkend="_class_abstract_object3_d">AbstractObject3D</link>*&#32;obj);
+<anchor xml:id="_render_8h_source_1l00028"/>00028 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_p_r_i_s_m___render_1ac16499f92f48f29237b02a6294b52e31">SetScreenSize</link>(<emphasis role="keywordtype">int</emphasis>&#32;w,&#32;<emphasis role="keywordtype">int</emphasis>&#32;h);
+<anchor xml:id="_render_8h_source_1l00029"/>00029 &#32;&#32;&#32;&#32;
+<anchor xml:id="_render_8h_source_1l00030"/>00030 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_render_8h_source_1l00031"/>00031 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;ScreenW,&#32;ScreenH;
+<anchor xml:id="_render_8h_source_1l00032"/>00032 };
+<anchor xml:id="_render_8h_source_1l00033"/>00033 
+<anchor xml:id="_render_8h_source_1l00034"/>00034 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;RENDER_H</emphasis>
+</programlisting></section>

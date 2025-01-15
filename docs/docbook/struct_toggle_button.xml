@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_toggle_button" xml:lang="ru">
+<title>Структура ToggleButton</title>
+<indexterm><primary>ToggleButton</primary></indexterm>
+<para>
+<computeroutput>#include &lt;button.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Поля данных    </title>
+        <itemizedlist>
+            <listitem><para>SDL_Texture * <link linkend="_struct_toggle_button_1a3cb434103624064b39c9212f797f6e44">image</link></para>
+</listitem>
+            <listitem><para>SDL_Renderer * <link linkend="_struct_toggle_button_1a966da7a60c4ea3ba301e26ccc5efe452">renderer</link></para>
+</listitem>
+            <listitem><para>SDL_Rect <link linkend="_struct_toggle_button_1a55aefd071649ac9dd8133e2d8a52d11f">rect</link></para>
+</listitem>
+            <listitem><para>std::string <link linkend="_struct_toggle_button_1a23c058547fbc73b5659191844a9f258c">text</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_toggle_button_1a7ea8e03c78a84ff3d7d2e0920ed18f0e">FD</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_toggle_button_1a03c996f9fcf0e10baeb3e700be0c409a">active</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+<para>
+См. определение в файле <link linkend="_button_8h_source">button.h</link> строка <link linkend="_button_8h_source_1l00010">10</link></para>
+</section>
+<section>
+<title>Поля</title>
+<anchor xml:id="_struct_toggle_button_1a03c996f9fcf0e10baeb3e700be0c409a"/><section>
+    <title>active</title>
+<indexterm><primary>active</primary><secondary>ToggleButton</secondary></indexterm>
+<indexterm><primary>ToggleButton</primary><secondary>active</secondary></indexterm>
+<para><computeroutput>bool active</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8h_source">button.h</link> строка <link linkend="_button_8h_source_1l00016">16</link></para>
+</section>
+<anchor xml:id="_struct_toggle_button_1a7ea8e03c78a84ff3d7d2e0920ed18f0e"/><section>
+    <title>FD</title>
+<indexterm><primary>FD</primary><secondary>ToggleButton</secondary></indexterm>
+<indexterm><primary>ToggleButton</primary><secondary>FD</secondary></indexterm>
+<para><computeroutput>bool FD</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8h_source">button.h</link> строка <link linkend="_button_8h_source_1l00015">15</link></para>
+</section>
+<anchor xml:id="_struct_toggle_button_1a3cb434103624064b39c9212f797f6e44"/><section>
+    <title>image</title>
+<indexterm><primary>image</primary><secondary>ToggleButton</secondary></indexterm>
+<indexterm><primary>ToggleButton</primary><secondary>image</secondary></indexterm>
+<para><computeroutput>SDL_Texture* image</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8h_source">button.h</link> строка <link linkend="_button_8h_source_1l00011">11</link></para>
+</section>
+<anchor xml:id="_struct_toggle_button_1a55aefd071649ac9dd8133e2d8a52d11f"/><section>
+    <title>rect</title>
+<indexterm><primary>rect</primary><secondary>ToggleButton</secondary></indexterm>
+<indexterm><primary>ToggleButton</primary><secondary>rect</secondary></indexterm>
+<para><computeroutput>SDL_Rect rect</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8h_source">button.h</link> строка <link linkend="_button_8h_source_1l00013">13</link></para>
+</section>
+<anchor xml:id="_struct_toggle_button_1a966da7a60c4ea3ba301e26ccc5efe452"/><section>
+    <title>renderer</title>
+<indexterm><primary>renderer</primary><secondary>ToggleButton</secondary></indexterm>
+<indexterm><primary>ToggleButton</primary><secondary>renderer</secondary></indexterm>
+<para><computeroutput>SDL_Renderer* renderer</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8h_source">button.h</link> строка <link linkend="_button_8h_source_1l00012">12</link></para>
+</section>
+<anchor xml:id="_struct_toggle_button_1a23c058547fbc73b5659191844a9f258c"/><section>
+    <title>text</title>
+<indexterm><primary>text</primary><secondary>ToggleButton</secondary></indexterm>
+<indexterm><primary>ToggleButton</primary><secondary>text</secondary></indexterm>
+<para><computeroutput>std::string text</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8h_source">button.h</link> строка <link linkend="_button_8h_source_1l00014">14</link></para>
+</section>
+<para>
+Объявления и описания членов структуры находятся в файле:</para>
+C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_UI/<link linkend="_button_8h">button.h</link></section>
+</section>

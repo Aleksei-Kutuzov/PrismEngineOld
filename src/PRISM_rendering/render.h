@@ -16,11 +16,11 @@
 class PRISM_Render {
 public:
 	PRISM_Vector3d cameraCoordinate = {0, 0, 0};
-	PRISM_Vector3d lightAmbient = { 0.1f, 0.1f, 0.1f }; // интенсивность окружающего света в сцене(задаётся для всего пространства).
+	PRISM_Vector3d lightAmbient = { 0.1f, 0.1f, 0.1f }; // РёРЅС‚РµРЅСЃРёРІРЅРѕСЃС‚СЊ РѕРєСЂСѓР¶Р°СЋС‰РµРіРѕ СЃРІРµС‚Р° РІ СЃС†РµРЅРµ(Р·Р°РґР°С‘С‚СЃСЏ РґР»СЏ РІСЃРµРіРѕ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІР°).
 
-	PRISM_Color CalculatePixelAmbient(PRISM_Color originalСolor, AbstractObject3D obj) const; // Окружающее освещение (ambient lighting) симулирует свет, равномерно распространяющийся в пространстве. Оно добавляет объекту базовую освещённость, даже если на него напрямую не падает свет.
-	PRISM_Color CalculatePixelDiffuse(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle); // Диффузное освещение моделирует рассеивание света на матовой поверхности.
-	PRISM_Color CalculatePixelSpecular(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle, PRISM_Vector3d cameraCoordinate);
+	PRISM_Color CalculatePixelAmbient(PRISM_Color originalРЎolor, AbstractObject3D obj) const; // РћРєСЂСѓР¶Р°СЋС‰РµРµ РѕСЃРІРµС‰РµРЅРёРµ (ambient lighting) СЃРёРјСѓР»РёСЂСѓРµС‚ СЃРІРµС‚, СЂР°РІРЅРѕРјРµСЂРЅРѕ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏСЋС‰РёР№СЃСЏ РІ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРµ. РћРЅРѕ РґРѕР±Р°РІР»СЏРµС‚ РѕР±СЉРµРєС‚Сѓ Р±Р°Р·РѕРІСѓСЋ РѕСЃРІРµС‰С‘РЅРЅРѕСЃС‚СЊ, РґР°Р¶Рµ РµСЃР»Рё РЅР° РЅРµРіРѕ РЅР°РїСЂСЏРјСѓСЋ РЅРµ РїР°РґР°РµС‚ СЃРІРµС‚.
+	PRISM_Color CalculatePixelDiffuse(PRISM_Color originalРЎolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle); // Р”РёС„С„СѓР·РЅРѕРµ РѕСЃРІРµС‰РµРЅРёРµ РјРѕРґРµР»РёСЂСѓРµС‚ СЂР°СЃСЃРµРёРІР°РЅРёРµ СЃРІРµС‚Р° РЅР° РјР°С‚РѕРІРѕР№ РїРѕРІРµСЂС…РЅРѕСЃС‚Рё.
+	PRISM_Color CalculatePixelSpecular(PRISM_Color originalРЎolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle, PRISM_Vector3d cameraCoordinate);
 	
 	
 

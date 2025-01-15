@@ -28,7 +28,7 @@ PRISM_Mesh MeshLoader::LoadOBJ(const char* filename, AbstractCamera3D camera) {
 	mesh.tris = {};
 	while (getline(fileContent, line)) {
 		if (line.empty() || line[0] == '#') {
-			continue; // Пропускаем пустые строки и комментарии
+			continue; // РџСЂРѕРїСѓСЃРєР°РµРј РїСѓСЃС‚С‹Рµ СЃС‚СЂРѕРєРё Рё РєРѕРјРјРµРЅС‚Р°СЂРёРё
 		}
 
 		std::istringstream iss(line);
@@ -36,52 +36,52 @@ PRISM_Mesh MeshLoader::LoadOBJ(const char* filename, AbstractCamera3D camera) {
 		iss >> identifier;
 
 		if (identifier == "v") {
-			// Вершина
+			// Р’РµСЂС€РёРЅР°
 			PRISM_Vector3d v;
 			iss >> v.x >> v.y >> v.z;
 			vertices.push_back(v);
 		}
 		else if (identifier == "vn") {
-			// Нормаль
+			// РќРѕСЂРјР°Р»СЊ
 			PRISM_Vector3d n;
 			iss >> n.x >> n.y >> n.z;
 			normals.push_back(n);
 		}
 		else if (identifier == "f") {
-			// Грань
+			// Р“СЂР°РЅСЊ
 			std::vector<int> vertexIndices;
 			std::vector<int> normalIndices;
 
 			std::string facePart;
 			while (iss >> facePart) {
-				// Разбиваем каждую часть грани (например, "1//1" или "1/1/1")
+				// Р Р°Р·Р±РёРІР°РµРј РєР°Р¶РґСѓСЋ С‡Р°СЃС‚СЊ РіСЂР°РЅРё (РЅР°РїСЂРёРјРµСЂ, "1//1" РёР»Рё "1/1/1")
 				size_t firstSlash = facePart.find('/');
 				size_t secondSlash = facePart.find('/', firstSlash + 1);
 
-				// Извлекаем индекс вершины (до первого '/')
+				// РР·РІР»РµРєР°РµРј РёРЅРґРµРєСЃ РІРµСЂС€РёРЅС‹ (РґРѕ РїРµСЂРІРѕРіРѕ '/')
 				int vertexIndex = std::stoi(facePart.substr(0, firstSlash)) - 1;
 				vertexIndices.push_back(vertexIndex);
 
-				// Проверяем, есть ли индекс нормали (после второго '/')
+				// РџСЂРѕРІРµСЂСЏРµРј, РµСЃС‚СЊ Р»Рё РёРЅРґРµРєСЃ РЅРѕСЂРјР°Р»Рё (РїРѕСЃР»Рµ РІС‚РѕСЂРѕРіРѕ '/')
 				if (secondSlash != std::string::npos) {
 					int normalIndex = std::stoi(facePart.substr(secondSlash + 1)) - 1;
 					normalIndices.push_back(normalIndex);
 				}
 			}
-			// Создаем треугольник, если индексы вершин определены
+			// РЎРѕР·РґР°РµРј С‚СЂРµСѓРіРѕР»СЊРЅРёРє, РµСЃР»Рё РёРЅРґРµРєСЃС‹ РІРµСЂС€РёРЅ РѕРїСЂРµРґРµР»РµРЅС‹
 			if (vertexIndices.size() == 3) {
 				PRISM_Triangle tri = {
 					vertices[vertexIndices[0]],
 					vertices[vertexIndices[1]],
 					vertices[vertexIndices[2]]
 				};
-				// Если указаны нормали, добавляем их в треугольник
+				// Р•СЃР»Рё СѓРєР°Р·Р°РЅС‹ РЅРѕСЂРјР°Р»Рё, РґРѕР±Р°РІР»СЏРµРј РёС… РІ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 				if (!normalIndices.empty() && normalIndices.size() == 3) {
 					tri.a_norlmal = normals[normalIndices[0]];
 					tri.b_norlmal = normals[normalIndices[1]];
 					tri.c_norlmal = normals[normalIndices[2]];
 				}
-				// Добавляем треугольник в объект
+				// Р”РѕР±Р°РІР»СЏРµРј С‚СЂРµСѓРіРѕР»СЊРЅРёРє РІ РѕР±СЉРµРєС‚
 				mesh.tris.push_back(tri);
 			}
 		}

@@ -1,0 +1,946 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRISM_ENGINE: Класс Math</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoprism.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">PRISM_ENGINE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">docs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Открытые статические члены</a>  </div>
+  <div class="headertitle"><div class="title">Класс Math</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс <a class="el" href="class_math.html" title="Класс Math предоставляет набор статических методов для выполнения математических операций,...">Math</a> предоставляет набор статических методов для выполнения математических операций, связанных с векторами, матрицами и цветами.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="math_8h_source.html">math.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:aa2160fa016d0ebc03a56f054e0c48ad9" id="r_aa2160fa016d0ebc03a56f054e0c48ad9"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2160fa016d0ebc03a56f054e0c48ad9">degToRad</a> (float degrees)</td></tr>
+<tr class="memdesc:aa2160fa016d0ebc03a56f054e0c48ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразует угол из градусов в радианы.  <br /></td></tr>
+<tr class="separator:aa2160fa016d0ebc03a56f054e0c48ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1d991771a0f086f6c08f5d145f840b" id="r_a2b1d991771a0f086f6c08f5d145f840b"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b1d991771a0f086f6c08f5d145f840b">Vector_DotProduct</a> (<a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v1, <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v2)</td></tr>
+<tr class="memdesc:a2b1d991771a0f086f6c08f5d145f840b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет скалярное произведение двух векторов.  <br /></td></tr>
+<tr class="separator:a2b1d991771a0f086f6c08f5d145f840b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1849ccf6828ccc800b53e7e74f23c2" id="r_a9b1849ccf6828ccc800b53e7e74f23c2"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b1849ccf6828ccc800b53e7e74f23c2">Vector_Length</a> (<a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v)</td></tr>
+<tr class="memdesc:a9b1849ccf6828ccc800b53e7e74f23c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет длину вектора.  <br /></td></tr>
+<tr class="separator:a9b1849ccf6828ccc800b53e7e74f23c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf30f4e2814a757655d7735f76787d9b" id="r_aaf30f4e2814a757655d7735f76787d9b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf30f4e2814a757655d7735f76787d9b">Vector_Normalise</a> (<a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v)</td></tr>
+<tr class="memdesc:aaf30f4e2814a757655d7735f76787d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормализует вектор, делая его длину равной 1.  <br /></td></tr>
+<tr class="separator:aaf30f4e2814a757655d7735f76787d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ecff6f520511615654512a6741239d1" id="r_a0ecff6f520511615654512a6741239d1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ecff6f520511615654512a6741239d1">Vector_CrossProduct</a> (<a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v1, <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v2)</td></tr>
+<tr class="memdesc:a0ecff6f520511615654512a6741239d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет векторное произведение двух векторов.  <br /></td></tr>
+<tr class="separator:a0ecff6f520511615654512a6741239d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31420324383e2d0d8d2bab5f5669dc90" id="r_a31420324383e2d0d8d2bab5f5669dc90"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31420324383e2d0d8d2bab5f5669dc90">Vector_IntersectPlane</a> (<a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;plane_p, <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;plane_n, <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;lineStart, <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;lineEnd)</td></tr>
+<tr class="memdesc:a31420324383e2d0d8d2bab5f5669dc90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет точку пересечения линии и плоскости.  <br /></td></tr>
+<tr class="separator:a31420324383e2d0d8d2bab5f5669dc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f982788322551ec9c2cf3da334b6e27" id="r_a8f982788322551ec9c2cf3da334b6e27"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f982788322551ec9c2cf3da334b6e27">Matrix_MakeIdentity</a> ()</td></tr>
+<tr class="memdesc:a8f982788322551ec9c2cf3da334b6e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает единичную матрицу 4x4.  <br /></td></tr>
+<tr class="separator:a8f982788322551ec9c2cf3da334b6e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751e8ee04fa36ec2a7c2cf65388db388" id="r_a751e8ee04fa36ec2a7c2cf65388db388"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a751e8ee04fa36ec2a7c2cf65388db388">Matrix_MakeRotationX</a> (float fAngleRad)</td></tr>
+<tr class="memdesc:a751e8ee04fa36ec2a7c2cf65388db388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает матрицу поворота вокруг оси X.  <br /></td></tr>
+<tr class="separator:a751e8ee04fa36ec2a7c2cf65388db388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4af6c5bcd41db2091def1a8dd24197" id="r_a6e4af6c5bcd41db2091def1a8dd24197"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e4af6c5bcd41db2091def1a8dd24197">Matrix_MakeRotationY</a> (float fAngleRad)</td></tr>
+<tr class="memdesc:a6e4af6c5bcd41db2091def1a8dd24197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает матрицу поворота вокруг оси Y.  <br /></td></tr>
+<tr class="separator:a6e4af6c5bcd41db2091def1a8dd24197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b159f7588ac3cbca1fba25ccb72cda3" id="r_a2b159f7588ac3cbca1fba25ccb72cda3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b159f7588ac3cbca1fba25ccb72cda3">Matrix_MakeRotationZ</a> (float fAngleRad)</td></tr>
+<tr class="memdesc:a2b159f7588ac3cbca1fba25ccb72cda3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает матрицу поворота вокруг оси Z.  <br /></td></tr>
+<tr class="separator:a2b159f7588ac3cbca1fba25ccb72cda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade6dadea627fe29eff89bb5ea86cf4b8" id="r_ade6dadea627fe29eff89bb5ea86cf4b8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade6dadea627fe29eff89bb5ea86cf4b8">Matrix_MakeTranslation</a> (float x, float y, float z)</td></tr>
+<tr class="memdesc:ade6dadea627fe29eff89bb5ea86cf4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает матрицу переноса.  <br /></td></tr>
+<tr class="separator:ade6dadea627fe29eff89bb5ea86cf4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3abc383f85ec5784f5006579496d8a29" id="r_a3abc383f85ec5784f5006579496d8a29"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3abc383f85ec5784f5006579496d8a29">Matrix_MakeScale</a> (float x, float y, float z)</td></tr>
+<tr class="memdesc:a3abc383f85ec5784f5006579496d8a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает матрицу масштабирования.  <br /></td></tr>
+<tr class="separator:a3abc383f85ec5784f5006579496d8a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb90ca08abcfdab52cf22b771c5493b" id="r_aefb90ca08abcfdab52cf22b771c5493b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefb90ca08abcfdab52cf22b771c5493b">Matrix_MakeProjection</a> (float fFovDegrees, float fAspectRatio, float fNear, float fFar)</td></tr>
+<tr class="memdesc:aefb90ca08abcfdab52cf22b771c5493b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает матрицу проекции.  <br /></td></tr>
+<tr class="separator:aefb90ca08abcfdab52cf22b771c5493b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb351ad862701dbacd36989bcfe450f1" id="r_afb351ad862701dbacd36989bcfe450f1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb351ad862701dbacd36989bcfe450f1">Matrix_MultiplyMatrix</a> (<a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> &amp;m1, <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> &amp;m2)</td></tr>
+<tr class="memdesc:afb351ad862701dbacd36989bcfe450f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножает две матрицы 4x4.  <br /></td></tr>
+<tr class="separator:afb351ad862701dbacd36989bcfe450f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9b6ed723de18358738269a586cbc53" id="r_a5d9b6ed723de18358738269a586cbc53"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d9b6ed723de18358738269a586cbc53">Matrix_PointAt</a> (<a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;pos, <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;target, <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;up)</td></tr>
+<tr class="memdesc:a5d9b6ed723de18358738269a586cbc53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает матрицу, указывающую из одной точки в другую.  <br /></td></tr>
+<tr class="separator:a5d9b6ed723de18358738269a586cbc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d6af6b7e2a2b8601cf18638f8dc546" id="r_a74d6af6b7e2a2b8601cf18638f8dc546"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74d6af6b7e2a2b8601cf18638f8dc546">Matrix_QuickInverse</a> (<a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> &amp;m)</td></tr>
+<tr class="memdesc:a74d6af6b7e2a2b8601cf18638f8dc546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Быстрое обратное преобразование матрицы 4x4.  <br /></td></tr>
+<tr class="separator:a74d6af6b7e2a2b8601cf18638f8dc546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e451891ac1c4959ea5c8ade0a2724b" id="r_a65e451891ac1c4959ea5c8ade0a2724b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65e451891ac1c4959ea5c8ade0a2724b">MultiplyMatrixVector</a> (<a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;i, <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;o, <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> &amp;m)</td></tr>
+<tr class="memdesc:a65e451891ac1c4959ea5c8ade0a2724b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножает вектор на матрицу.  <br /></td></tr>
+<tr class="separator:a65e451891ac1c4959ea5c8ade0a2724b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0bf272d17220d425881009b75f5b769" id="r_ab0bf272d17220d425881009b75f5b769"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0bf272d17220d425881009b75f5b769">CalculateNormals</a> (struct <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> triang)</td></tr>
+<tr class="memdesc:ab0bf272d17220d425881009b75f5b769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет нормали треугольника.  <br /></td></tr>
+<tr class="separator:ab0bf272d17220d425881009b75f5b769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43465c174cf3c327e12000dc0db8db9f" id="r_a43465c174cf3c327e12000dc0db8db9f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___g_l__f_color.html">PRISM_GL_fColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43465c174cf3c327e12000dc0db8db9f">convertToGlColor</a> (const <a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> &amp;color)</td></tr>
+<tr class="memdesc:a43465c174cf3c327e12000dc0db8db9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конвертирует цвет в формат OpenGL.  <br /></td></tr>
+<tr class="separator:a43465c174cf3c327e12000dc0db8db9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс <a class="el" href="class_math.html" title="Класс Math предоставляет набор статических методов для выполнения математических операций,...">Math</a> предоставляет набор статических методов для выполнения математических операций, связанных с векторами, матрицами и цветами. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8h_source.html">math.h</a> строка <a class="el" href="math_8h_source.html#l00018">18</a></p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="ab0bf272d17220d425881009b75f5b769" name="ab0bf272d17220d425881009b75f5b769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0bf272d17220d425881009b75f5b769">&#9670;&#160;</a></span>CalculateNormals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> CalculateNormals </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a></td>          <td class="paramname"><span class="paramname"><em>triang</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисляет нормали треугольника. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">triang</td><td>Треугольник.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Нормаль треугольника.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00188">188</a></p>
+
+</div>
+</div>
+<a id="a43465c174cf3c327e12000dc0db8db9f" name="a43465c174cf3c327e12000dc0db8db9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43465c174cf3c327e12000dc0db8db9f">&#9670;&#160;</a></span>convertToGlColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___g_l__f_color.html">PRISM_GL_fColor</a> convertToGlColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конвертирует цвет в формат OpenGL. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>Цвет в формате <a class="el" href="struct_p_r_i_s_m___color.html" title="Структура, представляющая цвет в формате RGBA (красный, зелёный, синий, альфа). Поддерживает различны...">PRISM_Color</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Цвет в формате OpenGL.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00198">198</a></p>
+
+</div>
+</div>
+<a id="aa2160fa016d0ebc03a56f054e0c48ad9" name="aa2160fa016d0ebc03a56f054e0c48ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2160fa016d0ebc03a56f054e0c48ad9">&#9670;&#160;</a></span>degToRad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float degToRad </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>degrees</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Преобразует угол из градусов в радианы. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">degrees</td><td>Угол в градусах.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Угол в радианах.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00005">5</a></p>
+
+</div>
+</div>
+<a id="a8f982788322551ec9c2cf3da334b6e27" name="a8f982788322551ec9c2cf3da334b6e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f982788322551ec9c2cf3da334b6e27">&#9670;&#160;</a></span>Matrix_MakeIdentity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> Matrix_MakeIdentity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создает единичную матрицу 4x4. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Единичная матрица.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00050">50</a></p>
+
+</div>
+</div>
+<a id="aefb90ca08abcfdab52cf22b771c5493b" name="aefb90ca08abcfdab52cf22b771c5493b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb90ca08abcfdab52cf22b771c5493b">&#9670;&#160;</a></span>Matrix_MakeProjection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> Matrix_MakeProjection </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fFovDegrees</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fAspectRatio</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fNear</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fFar</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создает матрицу проекции. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fFovDegrees</td><td>Угол обзора в градусах.</td></tr>
+    <tr><td class="paramname">fAspectRatio</td><td>Соотношение сторон экрана.</td></tr>
+    <tr><td class="paramname">fNear</td><td>Ближняя плоскость отсечения.</td></tr>
+    <tr><td class="paramname">fFar</td><td>Дальняя плоскость отсечения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Матрица проекции.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00119">119</a></p>
+
+</div>
+</div>
+<a id="a751e8ee04fa36ec2a7c2cf65388db388" name="a751e8ee04fa36ec2a7c2cf65388db388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751e8ee04fa36ec2a7c2cf65388db388">&#9670;&#160;</a></span>Matrix_MakeRotationX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> Matrix_MakeRotationX </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fAngleRad</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создает матрицу поворота вокруг оси X. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fAngleRad</td><td>Угол поворота в радианах.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Матрица поворота вокруг оси X.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00060">60</a></p>
+
+</div>
+</div>
+<a id="a6e4af6c5bcd41db2091def1a8dd24197" name="a6e4af6c5bcd41db2091def1a8dd24197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4af6c5bcd41db2091def1a8dd24197">&#9670;&#160;</a></span>Matrix_MakeRotationY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> Matrix_MakeRotationY </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fAngleRad</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создает матрицу поворота вокруг оси Y. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fAngleRad</td><td>Угол поворота в радианах.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Матрица поворота вокруг оси Y.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00072">72</a></p>
+
+</div>
+</div>
+<a id="a2b159f7588ac3cbca1fba25ccb72cda3" name="a2b159f7588ac3cbca1fba25ccb72cda3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b159f7588ac3cbca1fba25ccb72cda3">&#9670;&#160;</a></span>Matrix_MakeRotationZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> Matrix_MakeRotationZ </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fAngleRad</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создает матрицу поворота вокруг оси Z. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fAngleRad</td><td>Угол поворота в радианах.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Матрица поворота вокруг оси Z.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00084">84</a></p>
+
+</div>
+</div>
+<a id="a3abc383f85ec5784f5006579496d8a29" name="a3abc383f85ec5784f5006579496d8a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3abc383f85ec5784f5006579496d8a29">&#9670;&#160;</a></span>Matrix_MakeScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> Matrix_MakeScale </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создает матрицу масштабирования. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Масштабирование по оси X.</td></tr>
+    <tr><td class="paramname">y</td><td>Масштабирование по оси Y.</td></tr>
+    <tr><td class="paramname">z</td><td>Масштабирование по оси Z.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Матрица масштабирования.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00109">109</a></p>
+
+</div>
+</div>
+<a id="ade6dadea627fe29eff89bb5ea86cf4b8" name="ade6dadea627fe29eff89bb5ea86cf4b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6dadea627fe29eff89bb5ea86cf4b8">&#9670;&#160;</a></span>Matrix_MakeTranslation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> Matrix_MakeTranslation </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создает матрицу переноса. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Смещение по оси X.</td></tr>
+    <tr><td class="paramname">y</td><td>Смещение по оси Y.</td></tr>
+    <tr><td class="paramname">z</td><td>Смещение по оси Z.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Матрица переноса.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00096">96</a></p>
+
+</div>
+</div>
+<a id="afb351ad862701dbacd36989bcfe450f1" name="afb351ad862701dbacd36989bcfe450f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb351ad862701dbacd36989bcfe450f1">&#9670;&#160;</a></span>Matrix_MultiplyMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> Matrix_MultiplyMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Умножает две матрицы 4x4. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m1</td><td>Первая матрица.</td></tr>
+    <tr><td class="paramname">m2</td><td>Вторая матрица.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результирующая матрица.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00133">133</a></p>
+
+</div>
+</div>
+<a id="a5d9b6ed723de18358738269a586cbc53" name="a5d9b6ed723de18358738269a586cbc53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9b6ed723de18358738269a586cbc53">&#9670;&#160;</a></span>Matrix_PointAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> Matrix_PointAt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>up</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создает матрицу, указывающую из одной точки в другую. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Начальная точка.</td></tr>
+    <tr><td class="paramname">target</td><td>Целевая точка.</td></tr>
+    <tr><td class="paramname">up</td><td>Вектор "вверх".</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Матрица направления.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00142">142</a></p>
+
+</div>
+</div>
+<a id="a74d6af6b7e2a2b8601cf18638f8dc546" name="a74d6af6b7e2a2b8601cf18638f8dc546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d6af6b7e2a2b8601cf18638f8dc546">&#9670;&#160;</a></span>Matrix_QuickInverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> Matrix_QuickInverse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Быстрое обратное преобразование матрицы 4x4. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Матрица для инверсии.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Инверсированная матрица.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00165">165</a></p>
+
+</div>
+</div>
+<a id="a65e451891ac1c4959ea5c8ade0a2724b" name="a65e451891ac1c4959ea5c8ade0a2724b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e451891ac1c4959ea5c8ade0a2724b">&#9670;&#160;</a></span>MultiplyMatrixVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MultiplyMatrixVector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>i</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Умножает вектор на матрицу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Исходный вектор.</td></tr>
+    <tr><td class="paramname">o</td><td>Результирующий вектор.</td></tr>
+    <tr><td class="paramname">m</td><td>Матрица.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00178">178</a></p>
+
+</div>
+</div>
+<a id="a0ecff6f520511615654512a6741239d1" name="a0ecff6f520511615654512a6741239d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ecff6f520511615654512a6741239d1">&#9670;&#160;</a></span>Vector_CrossProduct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> Vector_CrossProduct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисляет векторное произведение двух векторов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>Первый вектор.</td></tr>
+    <tr><td class="paramname">v2</td><td>Второй вектор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор, являющийся результатом векторного произведения.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00029">29</a></p>
+
+</div>
+</div>
+<a id="a2b1d991771a0f086f6c08f5d145f840b" name="a2b1d991771a0f086f6c08f5d145f840b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1d991771a0f086f6c08f5d145f840b">&#9670;&#160;</a></span>Vector_DotProduct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vector_DotProduct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисляет скалярное произведение двух векторов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>Первый вектор.</td></tr>
+    <tr><td class="paramname">v2</td><td>Второй вектор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Скалярное произведение.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00009">9</a></p>
+
+</div>
+</div>
+<a id="a31420324383e2d0d8d2bab5f5669dc90" name="a31420324383e2d0d8d2bab5f5669dc90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31420324383e2d0d8d2bab5f5669dc90">&#9670;&#160;</a></span>Vector_IntersectPlane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> Vector_IntersectPlane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>plane_p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>plane_n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lineStart</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>lineEnd</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисляет точку пересечения линии и плоскости. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plane_p</td><td>Точка на плоскости.</td></tr>
+    <tr><td class="paramname">plane_n</td><td>Нормаль плоскости.</td></tr>
+    <tr><td class="paramname">lineStart</td><td>Начальная точка линии.</td></tr>
+    <tr><td class="paramname">lineEnd</td><td>Конечная точка линии.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Точка пересечения.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00038">38</a></p>
+
+</div>
+</div>
+<a id="a9b1849ccf6828ccc800b53e7e74f23c2" name="a9b1849ccf6828ccc800b53e7e74f23c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b1849ccf6828ccc800b53e7e74f23c2">&#9670;&#160;</a></span>Vector_Length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vector_Length </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вычисляет длину вектора. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Вектор.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Длина вектора.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00016">16</a></p>
+
+</div>
+</div>
+<a id="aaf30f4e2814a757655d7735f76787d9b" name="aaf30f4e2814a757655d7735f76787d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf30f4e2814a757655d7735f76787d9b">&#9670;&#160;</a></span>Vector_Normalise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> Vector_Normalise </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Нормализует вектор, делая его длину равной 1. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Вектор для нормализации.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Нормализованный вектор.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="math_8cpp_source.html">math.cpp</a> строка <a class="el" href="math_8cpp_source.html#l00021">21</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<a class="el" href="math_8h_source.html">math.h</a></li>
+<li>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<a class="el" href="math_8cpp_source.html">math.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

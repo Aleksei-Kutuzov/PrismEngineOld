@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_zbuffer_8h_source" xml:lang="ru">
+<title>zbuffer.h</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/zbuffer.h</primary></indexterm>
+См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="_zbuffer_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;ZBUFFER_H</emphasis>
+<anchor xml:id="_zbuffer_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;ZBUFFER_H</emphasis>
+<anchor xml:id="_zbuffer_8h_source_1l00003"/>00003 
+<anchor xml:id="_zbuffer_8h_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+<anchor xml:id="_zbuffer_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&lt;limits&gt;</emphasis>
+<anchor xml:id="_zbuffer_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&lt;SDL.h&gt;</emphasis>
+<anchor xml:id="_zbuffer_8h_source_1l00007"/>00007 
+<anchor xml:id="_zbuffer_8h_source_1l00008"/><link linkend="_class_z___buffer">00008</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_z___buffer_1a00b98023cc45ef0097d2dced362728c8">Z_Buffer</link>&#32;{
+<anchor xml:id="_zbuffer_8h_source_1l00009"/>00009 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_zbuffer_8h_source_1l00010"/>00010 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Конструктор</emphasis>
+<anchor xml:id="_zbuffer_8h_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<link linkend="_class_z___buffer_1a00b98023cc45ef0097d2dced362728c8">Z_Buffer</link>(<emphasis role="keywordtype">int</emphasis>&#32;screenW,&#32;<emphasis role="keywordtype">int</emphasis>&#32;screenH);
+<anchor xml:id="_zbuffer_8h_source_1l00012"/>00012 
+<anchor xml:id="_zbuffer_8h_source_1l00013"/>00013 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Метод&#32;для&#32;обновления&#32;Z-буфера</emphasis>
+<anchor xml:id="_zbuffer_8h_source_1l00014"/><link linkend="_class_z___buffer_1a39d02f129c05ada60dba570187cd26b5">00014</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_z___buffer_1a39d02f129c05ada60dba570187cd26b5">update</link>(<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y,&#32;<emphasis role="keywordtype">int</emphasis>&#32;z);
+<anchor xml:id="_zbuffer_8h_source_1l00015"/>00015 
+<anchor xml:id="_zbuffer_8h_source_1l00016"/>00016 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Метод&#32;для&#32;получения&#32;значения&#32;Z-буфера</emphasis>
+<anchor xml:id="_zbuffer_8h_source_1l00017"/>00017 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_z___buffer_1a7c0d937857543bccbcd49027556e8545">get</link>(<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y)&#32;<emphasis role="keyword">const</emphasis>;
+<anchor xml:id="_zbuffer_8h_source_1l00018"/>00018 
+<anchor xml:id="_zbuffer_8h_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Метод&#32;для&#32;очистки&#32;Z-буфера</emphasis>
+<anchor xml:id="_zbuffer_8h_source_1l00020"/>00020 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_z___buffer_1a30e6880d1e5a38506410342f7ee92595">clear</link>(SDL_Renderer*&#32;renderer);
+<anchor xml:id="_zbuffer_8h_source_1l00021"/>00021 
+<anchor xml:id="_zbuffer_8h_source_1l00022"/><link linkend="_class_z___buffer_1a2dcf9b132db4b8cf23b4edee30cc8f12">00022</link> &#32;&#32;&#32;&#32;<link linkend="_class_z___buffer_1a2dcf9b132db4b8cf23b4edee30cc8f12">~Z_Buffer</link>()&#32;{
+<anchor xml:id="_zbuffer_8h_source_1l00023"/>00023 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_zbuffer_8h_source_1l00024"/>00024 
+<anchor xml:id="_zbuffer_8h_source_1l00025"/>00025 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_zbuffer_8h_source_1l00026"/>00026 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;ScreenW,&#32;ScreenH;
+<anchor xml:id="_zbuffer_8h_source_1l00027"/>00027 &#32;&#32;&#32;&#32;std::vector&lt;int&gt;&#32;zMatrix;
+<anchor xml:id="_zbuffer_8h_source_1l00028"/>00028 &#32;&#32;&#32;&#32;std::vector&lt;int&gt;&#32;zMatrixСleared;
+<anchor xml:id="_zbuffer_8h_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;isCleared;
+<anchor xml:id="_zbuffer_8h_source_1l00030"/>00030 };
+<anchor xml:id="_zbuffer_8h_source_1l00031"/>00031 
+<anchor xml:id="_zbuffer_8h_source_1l00032"/>00032 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;ZBUFFER_H</emphasis>
+</programlisting></section>

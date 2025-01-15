@@ -1,0 +1,136 @@
+\doxysection{button.\+cpp}
+\hypertarget{button_8cpp_source}{}\label{button_8cpp_source}\index{C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM\_UI/button.cpp@{C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM\_UI/button.cpp}}
+\mbox{\hyperlink{button_8cpp}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{button_8h}{button.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00004}\mbox{\hyperlink{button_8cpp_ae271d5f10bebbb049e579a7f21b2e824}{00004}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{button_8cpp_ae271d5f10bebbb049e579a7f21b2e824}{InitToggleButton}}(\mbox{\hyperlink{struct_toggle_button}{ToggleButton}}\ \&toggle\_button,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00005}00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ IsActive,\ SDL\_Renderer\ *renderer)\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00006}00006\ \ \ \ \ SDL\_DisplayMode\ mode;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00007}00007\ \ \ \ \ SDL\_GetDisplayMode(0,\ 0,\ \&mode);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00008}00008\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00009}00009\ \ \ \ \ w\ =\ ((float)x\ +\ (float)w)\ /\ 2179.f\ *\ (\textcolor{keywordtype}{float})mode.w;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00010}00010\ \ \ \ \ h\ =\ ((float)y\ +\ (float)h)\ /\ 1080.f\ *\ (\textcolor{keywordtype}{float})mode.h;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00011}00011\ \ \ \ \ x\ =\ (float)x\ /\ 2179.f\ *\ (\textcolor{keywordtype}{float})mode.w;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00012}00012\ \ \ \ \ y\ =\ (float)y\ /\ 1080.f\ *\ (\textcolor{keywordtype}{float})mode.h;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00014}00014\ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.x\ =\ (int)x;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00015}00015\ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.y\ =\ (int)y;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00016}00016\ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.w\ =\ (int)w;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00017}00017\ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.h\ =\ (int)h;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00019}00019\ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a03c996f9fcf0e10baeb3e700be0c409a}{active}}\ =\ IsActive;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00020}00020\ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}}\ =\ renderer;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00021}00021\ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00024}\mbox{\hyperlink{button_8cpp_af240adf133032879058c1da5581078ea}{00024}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{button_8cpp_af240adf133032879058c1da5581078ea}{SetToggleButtonTexture}}(\mbox{\hyperlink{struct_toggle_button}{ToggleButton}}\ \&toggle\_button,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filename)\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00025}00025\ \ \ \ \ SDL\_Surface\ *surface\ =\ IMG\_Load(filename);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordflow}{if}\ (!surface)\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00027}00027\ \ \ \ \ \ \ \ \ SDL\_Log(\textcolor{stringliteral}{"{}Failed\ to\ load\ image:\ \%s"{}},\ IMG\_GetError());}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00028}00028\ \ \ \ \ \ \ \ \ return\ ;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00029}00029\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00030}00030\ \ \ \ \ SDL\_Texture\ *texture\ =\ SDL\_CreateTextureFromSurface(toggle\_button.\mbox{\hyperlink{struct_toggle_button_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}},\ surface);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00031}00031\ \ \ \ \ SDL\_FreeSurface(surface);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00032}00032\ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a3cb434103624064b39c9212f797f6e44}{image}}\ =\ texture;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00035}\mbox{\hyperlink{button_8cpp_aa02858010549847e5f40bed0b7aa8bcb}{00035}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{button_8cpp_aa02858010549847e5f40bed0b7aa8bcb}{ToggleButtonInput}}(\mbox{\hyperlink{struct_toggle_button}{ToggleButton}}\ \&toggle\_button,\ SDL\_Event\ \&e)\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00036}00036\ \ \ \ \ SDL\_DisplayMode\ mode;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00037}00037\ \ \ \ \ SDL\_GetDisplayMode(0,\ 0,\ \&mode);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{keywordtype}{int}\ window\_width\ =\ mode.w;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00039}00039\ \ \ \ \ \textcolor{keywordtype}{int}\ window\_height\ =\ mode.h;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00040}00040\ \ \ \ \ SDL\_Point\ touch\_point\ =\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}((float)e.tfinger.x\ *\ (float)window\_width),}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}((\textcolor{keywordtype}{float})e.tfinger.y\ *\ (\textcolor{keywordtype}{float})window\_height)}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00043}00043\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00044}00044\ \ \ \ \ SDL\_Rect\ \_rect\ =\ \{toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.x,\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.y,\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.w\ -\/\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.x,\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.h\ -\/\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.y\};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{keywordflow}{switch}\ (e.type)\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ SDL\_FINGERDOWN:}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!toggle\_button.\mbox{\hyperlink{struct_toggle_button_a03c996f9fcf0e10baeb3e700be0c409a}{active}}\ \&\&\ SDL\_PointInRect(\&touch\_point,\ \&\_rect))\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a7ea8e03c78a84ff3d7d2e0920ed18f0e}{FD}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (toggle\_button.\mbox{\hyperlink{struct_toggle_button_a03c996f9fcf0e10baeb3e700be0c409a}{active}}\ \&\&\ SDL\_PointInRect(\&touch\_point,\ \&\_rect))\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a7ea8e03c78a84ff3d7d2e0920ed18f0e}{FD}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ SDL\_FINGERUP:}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!toggle\_button.\mbox{\hyperlink{struct_toggle_button_a03c996f9fcf0e10baeb3e700be0c409a}{active}}\ \&\&\ SDL\_PointInRect(\&touch\_point,\ \&\_rect)\ \&\&\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a7ea8e03c78a84ff3d7d2e0920ed18f0e}{FD}})\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a03c996f9fcf0e10baeb3e700be0c409a}{active}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a7ea8e03c78a84ff3d7d2e0920ed18f0e}{FD}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (toggle\_button.\mbox{\hyperlink{struct_toggle_button_a03c996f9fcf0e10baeb3e700be0c409a}{active}}\ \&\&\ SDL\_PointInRect(\&touch\_point,\ \&\_rect)\ \&\&\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a7ea8e03c78a84ff3d7d2e0920ed18f0e}{FD}})\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a03c996f9fcf0e10baeb3e700be0c409a}{active}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a7ea8e03c78a84ff3d7d2e0920ed18f0e}{FD}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a7ea8e03c78a84ff3d7d2e0920ed18f0e}{FD}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00069}00069\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00070}00070\ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00072}\mbox{\hyperlink{button_8cpp_afb2808ed98eb6542a559aa75d35efe0d}{00072}}\ SDL\_Texture*\ \mbox{\hyperlink{button_8cpp_afb2808ed98eb6542a559aa75d35efe0d}{renderText}}(\textcolor{keyword}{const}\ std::string\ \&message,\ \textcolor{keyword}{const}\ std::string\ \&fontFile,}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ SDL\_Color\ color,\ \textcolor{keywordtype}{int}\ fontSize,\ SDL\_Renderer\ *renderer)}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00074}00074\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Открываем\ шрифт}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ TTF\_Font\ *font\ =\ TTF\_OpenFont(fontFile.c\_str(),\ fontSize);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (font\ ==\ \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_Log(\textcolor{stringliteral}{"{}Failed\ to\ load\ font:\ \%s"{}},\ fontFile.c\_str());}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00080}00080\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00081}00081\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Сначала\ нужно\ отобразить\ на\ поверхность\ с\ помощью\ TTF\_RenderText,}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00082}00082\ \ \ \ \ \ \ \ \ \textcolor{comment}{//затем\ загрузить\ поверхность\ в\ текстуру}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00083}00083\ \ \ \ \ \ \ \ \ SDL\_Surface\ *surf\ =\ TTF\_RenderUTF8\_Blended\_Wrapped(font,\ message.c\_str(),\ color,\ 1000);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00084}00084\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (surf\ ==\ \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ TTF\_CloseFont(font);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_Log(\textcolor{stringliteral}{"{}Failed\ to\ TTF\_RenderText"{}});}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00088}00088\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00089}00089\ \ \ \ \ \ \ \ \ SDL\_Texture\ *texture\ =\ SDL\_CreateTextureFromSurface(renderer,\ surf);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (texture\ ==\ \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_Log(\textcolor{stringliteral}{"{}Failed\ to\ create\ texture\ font"{}});}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00093}00093\ \ \ \ \ \ \ \ \ \textcolor{comment}{//Очистка\ поверхности\ и\ шрифта}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ SDL\_FreeSurface(surf);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00095}00095\ \ \ \ \ \ \ \ \ TTF\_CloseFont(font);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ texture;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00097}00097\ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00100}\mbox{\hyperlink{button_8cpp_a8fe13d21334ce808fdf5450cace9a629}{00100}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{button_8cpp_a8fe13d21334ce808fdf5450cace9a629}{SetToggleButtonText}}(\mbox{\hyperlink{struct_toggle_button}{ToggleButton}}\ \&toggle\_button,\ \textcolor{keyword}{const}\ std::string\ text,}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&fontFile,\ SDL\_Color\ color,\ \textcolor{keywordtype}{int}\ fontSize)\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00102}00102\ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a23c058547fbc73b5659191844a9f258c}{text}}\ =\ text;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00103}00103\ \ \ \ \ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a3cb434103624064b39c9212f797f6e44}{image}}\ =\ \mbox{\hyperlink{button_8cpp_afb2808ed98eb6542a559aa75d35efe0d}{renderText}}(toggle\_button.\mbox{\hyperlink{struct_toggle_button_a23c058547fbc73b5659191844a9f258c}{text}},\ fontFile,\ color,\ fontSize,\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}});}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00104}00104\ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00108}\mbox{\hyperlink{button_8cpp_a82caed73e3dcecce469a3ba5f9890908}{00108}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{button_8cpp_a82caed73e3dcecce469a3ba5f9890908}{RenderToggleButton}}(\mbox{\hyperlink{struct_toggle_button}{ToggleButton}}\ \&toggle\_button)\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00109}00109\ \ \ \ \ SDL\_DisplayMode\ mode;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00110}00110\ \ \ \ \ SDL\_GetDisplayMode(0,\ 0,\ \&mode);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00111}00111\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00112}00112\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00113}00113\ \ \ \ \ \textcolor{keywordtype}{int}\ W,\ H;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00114}00114\ \ \ \ \ SDL\_QueryTexture(toggle\_button.\mbox{\hyperlink{struct_toggle_button_a3cb434103624064b39c9212f797f6e44}{image}},\ NULL,\ NULL,\ \&W,\ \&H);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00115}00115\ \ \ \ \ SDL\_Rect\ dst;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00116}00116\ \ \ \ \ dst.x\ =\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.x\ +\ ((toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.w\ -\/\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.x)\ -\/\ W)\ /\ 2;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00117}00117\ \ \ \ \ dst.y\ =\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.y\ +\ ((toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.h\ -\/\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.y)\ -\/\ H)\ /\ 2;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00118}00118\ \ \ \ \ dst.w\ =\ W;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00119}00119\ \ \ \ \ dst.h\ =\ H;}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00120}00120\ \ \ \ \ \textcolor{keywordflow}{if}\ (!toggle\_button.\mbox{\hyperlink{struct_toggle_button_a03c996f9fcf0e10baeb3e700be0c409a}{active}})\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00121}00121\ \ \ \ \ \ \ \ \ roundedBoxRGBA(toggle\_button.\mbox{\hyperlink{struct_toggle_button_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}},\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.x,\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.y,\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.w,\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.h,}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 10,\ 255,\ 0,\ 0,\ 255);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00123}00123\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00124}00124\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00125}00125\ \ \ \ \ \ \ \ \ roundedBoxRGBA(toggle\_button.\mbox{\hyperlink{struct_toggle_button_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}},\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.x,\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.y,\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.w,\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a55aefd071649ac9dd8133e2d8a52d11f}{rect}}.h,}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00126}00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 10,\ 0,\ 255,\ 0,\ 255);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00127}00127\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00128}00128\ \ \ \ \ SDL\_RenderCopy(toggle\_button.\mbox{\hyperlink{struct_toggle_button_a966da7a60c4ea3ba301e26ccc5efe452}{renderer}},\ toggle\_button.\mbox{\hyperlink{struct_toggle_button_a3cb434103624064b39c9212f797f6e44}{image}},\ NULL,\ \&dst);}
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00129}00129\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{button_8cpp_source_l00130}00130\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_p_r_i_s_m___triangle" xml:lang="ru">
+<title>Структура PRISM_Triangle</title>
+<indexterm><primary>PRISM_Triangle</primary></indexterm>
+<para>
+
+<para>Структура, представляющая треугольник в 3D пространстве. Содержит три вершины и их нормали для расчёта освещения и других эффектов. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;other.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___triangle_1a501a21b8f2023e673635cef8bf415d94">PRISM_Triangle</link> (<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> a_={0.0f, 0.0f, 0.0f}, <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> b_={0.0f, 0.0f, 0.0f}, <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> c_={0.0f, 0.0f, 0.0f})</para>
+
+<para>Конструктор для создания треугольника с указанными вершинами. </para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_p_r_i_s_m___triangle_1a388f572c62279f839ee138a9afbdeeb5">print</link> ()</para>
+
+<para>Выводит информацию о треугольнике в консоль. Отображает координаты вершин и значения нормалей. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Поля данных    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_struct_p_r_i_s_m___triangle_1a02dc0d7c61c618dfcd04550a232cc2fb">a</link></para>
+
+<para>Первая вершина треугольника. Хранит координаты точки в пространстве. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_struct_p_r_i_s_m___triangle_1a940016c6b224e165a71d7d4550c333fa">b</link></para>
+
+<para>Вторая вершина треугольника. Хранит координаты точки в пространстве. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_struct_p_r_i_s_m___triangle_1adf66705530d423a1598895870b2e0875">c</link></para>
+
+<para>Третья вершина треугольника. Хранит координаты точки в пространстве. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_struct_p_r_i_s_m___triangle_1a1d4a7b3b2f67d1c45e08010317b4b4bc">a_norlmal</link> = { 0, 0, 0, 0 }</para>
+
+<para>Нормаль первой вершины треугольника. Используется для расчёта освещения. Если w == 1, нормаль активна. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_struct_p_r_i_s_m___triangle_1a41b34676271f1d1f9e7a457d301cf75c">b_norlmal</link> = { 0, 0, 0, 0 }</para>
+
+<para>Нормаль второй вершины треугольника. Используется для расчёта освещения. Если w == 1, нормаль активна. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_struct_p_r_i_s_m___triangle_1aea1c66594ed2f5bb0423abbcb8fc003e">c_norlmal</link> = { 0, 0, 0, 0 }</para>
+
+<para>Нормаль третьей вершины треугольника. Используется для расчёта освещения. Если w == 1, нормаль активна. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Структура, представляющая треугольник в 3D пространстве. Содержит три вершины и их нормали для расчёта освещения и других эффектов. </para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00014">14</link></para>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_struct_p_r_i_s_m___triangle_1a501a21b8f2023e673635cef8bf415d94"/><section>
+    <title>PRISM_Triangle()</title>
+<indexterm><primary>PRISM_Triangle</primary><secondary>PRISM_Triangle</secondary></indexterm>
+<indexterm><primary>PRISM_Triangle</primary><secondary>PRISM_Triangle</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> (<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> a_ = <computeroutput>{0.0f,&#160;0.0f,&#160;0.0f}</computeroutput>
+, <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> b_ = <computeroutput>{0.0f,&#160;0.0f,&#160;0.0f}</computeroutput>
+, <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> c_ = <computeroutput>{0.0f,&#160;0.0f,&#160;0.0f}</computeroutput>
+)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Конструктор для создания треугольника с указанными вершинами. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>a_</entry><entry>
+<para>Координаты первой вершины (по умолчанию {0, 0, 0}).</para>
+</entry>
+                            </row>
+                            <row>
+<entry>b_</entry><entry>
+<para>Координаты второй вершины (по умолчанию {0, 0, 0}).</para>
+</entry>
+                            </row>
+                            <row>
+<entry>c_</entry><entry>
+<para>Координаты третьей вершины (по умолчанию {0, 0, 0}).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00061">61</link></para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_struct_p_r_i_s_m___triangle_1a388f572c62279f839ee138a9afbdeeb5"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>PRISM_Triangle</secondary></indexterm>
+<indexterm><primary>PRISM_Triangle</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void print ( )</computeroutput></para><para>
+
+<para>Выводит информацию о треугольнике в консоль. Отображает координаты вершин и значения нормалей. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_other_8cpp_source">other.cpp</link> строка <link linkend="_other_8cpp_source_1l00008">8</link></para>
+</section>
+</section>
+<section>
+<title>Поля</title>
+<anchor xml:id="_struct_p_r_i_s_m___triangle_1a02dc0d7c61c618dfcd04550a232cc2fb"/><section>
+    <title>a</title>
+<indexterm><primary>a</primary><secondary>PRISM_Triangle</secondary></indexterm>
+<indexterm><primary>PRISM_Triangle</primary><secondary>a</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> a</computeroutput></para><para>
+
+<para>Первая вершина треугольника. Хранит координаты точки в пространстве. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00020">20</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___triangle_1a1d4a7b3b2f67d1c45e08010317b4b4bc"/><section>
+    <title>a_norlmal</title>
+<indexterm><primary>a_norlmal</primary><secondary>PRISM_Triangle</secondary></indexterm>
+<indexterm><primary>PRISM_Triangle</primary><secondary>a_norlmal</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> a_norlmal = { 0, 0, 0, 0 }</computeroutput></para><para>
+
+<para>Нормаль первой вершины треугольника. Используется для расчёта освещения. Если w == 1, нормаль активна. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00039">39</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___triangle_1a940016c6b224e165a71d7d4550c333fa"/><section>
+    <title>b</title>
+<indexterm><primary>b</primary><secondary>PRISM_Triangle</secondary></indexterm>
+<indexterm><primary>PRISM_Triangle</primary><secondary>b</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> b</computeroutput></para><para>
+
+<para>Вторая вершина треугольника. Хранит координаты точки в пространстве. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00026">26</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___triangle_1a41b34676271f1d1f9e7a457d301cf75c"/><section>
+    <title>b_norlmal</title>
+<indexterm><primary>b_norlmal</primary><secondary>PRISM_Triangle</secondary></indexterm>
+<indexterm><primary>PRISM_Triangle</primary><secondary>b_norlmal</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> b_norlmal = { 0, 0, 0, 0 }</computeroutput></para><para>
+
+<para>Нормаль второй вершины треугольника. Используется для расчёта освещения. Если w == 1, нормаль активна. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00046">46</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___triangle_1adf66705530d423a1598895870b2e0875"/><section>
+    <title>c</title>
+<indexterm><primary>c</primary><secondary>PRISM_Triangle</secondary></indexterm>
+<indexterm><primary>PRISM_Triangle</primary><secondary>c</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> c</computeroutput></para><para>
+
+<para>Третья вершина треугольника. Хранит координаты точки в пространстве. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00032">32</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___triangle_1aea1c66594ed2f5bb0423abbcb8fc003e"/><section>
+    <title>c_norlmal</title>
+<indexterm><primary>c_norlmal</primary><secondary>PRISM_Triangle</secondary></indexterm>
+<indexterm><primary>PRISM_Triangle</primary><secondary>c_norlmal</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> c_norlmal = { 0, 0, 0, 0 }</computeroutput></para><para>
+
+<para>Нормаль третьей вершины треугольника. Используется для расчёта освещения. Если w == 1, нормаль активна. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00053">53</link></para>
+</section>
+<para>
+Объявления и описания членов структур находятся в файлах:</para>
+C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<link linkend="_other_8h">other.h</link>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<link linkend="_other_8cpp">other.cpp</link></section>
+</section>

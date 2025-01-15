@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__scene_8h" xml:lang="ru">
+<title>Файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_objects3D/Scene.h</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_objects3D/Scene.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;vector&gt;<?linebreak?>#include &lt;map&gt;<?linebreak?>#include &quot;AbstractCamera3D.h&quot;<?linebreak?>#include &quot;AbstractObject3D.h&quot;<?linebreak?>#include &quot;../PRISM_rendering/render.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Структуры данных    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_scene">Scene</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_b6dc6f7c2aabea0db434001f258fbc37" xml:lang="ru">
+<title>Содержание директории C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src</title>
+<indexterm><primary>Содержание директории C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src</primary></indexterm>
+<simplesect>
+    <title>Директории    </title>
+        <itemizedlist>
+            <listitem><para>директория <link linkend="_dir_cca75dd9552383d6516191eefc766ece">PRISM_math</link></para>
+</listitem>
+            <listitem><para>директория <link linkend="_dir_d7cbac5f5c8de61a629af2c89d6304ab">PRISM_objects3D</link></para>
+</listitem>
+            <listitem><para>директория <link linkend="_dir_4554e836a3a5a35a1026141e54ec76fa">PRISM_rendering</link></para>
+</listitem>
+            <listitem><para>директория <link linkend="_dir_5fcc1279df0279394065d7500bf93a07">PRISM_UI</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Файлы    </title>
+        <itemizedlist>
+            <listitem><para>файл <link linkend="__prism_engine_8h">PrismEngine.h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

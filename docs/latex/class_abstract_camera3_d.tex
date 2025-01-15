@@ -1,0 +1,250 @@
+\doxysection{Класс Abstract\+Camera3D}
+\hypertarget{class_abstract_camera3_d}{}\label{class_abstract_camera3_d}\index{AbstractCamera3D@{AbstractCamera3D}}
+
+
+{\ttfamily \#include $<$Abstract\+Camera3\+D.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_camera3_d_a69554cf04a6fe9edb928417ef5552942}{Abstract\+Camera3D}} (float Near=0.\+1f, float Far=1000.\+0f, float Fov=90.\+0f, int displW=800, int displH=480)
+\item 
+\mbox{\hyperlink{class_abstract_camera3_d_a2a31d6bb9fac24357a7615ad18fa8537}{\texorpdfstring{$\sim$}{\string~}\+Abstract\+Camera3D}} ()
+\item 
+void \mbox{\hyperlink{class_abstract_camera3_d_a435bace0178916d3bb71558762a08d15}{Set\+Position}} (struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} Coord, struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} Rot, struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} view\+Dir\+\_\+)
+\item 
+void \mbox{\hyperlink{class_abstract_camera3_d_acf3f21598b2dbf6ec37b88f6b084f553}{Set\+View}} (struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} view\+Dir\+Vect, struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} up\+Dir\+Vect)
+\item 
+void \mbox{\hyperlink{class_abstract_camera3_d_a06aa32cc3a78b9563118d238cc71e6a0}{Clear\+Z\+\_\+\+Buffer}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\item 
+void \mbox{\hyperlink{class_abstract_camera3_d_a33c2cdb79016573bffcce1ffcdb44f38}{operator=}} (\mbox{\hyperlink{class_abstract_camera3_d}{Abstract\+Camera3D}} camera)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Поля данных}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \mbox{\hyperlink{class_abstract_camera3_d_ae2a63d044e2f5ebcacde18dd6edf8ef1}{Coordinate}}
+\item 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \mbox{\hyperlink{class_abstract_camera3_d_accfed9da2d822544527e3a911ff58616}{Rotation}}
+\item 
+float \mbox{\hyperlink{class_abstract_camera3_d_abe61468f5c3769409d3a544b1e871ba4}{FNear}}
+\item 
+float \mbox{\hyperlink{class_abstract_camera3_d_a33d38c1fa77a9c65fb84d6db924aadeb}{FFar}}
+\item 
+float \mbox{\hyperlink{class_abstract_camera3_d_a87532361c0b58f31e11ec704a1a4a142}{FFov}}
+\item 
+float \mbox{\hyperlink{class_abstract_camera3_d_a1e3414c56d4b2bff47c9587c37dfa388}{FAspect\+Ratio}}
+\item 
+float \mbox{\hyperlink{class_abstract_camera3_d_aea507545ff67cf3068a42c3da2802482}{FFov\+Rad}}
+\item 
+int \mbox{\hyperlink{class_abstract_camera3_d_a998fcbfaf0e79f12b768a1a509414d48}{ScreenW}}
+\item 
+int \mbox{\hyperlink{class_abstract_camera3_d_a95ac9b29beb28d30685937df8ddd8630}{ScreenH}}
+\item 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} \mbox{\hyperlink{class_abstract_camera3_d_a881a5db3026f58e17e34bac9e9404a13}{view\+Dir}}
+\item 
+\mbox{\hyperlink{class_z___buffer}{Z\+\_\+\+Buffer}} \mbox{\hyperlink{class_abstract_camera3_d_a677e3ddf31ae2b610ab15bff581832c9}{z\+\_\+buffer}}
+\item 
+\mbox{\hyperlink{struct_p_r_i_s_m___matrix__4_x4}{PRISM\+\_\+\+Matrix\+\_\+4\+X4}} \mbox{\hyperlink{class_abstract_camera3_d_a78893ed559b88e8c695cd9d39b5daabb}{matrix\+View}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00010}{10}}
+
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_abstract_camera3_d_a69554cf04a6fe9edb928417ef5552942}\index{AbstractCamera3D@{AbstractCamera3D}!AbstractCamera3D@{AbstractCamera3D}}
+\index{AbstractCamera3D@{AbstractCamera3D}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{AbstractCamera3D()}{AbstractCamera3D()}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a69554cf04a6fe9edb928417ef5552942} 
+\mbox{\hyperlink{class_abstract_camera3_d}{Abstract\+Camera3D}} (\begin{DoxyParamCaption}\item[{float}]{Near}{ = {\ttfamily 0.1f}, }\item[{float}]{Far}{ = {\ttfamily 1000.0f}, }\item[{float}]{Fov}{ = {\ttfamily 90.0f}, }\item[{int}]{displW}{ = {\ttfamily 800}, }\item[{int}]{displH}{ = {\ttfamily 480}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00036}{36}}
+
+\Hypertarget{class_abstract_camera3_d_a2a31d6bb9fac24357a7615ad18fa8537}\index{AbstractCamera3D@{AbstractCamera3D}!````~AbstractCamera3D@{\texorpdfstring{$\sim$}{\string~}AbstractCamera3D}}
+\index{````~AbstractCamera3D@{\texorpdfstring{$\sim$}{\string~}AbstractCamera3D}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AbstractCamera3D()}{\string~AbstractCamera3D()}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a2a31d6bb9fac24357a7615ad18fa8537} 
+\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_abstract_camera3_d}{Abstract\+Camera3D}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00043}{43}}
+
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_abstract_camera3_d_a06aa32cc3a78b9563118d238cc71e6a0}\index{AbstractCamera3D@{AbstractCamera3D}!ClearZ\_Buffer@{ClearZ\_Buffer}}
+\index{ClearZ\_Buffer@{ClearZ\_Buffer}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{ClearZ\_Buffer()}{ClearZ\_Buffer()}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a06aa32cc3a78b9563118d238cc71e6a0} 
+void Clear\+Z\+\_\+\+Buffer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8cpp_source}{Abstract\+Camera3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_camera3_d_8cpp_source_l00027}{27}}
+
+\Hypertarget{class_abstract_camera3_d_a33c2cdb79016573bffcce1ffcdb44f38}\index{AbstractCamera3D@{AbstractCamera3D}!operator=@{operator=}}
+\index{operator=@{operator=}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a33c2cdb79016573bffcce1ffcdb44f38} 
+void operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_camera3_d}{Abstract\+Camera3D}}}]{camera}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00049}{49}}
+
+\Hypertarget{class_abstract_camera3_d_a435bace0178916d3bb71558762a08d15}\index{AbstractCamera3D@{AbstractCamera3D}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a435bace0178916d3bb71558762a08d15} 
+void Set\+Position (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}}}]{Coord}{, }\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}}}]{Rot}{, }\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}}}]{view\+Dir\+\_\+}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8cpp_source}{Abstract\+Camera3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_camera3_d_8cpp_source_l00004}{4}}
+
+\Hypertarget{class_abstract_camera3_d_acf3f21598b2dbf6ec37b88f6b084f553}\index{AbstractCamera3D@{AbstractCamera3D}!SetView@{SetView}}
+\index{SetView@{SetView}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{SetView()}{SetView()}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_acf3f21598b2dbf6ec37b88f6b084f553} 
+void Set\+View (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}}}]{view\+Dir\+Vect}{, }\item[{struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}}}]{up\+Dir\+Vect}{}\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8cpp_source}{Abstract\+Camera3\+D.\+cpp}} строка \mbox{\hyperlink{_abstract_camera3_d_8cpp_source_l00021}{21}}
+
+
+
+\doxysubsection{Поля}
+\Hypertarget{class_abstract_camera3_d_ae2a63d044e2f5ebcacde18dd6edf8ef1}\index{AbstractCamera3D@{AbstractCamera3D}!Coordinate@{Coordinate}}
+\index{Coordinate@{Coordinate}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{Coordinate}{Coordinate}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_ae2a63d044e2f5ebcacde18dd6edf8ef1} 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} Coordinate}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00014}{14}}
+
+\Hypertarget{class_abstract_camera3_d_a1e3414c56d4b2bff47c9587c37dfa388}\index{AbstractCamera3D@{AbstractCamera3D}!FAspectRatio@{FAspectRatio}}
+\index{FAspectRatio@{FAspectRatio}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{FAspectRatio}{FAspectRatio}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a1e3414c56d4b2bff47c9587c37dfa388} 
+float FAspect\+Ratio}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00023}{23}}
+
+\Hypertarget{class_abstract_camera3_d_a33d38c1fa77a9c65fb84d6db924aadeb}\index{AbstractCamera3D@{AbstractCamera3D}!FFar@{FFar}}
+\index{FFar@{FFar}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{FFar}{FFar}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a33d38c1fa77a9c65fb84d6db924aadeb} 
+float FFar}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00019}{19}}
+
+\Hypertarget{class_abstract_camera3_d_a87532361c0b58f31e11ec704a1a4a142}\index{AbstractCamera3D@{AbstractCamera3D}!FFov@{FFov}}
+\index{FFov@{FFov}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{FFov}{FFov}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a87532361c0b58f31e11ec704a1a4a142} 
+float FFov}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00021}{21}}
+
+\Hypertarget{class_abstract_camera3_d_aea507545ff67cf3068a42c3da2802482}\index{AbstractCamera3D@{AbstractCamera3D}!FFovRad@{FFovRad}}
+\index{FFovRad@{FFovRad}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{FFovRad}{FFovRad}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_aea507545ff67cf3068a42c3da2802482} 
+float FFov\+Rad}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00025}{25}}
+
+\Hypertarget{class_abstract_camera3_d_abe61468f5c3769409d3a544b1e871ba4}\index{AbstractCamera3D@{AbstractCamera3D}!FNear@{FNear}}
+\index{FNear@{FNear}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{FNear}{FNear}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_abe61468f5c3769409d3a544b1e871ba4} 
+float FNear}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00017}{17}}
+
+\Hypertarget{class_abstract_camera3_d_a78893ed559b88e8c695cd9d39b5daabb}\index{AbstractCamera3D@{AbstractCamera3D}!matrixView@{matrixView}}
+\index{matrixView@{matrixView}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{matrixView}{matrixView}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a78893ed559b88e8c695cd9d39b5daabb} 
+\mbox{\hyperlink{struct_p_r_i_s_m___matrix__4_x4}{PRISM\+\_\+\+Matrix\+\_\+4\+X4}} matrix\+View}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00034}{34}}
+
+\Hypertarget{class_abstract_camera3_d_accfed9da2d822544527e3a911ff58616}\index{AbstractCamera3D@{AbstractCamera3D}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{Rotation}{Rotation}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_accfed9da2d822544527e3a911ff58616} 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} Rotation}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00015}{15}}
+
+\Hypertarget{class_abstract_camera3_d_a95ac9b29beb28d30685937df8ddd8630}\index{AbstractCamera3D@{AbstractCamera3D}!ScreenH@{ScreenH}}
+\index{ScreenH@{ScreenH}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{ScreenH}{ScreenH}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a95ac9b29beb28d30685937df8ddd8630} 
+int ScreenH}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00028}{28}}
+
+\Hypertarget{class_abstract_camera3_d_a998fcbfaf0e79f12b768a1a509414d48}\index{AbstractCamera3D@{AbstractCamera3D}!ScreenW@{ScreenW}}
+\index{ScreenW@{ScreenW}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{ScreenW}{ScreenW}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a998fcbfaf0e79f12b768a1a509414d48} 
+int ScreenW}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00027}{27}}
+
+\Hypertarget{class_abstract_camera3_d_a881a5db3026f58e17e34bac9e9404a13}\index{AbstractCamera3D@{AbstractCamera3D}!viewDir@{viewDir}}
+\index{viewDir@{viewDir}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{viewDir}{viewDir}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a881a5db3026f58e17e34bac9e9404a13} 
+struct \mbox{\hyperlink{struct_p_r_i_s_m___vector3d}{PRISM\+\_\+\+Vector3d}} view\+Dir}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00030}{30}}
+
+\Hypertarget{class_abstract_camera3_d_a677e3ddf31ae2b610ab15bff581832c9}\index{AbstractCamera3D@{AbstractCamera3D}!z\_buffer@{z\_buffer}}
+\index{z\_buffer@{z\_buffer}!AbstractCamera3D@{AbstractCamera3D}}
+\doxysubsubsection{\texorpdfstring{z\_buffer}{z\_buffer}}
+{\footnotesize\ttfamily \label{class_abstract_camera3_d_a677e3ddf31ae2b610ab15bff581832c9} 
+\mbox{\hyperlink{class_z___buffer}{Z\+\_\+\+Buffer}} z\+\_\+buffer}
+
+
+
+См. определение в файле \mbox{\hyperlink{_abstract_camera3_d_8h_source}{Abstract\+Camera3\+D.\+h}} строка \mbox{\hyperlink{_abstract_camera3_d_8h_source_l00032}{32}}
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Admin/\+Desktop/\+Prism\+Engine/\+Prism\+Engine/src/\+PRISM\+\_\+objects3\+D/\mbox{\hyperlink{_abstract_camera3_d_8h}{Abstract\+Camera3\+D.\+h}}\item 
+C\+:/\+Users/\+Admin/\+Desktop/\+Prism\+Engine/\+Prism\+Engine/src/\+PRISM\+\_\+objects3\+D/\mbox{\hyperlink{_abstract_camera3_d_8cpp}{Abstract\+Camera3\+D.\+cpp}}\end{DoxyCompactItemize}

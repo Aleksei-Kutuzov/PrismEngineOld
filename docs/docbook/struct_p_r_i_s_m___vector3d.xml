@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_p_r_i_s_m___vector3d" xml:lang="ru">
+<title>Структура PRISM_Vector3d</title>
+<indexterm><primary>PRISM_Vector3d</primary></indexterm>
+<para>
+
+<para>Структура <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> предназначена для представления трёхмерного вектора с дополнительным четвёртым компонентом (w). Четвёртая компонента используется для различных операций, таких как преобразования в однородных координатах </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;vector3D.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d_1a71d8882885ebd237236666388c4641bc">PRISM_Vector3d</link> ()</para>
+
+<para>Конструктор по умолчанию. Инициализирует все координаты нулями, а w — единицей. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d_1ab9d7691846d6f6d5e283778232ca7ecc">PRISM_Vector3d</link> (float <link linkend="_struct_p_r_i_s_m___vector3d_1ad0da36b2558901e21e7a30f6c227a45e">x</link>, float <link linkend="_struct_p_r_i_s_m___vector3d_1aa4f0d3eebc3c443f9be81bf48561a217">y</link>, float <link linkend="_struct_p_r_i_s_m___vector3d_1af73583b1e980b0aa03f9884812e9fd4d">z</link>, float <link linkend="_struct_p_r_i_s_m___vector3d_1a56eca241e2896b9f57a79589e76fd24b">w</link>=1.0f)</para>
+
+<para>Конструктор для инициализации всех координат. </para>
+</listitem>
+            <listitem><para>void <link linkend="_struct_p_r_i_s_m___vector3d_1a388f572c62279f839ee138a9afbdeeb5">print</link> ()</para>
+
+<para>Выводит значения координат вектора в консоль. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_struct_p_r_i_s_m___vector3d_1a93b7183c631b09ac13ad6d793f611ea9">operator+</link> (<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;other)</para>
+
+<para>Оператор сложения двух векторов. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_struct_p_r_i_s_m___vector3d_1aa916eba785cb71065738a144ce3549ae">operator-</link> (<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;other)</para>
+
+<para>Оператор вычитания двух векторов. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_struct_p_r_i_s_m___vector3d_1a590df1656fdbfb8dd30f48b036b8b001">operator*</link> (float k)</para>
+
+<para>Оператор умножения вектора на скаляр. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_struct_p_r_i_s_m___vector3d_1a899f63e5300e37577c9f4824554ddb74">operator/</link> (float k)</para>
+
+<para>Оператор деления вектора на скаляр. </para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_p_r_i_s_m___vector3d_1a38e4af628f836c2fccd423372ed9bc68">operator[]</link> (int index)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_p_r_i_s_m___vector3d_1ab8a8a6823a700434def105a4ff2c49dd">operator==</link> (<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;other)</para>
+
+<para>Оператор сравнения двух векторов на равенство. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Поля данных    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_struct_p_r_i_s_m___vector3d_1ad0da36b2558901e21e7a30f6c227a45e">x</link></para>
+
+<para>Координата вектора по оси X. </para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_p_r_i_s_m___vector3d_1aa4f0d3eebc3c443f9be81bf48561a217">y</link></para>
+
+<para>Координата вектора по оси Y. </para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_p_r_i_s_m___vector3d_1af73583b1e980b0aa03f9884812e9fd4d">z</link></para>
+
+<para>Координата вектора по оси Z. </para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_p_r_i_s_m___vector3d_1a56eca241e2896b9f57a79589e76fd24b">w</link> = 1.0</para>
+
+<para>Четвёртая координата (w). Используется для преобразований в однородных координатах или для работы с весами точек. По умолчанию равна 1.0. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Структура <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> предназначена для представления трёхмерного вектора с дополнительным четвёртым компонентом (w). Четвёртая компонента используется для различных операций, таких как преобразования в однородных координатах </para>
+
+
+
+<para>Поля структуры:<itemizedlist>
+<listitem>
+<para>x: координата по оси X.</para>
+</listitem><listitem>
+<para>y: координата по оси Y.</para>
+</listitem><listitem>
+<para>z: координата по оси Z.</para>
+</listitem><listitem>
+<para>w: четвёртая координата, используемая, например, для представления веса точки в проекционных преобразованиях или для перехода от однородных координат к обычным. По умолчанию равна 1. </para>
+</listitem></itemizedlist>
+</para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8h_source">vector3D.h</link> строка <link linkend="_vector3_d_8h_source_1l00019">19</link></para>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1a71d8882885ebd237236666388c4641bc"/><section>
+    <title>PRISM_Vector3d()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Конструктор по умолчанию. Инициализирует все координаты нулями, а w — единицей. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8h_source">vector3D.h</link> строка <link linkend="_vector3_d_8h_source_1l00047">47</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1ab9d7691846d6f6d5e283778232ca7ecc"/><section>
+    <title>PRISM_Vector3d()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> (float x, float y, float z, float w = <computeroutput>1.0f</computeroutput>
+)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Конструктор для инициализации всех координат. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para>Значение координаты X.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>Значение координаты Y.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>z</entry><entry>
+<para>Значение координаты Z.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>w</entry><entry>
+<para>Значение четвёртой координаты (w). По умолчанию равно 1.0.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8h_source">vector3D.h</link> строка <link linkend="_vector3_d_8h_source_1l00056">56</link></para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1a590df1656fdbfb8dd30f48b036b8b001"/><section>
+    <title>operator*()</title>
+<indexterm><primary>operator*</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>operator*</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> operator* (float k)</computeroutput></para><para>
+
+<para>Оператор умножения вектора на скаляр. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>k</entry><entry>
+<para>Скалярное значение для умножения.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Результат умножения как новый вектор.</para>
+</formalpara>
+</para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8cpp_source">vector3D.cpp</link> строка <link linkend="_vector3_d_8cpp_source_1l00025">25</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1a93b7183c631b09ac13ad6d793f611ea9"/><section>
+    <title>operator+()</title>
+<indexterm><primary>operator+</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>operator+</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> operator+ (<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; other)</computeroutput></para><para>
+
+<para>Оператор сложения двух векторов. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>other</entry><entry>
+<para>Другой вектор для сложения.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Результат сложения как новый вектор.</para>
+</formalpara>
+</para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8cpp_source">vector3D.cpp</link> строка <link linkend="_vector3_d_8cpp_source_1l00012">12</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1aa916eba785cb71065738a144ce3549ae"/><section>
+    <title>operator-()</title>
+<indexterm><primary>operator-</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>operator-</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> operator- (<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; other)</computeroutput></para><para>
+
+<para>Оператор вычитания двух векторов. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>other</entry><entry>
+<para>Другой вектор для вычитания.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Результат вычитания как новый вектор.</para>
+</formalpara>
+</para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8cpp_source">vector3D.cpp</link> строка <link linkend="_vector3_d_8cpp_source_1l00018">18</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1a899f63e5300e37577c9f4824554ddb74"/><section>
+    <title>operator/()</title>
+<indexterm><primary>operator/</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>operator/</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> operator/ (float k)</computeroutput></para><para>
+
+<para>Оператор деления вектора на скаляр. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>k</entry><entry>
+<para>Скалярное значение для деления.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Результат деления как новый вектор.</para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>std::invalid_argument</entry><entry>
+<para>Бросает исключение, если k = 0.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8cpp_source">vector3D.cpp</link> строка <link linkend="_vector3_d_8cpp_source_1l00032">32</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1ab8a8a6823a700434def105a4ff2c49dd"/><section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool operator== (<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; other)</computeroutput></para><para>
+
+<para>Оператор сравнения двух векторов на равенство. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>other</entry><entry>
+<para>Другой вектор для сравнения.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>True, если все координаты совпадают (кроме w); иначе False.</para>
+</formalpara>
+</para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8cpp_source">vector3D.cpp</link> строка <link linkend="_vector3_d_8cpp_source_1l00052">52</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1a38e4af628f836c2fccd423372ed9bc68"/><section>
+    <title>operator[]()</title>
+<indexterm><primary>operator[]</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>operator[]</secondary></indexterm>
+<para><computeroutput>float operator[] (int index)</computeroutput></para>
+<para>Оператор доступа к координатам по индексу.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>index</entry><entry>
+<para>Индекс координаты (0 для X, 1 для Y, 2 для Z, 3 для W).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Значение координаты по индексу.</para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>std::out_of_range</entry><entry>
+<para>Бросает исключение, если индекс выходит за пределы [0, 3].</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8cpp_source">vector3D.cpp</link> строка <link linkend="_vector3_d_8cpp_source_1l00040">40</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1a388f572c62279f839ee138a9afbdeeb5"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void print ( )</computeroutput></para><para>
+
+<para>Выводит значения координат вектора в консоль. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8cpp_source">vector3D.cpp</link> строка <link linkend="_vector3_d_8cpp_source_1l00007">7</link></para>
+</section>
+</section>
+<section>
+<title>Поля</title>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1a56eca241e2896b9f57a79589e76fd24b"/><section>
+    <title>w</title>
+<indexterm><primary>w</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>w</secondary></indexterm>
+<para><computeroutput>float w = 1.0</computeroutput></para><para>
+
+<para>Четвёртая координата (w). Используется для преобразований в однородных координатах или для работы с весами точек. По умолчанию равна 1.0. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8h_source">vector3D.h</link> строка <link linkend="_vector3_d_8h_source_1l00041">41</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1ad0da36b2558901e21e7a30f6c227a45e"/><section>
+    <title>x</title>
+<indexterm><primary>x</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>x</secondary></indexterm>
+<para><computeroutput>float x</computeroutput></para><para>
+
+<para>Координата вектора по оси X. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8h_source">vector3D.h</link> строка <link linkend="_vector3_d_8h_source_1l00024">24</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1aa4f0d3eebc3c443f9be81bf48561a217"/><section>
+    <title>y</title>
+<indexterm><primary>y</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>y</secondary></indexterm>
+<para><computeroutput>float y</computeroutput></para><para>
+
+<para>Координата вектора по оси Y. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8h_source">vector3D.h</link> строка <link linkend="_vector3_d_8h_source_1l00029">29</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___vector3d_1af73583b1e980b0aa03f9884812e9fd4d"/><section>
+    <title>z</title>
+<indexterm><primary>z</primary><secondary>PRISM_Vector3d</secondary></indexterm>
+<indexterm><primary>PRISM_Vector3d</primary><secondary>z</secondary></indexterm>
+<para><computeroutput>float z</computeroutput></para><para>
+
+<para>Координата вектора по оси Z. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_vector3_d_8h_source">vector3D.h</link> строка <link linkend="_vector3_d_8h_source_1l00034">34</link></para>
+</section>
+<para>
+Объявления и описания членов структур находятся в файлах:</para>
+C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<link linkend="_vector3_d_8h">vector3D.h</link>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<link linkend="_vector3_d_8cpp">vector3D.cpp</link></section>
+</section>

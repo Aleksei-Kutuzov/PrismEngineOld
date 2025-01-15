@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_button_8cpp" xml:lang="ru">
+<title>Файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_UI/button.cpp</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_UI/button.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;button.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Функции    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_button_8cpp_1ae271d5f10bebbb049e579a7f21b2e824">InitToggleButton</link> (<link linkend="_struct_toggle_button">ToggleButton</link> &amp;toggle_button, int x, int y, int w, int h, bool IsActive, SDL_Renderer *renderer)</para>
+</listitem>
+            <listitem><para>void <link linkend="_button_8cpp_1af240adf133032879058c1da5581078ea">SetToggleButtonTexture</link> (<link linkend="_struct_toggle_button">ToggleButton</link> &amp;toggle_button, const char *filename)</para>
+</listitem>
+            <listitem><para>void <link linkend="_button_8cpp_1aa02858010549847e5f40bed0b7aa8bcb">ToggleButtonInput</link> (<link linkend="_struct_toggle_button">ToggleButton</link> &amp;toggle_button, SDL_Event &amp;e)</para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_button_8cpp_1afb2808ed98eb6542a559aa75d35efe0d">renderText</link> (const std::string &amp;message, const std::string &amp;fontFile, SDL_Color color, int fontSize, SDL_Renderer *renderer)</para>
+</listitem>
+            <listitem><para>void <link linkend="_button_8cpp_1a8fe13d21334ce808fdf5450cace9a629">SetToggleButtonText</link> (<link linkend="_struct_toggle_button">ToggleButton</link> &amp;toggle_button, const std::string text, const std::string &amp;fontFile, SDL_Color color, int fontSize)</para>
+</listitem>
+            <listitem><para>void <link linkend="_button_8cpp_1a82caed73e3dcecce469a3ba5f9890908">RenderToggleButton</link> (<link linkend="_struct_toggle_button">ToggleButton</link> &amp;toggle_button)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Функции</title>
+<anchor xml:id="_button_8cpp_1ae271d5f10bebbb049e579a7f21b2e824"/><section>
+    <title>InitToggleButton()</title>
+<indexterm><primary>InitToggleButton</primary><secondary>button.cpp</secondary></indexterm>
+<indexterm><primary>button.cpp</primary><secondary>InitToggleButton</secondary></indexterm>
+<para><computeroutput>void InitToggleButton (<link linkend="_struct_toggle_button">ToggleButton</link> &amp; toggle_button, int x, int y, int w, int h, bool IsActive, SDL_Renderer * renderer)</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8cpp_source">button.cpp</link> строка <link linkend="_button_8cpp_source_1l00004">4</link></para>
+</section>
+<anchor xml:id="_button_8cpp_1afb2808ed98eb6542a559aa75d35efe0d"/><section>
+    <title>renderText()</title>
+<indexterm><primary>renderText</primary><secondary>button.cpp</secondary></indexterm>
+<indexterm><primary>button.cpp</primary><secondary>renderText</secondary></indexterm>
+<para><computeroutput>SDL_Texture * renderText (const std::string &amp; message, const std::string &amp; fontFile, SDL_Color color, int fontSize, SDL_Renderer * renderer)</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8cpp_source">button.cpp</link> строка <link linkend="_button_8cpp_source_1l00072">72</link></para>
+</section>
+<anchor xml:id="_button_8cpp_1a82caed73e3dcecce469a3ba5f9890908"/><section>
+    <title>RenderToggleButton()</title>
+<indexterm><primary>RenderToggleButton</primary><secondary>button.cpp</secondary></indexterm>
+<indexterm><primary>button.cpp</primary><secondary>RenderToggleButton</secondary></indexterm>
+<para><computeroutput>void RenderToggleButton (<link linkend="_struct_toggle_button">ToggleButton</link> &amp; toggle_button)</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8cpp_source">button.cpp</link> строка <link linkend="_button_8cpp_source_1l00108">108</link></para>
+</section>
+<anchor xml:id="_button_8cpp_1a8fe13d21334ce808fdf5450cace9a629"/><section>
+    <title>SetToggleButtonText()</title>
+<indexterm><primary>SetToggleButtonText</primary><secondary>button.cpp</secondary></indexterm>
+<indexterm><primary>button.cpp</primary><secondary>SetToggleButtonText</secondary></indexterm>
+<para><computeroutput>void SetToggleButtonText (<link linkend="_struct_toggle_button">ToggleButton</link> &amp; toggle_button, const std::string text, const std::string &amp; fontFile, SDL_Color color, int fontSize)</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8cpp_source">button.cpp</link> строка <link linkend="_button_8cpp_source_1l00100">100</link></para>
+</section>
+<anchor xml:id="_button_8cpp_1af240adf133032879058c1da5581078ea"/><section>
+    <title>SetToggleButtonTexture()</title>
+<indexterm><primary>SetToggleButtonTexture</primary><secondary>button.cpp</secondary></indexterm>
+<indexterm><primary>button.cpp</primary><secondary>SetToggleButtonTexture</secondary></indexterm>
+<para><computeroutput>void SetToggleButtonTexture (<link linkend="_struct_toggle_button">ToggleButton</link> &amp; toggle_button, const char * filename)</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8cpp_source">button.cpp</link> строка <link linkend="_button_8cpp_source_1l00024">24</link></para>
+</section>
+<anchor xml:id="_button_8cpp_1aa02858010549847e5f40bed0b7aa8bcb"/><section>
+    <title>ToggleButtonInput()</title>
+<indexterm><primary>ToggleButtonInput</primary><secondary>button.cpp</secondary></indexterm>
+<indexterm><primary>button.cpp</primary><secondary>ToggleButtonInput</secondary></indexterm>
+<para><computeroutput>void ToggleButtonInput (<link linkend="_struct_toggle_button">ToggleButton</link> &amp; toggle_button, SDL_Event &amp; e)</computeroutput></para><para>
+См. определение в файле <link linkend="_button_8cpp_source">button.cpp</link> строка <link linkend="_button_8cpp_source_1l00035">35</link></para>
+</section>
+</section>
+</section>

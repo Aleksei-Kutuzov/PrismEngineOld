@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_joystick" xml:lang="ru">
+<title>Структура Joystick</title>
+<indexterm><primary>Joystick</primary></indexterm>
+<para>
+<computeroutput>#include &lt;joystick.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Поля данных    </title>
+        <itemizedlist>
+            <listitem><para>SDL_Rect <link linkend="_struct_joystick_1aaaba59bc9f2578a08bd19198efdfee6b">base_rect</link></para>
+</listitem>
+            <listitem><para>SDL_Rect <link linkend="_struct_joystick_1aa0e6430ec216a5fbf19125bb0b09ac64">stick_rect</link></para>
+</listitem>
+            <listitem><para>SDL_Point <link linkend="_struct_joystick_1a04384f7c07a675481d0e4253c7e9966a">center</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_joystick_1ab2de5ae9f4869dec282654f50e84681b">max_distance</link></para>
+</listitem>
+            <listitem><para>SDL_FingerID <link linkend="_struct_joystick_1ac3c3601fcd3552c6bc353fadd95a0206">fingerId</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_joystick_1a03c996f9fcf0e10baeb3e700be0c409a">active</link></para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_struct_joystick_1a2bf724f6d43f229ba2699d8e80166a7a">background</link></para>
+</listitem>
+            <listitem><para>SDL_Texture * <link linkend="_struct_joystick_1a96168efe46bc9c0d1388031d20a818f0">image</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+<para>
+См. определение в файле <link linkend="_joystick_8cpp_source">joystick.cpp</link> строка <link linkend="_joystick_8cpp_source_1l00007">7</link></para>
+</section>
+<section>
+<title>Поля</title>
+<anchor xml:id="_struct_joystick_1a03c996f9fcf0e10baeb3e700be0c409a"/><section>
+    <title>active</title>
+<indexterm><primary>active</primary><secondary>Joystick</secondary></indexterm>
+<indexterm><primary>Joystick</primary><secondary>active</secondary></indexterm>
+<para><computeroutput>bool active</computeroutput></para><para>
+См. определение в файле <link linkend="_joystick_8cpp_source">joystick.cpp</link> строка <link linkend="_joystick_8cpp_source_1l00013">13</link></para>
+</section>
+<anchor xml:id="_struct_joystick_1a2bf724f6d43f229ba2699d8e80166a7a"/><section>
+    <title>background</title>
+<indexterm><primary>background</primary><secondary>Joystick</secondary></indexterm>
+<indexterm><primary>Joystick</primary><secondary>background</secondary></indexterm>
+<para><computeroutput>SDL_Texture * background</computeroutput></para><para>
+См. определение в файле <link linkend="_joystick_8cpp_source">joystick.cpp</link> строка <link linkend="_joystick_8cpp_source_1l00014">14</link></para>
+</section>
+<anchor xml:id="_struct_joystick_1aaaba59bc9f2578a08bd19198efdfee6b"/><section>
+    <title>base_rect</title>
+<indexterm><primary>base_rect</primary><secondary>Joystick</secondary></indexterm>
+<indexterm><primary>Joystick</primary><secondary>base_rect</secondary></indexterm>
+<para><computeroutput>SDL_Rect base_rect</computeroutput></para><para>
+См. определение в файле <link linkend="_joystick_8cpp_source">joystick.cpp</link> строка <link linkend="_joystick_8cpp_source_1l00008">8</link></para>
+</section>
+<anchor xml:id="_struct_joystick_1a04384f7c07a675481d0e4253c7e9966a"/><section>
+    <title>center</title>
+<indexterm><primary>center</primary><secondary>Joystick</secondary></indexterm>
+<indexterm><primary>Joystick</primary><secondary>center</secondary></indexterm>
+<para><computeroutput>SDL_Point center</computeroutput></para><para>
+См. определение в файле <link linkend="_joystick_8cpp_source">joystick.cpp</link> строка <link linkend="_joystick_8cpp_source_1l00010">10</link></para>
+</section>
+<anchor xml:id="_struct_joystick_1ac3c3601fcd3552c6bc353fadd95a0206"/><section>
+    <title>fingerId</title>
+<indexterm><primary>fingerId</primary><secondary>Joystick</secondary></indexterm>
+<indexterm><primary>Joystick</primary><secondary>fingerId</secondary></indexterm>
+<para><computeroutput>SDL_FingerID fingerId</computeroutput></para><para>
+См. определение в файле <link linkend="_joystick_8cpp_source">joystick.cpp</link> строка <link linkend="_joystick_8cpp_source_1l00012">12</link></para>
+</section>
+<anchor xml:id="_struct_joystick_1a96168efe46bc9c0d1388031d20a818f0"/><section>
+    <title>image</title>
+<indexterm><primary>image</primary><secondary>Joystick</secondary></indexterm>
+<indexterm><primary>Joystick</primary><secondary>image</secondary></indexterm>
+<para><computeroutput>SDL_Texture * image</computeroutput></para><para>
+См. определение в файле <link linkend="_joystick_8cpp_source">joystick.cpp</link> строка <link linkend="_joystick_8cpp_source_1l00015">15</link></para>
+</section>
+<anchor xml:id="_struct_joystick_1ab2de5ae9f4869dec282654f50e84681b"/><section>
+    <title>max_distance</title>
+<indexterm><primary>max_distance</primary><secondary>Joystick</secondary></indexterm>
+<indexterm><primary>Joystick</primary><secondary>max_distance</secondary></indexterm>
+<para><computeroutput>int max_distance</computeroutput></para><para>
+См. определение в файле <link linkend="_joystick_8cpp_source">joystick.cpp</link> строка <link linkend="_joystick_8cpp_source_1l00011">11</link></para>
+</section>
+<anchor xml:id="_struct_joystick_1aa0e6430ec216a5fbf19125bb0b09ac64"/><section>
+    <title>stick_rect</title>
+<indexterm><primary>stick_rect</primary><secondary>Joystick</secondary></indexterm>
+<indexterm><primary>Joystick</primary><secondary>stick_rect</secondary></indexterm>
+<para><computeroutput>SDL_Rect stick_rect</computeroutput></para><para>
+См. определение в файле <link linkend="_joystick_8cpp_source">joystick.cpp</link> строка <link linkend="_joystick_8cpp_source_1l00009">9</link></para>
+</section>
+<para>
+Объявления и описания членов структур находятся в файлах:</para>
+C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_UI/<link linkend="_joystick_8cpp">joystick.cpp</link>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_UI/<link linkend="_joystick_8h">joystick.h</link></section>
+</section>

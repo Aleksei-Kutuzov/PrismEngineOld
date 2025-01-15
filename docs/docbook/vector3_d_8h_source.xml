@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_vector3_d_8h_source" xml:lang="ru">
+<title>vector3D.h</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/vector3D.h</primary></indexterm>
+См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="_vector3_d_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;PRISM_VECTORS3D_H</emphasis>
+<anchor xml:id="_vector3_d_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;PRISM_VECTORS3D_H</emphasis>
+<anchor xml:id="_vector3_d_8h_source_1l00003"/>00003 
+<anchor xml:id="_vector3_d_8h_source_1l00019"/><link linkend="_struct_p_r_i_s_m___vector3d">00019</link> <emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_p_r_i_s_m___vector3d_1a71d8882885ebd237236666388c4641bc">PRISM_Vector3d</link>
+<anchor xml:id="_vector3_d_8h_source_1l00020"/>00020 {
+<anchor xml:id="_vector3_d_8h_source_1l00024"/><link linkend="_struct_p_r_i_s_m___vector3d_1ad0da36b2558901e21e7a30f6c227a45e">00024</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1ad0da36b2558901e21e7a30f6c227a45e">x</link>;
+<anchor xml:id="_vector3_d_8h_source_1l00025"/>00025 
+<anchor xml:id="_vector3_d_8h_source_1l00029"/><link linkend="_struct_p_r_i_s_m___vector3d_1aa4f0d3eebc3c443f9be81bf48561a217">00029</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1aa4f0d3eebc3c443f9be81bf48561a217">y</link>;
+<anchor xml:id="_vector3_d_8h_source_1l00030"/>00030 
+<anchor xml:id="_vector3_d_8h_source_1l00034"/><link linkend="_struct_p_r_i_s_m___vector3d_1af73583b1e980b0aa03f9884812e9fd4d">00034</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1af73583b1e980b0aa03f9884812e9fd4d">z</link>;
+<anchor xml:id="_vector3_d_8h_source_1l00035"/>00035 
+<anchor xml:id="_vector3_d_8h_source_1l00041"/><link linkend="_struct_p_r_i_s_m___vector3d_1a56eca241e2896b9f57a79589e76fd24b">00041</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1a56eca241e2896b9f57a79589e76fd24b">w</link>&#32;=&#32;1.0;
+<anchor xml:id="_vector3_d_8h_source_1l00042"/>00042 
+<anchor xml:id="_vector3_d_8h_source_1l00047"/><link linkend="_struct_p_r_i_s_m___vector3d_1a71d8882885ebd237236666388c4641bc">00047</link> &#32;&#32;&#32;&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1a71d8882885ebd237236666388c4641bc">PRISM_Vector3d</link>()&#32;:&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1ad0da36b2558901e21e7a30f6c227a45e">x</link>(0),&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1aa4f0d3eebc3c443f9be81bf48561a217">y</link>(0),&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1af73583b1e980b0aa03f9884812e9fd4d">z</link>(0),&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1a56eca241e2896b9f57a79589e76fd24b">w</link>(1)&#32;{}
+<anchor xml:id="_vector3_d_8h_source_1l00048"/>00048 
+<anchor xml:id="_vector3_d_8h_source_1l00056"/><link linkend="_struct_p_r_i_s_m___vector3d_1ab9d7691846d6f6d5e283778232ca7ecc">00056</link> &#32;&#32;&#32;&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1ab9d7691846d6f6d5e283778232ca7ecc">PRISM_Vector3d</link>(<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1ad0da36b2558901e21e7a30f6c227a45e">x</link>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1aa4f0d3eebc3c443f9be81bf48561a217">y</link>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1af73583b1e980b0aa03f9884812e9fd4d">z</link>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1a56eca241e2896b9f57a79589e76fd24b">w</link>&#32;=&#32;1.0f)&#32;:&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1ad0da36b2558901e21e7a30f6c227a45e">x</link>(<link linkend="_struct_p_r_i_s_m___vector3d_1ad0da36b2558901e21e7a30f6c227a45e">x</link>),&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1aa4f0d3eebc3c443f9be81bf48561a217">y</link>(<link linkend="_struct_p_r_i_s_m___vector3d_1aa4f0d3eebc3c443f9be81bf48561a217">y</link>),&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1af73583b1e980b0aa03f9884812e9fd4d">z</link>(<link linkend="_struct_p_r_i_s_m___vector3d_1af73583b1e980b0aa03f9884812e9fd4d">z</link>),&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1a56eca241e2896b9f57a79589e76fd24b">w</link>(<link linkend="_struct_p_r_i_s_m___vector3d_1a56eca241e2896b9f57a79589e76fd24b">w</link>)&#32;{}
+<anchor xml:id="_vector3_d_8h_source_1l00057"/>00057 
+<anchor xml:id="_vector3_d_8h_source_1l00061"/>00061 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1a388f572c62279f839ee138a9afbdeeb5">print</link>();
+<anchor xml:id="_vector3_d_8h_source_1l00062"/>00062 
+<anchor xml:id="_vector3_d_8h_source_1l00068"/>00068 &#32;&#32;&#32;&#32;<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1a93b7183c631b09ac13ad6d793f611ea9">operator+</link>(<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link>&amp;&#32;other);
+<anchor xml:id="_vector3_d_8h_source_1l00069"/>00069 
+<anchor xml:id="_vector3_d_8h_source_1l00075"/>00075 &#32;&#32;&#32;&#32;<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1aa916eba785cb71065738a144ce3549ae">operator-</link>(<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link>&amp;&#32;other);
+<anchor xml:id="_vector3_d_8h_source_1l00076"/>00076 
+<anchor xml:id="_vector3_d_8h_source_1l00082"/>00082 &#32;&#32;&#32;&#32;<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1a590df1656fdbfb8dd30f48b036b8b001">operator*</link>(<emphasis role="keywordtype">float</emphasis>&#32;k);
+<anchor xml:id="_vector3_d_8h_source_1l00083"/>00083 
+<anchor xml:id="_vector3_d_8h_source_1l00090"/>00090 &#32;&#32;&#32;&#32;<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1a899f63e5300e37577c9f4824554ddb74">operator/</link>(<emphasis role="keywordtype">float</emphasis>&#32;k);
+<anchor xml:id="_vector3_d_8h_source_1l00091"/>00091 &#32;&#32;&#32;&#32;
+<anchor xml:id="_vector3_d_8h_source_1l00098"/>00098 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1a38e4af628f836c2fccd423372ed9bc68">operator[]</link>(<emphasis role="keywordtype">int</emphasis>&#32;index);
+<anchor xml:id="_vector3_d_8h_source_1l00099"/>00099 
+<anchor xml:id="_vector3_d_8h_source_1l00105"/>00105 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___vector3d_1ab8a8a6823a700434def105a4ff2c49dd">operator==</link>(<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link>&amp;&#32;other);
+<anchor xml:id="_vector3_d_8h_source_1l00106"/>00106 };
+<anchor xml:id="_vector3_d_8h_source_1l00107"/>00107 
+<anchor xml:id="_vector3_d_8h_source_1l00108"/>00108 
+<anchor xml:id="_vector3_d_8h_source_1l00109"/>00109 
+<anchor xml:id="_vector3_d_8h_source_1l00110"/>00110 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;VECTORS3D_H</emphasis>
+</programlisting></section>

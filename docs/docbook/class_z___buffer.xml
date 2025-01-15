@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_z___buffer" xml:lang="ru">
+<title>Класс Z_Buffer</title>
+<indexterm><primary>Z_Buffer</primary></indexterm>
+<para>
+<computeroutput>#include &lt;zbuffer.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_z___buffer_1a00b98023cc45ef0097d2dced362728c8">Z_Buffer</link> (int screenW, int screenH)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_z___buffer_1a39d02f129c05ada60dba570187cd26b5">update</link> (int x, int y, int z)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_z___buffer_1a7c0d937857543bccbcd49027556e8545">get</link> (int x, int y) const</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_z___buffer_1a30e6880d1e5a38506410342f7ee92595">clear</link> (SDL_Renderer *renderer)</para>
+</listitem>
+            <listitem><para><link linkend="_class_z___buffer_1a2dcf9b132db4b8cf23b4edee30cc8f12">~Z_Buffer</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+<para>
+См. определение в файле <link linkend="_zbuffer_8h_source">zbuffer.h</link> строка <link linkend="_zbuffer_8h_source_1l00008">8</link></para>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_class_z___buffer_1a00b98023cc45ef0097d2dced362728c8"/><section>
+    <title>Z_Buffer()</title>
+<indexterm><primary>Z_Buffer</primary><secondary>Z_Buffer</secondary></indexterm>
+<indexterm><primary>Z_Buffer</primary><secondary>Z_Buffer</secondary></indexterm>
+<para><computeroutput><link linkend="_class_z___buffer">Z_Buffer</link> (int screenW, int screenH)</computeroutput></para><para>
+См. определение в файле <link linkend="_zbuffer_8cpp_source">zbuffer.cpp</link> строка <link linkend="_zbuffer_8cpp_source_1l00007">7</link></para>
+</section>
+<anchor xml:id="_class_z___buffer_1a2dcf9b132db4b8cf23b4edee30cc8f12"/><section>
+    <title>~Z_Buffer()</title>
+<indexterm><primary>~Z_Buffer</primary><secondary>Z_Buffer</secondary></indexterm>
+<indexterm><primary>Z_Buffer</primary><secondary>~Z_Buffer</secondary></indexterm>
+<para><computeroutput>~<link linkend="_class_z___buffer">Z_Buffer</link> ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="_zbuffer_8h_source">zbuffer.h</link> строка <link linkend="_zbuffer_8h_source_1l00022">22</link></para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_class_z___buffer_1a30e6880d1e5a38506410342f7ee92595"/><section>
+    <title>clear()</title>
+<indexterm><primary>clear</primary><secondary>Z_Buffer</secondary></indexterm>
+<indexterm><primary>Z_Buffer</primary><secondary>clear</secondary></indexterm>
+<para><computeroutput>void clear (SDL_Renderer * renderer)</computeroutput></para><para>
+См. определение в файле <link linkend="_zbuffer_8cpp_source">zbuffer.cpp</link> строка <link linkend="_zbuffer_8cpp_source_1l00026">26</link></para>
+</section>
+<anchor xml:id="_class_z___buffer_1a7c0d937857543bccbcd49027556e8545"/><section>
+    <title>get()</title>
+<indexterm><primary>get</primary><secondary>Z_Buffer</secondary></indexterm>
+<indexterm><primary>Z_Buffer</primary><secondary>get</secondary></indexterm>
+<para><computeroutput>int get (int x, int y) const</computeroutput></para><para>
+См. определение в файле <link linkend="_zbuffer_8cpp_source">zbuffer.cpp</link> строка <link linkend="_zbuffer_8cpp_source_1l00019">19</link></para>
+</section>
+<anchor xml:id="_class_z___buffer_1a39d02f129c05ada60dba570187cd26b5"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>Z_Buffer</secondary></indexterm>
+<indexterm><primary>Z_Buffer</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>void update (int x, int y, int z)</computeroutput></para></section>
+<para>
+Объявления и описания членов классов находятся в файлах:</para>
+C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/<link linkend="_zbuffer_8h">zbuffer.h</link>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/<link linkend="_zbuffer_8cpp">zbuffer.cpp</link></section>
+</section>

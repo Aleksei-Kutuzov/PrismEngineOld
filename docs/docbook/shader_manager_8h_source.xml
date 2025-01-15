@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_shader_manager_8h_source" xml:lang="ru">
+<title>shaderManager.h</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/shaderManager.h</primary></indexterm>
+См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="_shader_manager_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="_shader_manager_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__p_r_i_s_m___window_8h">PRISM_Window.h</link>&quot;</emphasis>
+<anchor xml:id="_shader_manager_8h_source_1l00003"/>00003 
+<anchor xml:id="_shader_manager_8h_source_1l00004"/><link linkend="_classshader_manager">00004</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classshader_manager">shaderManager</link>
+<anchor xml:id="_shader_manager_8h_source_1l00005"/>00005 {
+<anchor xml:id="_shader_manager_8h_source_1l00006"/>00006 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_shader_manager_8h_source_1l00007"/>00007 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;GLuint&#32;<link linkend="_classshader_manager_1a73ff9c5ffc92898686777b73cc4ba8a9">compileShader</link>(GLenum&#32;type,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;source);
+<anchor xml:id="_shader_manager_8h_source_1l00008"/>00008 
+<anchor xml:id="_shader_manager_8h_source_1l00009"/>00009 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_shader_manager_8h_source_1l00010"/>00010 
+<anchor xml:id="_shader_manager_8h_source_1l00011"/>00011 };
+</programlisting></section>

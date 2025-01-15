@@ -9,6 +9,10 @@ void PRISM_Matrix_4X4::print()
 
 float* PRISM_Matrix_4X4::operator[](int index)
 {
+	if (index < 0 || index >= 4)
+	{
+		throw std::out_of_range("Index out of range. Valid indices are 0, 1, 2, 3.");
+	}
 	return m[index];
 }
 

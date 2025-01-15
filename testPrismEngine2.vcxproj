@@ -146,6 +146,7 @@
     <ClCompile Include="src\PRISM_rendering\painter.cpp" />
     <ClCompile Include="src\PRISM_rendering\PRISM_Window.cpp" />
     <ClCompile Include="src\PRISM_rendering\render.cpp" />
+    <ClCompile Include="src\PRISM_rendering\shaderManager.cpp" />
     <ClCompile Include="src\PRISM_rendering\zbuffer.cpp" />
     <ClCompile Include="src\PRISM_UI\button.cpp" />
     <ClCompile Include="src\PRISM_UI\joystick.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="src\PRISM_rendering\painter.h" />
     <ClInclude Include="src\PRISM_rendering\PRISM_Window.h" />
     <ClInclude Include="src\PRISM_rendering\render.h" />
+    <ClInclude Include="src\PRISM_rendering\shaderManager.h" />
     <ClInclude Include="src\PRISM_rendering\zbuffer.h" />
     <ClInclude Include="src\PRISM_UI\button.h" />
     <ClInclude Include="src\PRISM_UI\joystick.h" />

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_p_r_i_s_m___render_mode" xml:lang="ru">
+<title>Структура PRISM_RenderMode</title>
+<indexterm><primary>PRISM_RenderMode</primary></indexterm>
+<para>
+<computeroutput>#include &lt;other.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_struct_p_r_i_s_m___render_mode_1a388f572c62279f839ee138a9afbdeeb5">print</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Поля данных    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_struct_p_r_i_s_m___render_mode_1ae78bad4ce536f660c8a0b157be5d01d7">DisplayDimming1</link> = true</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_p_r_i_s_m___render_mode_1a720a198ab315710c67ebe7b23e75389c">DisplayDimming2</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_p_r_i_s_m___render_mode_1a2dd74c2defd023489f80f3ceab3b96ce">DisplayTriangleContours</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_p_r_i_s_m___render_mode_1ac0843b69ebe3f8706641d775c456bf00">Z_Buffer</link> = true</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_p_r_i_s_m___render_mode_1aa7f36a036a682ab453d8efbe796859a8">ShowBackMesh</link> = false</para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_p_r_i_s_m___render_mode_1a96b001d4cdcebf8d5dbcd0887ffb7784">FillMesh</link> = true</para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_p_r_i_s_m___render_mode_1a9ff1fdb116c80da3ea34e79a6b541dfb">ContourWidth</link> = 5</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00227">227</link></para>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_struct_p_r_i_s_m___render_mode_1a388f572c62279f839ee138a9afbdeeb5"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>PRISM_RenderMode</secondary></indexterm>
+<indexterm><primary>PRISM_RenderMode</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void print ( )</computeroutput></para><para>
+См. определение в файле <link linkend="_other_8cpp_source">other.cpp</link> строка <link linkend="_other_8cpp_source_1l00029">29</link></para>
+</section>
+</section>
+<section>
+<title>Поля</title>
+<anchor xml:id="_struct_p_r_i_s_m___render_mode_1a9ff1fdb116c80da3ea34e79a6b541dfb"/><section>
+    <title>ContourWidth</title>
+<indexterm><primary>ContourWidth</primary><secondary>PRISM_RenderMode</secondary></indexterm>
+<indexterm><primary>PRISM_RenderMode</primary><secondary>ContourWidth</secondary></indexterm>
+<para><computeroutput>int ContourWidth = 5</computeroutput></para><para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00234">234</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___render_mode_1ae78bad4ce536f660c8a0b157be5d01d7"/><section>
+    <title>DisplayDimming1</title>
+<indexterm><primary>DisplayDimming1</primary><secondary>PRISM_RenderMode</secondary></indexterm>
+<indexterm><primary>PRISM_RenderMode</primary><secondary>DisplayDimming1</secondary></indexterm>
+<para><computeroutput>bool DisplayDimming1 = true</computeroutput></para><para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00228">228</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___render_mode_1a720a198ab315710c67ebe7b23e75389c"/><section>
+    <title>DisplayDimming2</title>
+<indexterm><primary>DisplayDimming2</primary><secondary>PRISM_RenderMode</secondary></indexterm>
+<indexterm><primary>PRISM_RenderMode</primary><secondary>DisplayDimming2</secondary></indexterm>
+<para><computeroutput>bool DisplayDimming2 = false</computeroutput></para><para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00229">229</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___render_mode_1a2dd74c2defd023489f80f3ceab3b96ce"/><section>
+    <title>DisplayTriangleContours</title>
+<indexterm><primary>DisplayTriangleContours</primary><secondary>PRISM_RenderMode</secondary></indexterm>
+<indexterm><primary>PRISM_RenderMode</primary><secondary>DisplayTriangleContours</secondary></indexterm>
+<para><computeroutput>bool DisplayTriangleContours = false</computeroutput></para><para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00230">230</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___render_mode_1a96b001d4cdcebf8d5dbcd0887ffb7784"/><section>
+    <title>FillMesh</title>
+<indexterm><primary>FillMesh</primary><secondary>PRISM_RenderMode</secondary></indexterm>
+<indexterm><primary>PRISM_RenderMode</primary><secondary>FillMesh</secondary></indexterm>
+<para><computeroutput>bool FillMesh = true</computeroutput></para><para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00233">233</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___render_mode_1aa7f36a036a682ab453d8efbe796859a8"/><section>
+    <title>ShowBackMesh</title>
+<indexterm><primary>ShowBackMesh</primary><secondary>PRISM_RenderMode</secondary></indexterm>
+<indexterm><primary>PRISM_RenderMode</primary><secondary>ShowBackMesh</secondary></indexterm>
+<para><computeroutput>bool ShowBackMesh = false</computeroutput></para><para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00232">232</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___render_mode_1ac0843b69ebe3f8706641d775c456bf00"/><section>
+    <title>Z_Buffer</title>
+<indexterm><primary>Z_Buffer</primary><secondary>PRISM_RenderMode</secondary></indexterm>
+<indexterm><primary>PRISM_RenderMode</primary><secondary>Z_Buffer</secondary></indexterm>
+<para><computeroutput>bool <link linkend="_class_z___buffer">Z_Buffer</link> = true</computeroutput></para><para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00231">231</link></para>
+</section>
+<para>
+Объявления и описания членов структур находятся в файлах:</para>
+C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<link linkend="_other_8h">other.h</link>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<link linkend="_other_8cpp">other.cpp</link></section>
+</section>

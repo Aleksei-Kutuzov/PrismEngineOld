@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_math_8cpp" xml:lang="ru">
+<title>Файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/math.cpp</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/math.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;math.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Макросы    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_math_8cpp_1a5a5d3f389b27f06573665824891be241">useHardwareZbuffer</link>&#160;&#160;&#160;true</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Макросы</title>
+<anchor xml:id="_math_8cpp_1a5a5d3f389b27f06573665824891be241"/><section>
+    <title>useHardwareZbuffer</title>
+<indexterm><primary>useHardwareZbuffer</primary><secondary>math.cpp</secondary></indexterm>
+<indexterm><primary>math.cpp</primary><secondary>useHardwareZbuffer</secondary></indexterm>
+<para><computeroutput>#define useHardwareZbuffer&#160;&#160;&#160;true</computeroutput></para><para>
+См. определение в файле <link linkend="_math_8cpp_source">math.cpp</link> строка <link linkend="_math_8cpp_source_1l00002">2</link></para>
+</section>
+</section>
+</section>

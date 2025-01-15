@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRISM_ENGINE: Исходный файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/render.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoprism.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">PRISM_ENGINE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">docs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_25f6b753474fe0a28800c78721e14565.html">PrismEngine</a></li><li class="navelem"><a class="el" href="dir_d7b1fc5b76cd0aeac2c104334654f815.html">PrismEngine</a></li><li class="navelem"><a class="el" href="dir_b6dc6f7c2aabea0db434001f258fbc37.html">src</a></li><li class="navelem"><a class="el" href="dir_4554e836a3a5a35a1026141e54ec76fa.html">PRISM_rendering</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">render.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="render_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef RENDER_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define RENDER_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;SDL.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;SDL_image.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_abstract_object3_d_8h.html">../PRISM_objects3D/AbstractObject3D.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//enum RasterizationMode {</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//  ZBufferComparison,</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//  AverageZFigureComparison</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//};</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___render.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_p_r_i_s_m___render.html">PRISM_Render</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___render.html#aadcdf339262ba7e6274d5695634c5b5f">   18</a></span>    <a class="code hl_struct" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> <a class="code hl_variable" href="class_p_r_i_s_m___render.html#aadcdf339262ba7e6274d5695634c5b5f">cameraCoordinate</a> = {0, 0, 0};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___render.html#aae1eaaa76fb0cea54f764c0fd1e1f820">   19</a></span>    <a class="code hl_struct" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> <a class="code hl_variable" href="class_p_r_i_s_m___render.html#aae1eaaa76fb0cea54f764c0fd1e1f820">lightAmbient</a> = { 0.1f, 0.1f, 0.1f }; <span class="comment">// интенсивность окружающего света в сцене(задаётся для всего пространства).</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_struct" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> <a class="code hl_function" href="class_p_r_i_s_m___render.html#a44df9b94b16fb1df310c02257c125490">CalculatePixelAmbient</a>(<a class="code hl_struct" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="code hl_class" href="class_abstract_object3_d.html">AbstractObject3D</a> obj) <span class="keyword">const</span>; <span class="comment">// Окружающее освещение (ambient lighting) симулирует свет, равномерно распространяющийся в пространстве. Оно добавляет объекту базовую освещённость, даже если на него напрямую не падает свет.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_struct" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> <a class="code hl_function" href="class_p_r_i_s_m___render.html#a31b9c243cb644531d85af023366e50d4">CalculatePixelDiffuse</a>(<a class="code hl_struct" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="code hl_struct" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, <a class="code hl_class" href="class_abstract_object3_d.html">AbstractObject3D</a> obj, <a class="code hl_struct" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> triangle); <span class="comment">// Диффузное освещение моделирует рассеивание света на матовой поверхности.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_struct" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> <a class="code hl_function" href="class_p_r_i_s_m___render.html#a4baae358af056a50be03ace21ff0883d">CalculatePixelSpecular</a>(<a class="code hl_struct" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="code hl_struct" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, <a class="code hl_class" href="class_abstract_object3_d.html">AbstractObject3D</a> obj, <a class="code hl_struct" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> triangle, <a class="code hl_struct" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> <a class="code hl_variable" href="class_p_r_i_s_m___render.html#aadcdf339262ba7e6274d5695634c5b5f">cameraCoordinate</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___render.html#a49a493a4aba911acb932c66030f15a90">Rendering</a>(<a class="code hl_class" href="class_p_r_i_s_m___window.html">PRISM_Window</a>* window, <a class="code hl_class" href="class_abstract_object3_d.html">AbstractObject3D</a>* obj);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___render.html#ac16499f92f48f29237b02a6294b52e31">SetScreenSize</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">int</span> ScreenW, ScreenH;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif </span><span class="comment">// RENDER_H</span></div>
+<div class="ttc" id="a_abstract_object3_d_8h_html"><div class="ttname"><a href="_abstract_object3_d_8h.html">AbstractObject3D.h</a></div></div>
+<div class="ttc" id="aclass_abstract_object3_d_html"><div class="ttname"><a href="class_abstract_object3_d.html">AbstractObject3D</a></div><div class="ttdef"><b>Определения</b> <a href="_abstract_object3_d_8h_source.html#l00029">AbstractObject3D.h:29</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___render_html"><div class="ttname"><a href="class_p_r_i_s_m___render.html">PRISM_Render</a></div><div class="ttdef"><b>Определения</b> <a href="#l00016">render.h:16</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___render_html_a31b9c243cb644531d85af023366e50d4"><div class="ttname"><a href="class_p_r_i_s_m___render.html#a31b9c243cb644531d85af023366e50d4">PRISM_Render::CalculatePixelDiffuse</a></div><div class="ttdeci">PRISM_Color CalculatePixelDiffuse(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle)</div><div class="ttdef"><b>Определения</b> <a href="render_8cpp_source.html#l00012">render.cpp:12</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___render_html_a44df9b94b16fb1df310c02257c125490"><div class="ttname"><a href="class_p_r_i_s_m___render.html#a44df9b94b16fb1df310c02257c125490">PRISM_Render::CalculatePixelAmbient</a></div><div class="ttdeci">PRISM_Color CalculatePixelAmbient(PRISM_Color originalСolor, AbstractObject3D obj) const</div><div class="ttdef"><b>Определения</b> <a href="render_8cpp_source.html#l00003">render.cpp:3</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___render_html_a49a493a4aba911acb932c66030f15a90"><div class="ttname"><a href="class_p_r_i_s_m___render.html#a49a493a4aba911acb932c66030f15a90">PRISM_Render::Rendering</a></div><div class="ttdeci">void Rendering(PRISM_Window *window, AbstractObject3D *obj)</div><div class="ttdef"><b>Определения</b> <a href="render_8cpp_source.html#l00060">render.cpp:60</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___render_html_a4baae358af056a50be03ace21ff0883d"><div class="ttname"><a href="class_p_r_i_s_m___render.html#a4baae358af056a50be03ace21ff0883d">PRISM_Render::CalculatePixelSpecular</a></div><div class="ttdeci">PRISM_Color CalculatePixelSpecular(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle, PRISM_Vector3d cameraCoordinate)</div><div class="ttdef"><b>Определения</b> <a href="render_8cpp_source.html#l00034">render.cpp:34</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___render_html_aadcdf339262ba7e6274d5695634c5b5f"><div class="ttname"><a href="class_p_r_i_s_m___render.html#aadcdf339262ba7e6274d5695634c5b5f">PRISM_Render::cameraCoordinate</a></div><div class="ttdeci">PRISM_Vector3d cameraCoordinate</div><div class="ttdef"><b>Определения</b> <a href="#l00018">render.h:18</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___render_html_aae1eaaa76fb0cea54f764c0fd1e1f820"><div class="ttname"><a href="class_p_r_i_s_m___render.html#aae1eaaa76fb0cea54f764c0fd1e1f820">PRISM_Render::lightAmbient</a></div><div class="ttdeci">PRISM_Vector3d lightAmbient</div><div class="ttdef"><b>Определения</b> <a href="#l00019">render.h:19</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___render_html_ac16499f92f48f29237b02a6294b52e31"><div class="ttname"><a href="class_p_r_i_s_m___render.html#ac16499f92f48f29237b02a6294b52e31">PRISM_Render::SetScreenSize</a></div><div class="ttdeci">void SetScreenSize(int w, int h)</div><div class="ttdef"><b>Определения</b> <a href="render_8cpp_source.html#l00113">render.cpp:113</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html"><div class="ttname"><a href="class_p_r_i_s_m___window.html">PRISM_Window</a></div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8h_source.html#l00012">PRISM_Window.h:13</a></div></div>
+<div class="ttc" id="astruct_p_r_i_s_m___color_html"><div class="ttname"><a href="struct_p_r_i_s_m___color.html">PRISM_Color</a></div><div class="ttdoc">Структура, представляющая цвет в формате RGBA (красный, зелёный, синий, альфа). Поддерживает различны...</div><div class="ttdef"><b>Определения</b> <a href="other_8h_source.html#l00093">other.h:93</a></div></div>
+<div class="ttc" id="astruct_p_r_i_s_m___light_html"><div class="ttname"><a href="struct_p_r_i_s_m___light.html">PRISM_Light</a></div><div class="ttdoc">Структура, представляющая источник света в 3D пространстве. Поддерживает настройку положения,...</div><div class="ttdef"><b>Определения</b> <a href="other_8h_source.html#l00204">other.h:204</a></div></div>
+<div class="ttc" id="astruct_p_r_i_s_m___triangle_html"><div class="ttname"><a href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a></div><div class="ttdoc">Структура, представляющая треугольник в 3D пространстве. Содержит три вершины и их нормали для расчёт...</div><div class="ttdef"><b>Определения</b> <a href="other_8h_source.html#l00014">other.h:15</a></div></div>
+<div class="ttc" id="astruct_p_r_i_s_m___vector3d_html"><div class="ttname"><a href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></div><div class="ttdoc">Структура PRISM_Vector3d предназначена для представления трёхмерного вектора с дополнительным четвёрт...</div><div class="ttdef"><b>Определения</b> <a href="vector3_d_8h_source.html#l00019">vector3D.h:20</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

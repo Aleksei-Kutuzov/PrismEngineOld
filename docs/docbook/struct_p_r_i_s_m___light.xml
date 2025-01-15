@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_p_r_i_s_m___light" xml:lang="ru">
+<title>Структура PRISM_Light</title>
+<indexterm><primary>PRISM_Light</primary></indexterm>
+<para>
+
+<para>Структура, представляющая источник света в 3D пространстве. Поддерживает настройку положения, цвета и интенсивности. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;other.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_struct_p_r_i_s_m___light_1a388f572c62279f839ee138a9afbdeeb5">print</link> ()</para>
+
+<para>Выводит параметры света в консоль. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Поля данных    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_struct_p_r_i_s_m___light_1a1378dc2f2b5bcf15f42bc37b36d05307">position</link></para>
+
+<para>Позиция источника света в 3D пространстве. </para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___color">PRISM_Color</link> <link linkend="_struct_p_r_i_s_m___light_1a751967452bc7aa83f729222132146b40">color</link> = {255, 255, 255}</para>
+
+<para>Цвет света. Значение по умолчанию: белый (255, 255, 255). </para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_p_r_i_s_m___light_1a77c3cb4d134852552e2a6a68a09d7419">lightIntensity</link> = 1.0f</para>
+
+<para>Интенсивность света (значение &gt;= 0.0f). Значение по умолчанию: 1.0f. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Структура, представляющая источник света в 3D пространстве. Поддерживает настройку положения, цвета и интенсивности. </para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00204">204</link></para>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_struct_p_r_i_s_m___light_1a388f572c62279f839ee138a9afbdeeb5"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>PRISM_Light</secondary></indexterm>
+<indexterm><primary>PRISM_Light</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void print ( )</computeroutput></para><para>
+
+<para>Выводит параметры света в консоль. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_other_8cpp_source">other.cpp</link> строка <link linkend="_other_8cpp_source_1l00024">24</link></para>
+</section>
+</section>
+<section>
+<title>Поля</title>
+<anchor xml:id="_struct_p_r_i_s_m___light_1a751967452bc7aa83f729222132146b40"/><section>
+    <title>color</title>
+<indexterm><primary>color</primary><secondary>PRISM_Light</secondary></indexterm>
+<indexterm><primary>PRISM_Light</primary><secondary>color</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___color">PRISM_Color</link> color = {255, 255, 255}</computeroutput></para><para>
+
+<para>Цвет света. Значение по умолчанию: белый (255, 255, 255). </para>
+</para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00213">213</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___light_1a77c3cb4d134852552e2a6a68a09d7419"/><section>
+    <title>lightIntensity</title>
+<indexterm><primary>lightIntensity</primary><secondary>PRISM_Light</secondary></indexterm>
+<indexterm><primary>PRISM_Light</primary><secondary>lightIntensity</secondary></indexterm>
+<para><computeroutput>float lightIntensity = 1.0f</computeroutput></para><para>
+
+<para>Интенсивность света (значение &gt;= 0.0f). Значение по умолчанию: 1.0f. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00219">219</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___light_1a1378dc2f2b5bcf15f42bc37b36d05307"/><section>
+    <title>position</title>
+<indexterm><primary>position</primary><secondary>PRISM_Light</secondary></indexterm>
+<indexterm><primary>PRISM_Light</primary><secondary>position</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> position</computeroutput></para><para>
+
+<para>Позиция источника света в 3D пространстве. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_other_8h_source">other.h</link> строка <link linkend="_other_8h_source_1l00208">208</link></para>
+</section>
+<para>
+Объявления и описания членов структур находятся в файлах:</para>
+C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<link linkend="_other_8h">other.h</link>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<link linkend="_other_8cpp">other.cpp</link></section>
+</section>

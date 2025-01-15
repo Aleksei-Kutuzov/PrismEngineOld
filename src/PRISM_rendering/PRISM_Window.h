@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "GL\glew.h"
 #include "GL/freeglut.h"
 #include "SDL.h"
 #include "SDL_opengl.h"
@@ -26,8 +27,6 @@ public:
 
 	void cleanUp();
 
-	GLuint LoadShader(const char* filename, GLenum shaderType);
-
 	const char* GetTitle();
 	void SetTitle(const char*);
 
@@ -42,4 +41,7 @@ private:
 	int x, y, w, h;
 	SDL_Window* window;
 	SDL_GLContext glContext;
+
+	GLuint shaderProgram;
+	GLuint VAO;
 };

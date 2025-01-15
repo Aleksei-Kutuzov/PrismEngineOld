@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_math_8h" xml:lang="ru">
+<title>Файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/math.h</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/math.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;vector&gt;<?linebreak?>#include &lt;SDL_stdinc.h&gt;<?linebreak?>#include &lt;SDL.h&gt;<?linebreak?>#include &quot;vector3D.h&quot;<?linebreak?>#include &quot;matrix.h&quot;<?linebreak?>#include &quot;other.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Структуры данных    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_math">Math</link></para>
+
+<para>Класс <link linkend="_class_math">Math</link> предоставляет набор статических методов для выполнения математических операций, связанных с векторами, матрицами и цветами. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Макросы    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_math_8h_1aee5d1992c3f64b469e4b66a88074db3a">PRISM_MATH_H</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Макросы</title>
+<anchor xml:id="_math_8h_1aee5d1992c3f64b469e4b66a88074db3a"/><section>
+    <title>PRISM_MATH_H</title>
+<indexterm><primary>PRISM_MATH_H</primary><secondary>math.h</secondary></indexterm>
+<indexterm><primary>math.h</primary><secondary>PRISM_MATH_H</secondary></indexterm>
+<para><computeroutput>#define PRISM_MATH_H</computeroutput></para><para>
+См. определение в файле <link linkend="_math_8h_source">math.h</link> строка <link linkend="_math_8h_source_1l00003">3</link></para>
+</section>
+</section>
+</section>

@@ -14,6 +14,7 @@
 #include "src/PRISM_objects3D/MeshLoader.h"
 
 #include "src/PRISM_rendering/zbuffer.h"
+#include "src/PRISM_rendering/shaderManager.h"
 #include "src/PRISM_rendering/render.h"
 #include "src/PRISM_rendering/PRISM_Window.h"
 #include "src/PRISM_rendering/painter.h"

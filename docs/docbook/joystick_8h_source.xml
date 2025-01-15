@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_joystick_8h_source" xml:lang="ru">
+<title>joystick.h</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_UI/joystick.h</primary></indexterm>
+См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="_joystick_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;JOYSTICK_H</emphasis>
+<anchor xml:id="_joystick_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;JOYSTICK_H</emphasis>
+<anchor xml:id="_joystick_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+<anchor xml:id="_joystick_8h_source_1l00004"/>00004 <emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_joystick">Joystick</link>&#32;{
+<anchor xml:id="_joystick_8h_source_1l00005"/>00005 &#32;&#32;&#32;&#32;SDL_Rect&#32;<link linkend="_struct_joystick_1aaaba59bc9f2578a08bd19198efdfee6b">base_rect</link>;
+<anchor xml:id="_joystick_8h_source_1l00006"/>00006 &#32;&#32;&#32;&#32;SDL_Rect&#32;<link linkend="_struct_joystick_1aa0e6430ec216a5fbf19125bb0b09ac64">stick_rect</link>;
+<anchor xml:id="_joystick_8h_source_1l00007"/>00007 &#32;&#32;&#32;&#32;SDL_Point&#32;<link linkend="_struct_joystick_1a04384f7c07a675481d0e4253c7e9966a">center</link>;
+<anchor xml:id="_joystick_8h_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_joystick_1ab2de5ae9f4869dec282654f50e84681b">max_distance</link>;
+<anchor xml:id="_joystick_8h_source_1l00009"/>00009 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_struct_joystick_1a03c996f9fcf0e10baeb3e700be0c409a">active</link>;
+<anchor xml:id="_joystick_8h_source_1l00010"/>00010 <emphasis role="comment">//&#32;&#32;SDL_Texture&#32;*texture;</emphasis>
+<anchor xml:id="_joystick_8h_source_1l00011"/>00011 &#32;&#32;&#32;&#32;SDL_Texture&#32;*<link linkend="_struct_joystick_1a2bf724f6d43f229ba2699d8e80166a7a">background</link>;
+<anchor xml:id="_joystick_8h_source_1l00012"/>00012 &#32;&#32;&#32;&#32;SDL_Texture&#32;*<link linkend="_struct_joystick_1a96168efe46bc9c0d1388031d20a818f0">image</link>;
+<anchor xml:id="_joystick_8h_source_1l00013"/>00013 };
+<anchor xml:id="_joystick_8h_source_1l00014"/>00014 
+<anchor xml:id="_joystick_8h_source_1l00015"/>00015 
+<anchor xml:id="_joystick_8h_source_1l00016"/>00016 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_joystick_8h_1a4b2d658e2a5f833b21572512b008c5d1">InitJoystick</link>(<link linkend="_struct_joystick">Joystick</link>&#32;&amp;joystick,&#32;<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y,&#32;<emphasis role="keywordtype">int</emphasis>&#32;base_size,&#32;<emphasis role="keywordtype">int</emphasis>&#32;stick_size,&#32;SDL_Renderer&#32;*renderer);
+<anchor xml:id="_joystick_8h_source_1l00017"/>00017 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_joystick_8h_1a0e0547a969ffec6e4bf52581a1083df7">UpdateJoystick</link>(<link linkend="_struct_joystick">Joystick</link>&#32;&amp;joystick,&#32;<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y);
+<anchor xml:id="_joystick_8h_source_1l00018"/>00018 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_joystick_8h_1a9109c20080d8804029bd7b78607e5684">HandleInput</link>(SDL_Event&#32;&amp;e,&#32;std::vector&lt;Joystick&gt;&#32;&amp;joysticks,&#32;<emphasis role="keywordtype">int</emphasis>&#32;window_width,&#32;<emphasis role="keywordtype">int</emphasis>&#32;window_height);
+<anchor xml:id="_joystick_8h_source_1l00019"/>00019 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_joystick_8h_1a7534f3c6e672027f7dd62624e1859cfd">GetJoystickPosition</link>(<link linkend="_struct_joystick">Joystick</link>&#32;&amp;joystick,&#32;<emphasis role="keywordtype">float</emphasis>&#32;&amp;norm_x,&#32;<emphasis role="keywordtype">float</emphasis>&#32;&amp;norm_y);
+<anchor xml:id="_joystick_8h_source_1l00020"/>00020 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_joystick_8h_1a6ac973c9890e1d44508a8c00a582cd01">RenderJoystick</link>(SDL_Renderer&#32;*renderer,&#32;<link linkend="_struct_joystick">Joystick</link>&#32;&amp;joystick);
+<anchor xml:id="_joystick_8h_source_1l00021"/>00021 
+<anchor xml:id="_joystick_8h_source_1l00022"/>00022 
+<anchor xml:id="_joystick_8h_source_1l00023"/>00023 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_p_r_i_s_m___matrix__4_x4" xml:lang="ru">
+<title>Структура PRISM_Matrix_4X4</title>
+<indexterm><primary>PRISM_Matrix_4X4</primary></indexterm>
+<para>
+
+<para>Структура <link linkend="_struct_p_r_i_s_m___matrix__4_x4">PRISM_Matrix_4X4</link> представляет 4x4 матрицу, которая может быть использована для различных линейных преобразований, таких как масштабирование, вращение, перенос, а также для работы с однородными координатами. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;matrix.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_struct_p_r_i_s_m___matrix__4_x4_1a388f572c62279f839ee138a9afbdeeb5">print</link> ()</para>
+
+<para>Выводит содержимое матрицы в консоль. </para>
+</listitem>
+            <listitem><para>float * <link linkend="_struct_p_r_i_s_m___matrix__4_x4_1ae7204f98880329763af1534dddd3bcad">operator[]</link> (int index)</para>
+
+<para>Оператор доступа к строкам матрицы по индексу. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_p_r_i_s_m___matrix__4_x4_1a7fd66b045ac2482f6398d286f898900a">operator==</link> (<link linkend="_struct_p_r_i_s_m___matrix__4_x4">PRISM_Matrix_4X4</link> &amp;other)</para>
+
+<para>Оператор сравнения двух матриц на равенство. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Поля данных    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_struct_p_r_i_s_m___matrix__4_x4_1a7cdab8754cd800b1ba4008e559aa314c">m</link> [4][4] = {0}</para>
+
+<para>Двумерный массив, представляющий элементы матрицы. Индексы: m[row][column]. Инициализируется нулями. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Структура <link linkend="_struct_p_r_i_s_m___matrix__4_x4">PRISM_Matrix_4X4</link> представляет 4x4 матрицу, которая может быть использована для различных линейных преобразований, таких как масштабирование, вращение, перенос, а также для работы с однородными координатами. </para>
+<para>
+См. определение в файле <link linkend="_matrix_8h_source">matrix.h</link> строка <link linkend="_matrix_8h_source_1l00013">13</link></para>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_struct_p_r_i_s_m___matrix__4_x4_1a7fd66b045ac2482f6398d286f898900a"/><section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>PRISM_Matrix_4X4</secondary></indexterm>
+<indexterm><primary>PRISM_Matrix_4X4</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool operator== (<link linkend="_struct_p_r_i_s_m___matrix__4_x4">PRISM_Matrix_4X4</link> &amp; other)</computeroutput></para><para>
+
+<para>Оператор сравнения двух матриц на равенство. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>other</entry><entry>
+<para>Другая матрица для сравнения.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>True, если все элементы матриц равны; иначе False.</para>
+</formalpara>
+</para>
+<para>
+См. определение в файле <link linkend="_matrix_8cpp_source">matrix.cpp</link> строка <link linkend="_matrix_8cpp_source_1l00019">19</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___matrix__4_x4_1ae7204f98880329763af1534dddd3bcad"/><section>
+    <title>operator[]()</title>
+<indexterm><primary>operator[]</primary><secondary>PRISM_Matrix_4X4</secondary></indexterm>
+<indexterm><primary>PRISM_Matrix_4X4</primary><secondary>operator[]</secondary></indexterm>
+<para><computeroutput>float * operator[] (int index)</computeroutput></para><para>
+
+<para>Оператор доступа к строкам матрицы по индексу. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>index</entry><entry>
+<para>Индекс строки (0-3).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Возвращает</title>
+
+<para>Указатель на строку матрицы.</para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Исключения</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>std::out_of_range</entry><entry>
+<para>Бросает исключение, если индекс выходит за пределы [0, 3].</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+См. определение в файле <link linkend="_matrix_8cpp_source">matrix.cpp</link> строка <link linkend="_matrix_8cpp_source_1l00010">10</link></para>
+</section>
+<anchor xml:id="_struct_p_r_i_s_m___matrix__4_x4_1a388f572c62279f839ee138a9afbdeeb5"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>PRISM_Matrix_4X4</secondary></indexterm>
+<indexterm><primary>PRISM_Matrix_4X4</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void print ( )</computeroutput></para><para>
+
+<para>Выводит содержимое матрицы в консоль. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_matrix_8cpp_source">matrix.cpp</link> строка <link linkend="_matrix_8cpp_source_1l00004">4</link></para>
+</section>
+</section>
+<section>
+<title>Поля</title>
+<anchor xml:id="_struct_p_r_i_s_m___matrix__4_x4_1a7cdab8754cd800b1ba4008e559aa314c"/><section>
+    <title>m</title>
+<indexterm><primary>m</primary><secondary>PRISM_Matrix_4X4</secondary></indexterm>
+<indexterm><primary>PRISM_Matrix_4X4</primary><secondary>m</secondary></indexterm>
+<para><computeroutput>float m[4][4] = {0}</computeroutput></para><para>
+
+<para>Двумерный массив, представляющий элементы матрицы. Индексы: m[row][column]. Инициализируется нулями. </para>
+</para>
+<para>
+См. определение в файле <link linkend="_matrix_8h_source">matrix.h</link> строка <link linkend="_matrix_8h_source_1l00020">20</link></para>
+</section>
+<para>
+Объявления и описания членов структур находятся в файлах:</para>
+C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<link linkend="_matrix_8h">matrix.h</link>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<link linkend="_matrix_8cpp">matrix.cpp</link></section>
+</section>

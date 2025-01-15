@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_abstract_object3_d" xml:lang="ru">
+<title>Класс AbstractObject3D</title>
+<indexterm><primary>AbstractObject3D</primary></indexterm>
+<para>
+<computeroutput>#include &lt;AbstractObject3D.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_abstract_object3_d_1ad61479c28632698d4c682374d81c91f0">AbstractObject3D</link> (struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> Coord, struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> Rot, struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> Sc, <link linkend="_class_abstract_camera3_d">AbstractCamera3D</link> &amp;camera)</para>
+</listitem>
+            <listitem><para><link linkend="_class_abstract_object3_d_1a27e02eb8c2f2684cfb7e80cbfe3d48cb">~AbstractObject3D</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1a7f14d00efaf40da5c8043c79ed98fb3a">SetMesh</link> (struct <link linkend="_struct_p_r_i_s_m___mesh">PRISM_Mesh</link> m)</para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_p_r_i_s_m___mesh">PRISM_Mesh</link> <link linkend="_class_abstract_object3_d_1a68d647bcabda18f6d7b26b36b311933b">GetMesh</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1a04fcc82bc4f28822ff74b59fe1a6f4ba">InitProjection</link> (<link linkend="_class_abstract_camera3_d">AbstractCamera3D</link> camera)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1a4715d4206facdace0d0ffe1efc81ae96">SetRotateXYZ</link> (struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> rotVect)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1a57c9fd28f17b11451e6c5d36db536bfb">SetMoveXYZ</link> (struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> moveVect)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1acde3b9eb0b43bfd343a18f444526bc15">SetScaleXYZ</link> (struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> scaleVect)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1a41d0a75667c7fe1e67defd8689fc4e73">PrintInfo</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> <link linkend="_class_abstract_object3_d_1a9371debf5f3a1c8e5c72503c1c173e64">RotateTriangle</link> (struct <link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> Triangle_)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> <link linkend="_class_abstract_object3_d_1a33ee4ea92fb858c1e19a5a420ac13441">TranslateTriangle</link> (struct <link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> Triangle_)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> <link linkend="_class_abstract_object3_d_1a4b37b8ef005ab4f79090c4d87b326801">ScaleTriangle</link> (struct <link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> Triangle_)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> <link linkend="_class_abstract_object3_d_1ab9373b601dba85585b99518343d302ef">ViewTriangle</link> (struct <link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> Triangle_)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_p_r_i_s_m___color">PRISM_Color</link> <link linkend="_class_abstract_object3_d_1af3834cbcf99a19ee555b0acbdfe334bc">CalculatePhongShadingColor</link> (const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;normal, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;viewDir, const <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> &amp;light, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;fragPos)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_abstract_object3_d_1a25b5a3ebd7fc24c26bb519aa2ed68c4b">ComputeBarycentricCoords</link> (float x, float y, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;v0, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;v1, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;v2, float &amp;u, float &amp;v, float &amp;w)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1a3b7636e18a1f5624d8882da0c47458da">DrawMeshTriangles</link> (SDL_Renderer *renderer, <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> rm)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1a27f9f71f5648aa4d40f3f76f831d0ac6">OldRasterisation</link> (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> light, short rgba[4], <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> RendMode)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1aa45a8a5bb80b410f2fbd28f15e3f477e">OptimizedEdgeRasterization</link> (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> light, short rgba[4], <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> RendMode)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1a4e726fabc7e6a8c043a91c8b573a26cd">RasterizeTile</link> (int minX, int maxX, int minY, int maxY, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;v0, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;v1, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp;v2, SDL_Renderer *SDL_renderer, <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> light, short rgba[4], <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> RendMode, std::vector&lt; SDL_Surface * &gt; &amp;surfaces)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1ac9ea7e204516960688ab4458ef1b7253">Rasterisation</link> (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> light, short rgba[4], <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> RendMode)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_abstract_object3_d_1a76994705915683e5dabc53a835b04af1">TileRasterisation</link> (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> light, short rgba[4], <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> RendMode)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Поля данных    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_p_r_i_s_m___matrix__4_x4">PRISM_Matrix_4X4</link> <link linkend="_class_abstract_object3_d_1a4a0043af98800a2c0517cfe81c9423c6">ProjectionMatrix</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_class_abstract_object3_d_1ae2a63d044e2f5ebcacde18dd6edf8ef1">Coordinate</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_class_abstract_object3_d_1accfed9da2d822544527e3a911ff58616">Rotation</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_class_abstract_object3_d_1a314c8b4cf5c683fc6b2dab2d65ace32a">Scale</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_p_r_i_s_m___mesh">PRISM_Mesh</link> <link linkend="_class_abstract_object3_d_1a4707653e32d90b220c3c6321f2666576">mesh</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> <link linkend="_class_abstract_object3_d_1a97c2d95d9572e2dd9408c6a4816ce055">materialAmbient</link> ={0.5f, 0.5f, 0.5f}</para>
+</listitem>
+            <listitem><para>float <link linkend="_class_abstract_object3_d_1aaf5630e64e53279641322fa6fd8a981d">kSpecular</link> = 0.5</para>
+</listitem>
+            <listitem><para>float <link linkend="_class_abstract_object3_d_1a62a770b3680bca1269d59b9992144650">ScreenW</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_abstract_object3_d_1af273480bb7b551fe2359b8f4b23a084b">ScreenH</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_abstract_camera3_d">AbstractCamera3D</link> &amp; <link linkend="_class_abstract_object3_d_1a1320848696d06579795689c5e5ee4db9">Camera</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+<para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00029">29</link></para>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_class_abstract_object3_d_1ad61479c28632698d4c682374d81c91f0"/><section>
+    <title>AbstractObject3D()</title>
+<indexterm><primary>AbstractObject3D</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>AbstractObject3D</secondary></indexterm>
+<para><computeroutput><link linkend="_class_abstract_object3_d">AbstractObject3D</link> (struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> Coord, struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> Rot, struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> Sc, <link linkend="_class_abstract_camera3_d">AbstractCamera3D</link> &amp; camera)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00045">45</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a27e02eb8c2f2684cfb7e80cbfe3d48cb"/><section>
+    <title>~AbstractObject3D()</title>
+<indexterm><primary>~AbstractObject3D</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>~AbstractObject3D</secondary></indexterm>
+<para><computeroutput>~<link linkend="_class_abstract_object3_d">AbstractObject3D</link> ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00056">56</link></para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_class_abstract_object3_d_1af3834cbcf99a19ee555b0acbdfe334bc"/><section>
+    <title>CalculatePhongShadingColor()</title>
+<indexterm><primary>CalculatePhongShadingColor</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>CalculatePhongShadingColor</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___color">PRISM_Color</link> CalculatePhongShadingColor (const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; normal, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; viewDir, const <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> &amp; light, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; fragPos)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00100">100</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a25b5a3ebd7fc24c26bb519aa2ed68c4b"/><section>
+    <title>ComputeBarycentricCoords()</title>
+<indexterm><primary>ComputeBarycentricCoords</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>ComputeBarycentricCoords</secondary></indexterm>
+<para><computeroutput>bool ComputeBarycentricCoords (float x, float y, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; v0, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; v1, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; v2, float &amp; u, float &amp; v, float &amp; w)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00291">291</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a3b7636e18a1f5624d8882da0c47458da"/><section>
+    <title>DrawMeshTriangles()</title>
+<indexterm><primary>DrawMeshTriangles</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>DrawMeshTriangles</secondary></indexterm>
+<para><computeroutput>void DrawMeshTriangles (SDL_Renderer * renderer, <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> rm)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00195">195</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a68d647bcabda18f6d7b26b36b311933b"/><section>
+    <title>GetMesh()</title>
+<indexterm><primary>GetMesh</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>GetMesh</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_struct_p_r_i_s_m___mesh">PRISM_Mesh</link> GetMesh ( )</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00008">8</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a04fcc82bc4f28822ff74b59fe1a6f4ba"/><section>
+    <title>InitProjection()</title>
+<indexterm><primary>InitProjection</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>InitProjection</secondary></indexterm>
+<para><computeroutput>void InitProjection (<link linkend="_class_abstract_camera3_d">AbstractCamera3D</link> camera)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00012">12</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a27f9f71f5648aa4d40f3f76f831d0ac6"/><section>
+    <title>OldRasterisation()</title>
+<indexterm><primary>OldRasterisation</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>OldRasterisation</secondary></indexterm>
+<para><computeroutput>void OldRasterisation (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer * SDL_renderer, <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> light, short rgba[4], <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> RendMode)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00300">300</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1aa45a8a5bb80b410f2fbd28f15e3f477e"/><section>
+    <title>OptimizedEdgeRasterization()</title>
+<indexterm><primary>OptimizedEdgeRasterization</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>OptimizedEdgeRasterization</secondary></indexterm>
+<para><computeroutput>void OptimizedEdgeRasterization (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer * SDL_renderer, <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> light, short rgba[4], <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> RendMode)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00356">356</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a41d0a75667c7fe1e67defd8689fc4e73"/><section>
+    <title>PrintInfo()</title>
+<indexterm><primary>PrintInfo</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>PrintInfo</secondary></indexterm>
+<para><computeroutput>void PrintInfo ( )</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00045">45</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1ac9ea7e204516960688ab4458ef1b7253"/><section>
+    <title>Rasterisation()</title>
+<indexterm><primary>Rasterisation</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>Rasterisation</secondary></indexterm>
+<para><computeroutput>void Rasterisation (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer * SDL_renderer, <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> light, short rgba[4], <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> RendMode)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00452">452</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a4e726fabc7e6a8c043a91c8b573a26cd"/><section>
+    <title>RasterizeTile()</title>
+<indexterm><primary>RasterizeTile</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>RasterizeTile</secondary></indexterm>
+<para><computeroutput>void RasterizeTile (int minX, int maxX, int minY, int maxY, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; v0, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; v1, const <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> &amp; v2, SDL_Renderer * SDL_renderer, <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> light, short rgba[4], <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> RendMode, std::vector&lt; SDL_Surface * &gt; &amp; surfaces)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00402">402</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a9371debf5f3a1c8e5c72503c1c173e64"/><section>
+    <title>RotateTriangle()</title>
+<indexterm><primary>RotateTriangle</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>RotateTriangle</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> RotateTriangle (struct <link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> Triangle_)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00052">52</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a4b37b8ef005ab4f79090c4d87b326801"/><section>
+    <title>ScaleTriangle()</title>
+<indexterm><primary>ScaleTriangle</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>ScaleTriangle</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> ScaleTriangle (struct <link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> Triangle_)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00080">80</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a7f14d00efaf40da5c8043c79ed98fb3a"/><section>
+    <title>SetMesh()</title>
+<indexterm><primary>SetMesh</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>SetMesh</secondary></indexterm>
+<para><computeroutput>void SetMesh (struct <link linkend="_struct_p_r_i_s_m___mesh">PRISM_Mesh</link> m)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00004">4</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a57c9fd28f17b11451e6c5d36db536bfb"/><section>
+    <title>SetMoveXYZ()</title>
+<indexterm><primary>SetMoveXYZ</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>SetMoveXYZ</secondary></indexterm>
+<para><computeroutput>void SetMoveXYZ (struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> moveVect)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00035">35</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a4715d4206facdace0d0ffe1efc81ae96"/><section>
+    <title>SetRotateXYZ()</title>
+<indexterm><primary>SetRotateXYZ</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>SetRotateXYZ</secondary></indexterm>
+<para><computeroutput>void SetRotateXYZ (struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> rotVect)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00019">19</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1acde3b9eb0b43bfd343a18f444526bc15"/><section>
+    <title>SetScaleXYZ()</title>
+<indexterm><primary>SetScaleXYZ</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>SetScaleXYZ</secondary></indexterm>
+<para><computeroutput>void SetScaleXYZ (struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> scaleVect)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00040">40</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a76994705915683e5dabc53a835b04af1"/><section>
+    <title>TileRasterisation()</title>
+<indexterm><primary>TileRasterisation</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>TileRasterisation</secondary></indexterm>
+<para><computeroutput>void TileRasterisation (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer * SDL_renderer, <link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link> light, short rgba[4], <link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link> RendMode)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00520">520</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a33ee4ea92fb858c1e19a5a420ac13441"/><section>
+    <title>TranslateTriangle()</title>
+<indexterm><primary>TranslateTriangle</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>TranslateTriangle</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> TranslateTriangle (struct <link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> Triangle_)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00071">71</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1ab9373b601dba85585b99518343d302ef"/><section>
+    <title>ViewTriangle()</title>
+<indexterm><primary>ViewTriangle</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>ViewTriangle</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> ViewTriangle (struct <link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link> Triangle_)</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8cpp_source">AbstractObject3D.cpp</link> строка <link linkend="__abstract_object3_d_8cpp_source_1l00089">89</link></para>
+</section>
+</section>
+<section>
+<title>Поля</title>
+<anchor xml:id="_class_abstract_object3_d_1a1320848696d06579795689c5e5ee4db9"/><section>
+    <title>Camera</title>
+<indexterm><primary>Camera</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>Camera</secondary></indexterm>
+<para><computeroutput><link linkend="_class_abstract_camera3_d">AbstractCamera3D</link>&amp; Camera</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00043">43</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1ae2a63d044e2f5ebcacde18dd6edf8ef1"/><section>
+    <title>Coordinate</title>
+<indexterm><primary>Coordinate</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>Coordinate</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> Coordinate</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00035">35</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1aaf5630e64e53279641322fa6fd8a981d"/><section>
+    <title>kSpecular</title>
+<indexterm><primary>kSpecular</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>kSpecular</secondary></indexterm>
+<para><computeroutput>float kSpecular = 0.5</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00040">40</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a97c2d95d9572e2dd9408c6a4816ce055"/><section>
+    <title>materialAmbient</title>
+<indexterm><primary>materialAmbient</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>materialAmbient</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> materialAmbient ={0.5f, 0.5f, 0.5f}</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00039">39</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a4707653e32d90b220c3c6321f2666576"/><section>
+    <title>mesh</title>
+<indexterm><primary>mesh</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>mesh</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_struct_p_r_i_s_m___mesh">PRISM_Mesh</link> mesh</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00038">38</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a4a0043af98800a2c0517cfe81c9423c6"/><section>
+    <title>ProjectionMatrix</title>
+<indexterm><primary>ProjectionMatrix</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>ProjectionMatrix</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_struct_p_r_i_s_m___matrix__4_x4">PRISM_Matrix_4X4</link> ProjectionMatrix</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00034">34</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1accfed9da2d822544527e3a911ff58616"/><section>
+    <title>Rotation</title>
+<indexterm><primary>Rotation</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>Rotation</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> Rotation</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00036">36</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a314c8b4cf5c683fc6b2dab2d65ace32a"/><section>
+    <title>Scale</title>
+<indexterm><primary>Scale</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>Scale</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> Scale</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00037">37</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1af273480bb7b551fe2359b8f4b23a084b"/><section>
+    <title>ScreenH</title>
+<indexterm><primary>ScreenH</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>ScreenH</secondary></indexterm>
+<para><computeroutput>float ScreenH</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00042">42</link></para>
+</section>
+<anchor xml:id="_class_abstract_object3_d_1a62a770b3680bca1269d59b9992144650"/><section>
+    <title>ScreenW</title>
+<indexterm><primary>ScreenW</primary><secondary>AbstractObject3D</secondary></indexterm>
+<indexterm><primary>AbstractObject3D</primary><secondary>ScreenW</secondary></indexterm>
+<para><computeroutput>float ScreenW</computeroutput></para><para>
+См. определение в файле <link linkend="__abstract_object3_d_8h_source">AbstractObject3D.h</link> строка <link linkend="__abstract_object3_d_8h_source_1l00041">41</link></para>
+</section>
+<para>
+Объявления и описания членов классов находятся в файлах:</para>
+C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_objects3D/<link linkend="__abstract_object3_d_8h">AbstractObject3D.h</link>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_objects3D/<link linkend="__abstract_object3_d_8cpp">AbstractObject3D.cpp</link></section>
+</section>

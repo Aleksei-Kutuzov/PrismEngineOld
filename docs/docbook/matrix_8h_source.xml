@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_matrix_8h_source" xml:lang="ru">
+<title>matrix.h</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/matrix.h</primary></indexterm>
+См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="_matrix_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;PRISM_MATRIX_H</emphasis>
+<anchor xml:id="_matrix_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;PRISM_MATRIX_H</emphasis>
+<anchor xml:id="_matrix_8h_source_1l00003"/>00003 
+<anchor xml:id="_matrix_8h_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_vector3_d_8h">vector3D.h</link>&quot;</emphasis>
+<anchor xml:id="_matrix_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&lt;cmath&gt;</emphasis>
+<anchor xml:id="_matrix_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&lt;stdexcept&gt;</emphasis>
+<anchor xml:id="_matrix_8h_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;SDL.h&gt;</emphasis>
+<anchor xml:id="_matrix_8h_source_1l00013"/><link linkend="_struct_p_r_i_s_m___matrix__4_x4">00013</link> <emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_p_r_i_s_m___matrix__4_x4">PRISM_Matrix_4X4</link>
+<anchor xml:id="_matrix_8h_source_1l00014"/>00014 {
+<anchor xml:id="_matrix_8h_source_1l00020"/><link linkend="_struct_p_r_i_s_m___matrix__4_x4_1a7cdab8754cd800b1ba4008e559aa314c">00020</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___matrix__4_x4_1a7cdab8754cd800b1ba4008e559aa314c">m</link>[4][4]&#32;=&#32;{0};
+<anchor xml:id="_matrix_8h_source_1l00021"/>00021 
+<anchor xml:id="_matrix_8h_source_1l00025"/>00025 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___matrix__4_x4_1a388f572c62279f839ee138a9afbdeeb5">print</link>();
+<anchor xml:id="_matrix_8h_source_1l00026"/>00026 
+<anchor xml:id="_matrix_8h_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>*&#32;<link linkend="_struct_p_r_i_s_m___matrix__4_x4_1ae7204f98880329763af1534dddd3bcad">operator[]</link>(<emphasis role="keywordtype">int</emphasis>&#32;index);
+<anchor xml:id="_matrix_8h_source_1l00034"/>00034 
+<anchor xml:id="_matrix_8h_source_1l00040"/>00040 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_struct_p_r_i_s_m___matrix__4_x4_1a7fd66b045ac2482f6398d286f898900a">operator==</link>(<link linkend="_struct_p_r_i_s_m___matrix__4_x4">PRISM_Matrix_4X4</link>&amp;&#32;other);
+<anchor xml:id="_matrix_8h_source_1l00041"/>00041 
+<anchor xml:id="_matrix_8h_source_1l00042"/>00042 };
+<anchor xml:id="_matrix_8h_source_1l00043"/>00043 
+<anchor xml:id="_matrix_8h_source_1l00044"/>00044 
+<anchor xml:id="_matrix_8h_source_1l00045"/>00045 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;MATRIX_H</emphasis>
+</programlisting></section>

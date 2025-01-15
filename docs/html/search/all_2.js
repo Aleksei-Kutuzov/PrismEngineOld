@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['c_0',['c',['../struct_p_r_i_s_m___triangle.html#adf66705530d423a1598895870b2e0875',1,'PRISM_Triangle']]],
+  ['c_5fnorlmal_1',['c_norlmal',['../struct_p_r_i_s_m___triangle.html#aea1c66594ed2f5bb0423abbcb8fc003e',1,'PRISM_Triangle']]],
+  ['calculatenormals_2',['CalculateNormals',['../class_math.html#ab0bf272d17220d425881009b75f5b769',1,'Math']]],
+  ['calculatephongshadingcolor_3',['CalculatePhongShadingColor',['../class_abstract_object3_d.html#af3834cbcf99a19ee555b0acbdfe334bc',1,'AbstractObject3D']]],
+  ['calculatepixelambient_4',['CalculatePixelAmbient',['../class_p_r_i_s_m___render.html#a44df9b94b16fb1df310c02257c125490',1,'PRISM_Render']]],
+  ['calculatepixeldiffuse_5',['CalculatePixelDiffuse',['../class_p_r_i_s_m___render.html#a31b9c243cb644531d85af023366e50d4',1,'PRISM_Render']]],
+  ['calculatepixelspecular_6',['CalculatePixelSpecular',['../class_p_r_i_s_m___render.html#a4baae358af056a50be03ace21ff0883d',1,'PRISM_Render']]],
+  ['camera_7',['Camera',['../class_abstract_object3_d.html#a1320848696d06579795689c5e5ee4db9',1,'AbstractObject3D']]],
+  ['cameracoordinate_8',['cameraCoordinate',['../class_p_r_i_s_m___render.html#aadcdf339262ba7e6274d5695634c5b5f',1,'PRISM_Render']]],
+  ['center_9',['center',['../struct_joystick.html#a04384f7c07a675481d0e4253c7e9966a',1,'Joystick']]],
+  ['cleanup_10',['cleanUp',['../class_p_r_i_s_m___window.html#ae900b054a1598c54acaa67902f87185d',1,'PRISM_Window']]],
+  ['clear_11',['clear',['../class_p_r_i_s_m___window.html#ac8bb3912a3ce86b15842e79d0b421204',1,'PRISM_Window::clear()'],['../class_z___buffer.html#a30e6880d1e5a38506410342f7ee92595',1,'Z_Buffer::clear()']]],
+  ['clearz_5fbuffer_12',['ClearZ_Buffer',['../class_abstract_camera3_d.html#a06aa32cc3a78b9563118d238cc71e6a0',1,'AbstractCamera3D']]],
+  ['color_13',['color',['../struct_p_r_i_s_m___light.html#a751967452bc7aa83f729222132146b40',1,'PRISM_Light']]],
+  ['compileshader_14',['compileShader',['../classshader_manager.html#a73ff9c5ffc92898686777b73cc4ba8a9',1,'shaderManager']]],
+  ['computebarycentriccoords_15',['ComputeBarycentricCoords',['../class_abstract_object3_d.html#a25b5a3ebd7fc24c26bb519aa2ed68c4b',1,'AbstractObject3D']]],
+  ['contourwidth_16',['ContourWidth',['../struct_p_r_i_s_m___render_mode.html#a9ff1fdb116c80da3ea34e79a6b541dfb',1,'PRISM_RenderMode']]],
+  ['converttoglcolor_17',['convertToGlColor',['../class_math.html#a43465c174cf3c327e12000dc0db8db9f',1,'Math']]],
+  ['coordinate_18',['Coordinate',['../class_abstract_camera3_d.html#ae2a63d044e2f5ebcacde18dd6edf8ef1',1,'AbstractCamera3D::Coordinate'],['../class_abstract_object3_d.html#ae2a63d044e2f5ebcacde18dd6edf8ef1',1,'AbstractObject3D::Coordinate']]]
+];

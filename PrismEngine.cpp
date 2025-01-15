@@ -415,9 +415,8 @@ int main(int argc, char* argv[])
     object.SetMesh(MeshLoader::LoadOBJ("Sphere.obj", MainCamera)); 
 
     
-    object.mesh.print();
+    //object.mesh.print();
 
-    
     object.materialAmbient = { 0.247f, 0.199f, 0.074f }; //золото
     object.kSpecular = 0.1f;
     scene.AddObject(&object);

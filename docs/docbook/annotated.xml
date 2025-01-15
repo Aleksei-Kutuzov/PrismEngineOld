@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="ru">
+<title>Структуры данных</title>
+Структуры данных с их кратким описанием.<link linkend="_class_abstract_camera3_d">AbstractCamera3D</link><link linkend="_class_abstract_object3_d">AbstractObject3D</link><link linkend="_struct_joystick">Joystick</link><link linkend="_class_math">Math</link>
+<para>Класс <link linkend="_class_math">Math</link> предоставляет набор статических методов для выполнения математических операций, связанных с векторами, матрицами и цветами </para>
+<link linkend="_class_mesh_loader">MeshLoader</link><link linkend="_struct_p_r_i_s_m___color">PRISM_Color</link>
+<para>Структура, представляющая цвет в формате RGBA (красный, зелёный, синий, альфа). Поддерживает различные форматы ввода: целочисленные и вещественные значения </para>
+<link linkend="_struct_p_r_i_s_m___g_l__f_color">PRISM_GL_fColor</link>
+<para>Структура, представляющая цвет с компонентами в формате float (0.0 - 1.0). Используется для OpenGL и других графических API </para>
+<link linkend="_struct_p_r_i_s_m___light">PRISM_Light</link>
+<para>Структура, представляющая источник света в 3D пространстве. Поддерживает настройку положения, цвета и интенсивности </para>
+<link linkend="_struct_p_r_i_s_m___matrix__4_x4">PRISM_Matrix_4X4</link>
+<para>Структура <link linkend="_struct_p_r_i_s_m___matrix__4_x4">PRISM_Matrix_4X4</link> представляет 4x4 матрицу, которая может быть использована для различных линейных преобразований, таких как масштабирование, вращение, перенос, а также для работы с однородными координатами </para>
+<link linkend="_struct_p_r_i_s_m___mesh">PRISM_Mesh</link>
+<para>Структура, представляющая 3D-меш, состоящий из набора треугольников. Используется для моделирования объектов в трёхмерной графике </para>
+<link linkend="_class_p_r_i_s_m___painter">PRISM_Painter</link><link linkend="_class_p_r_i_s_m___render">PRISM_Render</link><link linkend="_struct_p_r_i_s_m___render_mode">PRISM_RenderMode</link><link linkend="_struct_p_r_i_s_m___triangle">PRISM_Triangle</link>
+<para>Структура, представляющая треугольник в 3D пространстве. Содержит три вершины и их нормали для расчёта освещения и других эффектов </para>
+<link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link>
+<para>Структура <link linkend="_struct_p_r_i_s_m___vector3d">PRISM_Vector3d</link> предназначена для представления трёхмерного вектора с дополнительным четвёртым компонентом (w). Четвёртая компонента используется для различных операций, таких как преобразования в однородных координатах </para>
+<link linkend="_class_p_r_i_s_m___window">PRISM_Window</link><link linkend="_class_scene">Scene</link><link linkend="_classshader_manager">shaderManager</link><link linkend="_struct_toggle_button">ToggleButton</link><link linkend="_class_z___buffer">Z_Buffer</link></section>

@@ -84,6 +84,9 @@
     <ClCompile Include="src\PRISM_objects3D\MeshLoader.cpp">
       <Filter>Исходные файлы\PRISM_objects3D</Filter>
     </ClCompile>
+    <ClCompile Include="src\PRISM_rendering\shaderManager.cpp">
+      <Filter>Исходные файлы\PRISM_rendering</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\PRISM_math\vector3D.h">
@@ -130,6 +133,9 @@
     </ClInclude>
     <ClInclude Include="src\PRISM_objects3D\MeshLoader.h">
       <Filter>Файлы заголовков\PRISM_objects3D</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PRISM_rendering\shaderManager.h">
+      <Filter>Файлы заголовков\PRISM_rendering</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

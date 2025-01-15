@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRISM_ENGINE: Класс PRISM_Render</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoprism.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">PRISM_ENGINE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">docs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Поля данных</a>  </div>
+  <div class="headertitle"><div class="title">Класс PRISM_Render</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="render_8h_source.html">render.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a44df9b94b16fb1df310c02257c125490" id="r_a44df9b94b16fb1df310c02257c125490"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44df9b94b16fb1df310c02257c125490">CalculatePixelAmbient</a> (<a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> obj) const</td></tr>
+<tr class="separator:a44df9b94b16fb1df310c02257c125490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b9c243cb644531d85af023366e50d4" id="r_a31b9c243cb644531d85af023366e50d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31b9c243cb644531d85af023366e50d4">CalculatePixelDiffuse</a> (<a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> obj, <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> triangle)</td></tr>
+<tr class="separator:a31b9c243cb644531d85af023366e50d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4baae358af056a50be03ace21ff0883d" id="r_a4baae358af056a50be03ace21ff0883d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4baae358af056a50be03ace21ff0883d">CalculatePixelSpecular</a> (<a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> obj, <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> triangle, <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> <a class="el" href="#aadcdf339262ba7e6274d5695634c5b5f">cameraCoordinate</a>)</td></tr>
+<tr class="separator:a4baae358af056a50be03ace21ff0883d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a493a4aba911acb932c66030f15a90" id="r_a49a493a4aba911acb932c66030f15a90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49a493a4aba911acb932c66030f15a90">Rendering</a> (<a class="el" href="class_p_r_i_s_m___window.html">PRISM_Window</a> *window, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *obj)</td></tr>
+<tr class="separator:a49a493a4aba911acb932c66030f15a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac16499f92f48f29237b02a6294b52e31" id="r_ac16499f92f48f29237b02a6294b52e31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac16499f92f48f29237b02a6294b52e31">SetScreenSize</a> (int w, int h)</td></tr>
+<tr class="separator:ac16499f92f48f29237b02a6294b52e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Поля данных</h2></td></tr>
+<tr class="memitem:aadcdf339262ba7e6274d5695634c5b5f" id="r_aadcdf339262ba7e6274d5695634c5b5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadcdf339262ba7e6274d5695634c5b5f">cameraCoordinate</a> = {0, 0, 0}</td></tr>
+<tr class="separator:aadcdf339262ba7e6274d5695634c5b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1eaaa76fb0cea54f764c0fd1e1f820" id="r_aae1eaaa76fb0cea54f764c0fd1e1f820"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae1eaaa76fb0cea54f764c0fd1e1f820">lightAmbient</a> = { 0.1f, 0.1f, 0.1f }</td></tr>
+<tr class="separator:aae1eaaa76fb0cea54f764c0fd1e1f820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="render_8h_source.html">render.h</a> строка <a class="el" href="render_8h_source.html#l00016">16</a></p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a44df9b94b16fb1df310c02257c125490" name="a44df9b94b16fb1df310c02257c125490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44df9b94b16fb1df310c02257c125490">&#9670;&#160;</a></span>CalculatePixelAmbient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> CalculatePixelAmbient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a></td>          <td class="paramname"><span class="paramname"><em>originalСolor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a></td>          <td class="paramname"><span class="paramname"><em>obj</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="render_8cpp_source.html">render.cpp</a> строка <a class="el" href="render_8cpp_source.html#l00003">3</a></p>
+
+</div>
+</div>
+<a id="a31b9c243cb644531d85af023366e50d4" name="a31b9c243cb644531d85af023366e50d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31b9c243cb644531d85af023366e50d4">&#9670;&#160;</a></span>CalculatePixelDiffuse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> CalculatePixelDiffuse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a></td>          <td class="paramname"><span class="paramname"><em>originalСolor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a></td>          <td class="paramname"><span class="paramname"><em>light</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a></td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a></td>          <td class="paramname"><span class="paramname"><em>triangle</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="render_8cpp_source.html">render.cpp</a> строка <a class="el" href="render_8cpp_source.html#l00012">12</a></p>
+
+</div>
+</div>
+<a id="a4baae358af056a50be03ace21ff0883d" name="a4baae358af056a50be03ace21ff0883d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4baae358af056a50be03ace21ff0883d">&#9670;&#160;</a></span>CalculatePixelSpecular()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> CalculatePixelSpecular </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a></td>          <td class="paramname"><span class="paramname"><em>originalСolor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a></td>          <td class="paramname"><span class="paramname"><em>light</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a></td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a></td>          <td class="paramname"><span class="paramname"><em>triangle</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>cameraCoordinate</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="render_8cpp_source.html">render.cpp</a> строка <a class="el" href="render_8cpp_source.html#l00034">34</a></p>
+
+</div>
+</div>
+<a id="a49a493a4aba911acb932c66030f15a90" name="a49a493a4aba911acb932c66030f15a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a493a4aba911acb932c66030f15a90">&#9670;&#160;</a></span>Rendering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rendering </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_p_r_i_s_m___window.html">PRISM_Window</a> *</td>          <td class="paramname"><span class="paramname"><em>window</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="render_8cpp_source.html">render.cpp</a> строка <a class="el" href="render_8cpp_source.html#l00060">60</a></p>
+
+</div>
+</div>
+<a id="ac16499f92f48f29237b02a6294b52e31" name="ac16499f92f48f29237b02a6294b52e31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac16499f92f48f29237b02a6294b52e31">&#9670;&#160;</a></span>SetScreenSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetScreenSize </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="render_8cpp_source.html">render.cpp</a> строка <a class="el" href="render_8cpp_source.html#l00113">113</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Поля</h2>
+<a id="aadcdf339262ba7e6274d5695634c5b5f" name="aadcdf339262ba7e6274d5695634c5b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadcdf339262ba7e6274d5695634c5b5f">&#9670;&#160;</a></span>cameraCoordinate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> cameraCoordinate = {0, 0, 0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="render_8h_source.html">render.h</a> строка <a class="el" href="render_8h_source.html#l00018">18</a></p>
+
+</div>
+</div>
+<a id="aae1eaaa76fb0cea54f764c0fd1e1f820" name="aae1eaaa76fb0cea54f764c0fd1e1f820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1eaaa76fb0cea54f764c0fd1e1f820">&#9670;&#160;</a></span>lightAmbient</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> lightAmbient = { 0.1f, 0.1f, 0.1f }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="render_8h_source.html">render.h</a> строка <a class="el" href="render_8h_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/<a class="el" href="render_8h_source.html">render.h</a></li>
+<li>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/<a class="el" href="render_8cpp_source.html">render.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

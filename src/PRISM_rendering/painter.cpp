@@ -6,16 +6,16 @@
 
 
 void PRISM_Painter::DrawThickLine(SDL_Renderer* renderer, int x1, int y1, int x2, int y2, int thickness) {
-	// Вычисление разности координат
+	// Р’С‹С‡РёСЃР»РµРЅРёРµ СЂР°Р·РЅРѕСЃС‚Рё РєРѕРѕСЂРґРёРЅР°С‚
 	int dx = x2 - x1;
 	int dy = y2 - y1;
 
-	// Вычисление нормализованного вектора перпендикулярного линии
+	// Р’С‹С‡РёСЃР»РµРЅРёРµ РЅРѕСЂРјР°Р»РёР·РѕРІР°РЅРЅРѕРіРѕ РІРµРєС‚РѕСЂР° РїРµСЂРїРµРЅРґРёРєСѓР»СЏСЂРЅРѕРіРѕ Р»РёРЅРёРё
 	float length = (float)sqrtf(dx * dx + dy * dy);
 	float nx = -dy / length;
 	float ny = dx / length;
 
-	// Рисование параллельных линий
+	// Р РёСЃРѕРІР°РЅРёРµ РїР°СЂР°Р»Р»РµР»СЊРЅС‹С… Р»РёРЅРёР№
 	for (int i = -thickness / 2; i <= thickness / 2; ++i) {
 		int offsetX = (int)(nx * i);
 		int offsetY = (int)(ny * i);
@@ -37,18 +37,18 @@ void PRISM_Painter::DrawPoint(PRISM_Window* window, int x, int y)
 		return;
 	}
 
-	// переключаем контекст OpenGL окна
+	// РїРµСЂРµРєР»СЋС‡Р°РµРј РєРѕРЅС‚РµРєСЃС‚ OpenGL РѕРєРЅР°
 	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
 	
-	//отображаем поверх
+	//РѕС‚РѕР±СЂР°Р¶Р°РµРј РїРѕРІРµСЂС…
 	glDepthFunc(GL_ALWAYS);
 
-	//начало
+	//РЅР°С‡Р°Р»Рѕ
 	glBegin(GL_POINTS);
 	glVertex2f(x, y);
-	//конец
+	//РєРѕРЅРµС†
 	glEnd();
-	//возврат режима глубин
+	//РІРѕР·РІСЂР°С‚ СЂРµР¶РёРјР° РіР»СѓР±РёРЅ
 	glDepthFunc(GL_LESS);
 }
 
@@ -58,19 +58,19 @@ void PRISM_Painter::DrawPoint(PRISM_Window* window, int x, int y, int r, int g, 
 		return;
 	}
 	
-	// переключаем контекст OpenGL окна
+	// РїРµСЂРµРєР»СЋС‡Р°РµРј РєРѕРЅС‚РµРєСЃС‚ OpenGL РѕРєРЅР°
 	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
-	//отображаем поверх
+	//РѕС‚РѕР±СЂР°Р¶Р°РµРј РїРѕРІРµСЂС…
 	glDepthFunc(GL_ALWAYS);
-	//начало
+	//РЅР°С‡Р°Р»Рѕ
 	glBegin(GL_POINTS);
-	//цвет
+	//С†РІРµС‚
 	glColor3f(r, g, b);
 
 	glVertex2f(x, y);
-	//конец
+	//РєРѕРЅРµС†
 	glEnd();
-	//возврат режима глубин
+	//РІРѕР·РІСЂР°С‚ СЂРµР¶РёРјР° РіР»СѓР±РёРЅ
 	glDepthFunc(GL_LESS);
 }
 
@@ -81,21 +81,21 @@ void PRISM_Painter::DrawThickLine(PRISM_Window* window, int x1, int y1, int x2, 
 		return;
 	}
 
-	// переключаем контекст OpenGL окна
+	// РїРµСЂРµРєР»СЋС‡Р°РµРј РєРѕРЅС‚РµРєСЃС‚ OpenGL РѕРєРЅР°
 	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
 
-	//отображаем поверх
+	//РѕС‚РѕР±СЂР°Р¶Р°РµРј РїРѕРІРµСЂС…
 	glDepthFunc(GL_ALWAYS);
-	// задаём ширину
+	// Р·Р°РґР°С‘Рј С€РёСЂРёРЅСѓ
 	glLineWidth(thickness);
 
-	//начало
+	//РЅР°С‡Р°Р»Рѕ
 	glBegin(GL_LINES);
-	glVertex2f(x1, y1); // Начальная точка линии
-	glVertex2f(x2, y2);  // Конечная точка линии
-	//конец
+	glVertex2f(x1, y1); // РќР°С‡Р°Р»СЊРЅР°СЏ С‚РѕС‡РєР° Р»РёРЅРёРё
+	glVertex2f(x2, y2);  // РљРѕРЅРµС‡РЅР°СЏ С‚РѕС‡РєР° Р»РёРЅРёРё
+	//РєРѕРЅРµС†
 	glEnd();
-	//возврат режима глубин
+	//РІРѕР·РІСЂР°С‚ СЂРµР¶РёРјР° РіР»СѓР±РёРЅ
 	glDepthFunc(GL_LESS);
 	
 }
@@ -106,22 +106,22 @@ void PRISM_Painter::DrawThickLine(PRISM_Window* window, int x1, int y1, int x2, 
 		return;
 	}
 
-	// переключаем контекст OpenGL окна
+	// РїРµСЂРµРєР»СЋС‡Р°РµРј РєРѕРЅС‚РµРєСЃС‚ OpenGL РѕРєРЅР°
 	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
 
-	//отображаем поверх
+	//РѕС‚РѕР±СЂР°Р¶Р°РµРј РїРѕРІРµСЂС…
 	glDepthFunc(GL_ALWAYS);
-	// задаём ширину
+	// Р·Р°РґР°С‘Рј С€РёСЂРёРЅСѓ
 	glLineWidth(thickness);
 
-	//начало
+	//РЅР°С‡Р°Р»Рѕ
 	glBegin(GL_LINES);
 	glColor3f(r, g, b);
-	glVertex2f(x1, y1); // Начальная точка линии
-	glVertex2f(x2, y2);  // Конечная точка линии
-	//конец
+	glVertex2f(x1, y1); // РќР°С‡Р°Р»СЊРЅР°СЏ С‚РѕС‡РєР° Р»РёРЅРёРё
+	glVertex2f(x2, y2);  // РљРѕРЅРµС‡РЅР°СЏ С‚РѕС‡РєР° Р»РёРЅРёРё
+	//РєРѕРЅРµС†
 	glEnd();
-	//возврат режима глубин
+	//РІРѕР·РІСЂР°С‚ СЂРµР¶РёРјР° РіР»СѓР±РёРЅ
 	glDepthFunc(GL_LESS);
 }
 
@@ -131,26 +131,26 @@ void PRISM_Painter::DrawTriangle(PRISM_Window* window, int x1, int y1, int x2, i
 		return;
 	}
 
-	// Активируем OpenGL-контекст окна
+	// РђРєС‚РёРІРёСЂСѓРµРј OpenGL-РєРѕРЅС‚РµРєСЃС‚ РѕРєРЅР°
 	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
 
-	//отображаем поверх
+	//РѕС‚РѕР±СЂР°Р¶Р°РµРј РїРѕРІРµСЂС…
 	glDepthFunc(GL_ALWAYS);
 
-	// Рисуем 2D-треугольник
+	// Р РёСЃСѓРµРј 2D-С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 	glBegin(GL_TRIANGLES);
 
-	// Вершина 1
+	// Р’РµСЂС€РёРЅР° 1
 	glVertex2f(x1, y1);
 
-	// Вершина 2
+	// Р’РµСЂС€РёРЅР° 2
 	glVertex2f(x2, y2);
 
-	// Вершина 3
+	// Р’РµСЂС€РёРЅР° 3
 	glVertex2f(x3, y3);
 
 	glEnd();
-	//возврат режима глубин
+	//РІРѕР·РІСЂР°С‚ СЂРµР¶РёРјР° РіР»СѓР±РёРЅ
 	glDepthFunc(GL_LESS);
 }
 
@@ -160,29 +160,29 @@ void PRISM_Painter::DrawTriangle(PRISM_Window* window, int x1, int y1, int x2, i
 		return;
 	}
 
-	// Активируем OpenGL-контекст окна
+	// РђРєС‚РёРІРёСЂСѓРµРј OpenGL-РєРѕРЅС‚РµРєСЃС‚ РѕРєРЅР°
 	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
 
-	//отображаем поверх
+	//РѕС‚РѕР±СЂР°Р¶Р°РµРј РїРѕРІРµСЂС…
 	glDepthFunc(GL_ALWAYS);
 
-	// Рисуем 2D-треугольник
+	// Р РёСЃСѓРµРј 2D-С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 	glBegin(GL_TRIANGLES);
 
-	// Вершина 1
+	// Р’РµСЂС€РёРЅР° 1
 	glColor3f(r, g, b);
 	glVertex2f(x1, y1);
 
-	// Вершина 2
+	// Р’РµСЂС€РёРЅР° 2
 	glColor3f(r, g, b);
 	glVertex2f(x2, y2);
 
-	// Вершина 3
+	// Р’РµСЂС€РёРЅР° 3
 	glColor3f(r, g, b);
 	glVertex2f(x3, y3);
 
 	glEnd();
-	//возврат режима глубин
+	//РІРѕР·РІСЂР°С‚ СЂРµР¶РёРјР° РіР»СѓР±РёРЅ
 	glDepthFunc(GL_LESS);
 }
 
@@ -192,29 +192,29 @@ void PRISM_Painter::DrawRectangle(PRISM_Window* window, int x1, int y1, int x2, 
 		return;
 	}
 
-	// Активируем OpenGL-контекст окна
+	// РђРєС‚РёРІРёСЂСѓРµРј OpenGL-РєРѕРЅС‚РµРєСЃС‚ РѕРєРЅР°
 	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
 
-	//отображаем поверх
+	//РѕС‚РѕР±СЂР°Р¶Р°РµРј РїРѕРІРµСЂС…
 	glDepthFunc(GL_ALWAYS);
 	
-	// Рисуем 2D-квадрат
+	// Р РёСЃСѓРµРј 2D-РєРІР°РґСЂР°С‚
 	glBegin(GL_QUADS);
 
-	// верхний левый
+	// РІРµСЂС…РЅРёР№ Р»РµРІС‹Р№
 	glVertex2f(x1, y1);
 
-	// верхний правый
+	// РІРµСЂС…РЅРёР№ РїСЂР°РІС‹Р№
 	glVertex2f(x2, y1);
 
-	// нижний правый
+	// РЅРёР¶РЅРёР№ РїСЂР°РІС‹Р№
 	glVertex2f(x2, y2);
 
-	// нижний левый
+	// РЅРёР¶РЅРёР№ Р»РµРІС‹Р№
 	glVertex2f(x1, y2);
 
 	glEnd();
-	//возврат режима глубин
+	//РІРѕР·РІСЂР°С‚ СЂРµР¶РёРјР° РіР»СѓР±РёРЅ
 	glDepthFunc(GL_LESS);
 }
 
@@ -224,32 +224,32 @@ void PRISM_Painter::DrawRectangle(PRISM_Window* window, int x1, int y1, int x2, 
 		return;
 	}
 
-	// Активируем OpenGL-контекст окна
+	// РђРєС‚РёРІРёСЂСѓРµРј OpenGL-РєРѕРЅС‚РµРєСЃС‚ РѕРєРЅР°
 	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
 
-	//отображаем поверх
+	//РѕС‚РѕР±СЂР°Р¶Р°РµРј РїРѕРІРµСЂС…
 	glDepthFunc(GL_ALWAYS);
 
-	// Рисуем 2D-квадрат
+	// Р РёСЃСѓРµРј 2D-РєРІР°РґСЂР°С‚
 	glBegin(GL_QUADS);
 
-	//цвет
+	//С†РІРµС‚
 	glColor3f(r, g, b);
 
-	// верхний левый
+	// РІРµСЂС…РЅРёР№ Р»РµРІС‹Р№
 	glVertex2f(x1, y1);
 
-	// верхний правый
+	// РІРµСЂС…РЅРёР№ РїСЂР°РІС‹Р№
 	glVertex2f(x2, y1);
 
-	// нижний правый
+	// РЅРёР¶РЅРёР№ РїСЂР°РІС‹Р№
 	glVertex2f(x2, y2);
 
-	// нижний левый
+	// РЅРёР¶РЅРёР№ Р»РµРІС‹Р№
 	glVertex2f(x1, y2);
 
 	glEnd();
-	//возврат режима глубин
+	//РІРѕР·РІСЂР°С‚ СЂРµР¶РёРјР° РіР»СѓР±РёРЅ
 	glDepthFunc(GL_LESS);
 }
 
@@ -262,21 +262,21 @@ void PRISM_Painter::DrawTriangle3D(PRISM_Window* window,
 		return;
 	}
 
-	// Активируем OpenGL-контекст окна
+	// РђРєС‚РёРІРёСЂСѓРµРј OpenGL-РєРѕРЅС‚РµРєСЃС‚ РѕРєРЅР°
 	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
 	
-	// Рисуем 3D-треугольник
+	// Р РёСЃСѓРµРј 3D-С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 	glBegin(GL_TRIANGLES);
 
-	// Вершина 1
+	// Р’РµСЂС€РёРЅР° 1
 	glColor3f(r, g, b);
 	glVertex3f(x1, y1, z1);
 
-	// Вершина 2
+	// Р’РµСЂС€РёРЅР° 2
 	glColor3f(r, g, b);
 	glVertex3f(x2, y2, z2);
 
-	// Вершина 3
+	// Р’РµСЂС€РёРЅР° 3
 	glColor3f(r, g, b);
 	glVertex3f(x3, y3, z3);
 
@@ -290,21 +290,21 @@ void PRISM_Painter::DrawTriangle3D(PRISM_Window* window, PRISM_Triangle triangle
 		return;
 	}
 
-	// Активируем OpenGL-контекст окна
+	// РђРєС‚РёРІРёСЂСѓРµРј OpenGL-РєРѕРЅС‚РµРєСЃС‚ РѕРєРЅР°
 	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
 
-	// Рисуем 3D-треугольник
+	// Р РёСЃСѓРµРј 3D-С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 	glBegin(GL_TRIANGLES);
 
-	// Вершина 1
+	// Р’РµСЂС€РёРЅР° 1
 	glColor3f(r, g, b);
 	glVertex3f(triangle.a.x, triangle.a.y, triangle.a.z);
 
-	// Вершина 2
+	// Р’РµСЂС€РёРЅР° 2
 	glColor3f(r, g, b);
 	glVertex3f(triangle.b.x, triangle.b.y, triangle.b.z);
 
-	// Вершина 3
+	// Р’РµСЂС€РёРЅР° 3
 	glColor3f(r, g, b);
 	glVertex3f(triangle.c.x, triangle.c.y, triangle.c.z);
 
@@ -319,21 +319,21 @@ void PRISM_Painter::DrawTriangle3D(PRISM_Window* window, PRISM_Triangle triangle
 
 	PRISM_GL_fColor gl_color = Math::convertToGlColor(color);
 
-	// Активируем OpenGL-контекст окна
+	// РђРєС‚РёРІРёСЂСѓРµРј OpenGL-РєРѕРЅС‚РµРєСЃС‚ РѕРєРЅР°
 	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
 
-	// Рисуем 3D-треугольник
+	// Р РёСЃСѓРµРј 3D-С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 	glBegin(GL_TRIANGLES);
 
-	// Вершина 1
+	// Р’РµСЂС€РёРЅР° 1
 	glColor3f(gl_color.r, gl_color.g, gl_color.b);
 	glVertex3f(triangle.a.x, triangle.a.y, triangle.a.z);
 
-	// Вершина 2
+	// Р’РµСЂС€РёРЅР° 2
 	glColor3f(gl_color.r, gl_color.g, gl_color.b);
 	glVertex3f(triangle.b.x, triangle.b.y, triangle.b.z);
 
-	// Вершина 3
+	// Р’РµСЂС€РёРЅР° 3
 	glColor3f(gl_color.r, gl_color.g, gl_color.b);
 	glVertex3f(triangle.c.x, triangle.c.y, triangle.c.z);
 	

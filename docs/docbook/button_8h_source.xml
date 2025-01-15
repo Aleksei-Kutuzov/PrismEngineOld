@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_button_8h_source" xml:lang="ru">
+<title>button.h</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_UI/button.h</primary></indexterm>
+См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="_button_8h_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;BUTTON_H</emphasis>
+<anchor xml:id="_button_8h_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;BUTTON_H</emphasis>
+<anchor xml:id="_button_8h_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&quot;SDL.h&quot;</emphasis>
+<anchor xml:id="_button_8h_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&quot;SDL_image.h&quot;</emphasis>
+<anchor xml:id="_button_8h_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&lt;SDL_ttf.h&gt;</emphasis>
+<anchor xml:id="_button_8h_source_1l00006"/>00006 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+<anchor xml:id="_button_8h_source_1l00007"/>00007 <emphasis role="preprocessor">#include&#32;&lt;SDL2_gfxPrimitives.h&gt;</emphasis>
+<anchor xml:id="_button_8h_source_1l00008"/>00008 
+<anchor xml:id="_button_8h_source_1l00009"/>00009 
+<anchor xml:id="_button_8h_source_1l00010"/><link linkend="_struct_toggle_button">00010</link> <emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_toggle_button">ToggleButton</link>&#32;{
+<anchor xml:id="_button_8h_source_1l00011"/><link linkend="_struct_toggle_button_1a3cb434103624064b39c9212f797f6e44">00011</link> &#32;&#32;&#32;&#32;SDL_Texture&#32;*<link linkend="_struct_toggle_button_1a3cb434103624064b39c9212f797f6e44">image</link>;
+<anchor xml:id="_button_8h_source_1l00012"/><link linkend="_struct_toggle_button_1a966da7a60c4ea3ba301e26ccc5efe452">00012</link> &#32;&#32;&#32;&#32;SDL_Renderer&#32;*<link linkend="_struct_toggle_button_1a966da7a60c4ea3ba301e26ccc5efe452">renderer</link>;
+<anchor xml:id="_button_8h_source_1l00013"/><link linkend="_struct_toggle_button_1a55aefd071649ac9dd8133e2d8a52d11f">00013</link> &#32;&#32;&#32;&#32;SDL_Rect&#32;<link linkend="_struct_toggle_button_1a55aefd071649ac9dd8133e2d8a52d11f">rect</link>;
+<anchor xml:id="_button_8h_source_1l00014"/><link linkend="_struct_toggle_button_1a23c058547fbc73b5659191844a9f258c">00014</link> &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_struct_toggle_button_1a23c058547fbc73b5659191844a9f258c">text</link>;
+<anchor xml:id="_button_8h_source_1l00015"/><link linkend="_struct_toggle_button_1a7ea8e03c78a84ff3d7d2e0920ed18f0e">00015</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_struct_toggle_button_1a7ea8e03c78a84ff3d7d2e0920ed18f0e">FD</link>;
+<anchor xml:id="_button_8h_source_1l00016"/><link linkend="_struct_toggle_button_1a03c996f9fcf0e10baeb3e700be0c409a">00016</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_struct_toggle_button_1a03c996f9fcf0e10baeb3e700be0c409a">active</link>;
+<anchor xml:id="_button_8h_source_1l00017"/>00017 &#32;&#32;&#32;&#32;
+<anchor xml:id="_button_8h_source_1l00018"/>00018 };
+<anchor xml:id="_button_8h_source_1l00019"/>00019 
+<anchor xml:id="_button_8h_source_1l00020"/>00020 
+<anchor xml:id="_button_8h_source_1l00021"/>00021 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_button_8h_1ae271d5f10bebbb049e579a7f21b2e824">InitToggleButton</link>(<link linkend="_struct_toggle_button">ToggleButton</link>&#32;&amp;toggle_button,&#32;<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y,&#32;<emphasis role="keywordtype">int</emphasis>&#32;w,&#32;<emphasis role="keywordtype">int</emphasis>&#32;h,
+<anchor xml:id="_button_8h_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;IsActive,&#32;SDL_Renderer&#32;*renderer);
+<anchor xml:id="_button_8h_source_1l00023"/>00023 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_button_8h_1af240adf133032879058c1da5581078ea">SetToggleButtonTexture</link>(<link linkend="_struct_toggle_button">ToggleButton</link>&#32;&amp;toggle_button,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*filename);
+<anchor xml:id="_button_8h_source_1l00024"/>00024 SDL_Texture*&#32;<link linkend="_button_8h_1afb2808ed98eb6542a559aa75d35efe0d">renderText</link>(<emphasis role="keyword">const</emphasis>&#32;std::string&#32;&amp;message,&#32;<emphasis role="keyword">const</emphasis>&#32;std::string&#32;&amp;fontFile,
+<anchor xml:id="_button_8h_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_Color&#32;color,&#32;<emphasis role="keywordtype">int</emphasis>&#32;fontSize,&#32;SDL_Renderer&#32;*renderer);
+<anchor xml:id="_button_8h_source_1l00026"/>00026 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_button_8h_1a8fe13d21334ce808fdf5450cace9a629">SetToggleButtonText</link>(<link linkend="_struct_toggle_button">ToggleButton</link>&#32;&amp;toggle_button,&#32;<emphasis role="keyword">const</emphasis>&#32;std::string&#32;text,
+<anchor xml:id="_button_8h_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;std::string&#32;&amp;fontFile,&#32;SDL_Color&#32;color,&#32;<emphasis role="keywordtype">int</emphasis>&#32;fontSize);
+<anchor xml:id="_button_8h_source_1l00028"/>00028 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_button_8h_1aa02858010549847e5f40bed0b7aa8bcb">ToggleButtonInput</link>(<link linkend="_struct_toggle_button">ToggleButton</link>&#32;&amp;toggle_button,&#32;SDL_Event&#32;&amp;e);
+<anchor xml:id="_button_8h_source_1l00029"/>00029 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_button_8h_1a1ab311ff9dab6e1ac74f7fde026bf427">renderTexture</link>(SDL_Texture&#32;*tex,&#32;SDL_Renderer&#32;*ren,&#32;<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y,&#32;<emphasis role="keywordtype">int</emphasis>&#32;w,&#32;<emphasis role="keywordtype">int</emphasis>&#32;h);
+<anchor xml:id="_button_8h_source_1l00030"/>00030 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_button_8h_1a82caed73e3dcecce469a3ba5f9890908">RenderToggleButton</link>(<link linkend="_struct_toggle_button">ToggleButton</link>&#32;&amp;toggle_button);
+<anchor xml:id="_button_8h_source_1l00031"/>00031 
+<anchor xml:id="_button_8h_source_1l00032"/>00032 
+<anchor xml:id="_button_8h_source_1l00033"/>00033 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

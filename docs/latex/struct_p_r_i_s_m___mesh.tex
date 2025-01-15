@@ -1,0 +1,68 @@
+\doxysection{Структура PRISM\+\_\+\+Mesh}
+\hypertarget{struct_p_r_i_s_m___mesh}{}\label{struct_p_r_i_s_m___mesh}\index{PRISM\_Mesh@{PRISM\_Mesh}}
+
+
+Структура, представляющая 3D-\/меш, состоящий из набора треугольников. Используется для моделирования объектов в трёхмерной графике.  
+
+
+
+
+{\ttfamily \#include $<$other.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_p_r_i_s_m___mesh_a388f572c62279f839ee138a9afbdeeb5}{print}} ()
+\begin{DoxyCompactList}\small\item\em Выводит информацию о всех треугольниках меша в консоль. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Поля данных}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}} $>$ \mbox{\hyperlink{struct_p_r_i_s_m___mesh_ac393379bc7f471ceca77be5b67626168}{tris}}
+\begin{DoxyCompactList}\small\item\em Вектор треугольников, составляющих меш. Каждый треугольник содержит свои вершины и нормали. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Структура, представляющая 3D-\/меш, состоящий из набора треугольников. Используется для моделирования объектов в трёхмерной графике. 
+
+См. определение в файле \mbox{\hyperlink{other_8h_source}{other.\+h}} строка \mbox{\hyperlink{other_8h_source_l00074}{74}}
+
+
+
+\doxysubsection{Методы}
+\Hypertarget{struct_p_r_i_s_m___mesh_a388f572c62279f839ee138a9afbdeeb5}\index{PRISM\_Mesh@{PRISM\_Mesh}!print@{print}}
+\index{print@{print}!PRISM\_Mesh@{PRISM\_Mesh}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{struct_p_r_i_s_m___mesh_a388f572c62279f839ee138a9afbdeeb5} 
+void print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Выводит информацию о всех треугольниках меша в консоль. 
+
+
+
+См. определение в файле \mbox{\hyperlink{other_8cpp_source}{other.\+cpp}} строка \mbox{\hyperlink{other_8cpp_source_l00013}{13}}
+
+
+
+\doxysubsection{Поля}
+\Hypertarget{struct_p_r_i_s_m___mesh_ac393379bc7f471ceca77be5b67626168}\index{PRISM\_Mesh@{PRISM\_Mesh}!tris@{tris}}
+\index{tris@{tris}!PRISM\_Mesh@{PRISM\_Mesh}}
+\doxysubsubsection{\texorpdfstring{tris}{tris}}
+{\footnotesize\ttfamily \label{struct_p_r_i_s_m___mesh_ac393379bc7f471ceca77be5b67626168} 
+std\+::vector$<$\mbox{\hyperlink{struct_p_r_i_s_m___triangle}{PRISM\+\_\+\+Triangle}}$>$ tris}
+
+
+
+Вектор треугольников, составляющих меш. Каждый треугольник содержит свои вершины и нормали. 
+
+
+
+См. определение в файле \mbox{\hyperlink{other_8h_source}{other.\+h}} строка \mbox{\hyperlink{other_8h_source_l00080}{80}}
+
+
+
+Объявления и описания членов структур находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Admin/\+Desktop/\+Prism\+Engine/\+Prism\+Engine/src/\+PRISM\+\_\+math/\mbox{\hyperlink{other_8h}{other.\+h}}\item 
+C\+:/\+Users/\+Admin/\+Desktop/\+Prism\+Engine/\+Prism\+Engine/src/\+PRISM\+\_\+math/\mbox{\hyperlink{other_8cpp}{other.\+cpp}}\end{DoxyCompactItemize}

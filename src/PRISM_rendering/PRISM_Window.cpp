@@ -2,19 +2,20 @@
 
 
 
+
 PRISM_Window::PRISM_Window(int width, int height, const char* title)
                   : window(nullptr), glContext(nullptr), running(true)
 {
     this->w = width;
     this->h = height;
-    // Инициализация SDL
+    // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ SDL
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         SDL_LogError(SDL_LOG_PRIORITY_ERROR, "SDL could not initialize! SDL_Error: %s", SDL_GetError());
         running = false;
         return;
     }
 
-    // Установка кодировки UTF-8
+    // РЈСЃС‚Р°РЅРѕРІРєР° РєРѕРґРёСЂРѕРІРєРё UTF-8
     if (!SDL_SetHint(SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP, "1") ||
         !SDL_SetHint(SDL_HINT_VIDEO_WIN_D3DCOMPILER, "d3dcompiler_47.dll") ||
         !SDL_SetHint(SDL_HINT_VIDEO_ALLOW_SCREENSAVER, "1") ||
@@ -24,12 +25,12 @@ PRISM_Window::PRISM_Window(int width, int height, const char* title)
     }
     
     SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
-    SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 4);  // Количество сэмплов (4x MSAA)
+    SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 4);  // РљРѕР»РёС‡РµСЃС‚РІРѕ СЃСЌРјРїР»РѕРІ (4x MSAA)
 
 
     SDL_LogInfo(SDL_LOG_PRIORITY_INFO, "SDL initialized successfully.");
 
-    // Создание окна с поддержкой OpenGL
+    // РЎРѕР·РґР°РЅРёРµ РѕРєРЅР° СЃ РїРѕРґРґРµСЂР¶РєРѕР№ OpenGL
     window = SDL_CreateWindow(title,
         SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
         width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
@@ -40,7 +41,7 @@ PRISM_Window::PRISM_Window(int width, int height, const char* title)
         return;
     }
 
-    // Создание контекста OpenGL
+    // РЎРѕР·РґР°РЅРёРµ РєРѕРЅС‚РµРєСЃС‚Р° OpenGL
     glContext = SDL_GL_CreateContext(window);
     if (!glContext) {
         SDL_LogError(SDL_LOG_PRIORITY_ERROR, "OpenGL context could not be created! SDL_Error: %s", SDL_GetError());
@@ -48,28 +49,28 @@ PRISM_Window::PRISM_Window(int width, int height, const char* title)
         return;
     }
 
-    // Инициализация OpenGL через freeGLUT (необязательно, но полезно для расширенных возможностей)
+    // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ OpenGL С‡РµСЂРµР· freeGLUT (РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅРѕ, РЅРѕ РїРѕР»РµР·РЅРѕ РґР»СЏ СЂР°СЃС€РёСЂРµРЅРЅС‹С… РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№)
     int argc = 0;
     glutInit(&argc, nullptr);
 
-    // Настройка OpenGL (например, для использования глубины)
+    // РќР°СЃС‚СЂРѕР№РєР° OpenGL (РЅР°РїСЂРёРјРµСЂ, РґР»СЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РіР»СѓР±РёРЅС‹)
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LESS);
 
 
     SDL_LogInfo(SDL_LOG_PRIORITY_INFO, "Window created successfully, OpenGL context initialized.");
-    //glEnable(GL_MULTISAMPLE); не все версии поддерживают версиях
+    //glEnable(GL_MULTISAMPLE); РЅРµ РІСЃРµ РІРµСЂСЃРёРё РїРѕРґРґРµСЂР¶РёРІР°СЋС‚ РІРµСЂСЃРёСЏС…
 
-    // Настройка ортографической проекции для координат SDL
+    // РќР°СЃС‚СЂРѕР№РєР° РѕСЂС‚РѕРіСЂР°С„РёС‡РµСЃРєРѕР№ РїСЂРѕРµРєС†РёРё РґР»СЏ РєРѕРѕСЂРґРёРЅР°С‚ SDL
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     glOrtho(0, width, height, 0, -1, 1);
 
-    // Сброс модели
+    // РЎР±СЂРѕСЃ РјРѕРґРµР»Рё
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
-    // Устанавливаем единичную модельно-видовую матрицу
+    // РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РµРґРёРЅРёС‡РЅСѓСЋ РјРѕРґРµР»СЊРЅРѕ-РІРёРґРѕРІСѓСЋ РјР°С‚СЂРёС†Сѓ
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
@@ -106,7 +107,7 @@ void PRISM_Window::handleEvents() {
             int newWidth = e.window.data1;
             int newHeight = e.window.data2;
 
-            // Обновляем видовой порт и проекцию
+            // РћР±РЅРѕРІР»СЏРµРј РІРёРґРѕРІРѕР№ РїРѕСЂС‚ Рё РїСЂРѕРµРєС†РёСЋ
             glViewport(0, 0, newWidth, newHeight);
 
             glMatrixMode(GL_PROJECTION);
@@ -124,7 +125,7 @@ void PRISM_Window::handleEvents() {
 void PRISM_Window::update() {
 
 
-    // Обновление экрана
+    // РћР±РЅРѕРІР»РµРЅРёРµ СЌРєСЂР°РЅР°
     SDL_GL_SwapWindow(window);
 
     SDL_LogInfo(SDL_LOG_PRIORITY_INFO, "Frame rendered successfully.");

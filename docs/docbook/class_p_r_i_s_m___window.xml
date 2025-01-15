@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_p_r_i_s_m___window" xml:lang="ru">
+<title>Класс PRISM_Window</title>
+<indexterm><primary>PRISM_Window</primary></indexterm>
+<para>
+<computeroutput>#include &lt;PRISM_Window.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_p_r_i_s_m___window_1add5cb291c2ea0bae7ef26948cdae0418">PRISM_Window</link> (int w, int h, const char *title)</para>
+</listitem>
+            <listitem><para><link linkend="_class_p_r_i_s_m___window_1af2823855876c4407cc6004de3031230c">~PRISM_Window</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_p_r_i_s_m___window_1ad619b8b51adc7874204abd71080cd90e">isRunning</link> () const</para>
+</listitem>
+            <listitem><para>SDL_Window * <link linkend="_class_p_r_i_s_m___window_1adaac48ee303e76d89f367b4c55439134">GetSDLWindow</link> () const</para>
+</listitem>
+            <listitem><para>SDL_GLContext <link linkend="_class_p_r_i_s_m___window_1a7b065c734e903b8b1593588b7256ad8f">GetGLContext</link> () const</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_p_r_i_s_m___window_1a6795895f8393ec3671ac25157173672d">handleEvents</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_p_r_i_s_m___window_1ac5c54df7ed3b930268c8d7752c101725">update</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_p_r_i_s_m___window_1ac8bb3912a3ce86b15842e79d0b421204">clear</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_p_r_i_s_m___window_1ae900b054a1598c54acaa67902f87185d">cleanUp</link> ()</para>
+</listitem>
+            <listitem><para>const char * <link linkend="_class_p_r_i_s_m___window_1ac10e0c992234806a5104c9a7fcdd3dc4">GetTitle</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_p_r_i_s_m___window_1a00fd7a839dcf3f9f45db028664ab99dc">SetTitle</link> (const char *)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_p_r_i_s_m___window_1a55ac7c597be8e471ad18e44201bcf772">SetTitle</link> (const std::string &amp;t)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_p_r_i_s_m___window_1a9362418cb56b867b070aa09e25b8e413">GetX</link> () const</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_p_r_i_s_m___window_1a640ef416dd1bbacf0b55bd46e7b46d5b">GetY</link> () const</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_p_r_i_s_m___window_1aa4f8d42dc490aaebbe37110a40a7eb12">GetW</link> () const</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_p_r_i_s_m___window_1abf138c7e893538537f5ad24dab408e6a">GetH</link> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Поля данных    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_p_r_i_s_m___window_1a36f7b6be7108281af77939ceaec42fd6">running</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+<para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8h_source">PRISM_Window.h</link> строка <link linkend="__p_r_i_s_m___window_8h_source_1l00012">12</link></para>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_class_p_r_i_s_m___window_1add5cb291c2ea0bae7ef26948cdae0418"/><section>
+    <title>PRISM_Window()</title>
+<indexterm><primary>PRISM_Window</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>PRISM_Window</secondary></indexterm>
+<para><computeroutput><link linkend="_class_p_r_i_s_m___window">PRISM_Window</link> (int w, int h, const char * title)</computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8cpp_source">PRISM_Window.cpp</link> строка <link linkend="__p_r_i_s_m___window_8cpp_source_1l00006">6</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1af2823855876c4407cc6004de3031230c"/><section>
+    <title>~PRISM_Window()</title>
+<indexterm><primary>~PRISM_Window</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>~PRISM_Window</secondary></indexterm>
+<para><computeroutput>~<link linkend="_class_p_r_i_s_m___window">PRISM_Window</link> ( )</computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8cpp_source">PRISM_Window.cpp</link> строка <link linkend="__p_r_i_s_m___window_8cpp_source_1l00095">95</link></para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_class_p_r_i_s_m___window_1ae900b054a1598c54acaa67902f87185d"/><section>
+    <title>cleanUp()</title>
+<indexterm><primary>cleanUp</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>cleanUp</secondary></indexterm>
+<para><computeroutput>void cleanUp ( )</computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8cpp_source">PRISM_Window.cpp</link> строка <link linkend="__p_r_i_s_m___window_8cpp_source_1l00139">139</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1ac8bb3912a3ce86b15842e79d0b421204"/><section>
+    <title>clear()</title>
+<indexterm><primary>clear</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>clear</secondary></indexterm>
+<para><computeroutput>void clear ( )</computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8cpp_source">PRISM_Window.cpp</link> строка <link linkend="__p_r_i_s_m___window_8cpp_source_1l00134">134</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1a7b065c734e903b8b1593588b7256ad8f"/><section>
+    <title>GetGLContext()</title>
+<indexterm><primary>GetGLContext</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>GetGLContext</secondary></indexterm>
+<para><computeroutput>SDL_GLContext GetGLContext ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8h_source">PRISM_Window.h</link> строка <link linkend="__p_r_i_s_m___window_8h_source_1l00022">22</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1abf138c7e893538537f5ad24dab408e6a"/><section>
+    <title>GetH()</title>
+<indexterm><primary>GetH</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>GetH</secondary></indexterm>
+<para><computeroutput>int GetH ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8h_source">PRISM_Window.h</link> строка <link linkend="__p_r_i_s_m___window_8h_source_1l00038">38</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1adaac48ee303e76d89f367b4c55439134"/><section>
+    <title>GetSDLWindow()</title>
+<indexterm><primary>GetSDLWindow</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>GetSDLWindow</secondary></indexterm>
+<para><computeroutput>SDL_Window * GetSDLWindow ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8h_source">PRISM_Window.h</link> строка <link linkend="__p_r_i_s_m___window_8h_source_1l00021">21</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1ac10e0c992234806a5104c9a7fcdd3dc4"/><section>
+    <title>GetTitle()</title>
+<indexterm><primary>GetTitle</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>GetTitle</secondary></indexterm>
+<para><computeroutput>const char * GetTitle ( )</computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8cpp_source">PRISM_Window.cpp</link> строка <link linkend="__p_r_i_s_m___window_8cpp_source_1l00079">79</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1aa4f8d42dc490aaebbe37110a40a7eb12"/><section>
+    <title>GetW()</title>
+<indexterm><primary>GetW</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>GetW</secondary></indexterm>
+<para><computeroutput>int GetW ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8h_source">PRISM_Window.h</link> строка <link linkend="__p_r_i_s_m___window_8h_source_1l00037">37</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1a9362418cb56b867b070aa09e25b8e413"/><section>
+    <title>GetX()</title>
+<indexterm><primary>GetX</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>GetX</secondary></indexterm>
+<para><computeroutput>int GetX ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8h_source">PRISM_Window.h</link> строка <link linkend="__p_r_i_s_m___window_8h_source_1l00035">35</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1a640ef416dd1bbacf0b55bd46e7b46d5b"/><section>
+    <title>GetY()</title>
+<indexterm><primary>GetY</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>GetY</secondary></indexterm>
+<para><computeroutput>int GetY ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8h_source">PRISM_Window.h</link> строка <link linkend="__p_r_i_s_m___window_8h_source_1l00036">36</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1a6795895f8393ec3671ac25157173672d"/><section>
+    <title>handleEvents()</title>
+<indexterm><primary>handleEvents</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>handleEvents</secondary></indexterm>
+<para><computeroutput>void handleEvents ( )</computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8cpp_source">PRISM_Window.cpp</link> строка <link linkend="__p_r_i_s_m___window_8cpp_source_1l00100">100</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1ad619b8b51adc7874204abd71080cd90e"/><section>
+    <title>isRunning()</title>
+<indexterm><primary>isRunning</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>isRunning</secondary></indexterm>
+<para><computeroutput>bool isRunning ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8h_source">PRISM_Window.h</link> строка <link linkend="__p_r_i_s_m___window_8h_source_1l00020">20</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1a00fd7a839dcf3f9f45db028664ab99dc"/><section>
+    <title>SetTitle()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>SetTitle</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>SetTitle</secondary></indexterm>
+<para><computeroutput>void SetTitle (const char * t)</computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8cpp_source">PRISM_Window.cpp</link> строка <link linkend="__p_r_i_s_m___window_8cpp_source_1l00083">83</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1a55ac7c597be8e471ad18e44201bcf772"/><section>
+    <title>SetTitle()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>SetTitle</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>SetTitle</secondary></indexterm>
+<para><computeroutput>void SetTitle (const std::string &amp; t)</computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8cpp_source">PRISM_Window.cpp</link> строка <link linkend="__p_r_i_s_m___window_8cpp_source_1l00088">88</link></para>
+</section>
+<anchor xml:id="_class_p_r_i_s_m___window_1ac5c54df7ed3b930268c8d7752c101725"/><section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>update</secondary></indexterm>
+<para><computeroutput>void update ( )</computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8cpp_source">PRISM_Window.cpp</link> строка <link linkend="__p_r_i_s_m___window_8cpp_source_1l00125">125</link></para>
+</section>
+</section>
+<section>
+<title>Поля</title>
+<anchor xml:id="_class_p_r_i_s_m___window_1a36f7b6be7108281af77939ceaec42fd6"/><section>
+    <title>running</title>
+<indexterm><primary>running</primary><secondary>PRISM_Window</secondary></indexterm>
+<indexterm><primary>PRISM_Window</primary><secondary>running</secondary></indexterm>
+<para><computeroutput>bool running</computeroutput></para><para>
+См. определение в файле <link linkend="__p_r_i_s_m___window_8h_source">PRISM_Window.h</link> строка <link linkend="__p_r_i_s_m___window_8h_source_1l00016">16</link></para>
+</section>
+<para>
+Объявления и описания членов классов находятся в файлах:</para>
+C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/<link linkend="__p_r_i_s_m___window_8h">PRISM_Window.h</link>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/<link linkend="__p_r_i_s_m___window_8cpp">PRISM_Window.cpp</link></section>
+</section>

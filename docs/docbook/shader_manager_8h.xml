@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_shader_manager_8h" xml:lang="ru">
+<title>Файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/shaderManager.h</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/shaderManager.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;PRISM_Window.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Структуры данных    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classshader_manager">shaderManager</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

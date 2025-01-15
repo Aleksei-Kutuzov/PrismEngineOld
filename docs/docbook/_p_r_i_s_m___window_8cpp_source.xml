@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__p_r_i_s_m___window_8cpp_source" xml:lang="ru">
+<title>PRISM_Window.cpp</title>
+<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/PRISM_Window.cpp</primary></indexterm>
+См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__p_r_i_s_m___window_8h">PRISM_Window.h</link>&quot;</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00002"/>00002 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00003"/>00003 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00004"/>00004 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00005"/>00005 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00006"/><link linkend="_class_p_r_i_s_m___window_1add5cb291c2ea0bae7ef26948cdae0418">00006</link> <link linkend="_class_p_r_i_s_m___window_1add5cb291c2ea0bae7ef26948cdae0418">PRISM_Window::PRISM_Window</link>(<emphasis role="keywordtype">int</emphasis>&#32;width,&#32;<emphasis role="keywordtype">int</emphasis>&#32;height,&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;title)
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00007"/>00007 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;:&#32;window(nullptr),&#32;glContext(nullptr),&#32;<link linkend="_class_p_r_i_s_m___window_1a36f7b6be7108281af77939ceaec42fd6">running</link>(true)
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00008"/>00008 {
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00009"/>00009 &#32;&#32;&#32;&#32;this-&gt;w&#32;=&#32;width;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00010"/>00010 &#32;&#32;&#32;&#32;this-&gt;h&#32;=&#32;height;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Инициализация&#32;SDL</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00012"/>00012 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(SDL_Init(SDL_INIT_VIDEO)&#32;&lt;&#32;0)&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_LogError(SDL_LOG_PRIORITY_ERROR,&#32;<emphasis role="stringliteral">&quot;SDL&#32;could&#32;not&#32;initialize!&#32;SDL_Error:&#32;%s&quot;</emphasis>,&#32;SDL_GetError());
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_p_r_i_s_m___window_1a36f7b6be7108281af77939ceaec42fd6">running</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00016"/>00016 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00017"/>00017 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Установка&#32;кодировки&#32;UTF-8</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!SDL_SetHint(SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP,&#32;<emphasis role="stringliteral">&quot;1&quot;</emphasis>)&#32;||
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;!SDL_SetHint(SDL_HINT_VIDEO_WIN_D3DCOMPILER,&#32;<emphasis role="stringliteral">&quot;d3dcompiler_47.dll&quot;</emphasis>)&#32;||
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;!SDL_SetHint(SDL_HINT_VIDEO_ALLOW_SCREENSAVER,&#32;<emphasis role="stringliteral">&quot;1&quot;</emphasis>)&#32;||
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;!SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR,&#32;<emphasis role="stringliteral">&quot;0&quot;</emphasis>)&#32;||
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;!SDL_SetHint(SDL_HINT_VIDEO_X11_XRANDR,&#32;<emphasis role="stringliteral">&quot;1&quot;</emphasis>))&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_LogWarn(SDL_LOG_PRIORITY_WARN,&#32;<emphasis role="stringliteral">&quot;Failed&#32;to&#32;set&#32;SDL&#32;hints!&quot;</emphasis>);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00026"/>00026 &#32;&#32;&#32;&#32;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS,&#32;1);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00028"/>00028 &#32;&#32;&#32;&#32;SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES,&#32;4);&#32;&#32;<emphasis role="comment">//&#32;Количество&#32;сэмплов&#32;(4x&#32;MSAA)</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00029"/>00029 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00030"/>00030 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;SDL_LogInfo(SDL_LOG_PRIORITY_INFO,&#32;<emphasis role="stringliteral">&quot;SDL&#32;initialized&#32;successfully.&quot;</emphasis>);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00032"/>00032 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Создание&#32;окна&#32;с&#32;поддержкой&#32;OpenGL</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;window&#32;=&#32;SDL_CreateWindow(title,
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_WINDOWPOS_UNDEFINED,&#32;SDL_WINDOWPOS_UNDEFINED,
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;width,&#32;height,&#32;SDL_WINDOW_OPENGL&#32;|&#32;SDL_WINDOW_RESIZABLE);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00037"/>00037 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00038"/>00038 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!window)&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_LogError(SDL_LOG_PRIORITY_ERROR,&#32;<emphasis role="stringliteral">&quot;Window&#32;could&#32;not&#32;be&#32;created!&#32;SDL_Error:&#32;%s&quot;</emphasis>,&#32;SDL_GetError());
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_p_r_i_s_m___window_1a36f7b6be7108281af77939ceaec42fd6">running</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00043"/>00043 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00044"/>00044 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Создание&#32;контекста&#32;OpenGL</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00045"/>00045 &#32;&#32;&#32;&#32;glContext&#32;=&#32;SDL_GL_CreateContext(window);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00046"/>00046 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!glContext)&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_LogError(SDL_LOG_PRIORITY_ERROR,&#32;<emphasis role="stringliteral">&quot;OpenGL&#32;context&#32;could&#32;not&#32;be&#32;created!&#32;SDL_Error:&#32;%s&quot;</emphasis>,&#32;SDL_GetError());
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_p_r_i_s_m___window_1a36f7b6be7108281af77939ceaec42fd6">running</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00051"/>00051 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Инициализация&#32;OpenGL&#32;через&#32;freeGLUT&#32;(необязательно,&#32;но&#32;полезно&#32;для&#32;расширенных&#32;возможностей)</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;argc&#32;=&#32;0;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;glutInit(&amp;argc,&#32;<emphasis role="keyword">nullptr</emphasis>);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00055"/>00055 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00056"/>00056 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Настройка&#32;OpenGL&#32;(например,&#32;для&#32;использования&#32;глубины)</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00057"/>00057 &#32;&#32;&#32;&#32;glEnable(GL_DEPTH_TEST);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00058"/>00058 &#32;&#32;&#32;&#32;glDepthFunc(GL_LESS);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00059"/>00059 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00060"/>00060 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;SDL_LogInfo(SDL_LOG_PRIORITY_INFO,&#32;<emphasis role="stringliteral">&quot;Window&#32;created&#32;successfully,&#32;OpenGL&#32;context&#32;initialized.&quot;</emphasis>);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00062"/>00062 &#32;&#32;&#32;&#32;<emphasis role="comment">//glEnable(GL_MULTISAMPLE);&#32;не&#32;все&#32;версии&#32;поддерживают&#32;версиях</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00063"/>00063 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Настройка&#32;ортографической&#32;проекции&#32;для&#32;координат&#32;SDL</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;glMatrixMode(GL_PROJECTION);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00066"/>00066 &#32;&#32;&#32;&#32;glLoadIdentity();
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00067"/>00067 &#32;&#32;&#32;&#32;glOrtho(0,&#32;width,&#32;height,&#32;0,&#32;-1,&#32;1);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00068"/>00068 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00069"/>00069 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Сброс&#32;модели</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00070"/>00070 &#32;&#32;&#32;&#32;glMatrixMode(GL_MODELVIEW);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00071"/>00071 &#32;&#32;&#32;&#32;glLoadIdentity();
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00072"/>00072 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00073"/>00073 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Устанавливаем&#32;единичную&#32;модельно-видовую&#32;матрицу</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00074"/>00074 &#32;&#32;&#32;&#32;glMatrixMode(GL_MODELVIEW);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00075"/>00075 &#32;&#32;&#32;&#32;glLoadIdentity();
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00076"/>00076 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00077"/>00077 }
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00078"/>00078 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00079"/><link linkend="_class_p_r_i_s_m___window_1ac10e0c992234806a5104c9a7fcdd3dc4">00079</link> <emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="_class_p_r_i_s_m___window_1ac10e0c992234806a5104c9a7fcdd3dc4">PRISM_Window::GetTitle</link>()&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00080"/>00080 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;SDL_GetWindowTitle(window);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00081"/>00081 }
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00082"/>00082 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00083"/><link linkend="_class_p_r_i_s_m___window_1a00fd7a839dcf3f9f45db028664ab99dc">00083</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_p_r_i_s_m___window_1a00fd7a839dcf3f9f45db028664ab99dc">PRISM_Window::SetTitle</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>*&#32;t)
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00084"/>00084 {
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00085"/>00085 &#32;&#32;&#32;&#32;SDL_SetWindowTitle(window,&#32;t);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00086"/>00086 }
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00087"/>00087 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00088"/><link linkend="_class_p_r_i_s_m___window_1a55ac7c597be8e471ad18e44201bcf772">00088</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_p_r_i_s_m___window_1a00fd7a839dcf3f9f45db028664ab99dc">PRISM_Window::SetTitle</link>(<emphasis role="keyword">const</emphasis>&#32;std::string&amp;&#32;t)&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00089"/>00089 &#32;&#32;&#32;&#32;SDL_SetWindowTitle(window,&#32;t.c_str());
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00090"/>00090 }
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00091"/>00091 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00092"/>00092 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00093"/>00093 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00094"/>00094 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00095"/><link linkend="_class_p_r_i_s_m___window_1af2823855876c4407cc6004de3031230c">00095</link> <link linkend="_class_p_r_i_s_m___window_1af2823855876c4407cc6004de3031230c">PRISM_Window::~PRISM_Window</link>()
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00096"/>00096 {
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00097"/>00097 &#32;&#32;&#32;&#32;<link linkend="_class_p_r_i_s_m___window_1ae900b054a1598c54acaa67902f87185d">cleanUp</link>();
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00098"/>00098 }
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00099"/>00099 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00100"/><link linkend="_class_p_r_i_s_m___window_1a6795895f8393ec3671ac25157173672d">00100</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_p_r_i_s_m___window_1a6795895f8393ec3671ac25157173672d">PRISM_Window::handleEvents</link>()&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00101"/>00101 &#32;&#32;&#32;&#32;SDL_Event&#32;e;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00102"/>00102 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;(SDL_PollEvent(&amp;e))&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00103"/>00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(e.type&#32;==&#32;SDL_QUIT)&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00104"/>00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_p_r_i_s_m___window_1a36f7b6be7108281af77939ceaec42fd6">running</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00106"/>00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(e.type&#32;==&#32;SDL_WINDOWEVENT&#32;&amp;&amp;&#32;e.window.event&#32;==&#32;SDL_WINDOWEVENT_RESIZED)&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;newWidth&#32;=&#32;e.window.data1;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00108"/>00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;newHeight&#32;=&#32;e.window.data2;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00109"/>00109 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Обновляем&#32;видовой&#32;порт&#32;и&#32;проекцию</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;glViewport(0,&#32;0,&#32;newWidth,&#32;newHeight);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00112"/>00112 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00113"/>00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;glMatrixMode(GL_PROJECTION);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;glLoadIdentity();
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00115"/>00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;glOrtho(0,&#32;newWidth,&#32;newHeight,&#32;0,&#32;-1,&#32;1);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00116"/>00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;glMatrixMode(GL_MODELVIEW);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00117"/>00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;glLoadIdentity();
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00118"/>00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;w&#32;=&#32;newWidth;&#32;h&#32;=&#32;newHeight;
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00119"/>00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00120"/>00120 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00121"/>00121 }
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00122"/>00122 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00123"/>00123 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00124"/>00124 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00125"/><link linkend="_class_p_r_i_s_m___window_1ac5c54df7ed3b930268c8d7752c101725">00125</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_p_r_i_s_m___window_1ac5c54df7ed3b930268c8d7752c101725">PRISM_Window::update</link>()&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00126"/>00126 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00127"/>00127 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00128"/>00128 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Обновление&#32;экрана</emphasis>
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00129"/>00129 &#32;&#32;&#32;&#32;SDL_GL_SwapWindow(window);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00130"/>00130 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00131"/>00131 &#32;&#32;&#32;&#32;SDL_LogInfo(SDL_LOG_PRIORITY_INFO,&#32;<emphasis role="stringliteral">&quot;Frame&#32;rendered&#32;successfully.&quot;</emphasis>);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00132"/>00132 }
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00133"/>00133 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00134"/><link linkend="_class_p_r_i_s_m___window_1ac8bb3912a3ce86b15842e79d0b421204">00134</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_p_r_i_s_m___window_1ac8bb3912a3ce86b15842e79d0b421204">PRISM_Window::clear</link>()
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00135"/>00135 {
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00136"/>00136 &#32;&#32;&#32;&#32;glClear(GL_COLOR_BUFFER_BIT&#32;|&#32;GL_DEPTH_BUFFER_BIT);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00137"/>00137 }
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00138"/>00138 
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00139"/><link linkend="_class_p_r_i_s_m___window_1ae900b054a1598c54acaa67902f87185d">00139</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_p_r_i_s_m___window_1ae900b054a1598c54acaa67902f87185d">PRISM_Window::cleanUp</link>()&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00140"/>00140 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(glContext)&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00141"/>00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_GL_DeleteContext(glContext);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00142"/>00142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_LogInfo(SDL_LOG_PRIORITY_INFO,&#32;<emphasis role="stringliteral">&quot;OpenGL&#32;context&#32;deleted.&quot;</emphasis>);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00143"/>00143 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00144"/>00144 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(window)&#32;{
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00145"/>00145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_DestroyWindow(window);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00146"/>00146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SDL_LogInfo(SDL_LOG_PRIORITY_INFO,&#32;<emphasis role="stringliteral">&quot;Window&#32;destroyed.&quot;</emphasis>);
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00147"/>00147 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00148"/>00148 &#32;&#32;&#32;&#32;SDL_Quit();
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00149"/>00149 }
+<anchor xml:id="__p_r_i_s_m___window_8cpp_source_1l00150"/>00150 
+</programlisting></section>

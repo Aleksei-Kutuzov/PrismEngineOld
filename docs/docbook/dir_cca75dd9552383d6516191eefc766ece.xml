@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_cca75dd9552383d6516191eefc766ece" xml:lang="ru">
+<title>Содержание директории C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math</title>
+<indexterm><primary>Содержание директории C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math</primary></indexterm>
+<simplesect>
+    <title>Файлы    </title>
+        <itemizedlist>
+            <listitem><para>файл <link linkend="_math_8cpp">math.cpp</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_math_8h">math.h</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_matrix_8cpp">matrix.cpp</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_matrix_8h">matrix.h</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_other_8cpp">other.cpp</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_other_8h">other.h</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_vector3_d_8cpp">vector3D.cpp</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="_vector3_d_8h">vector3D.h</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -35,8 +35,8 @@ public:
 	void Render(PRISM_Window* win);
 
 private:
-	std::vector<AbstractObject3D*> objects;        // Вектор указателей на 3D объекты
-	std::vector<AbstractCamera3D*> cameras;        // Вектор указателей на камеры
+	std::vector<AbstractObject3D*> objects;        // Р’РµРєС‚РѕСЂ СѓРєР°Р·Р°С‚РµР»РµР№ РЅР° 3D РѕР±СЉРµРєС‚С‹
+	std::vector<AbstractCamera3D*> cameras;        // Р’РµРєС‚РѕСЂ СѓРєР°Р·Р°С‚РµР»РµР№ РЅР° РєР°РјРµСЂС‹
 	AbstractCamera3D* enabledCamera;
 
 	PRISM_Render render;
