@@ -118,27 +118,27 @@ void main_() {
             }
 
             if (state[SDL_SCANCODE_UP]) {
-                MainCamera.Coordinate.z += 1;
+                MainCamera.Translate.z += 1;
             }
 
             if (state[SDL_SCANCODE_DOWN]) {
-                MainCamera.Coordinate.z -= 1;
+                MainCamera.Translate.z -= 1;
             }
 
             if (state[SDL_SCANCODE_LEFT]) {
-                MainCamera.Coordinate.x -= 1;
+                MainCamera.Translate.x -= 1;
             }
 
             if (state[SDL_SCANCODE_RIGHT]) {
-                MainCamera.Coordinate.x += 1;
+                MainCamera.Translate.x += 1;
             }
 
             if (state[SDL_SCANCODE_W]) {
-                MainCamera.Coordinate.y -= 1;
+                MainCamera.Translate.y -= 1;
             }
 
             if (state[SDL_SCANCODE_S]) {
-                MainCamera.Coordinate.y += 1;
+                MainCamera.Translate.y += 1;
             }
 
             if (state[SDL_SCANCODE_A]) {
@@ -165,7 +165,7 @@ void main_() {
                 Obj1.Rotation.y += 1;
             }
             Obj1.SetRotateXYZ(Obj1.Rotation);
-            MainCamera.SetPosition(MainCamera.Coordinate, MainCamera.Rotation, { 0, 0, 1 });
+            MainCamera.SetPosition(MainCamera.Translate, MainCamera.Rotation, { 0, 0, 1 });
 
 
         }
@@ -214,7 +214,7 @@ void main_() {
 class AbstractObject3D_demo {
 private:
     //TRANSFORM
-    struct PRISM_Vector3d Coordinate = {0, 0, 0};
+    struct PRISM_Vector3d Translate = {0, 0, 0};
     struct PRISM_Vector3d Rotation = { 0, 0, 0 };
     struct PRISM_Vector3d Scale = { 1, 1, 1 };
 
@@ -225,7 +225,7 @@ public:
 
 
     PRISM_Vector3d getCoordinate() {
-        return Coordinate;
+        return Translate;
     }
     float getCoordinate(char cordChar) {
         if (cordChar == 'X' || cordChar == 'x') {
@@ -247,21 +247,21 @@ public:
 
     void setCoordinate(PRISM_Vector3d v) {
         // @@@
-        Coordinate = v;
+        Translate = v;
     }
 
     void setCoordinate(char cordChar, float v) {
         if (cordChar == 'X' || cordChar == 'x') {
-            setCoordinate({ v, Coordinate.y, Coordinate.z });
+            setCoordinate({ v, Translate.y, Translate.z });
         }
         else if (cordChar == 'Y' || cordChar == 'y') {
-            setCoordinate({ Coordinate.x, v, Coordinate.z });
+            setCoordinate({ Translate.x, v, Translate.z });
         }
         else if (cordChar == 'Z' || cordChar == 'z') {
-            setCoordinate({ Coordinate.x, Coordinate.y, v });
+            setCoordinate({ Translate.x, Translate.y, v });
         }
         else if (cordChar == 'W' || cordChar == 'w') {
-            setCoordinate({ Coordinate.x, Coordinate.y, Coordinate.z, v });
+            setCoordinate({ Translate.x, Translate.y, Translate.z, v });
         }
         else {
             SDL_Log("the 'Coordinate' field does not have the '%c' component called", cordChar);
@@ -412,7 +412,7 @@ int main(int argc, char* argv[])
     
     AbstractObject3D object{ {0,0,0},{0,0,0},{1,1,1},MainCamera };
 
-    object.SetMesh(MeshLoader::LoadOBJ("Sphere.obj", MainCamera)); 
+    object.SetMesh(MeshLoader::LoadOBJ("minecraft sword.obj", MainCamera)); 
 
     
     //object.mesh.print();

@@ -50,14 +50,15 @@ void Scene::PrintInfo()
 {
 	for (const auto& object : objects) {
 		SDL_Log("objects in Scene:");
-		object->PrintInfo();  // Вызов метода рендеринга для каждого элемента
+		object->PrintInfo();  
 	}
+
 }
 
 AbstractCamera3D* Scene::SetCamera(AbstractCamera3D* obj)
 {
 	enabledCamera = obj;
-	render.cameraCoordinate = obj->Coordinate;
+	render.cameraCoordinate = obj->Translate;
 	return obj;
 }
 

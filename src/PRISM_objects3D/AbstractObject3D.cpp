@@ -33,7 +33,7 @@ void AbstractObject3D::SetRotateXYZ(struct PRISM_Vector3d rotVect) {
 }
 
 void AbstractObject3D::SetMoveXYZ(struct PRISM_Vector3d moveVect) {
-    Coordinate = moveVect;
+    Translate = moveVect;
 	matrixTranslate = Math::Matrix_MakeTranslation(moveVect.x, moveVect.y, moveVect.z);
 }
 
@@ -44,7 +44,7 @@ void AbstractObject3D::SetScaleXYZ(struct PRISM_Vector3d scaleVect) {
 
 void AbstractObject3D::PrintInfo()
 {
-	SDL_Log("PRISM_ENGINE::PRISM_objects::AbstractObject3D\n\tMoveXYZ: %f, %f, %f\n\tRotateXYZ: %f, %f, %f\n\tScaleXYZ: %f, %f, %f", Coordinate.x, Coordinate.y, Coordinate.z,
+	SDL_Log("PRISM_ENGINE::PRISM_objects::AbstractObject3D\n\tMoveXYZ: %f, %f, %f\n\tRotateXYZ: %f, %f, %f\n\tScaleXYZ: %f, %f, %f", Translate.x, Translate.y, Translate.z,
 																																	 Rotation.x, Rotation.y, Rotation.z,
 																																	 Scale.x, Scale.y, Scale.z);
 }
@@ -202,9 +202,9 @@ void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, PRISM_RenderMod
 		TriangleViewed = ViewTriangle(TriangleTranslated);
 		
 		PRISM_Vector3d normal = Math::CalculateNormals(TriangleViewed);
-		if (normal.x * (TriangleViewed.a.x - Camera.Coordinate.x) +
-		    normal.y * (TriangleViewed.a.y - Camera.Coordinate.y) +
-			normal.z * (TriangleViewed.a.z - Camera.Coordinate.z) < 0.0f || rm.ShowBackMesh) {
+		if (normal.x * (TriangleViewed.a.x - Camera.Translate.x) +
+		    normal.y * (TriangleViewed.a.y - Camera.Translate.y) +
+			normal.z * (TriangleViewed.a.z - Camera.Translate.z) < 0.0f || rm.ShowBackMesh) {
 			
 			Math::MultiplyMatrixVector(TriangleViewed.a, TriangleProjected.a,
 			                     ProjectionMatrix);

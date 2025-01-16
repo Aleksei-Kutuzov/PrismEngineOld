@@ -13,14 +13,14 @@ void AbstractCamera3D::SetPosition(struct PRISM_Vector3d Coord, struct PRISM_Vec
 	
 	
 	
-	Coordinate = Coord;
+	Translate = Coord;
 	Rotation = Rot;
 	SetView(viewDir, {0, 1, 0});
 }
 
 void AbstractCamera3D::SetView(struct PRISM_Vector3d viewDirVect, struct PRISM_Vector3d upDirVect) {
-	struct PRISM_Vector3d viewDirTarget = Coordinate + viewDirVect;
-	PRISM_Matrix_4X4 matrixCamera = Math::Matrix_PointAt(Coordinate, viewDirTarget, upDirVect);
+	struct PRISM_Vector3d viewDirTarget = Translate + viewDirVect;
+	PRISM_Matrix_4X4 matrixCamera = Math::Matrix_PointAt(Translate, viewDirTarget, upDirVect);
 	matrixView = Math::Matrix_QuickInverse(matrixCamera);
 }
 
