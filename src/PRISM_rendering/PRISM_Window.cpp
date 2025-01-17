@@ -57,14 +57,21 @@ PRISM_Window::PRISM_Window(int width, int height, const char* title)
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LESS);
 
+    // Инициализация GLEW
+    glewExperimental = GL_TRUE;
+    if (glewInit() != GLEW_OK) {
+        SDL_Log("Failed to initialize GLEW!");
+        return ;
+    }
 
     SDL_LogInfo(SDL_LOG_PRIORITY_INFO, "Window created successfully, OpenGL context initialized.");
+    SDL_LogInfo(SDL_LOG_PRIORITY_INFO, (char*)glGetString(GL_VERSION));
     //glEnable(GL_MULTISAMPLE); не все версии поддерживают версиях
 
-    // Настройка ортографической проекции для координат SDL
+    // Настройка ортографической проекции
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glOrtho(0, width, height, 0, -1, 1);
+    glOrtho(-1, 1, -1, 1, -1, 1);
 
     // Сброс модели
     glMatrixMode(GL_MODELVIEW);
@@ -73,6 +80,7 @@ PRISM_Window::PRISM_Window(int width, int height, const char* title)
     // Устанавливаем единичную модельно-видовую матрицу
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
+
 
 }
 
@@ -112,7 +120,7 @@ void PRISM_Window::handleEvents() {
 
             glMatrixMode(GL_PROJECTION);
             glLoadIdentity();
-            glOrtho(0, newWidth, newHeight, 0, -1, 1);
+            glOrtho(-1, 1, -1, 1, -1, 1);  // если надо как в SDL glOrtho(0, newWidth, newHeight, 0, -1, 1);
             glMatrixMode(GL_MODELVIEW);
             glLoadIdentity();
             w = newWidth; h = newHeight;

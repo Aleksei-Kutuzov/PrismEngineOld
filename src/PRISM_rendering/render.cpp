@@ -79,13 +79,13 @@ void PRISM_Render::Rendering(PRISM_Window* window, AbstractObject3D* obj)
 			normal.y * (TriangleProjected.a.y - obj->Camera.Translate.y) +
 			normal.z * (TriangleProjected.a.z - obj->Camera.Translate.z) < 0.0f) {
 
-			TriangleProjected.a.x += 1.0f; TriangleProjected.a.y += 1.0f;
-			TriangleProjected.b.x += 1.0f; TriangleProjected.b.y += 1.0f;
-			TriangleProjected.c.x += 1.0f; TriangleProjected.c.y += 1.0f;
+			//TriangleProjected.a.x += 1.0f; TriangleProjected.a.y += 1.0f;
+			//TriangleProjected.b.x += 1.0f; TriangleProjected.b.y += 1.0f;
+			//TriangleProjected.c.x += 1.0f; TriangleProjected.c.y += 1.0f;
 
-			TriangleProjected.a.x *= 0.5f * (float)ScreenW; TriangleProjected.a.y *= 0.5f * (float)ScreenH;
-			TriangleProjected.b.x *= 0.5f * (float)ScreenW; TriangleProjected.b.y *= 0.5f * (float)ScreenH;
-			TriangleProjected.c.x *= 0.5f * (float)ScreenW; TriangleProjected.c.y *= 0.5f * (float)ScreenH;
+			//TriangleProjected.a.x *= 0.5f * (float)ScreenW; TriangleProjected.a.y *= 0.5f * (float)ScreenH;
+			//TriangleProjected.b.x *= 0.5f * (float)ScreenW; TriangleProjected.b.y *= 0.5f * (float)ScreenH;
+			//TriangleProjected.c.x *= 0.5f * (float)ScreenW; TriangleProjected.c.y *= 0.5f * (float)ScreenH;
 			
 			PRISM_Vector3d Z_values = { (TriangleTranslated.a.z + obj->Camera.FFar) / (obj->Camera.FFar * 2),
 										(TriangleTranslated.b.z + obj->Camera.FFar) / (obj->Camera.FFar * 2),
