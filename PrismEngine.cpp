@@ -1,4 +1,7 @@
 ﻿#include "src/PrismEngine.h"
+#define _CRTDBG_MAP_ALLOC
+#include <cstdlib>
+#include <crtdbg.h>
 
 
 
@@ -366,6 +369,8 @@ public:
 
 int main(int argc, char* argv[])
 {
+    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
     //test_Zbuff();
     //main_();
     AbstractObject3D_demo t(1);
@@ -408,11 +413,11 @@ int main(int argc, char* argv[])
     Scene scene;
     AbstractCamera3D MainCamera(0.1, 1000.0f, 90.0f,
         window.GetW(), window.GetH());
-    MainCamera.SetPosition({ 0, 0, -5 }, { 0, 0, 0 }, { 0, 0, 1 });
+    MainCamera.SetPosition({ 0, 0, -30 }, { 0, 0, 0 }, { 0, 0, 1 });
     
     AbstractObject3D object{ {0,0,0},{0,0,0},{1,1,1},MainCamera };
 
-    object.SetMesh(MeshLoader::LoadOBJ("minecraft sword.obj", MainCamera)); 
+    object.SetMesh(MeshLoader::LoadOBJ("magic.obj", MainCamera)); 
 
     
     //object.mesh.print();
@@ -421,6 +426,9 @@ int main(int argc, char* argv[])
     object.kSpecular = 0.1f;
     scene.AddObject(&object);
     scene.SetCamera(&MainCamera);
+
+    //ShaderManager shm;
+    //shm.initShaders();
 
     clock_t start, end;
     // Главный цикл
@@ -460,4 +468,42 @@ int main(int argc, char* argv[])
 
     // GL_test();
     return(0);
+}
+
+int _main(int argc, char* argv[])
+{
+    // Создаем окно
+    PRISM_Window window(600, 400, u8"♦PRISME♦");
+
+    // Проверяем, удалось ли создать окно
+    if (!window.isRunning()) {
+        return -1;
+    }
+    
+    PRISM_Painter painter;
+    
+    // Главный цикл
+    while (window.isRunning()) {
+        // Обработка событий
+        window.handleEvents();
+
+        //Отрисовка сцены
+        window.clear();
+        //window.shaderManager.render();
+        float LO = -1.f; float HI = 1.f;
+        painter.DrawTriangle3D(&window, -0.2f, -0.4f, 0.f,
+                                         -0.1f, 0.5f, 0.f,
+                                         0.5f, -0.5f, 0.2f, 255, 0, 0);
+        painter.DrawTriangle3D(&window, { { -0.7f, 0.5f, 0.1f},
+                                          {0.f, 0.8f, 0.1f},
+                                          {0.6f, -0.5f, 0.1f} }, 255, 255, 100 );
+        painter.DrawThickLine(&window, -1.f, -1.f, 1.f, 1.f, 25, 0, 0, 255);
+        painter.DrawRectangle(&window, -0.5f, -0.5f, 0.5f, 0.2f, 255, 0, 255);
+        painter.DrawPoint(&window, -0.6f, -0.1f, 0, 255, 255);
+        window.update();
+        Sleep(10);
+
+    }
+
+    return 0;
 }

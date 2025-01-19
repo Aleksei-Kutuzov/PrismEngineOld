@@ -27,6 +27,9 @@ PRISM_Window::PRISM_Window(int width, int height, const char* title)
     SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
     SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 4);  // Количество сэмплов (4x MSAA)
 
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
 
     SDL_LogInfo(SDL_LOG_PRIORITY_INFO, "SDL initialized successfully.");
 
@@ -81,7 +84,7 @@ PRISM_Window::PRISM_Window(int width, int height, const char* title)
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
-
+    shaderManager.initShaders(shaderManager.baseVertexShader, shaderManager.baseFragmentShader);
 }
 
 const char* PRISM_Window::GetTitle() {
@@ -137,14 +140,34 @@ void PRISM_Window::update() {
     SDL_GL_SwapWindow(window);
 
     SDL_LogInfo(SDL_LOG_PRIORITY_INFO, "Frame rendered successfully.");
+
+    // Получаем location uniform-переменной
+    GLuint timeLocation = glGetUniformLocation(shaderManager.shaderProgram, "uTime");
+
+    // Передаём текущее время
+    float timeValue = SDL_GetTicks() / 1000.0f; // Время в секундах
+    glUseProgram(shaderManager.shaderProgram);
+    glUniform1f(timeLocation, timeValue);
+
 }
 
 void PRISM_Window::clear()
 {
+    // Очистка экрана
+    glClearColor(0.f, 0.f, 0.f, 0.1f); // Темно-серый фон
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
 void PRISM_Window::cleanUp() {
+    if (shaderManager.VAO != 0) {
+        glDeleteVertexArrays(1, &shaderManager.VAO);
+        shaderManager.VAO = 0;
+    }
+    if (shaderManager.VBO != 0) {
+        glDeleteBuffers(1, &shaderManager.VBO);
+        shaderManager.VBO = 0;
+    }
+
     if (glContext) {
         SDL_GL_DeleteContext(glContext);
         SDL_LogInfo(SDL_LOG_PRIORITY_INFO, "OpenGL context deleted.");

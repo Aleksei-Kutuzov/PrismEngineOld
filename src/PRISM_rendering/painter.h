@@ -46,7 +46,8 @@ public:
 	/// <param name="window">Указатель на окно PRISM_Window для отрисовки.</param>
 	/// <param name="x">Координата X точки.</param>
 	/// <param name="y">Координата Y точки.</param>
-	static void DrawPoint(PRISM_Window* window, int x, int y);
+	static void DrawPoint(PRISM_Window* window, float x, float y);
+
 	
 	/// <summary>
 	/// Рисует точку в указанном окне с заданным цветом.
@@ -57,7 +58,7 @@ public:
 	/// <param name="r">Интенсивность красного цвета (0-255).</param>
 	/// <param name="g">Интенсивность зеленого цвета (0-255).</param>
 	/// <param name="b">Интенсивность синего цвета (0-255).</param>
-	static void DrawPoint(PRISM_Window* window, int x, int y, int r, int g, int b);
+	static void DrawPoint(PRISM_Window* window, float x, float y, int r, int g, int b);
 	
 
 
@@ -70,9 +71,9 @@ public:
 	/// <param name="x2">Координата X конечной точки линии.</param>
 	/// <param name="y2">Координата Y конечной точки линии.</param>
 	/// <param name="thickness">Толщина линии.</param>
-	static void DrawThickLine(PRISM_Window* window, int x1, int y1, int x2, int y2, int thickness);
+	static void DrawThickLine(PRISM_Window* window, float x1, float y1, float x2, float y2, int thickness);
 	
-	
+
 	/// <summary>
 	/// Рисует линию в указанном окне с заданным цветом.
 	/// </summary>
@@ -99,7 +100,7 @@ public:
 	/// <param name="y2">Координата Y второй вершины треугольника.</param>
 	/// <param name="x3">Координата X третьей вершины треугольника.</param>
 	/// <param name="y3">Координата Y третьей вершины треугольника.</param>
-	static void DrawTriangle(PRISM_Window* window, int x1, int y1, int x2, int y2, int x3, int y3);
+	static void DrawTriangle(PRISM_Window* window, float x1, float y1, float x2, float y2, float x3, float y3);
 
 	/// <summary>
 	/// Рисует треугольник в указанном окне с заданным цветом.
@@ -114,7 +115,7 @@ public:
 	/// <param name="r">Интенсивность красного цвета (0-255).</param>
 	/// <param name="g">Интенсивность зеленого цвета (0-255).</param>
 	/// <param name="b">Интенсивность синего цвета (0-255).</param>
-	static void DrawTriangle(PRISM_Window* window, int x1, int y1, int x2, int y2, int x3, int y3, int r, int g, int b);
+	static void DrawTriangle(PRISM_Window* window, float x1, float y1, float x2, float y2, float x3, float y3, int r, int g, int b);
 
 
 
@@ -126,7 +127,8 @@ public:
 	/// <param name="y1">Координата Y верхнего левого угла прямоугольника.</param>
 	/// <param name="x2">Координата X нижнего правого угла прямоугольника.</param>
 	/// <param name="y2">Координата Y нижнего правого угла прямоугольника.</param>
-	static void DrawRectangle(PRISM_Window* window, int x1, int y1, int x2, int y2);
+	static void DrawRectangle(PRISM_Window* window, float x1, float y1, float x2, float y2);
+
 	
 	/// <summary>
 	/// Рисует прямоугольник в указанном окне с заданным цветом.
@@ -139,7 +141,7 @@ public:
 	/// <param name="r">Интенсивность красного цвета (0-255).</param>
 	/// <param name="g">Интенсивность зеленого цвета (0-255).</param>
 	/// <param name="b">Интенсивность синего цвета (0-255).</param>
-	static void DrawRectangle(PRISM_Window* window, int x1, int y1, int x2, int y2, int r, int g, int b);
+	static void DrawRectangle(PRISM_Window* window, float x1, float y1, float x2, float y2, int r, int g, int b);
 	
 
 
@@ -159,7 +161,7 @@ public:
 	/// <param name="r">Интенсивность красного цвета (0-255).</param>
 	/// <param name="g">Интенсивность зеленого цвета (0-255).</param>
 	/// <param name="b">Интенсивность синего цвета (0-255).</param>
-	static void DrawTriangle3D(PRISM_Window* window, float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, float r, float g, float b);
+	static void DrawTriangle3D(PRISM_Window* window, float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, int r, int g, int b);
 	
 	/// <summary>
 	/// Рисует 3D-треугольник в указанном окне с заданным цветом.
@@ -169,7 +171,7 @@ public:
 	/// <param name="r">Интенсивность красного цвета (0-255).</param>
 	/// <param name="g">Интенсивность зеленого цвета (0-255).</param>
 	/// <param name="b">Интенсивность синего цвета (0-255).</param>
-	static void DrawTriangle3D(PRISM_Window* window, PRISM_Triangle triangle, float r, float g, float b);
+	static void DrawTriangle3D(PRISM_Window* window, PRISM_Triangle triangle, int r, int g, int b);
 	
 	/// <summary>
 	/// Рисует 3D-треугольник в указанном окне с использованием заданного цвета.

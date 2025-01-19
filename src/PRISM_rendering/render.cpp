@@ -91,7 +91,7 @@ void PRISM_Render::Rendering(PRISM_Window* window, AbstractObject3D* obj)
 										(TriangleTranslated.b.z + obj->Camera.FFar) / (obj->Camera.FFar * 2),
 										(TriangleTranslated.c.z + obj->Camera.FFar) / (obj->Camera.FFar * 2) };
 
-			TriangleProjected.a.z = -Z_values.x; TriangleProjected.b.z = -Z_values.y; TriangleProjected.c.z = -Z_values.z;
+			TriangleProjected.a.z = Z_values.x; TriangleProjected.b.z = Z_values.y; TriangleProjected.c.z = Z_values.z;
 
 			PRISM_Light light; light.color = { 255, 255, 255 }; light.position = {0, 0, -2};
 			PRISM_Color colorDiffuse = CalculatePixelDiffuse({ 255, 255, 255 }, light, *obj, TriangleViewed);
