@@ -74,6 +74,7 @@ PRISM_Vector3d Scene::GetLightAmbient() const
 
 void Scene::Render(PRISM_Window* win)
 {
+	glOrtho(-1, 1, -1, 1, -enabledCamera->FNear, enabledCamera->FFar);
 	render.SetScreenSize(win->GetW(), win->GetH());
 	for (AbstractObject3D* object :objects) {
 		render.Rendering(win, object);

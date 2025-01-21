@@ -1,10 +1,10 @@
 #include "render.h"
 
-PRISM_Color PRISM_Render::CalculatePixelAmbient(PRISM_Color originalСolor, AbstractObject3D obj) const
+PRISM_Color PRISM_Render::CalculatePixelAmbient(PRISM_Color originalСolor, AbstractObject3D obj, PRISM_Triangle triangle) const
 {
-	unsigned char r = (unsigned char)((float)originalСolor.r * obj.materialAmbient.x * lightAmbient.x);
-	unsigned char g = (unsigned char)((float)originalСolor.g * obj.materialAmbient.y * lightAmbient.y);
-	unsigned char b = (unsigned char)((float)originalСolor.b * obj.materialAmbient.z * lightAmbient.z);
+	unsigned char r = (unsigned char)((float)originalСolor.r * triangle.ambientColor.x * lightAmbient.x);
+	unsigned char g = (unsigned char)((float)originalСolor.g * triangle.ambientColor.y * lightAmbient.y);
+	unsigned char b = (unsigned char)((float)originalСolor.b * triangle.ambientColor.z * lightAmbient.z);
 
 	return PRISM_Color{r, g, b};
 }
@@ -12,7 +12,7 @@ PRISM_Color PRISM_Render::CalculatePixelAmbient(PRISM_Color originalСolor, Abst
 PRISM_Color PRISM_Render::CalculatePixelDiffuse(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle)
 {
 	PRISM_Color lightDiffuse = light.color;
-	PRISM_Vector3d materialDiffuse = obj.materialAmbient;
+	PRISM_Vector3d materialDiffuse = triangle.diffuseColor;
 	PRISM_Vector3d normal = Math::CalculateNormals(triangle);
 	PRISM_Vector3d lightDir = { .0f, .0f, -1.0f };
 
@@ -49,12 +49,17 @@ PRISM_Color PRISM_Render::CalculatePixelSpecular(PRISM_Color originalСolor, PRI
 	viewDir = Math::Vector_Normalise(viewDir);
 
 	float spec = std::max(0.f, Math::Vector_DotProduct(reflectDir, viewDir));
-	float shininess = 32.0f;
-	float specular = light.lightIntensity * obj.kSpecular * std::pow(spec, shininess);
-	
-	PRISM_Color specularСolor = { originalСolor.r * specular, originalСolor.g * specular, originalСolor.b * specular };
+	float shininess = triangle.shininess;
+	float specular = (unsigned char)std::min(255.0f, light.lightIntensity * 255/2 * std::pow(spec, shininess));
 
+	
+	PRISM_Color specularСolor = { originalСolor.r * specular * 1.f / 255.f * triangle.specularColor.x, originalСolor.g * specular * 1.f/255.f * triangle.specularColor.y, originalСolor.b * specular * 1.f / 255.f * triangle.specularColor.y };
 	return specularСolor;
+}
+
+void PRISM_Render::UpdateVertexAmbient(PRISM_Window* window, PRISM_Color originalСolor, PRISM_Triangle triangle) const
+{
+	return ;
 }
 
 void PRISM_Render::Rendering(PRISM_Window* window, AbstractObject3D* obj)
@@ -79,27 +84,25 @@ void PRISM_Render::Rendering(PRISM_Window* window, AbstractObject3D* obj)
 			normal.y * (TriangleProjected.a.y - obj->Camera.Translate.y) +
 			normal.z * (TriangleProjected.a.z - obj->Camera.Translate.z) < 0.0f) {
 
-			//TriangleProjected.a.x += 1.0f; TriangleProjected.a.y += 1.0f;
-			//TriangleProjected.b.x += 1.0f; TriangleProjected.b.y += 1.0f;
-			//TriangleProjected.c.x += 1.0f; TriangleProjected.c.y += 1.0f;
-
-			//TriangleProjected.a.x *= 0.5f * (float)ScreenW; TriangleProjected.a.y *= 0.5f * (float)ScreenH;
-			//TriangleProjected.b.x *= 0.5f * (float)ScreenW; TriangleProjected.b.y *= 0.5f * (float)ScreenH;
-			//TriangleProjected.c.x *= 0.5f * (float)ScreenW; TriangleProjected.c.y *= 0.5f * (float)ScreenH;
+			// Цветовые параметры треугольника
+			TriangleViewed.ambientColor = triangle.ambientColor;
+			TriangleViewed.diffuseColor = triangle.diffuseColor;
+			TriangleViewed.specularColor = triangle.specularColor;
 			
-			PRISM_Vector3d Z_values = { (TriangleTranslated.a.z + obj->Camera.FFar) / (obj->Camera.FFar * 2),
-										(TriangleTranslated.b.z + obj->Camera.FFar) / (obj->Camera.FFar * 2),
-										(TriangleTranslated.c.z + obj->Camera.FFar) / (obj->Camera.FFar * 2) };
+
+			PRISM_Vector3d Z_values = { TriangleTranslated.a.z,
+										TriangleTranslated.b.z,
+										TriangleTranslated.c.z  };
 
 			TriangleProjected.a.z = Z_values.x; TriangleProjected.b.z = Z_values.y; TriangleProjected.c.z = Z_values.z;
 
 			PRISM_Light light; light.color = { 255, 255, 255 }; light.position = {0, 0, -2};
-			PRISM_Color colorDiffuse = CalculatePixelDiffuse({ 255, 255, 255 }, light, *obj, TriangleViewed);
+			PRISM_Color colorDiffuse = CalculatePixelDiffuse({ 1, 1, 1 }, light, *obj, TriangleViewed);
 			//PRISM_Color color = CalculatePixelAmbient({ 255, 255, 255 }, *obj);
-			PRISM_Color collorAmbient = CalculatePixelAmbient({ 255, 255, 255 }, *obj);
-			PRISM_Color collorSpecular = CalculatePixelSpecular({ 255, 255, 255 }, light, *obj, TriangleViewed, cameraCoordinate);
+			PRISM_Color collorAmbient = CalculatePixelAmbient({ 1, 1, 1 }, *obj, TriangleViewed);
+			PRISM_Color collorSpecular = CalculatePixelSpecular({ 1, 1, 1 }, light, *obj, TriangleViewed, cameraCoordinate);
 
-
+			
 
 			PRISM_Painter::DrawTriangle3D(window, TriangleProjected, { colorDiffuse.r + collorAmbient.r + collorSpecular.r,
 																	   colorDiffuse.g + collorAmbient.g + collorSpecular.g,

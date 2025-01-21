@@ -1,93 +1,93 @@
 #include "MeshLoader.h"
 #include "../PRISM_math/other.h"
-
+#include "OBJ_Loader.h"
 
 PRISM_Mesh MeshLoader::LoadOBJ(const char* filename, AbstractCamera3D camera) {
-	SDL_RWops* file = SDL_RWFromFile(filename, "r");
-	
-	PRISM_Mesh mesh = {};
+    PRISM_Mesh mesh = {};
 
-	if (!file) {
-		SDL_Log("Could not open file: %s", SDL_GetError());
-		return mesh;
-	}
+    // Создаем объект загрузчика
+    objl::Loader loader;
 
-	Sint64 fileSize = SDL_RWsize(file);
-	char* buffer = new char[fileSize + 1];
-	SDL_RWread(file, buffer, fileSize, 1);
-	buffer[fileSize] = '\0';
-	
-	std::string line;
-	std::istringstream fileContent(buffer);
-	
-	std::vector<PRISM_Vector3d> vertices;
-	std::vector<PRISM_Vector3d> normals;
-	std::vector<PRISM_Triangle> triangles;
-	
+    // Загружаем файл
+    if (!loader.LoadFile(filename)) {
+        SDL_Log("Failed to load OBJ file: %s", filename);
+        return mesh;
+    }
 
-	mesh.tris = {};
-	while (getline(fileContent, line)) {
-		if (line.empty() || line[0] == '#') {
-			continue; // Пропускаем пустые строки и комментарии
-		}
+    // Проверяем наличие мешей в файле
+    if (loader.LoadedMeshes.empty()) {
+        SDL_Log("No meshes found in OBJ file: %s", filename);
+        return mesh;
+    }
 
-		std::istringstream iss(line);
-		std::string identifier;
-		iss >> identifier;
+    // Проходим по всем мешам
+    for (const objl::Mesh& loadedMesh : loader.LoadedMeshes) {
+        // Вершины
+        std::vector<PRISM_Vector3d> vertices;
+        for (const objl::Vertex& vertex : loadedMesh.Vertices) {
+            PRISM_Vector3d v;
+            v.x = vertex.Position.X;
+            v.y = vertex.Position.Y;
+            v.z = vertex.Position.Z;
+            vertices.push_back(v);
+        }
 
-		if (identifier == "v") {
-			// Вершина
-			PRISM_Vector3d v;
-			iss >> v.x >> v.y >> v.z;
-			vertices.push_back(v);
-		}
-		else if (identifier == "vn") {
-			// Нормаль
-			PRISM_Vector3d n;
-			iss >> n.x >> n.y >> n.z;
-			normals.push_back(n);
-		}
-		else if (identifier == "f") {
-			// Грань
-			std::vector<int> vertexIndices;
-			std::vector<int> normalIndices;
+        // Нормали
+        std::vector<PRISM_Vector3d> normals;
+        for (const objl::Vertex& vertex : loadedMesh.Vertices) {
+            PRISM_Vector3d n;
+            n.x = vertex.Normal.X;
+            n.y = vertex.Normal.Y;
+            n.z = vertex.Normal.Z;
+            normals.push_back(n);
+        }
 
-			std::string facePart;
-			while (iss >> facePart) {
-				// Разбиваем каждую часть грани (например, "1//1" или "1/1/1")
-				size_t firstSlash = facePart.find('/');
-				size_t secondSlash = facePart.find('/', firstSlash + 1);
+        // Цвета материала
+        PRISM_Vector3d diffuseColor = { 1.0f, 1.0f, 1.0f };   // Белый по умолчанию (диффузный)
+        PRISM_Vector3d ambientColor = { 1.0f, 1.0f, 1.0f };   // Белый по умолчанию (амбиентный)
+        PRISM_Vector3d specularColor = { 1.0f, 1.0f, 1.0f };  // Белый по умолчанию (спекулярный)
 
-				// Извлекаем индекс вершины (до первого '/')
-				int vertexIndex = std::stoi(facePart.substr(0, firstSlash)) - 1;
-				vertexIndices.push_back(vertexIndex);
+        if (!loader.LoadedMaterials.empty()) {
+            // Диффузный цвет из MTL
+            diffuseColor.x = loadedMesh.MeshMaterial.Kd.X;
+            diffuseColor.y = loadedMesh.MeshMaterial.Kd.Y;
+            diffuseColor.z = loadedMesh.MeshMaterial.Kd.Z;
 
-				// Проверяем, есть ли индекс нормали (после второго '/')
-				if (secondSlash != std::string::npos) {
-					int normalIndex = std::stoi(facePart.substr(secondSlash + 1)) - 1;
-					normalIndices.push_back(normalIndex);
-				}
-			}
-			// Создаем треугольник, если индексы вершин определены
-			if (vertexIndices.size() == 3) {
-				PRISM_Triangle tri = {
-					vertices[vertexIndices[0]],
-					vertices[vertexIndices[1]],
-					vertices[vertexIndices[2]]
-				};
-				// Если указаны нормали, добавляем их в треугольник
-				if (!normalIndices.empty() && normalIndices.size() == 3) {
-					tri.a_norlmal = normals[normalIndices[0]];
-					tri.b_norlmal = normals[normalIndices[1]];
-					tri.c_norlmal = normals[normalIndices[2]];
-				}
-				// Добавляем треугольник в объект
-				mesh.tris.push_back(tri);
-			}
-		}
-	}
-	delete[] buffer;
-	SDL_RWclose(file);
+            // Амбиентный цвет из MTL
+            ambientColor.x = loadedMesh.MeshMaterial.Ka.X;
+            ambientColor.y = loadedMesh.MeshMaterial.Ka.Y;
+            ambientColor.z = loadedMesh.MeshMaterial.Ka.Z;
 
-	return mesh;
+            // Спекулярный цвет из MTL
+            specularColor.x = loadedMesh.MeshMaterial.Ks.X;
+            specularColor.y = loadedMesh.MeshMaterial.Ks.Y;
+            specularColor.z = loadedMesh.MeshMaterial.Ks.Z;
+        }
+
+        // Грани (треугольники)
+        for (size_t i = 0; i < loadedMesh.Indices.size(); i += 3) {
+            PRISM_Triangle tri;
+
+            // Вершины треугольника
+            tri.a = vertices[loadedMesh.Indices[i]];
+            tri.b = vertices[loadedMesh.Indices[i + 1]];
+            tri.c = vertices[loadedMesh.Indices[i + 2]];
+
+            // Нормали треугольника
+            tri.a_norlmal = normals[loadedMesh.Indices[i]];
+            tri.b_norlmal = normals[loadedMesh.Indices[i + 1]];
+            tri.c_norlmal = normals[loadedMesh.Indices[i + 2]];
+
+            // Цвета треугольника
+            tri.diffuseColor = diffuseColor;
+            tri.ambientColor = ambientColor;
+            tri.specularColor = specularColor;
+
+            // Добавляем треугольник в меш
+            mesh.tris.push_back(tri);
+        }
+    }
+
+    return mesh;
 };
+

@@ -137,5 +137,8 @@
     <ClInclude Include="src\PRISM_rendering\ShaderManager.h">
       <Filter>Файлы заголовков\PRISM_rendering</Filter>
     </ClInclude>
+    <ClInclude Include="src\PRISM_objects3D\OBJ_Loader.h">
+      <Filter>Файлы заголовков\PRISM_objects3D</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

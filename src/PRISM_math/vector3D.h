@@ -1,6 +1,7 @@
 #ifndef PRISM_VECTORS3D_H
 #define PRISM_VECTORS3D_H
 
+
 /// <summary>
 /// Структура PRISM_Vector3d предназначена для представления 
 /// трёхмерного вектора с дополнительным четвёртым компонентом (w).
@@ -23,15 +24,18 @@ struct PRISM_Vector3d
 	/// </summary>
 	float x;
 
+
 	/// <summary>
 	/// Координата вектора по оси Y.
 	/// </summary>
 	float y;
 
+
 	/// <summary>
 	/// Координата вектора по оси Z.
 	/// </summary>
 	float z;
+
 
 	/// <summary>
 	/// Четвёртая координата (w). 

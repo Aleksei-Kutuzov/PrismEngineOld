@@ -49,6 +49,17 @@ public:
     // Исходный код фрагментного шейдера
     const char* baseFragmentShader = R"(
     #version 330 core
+    in vec3 vertexColor;
+    out vec4 FragColor;
+
+    void main() {
+        FragColor = vec4(vertexColor, 1.0); // Используем переданный цвет
+    }
+    )";
+
+    // Исходный код фрагментного шейдера
+    const char* testFragmentShader = R"(
+    #version 330 core
     in vec3 vertexColor;  // Цвет из вершины
     in vec2 fragCoord;    // Нормализованные координаты фрагмента
     out vec4 FragColor;
