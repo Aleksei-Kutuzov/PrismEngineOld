@@ -659,3 +659,59 @@ void PRISM_Painter::DrawTriangle3D(PRISM_Window* window, PRISM_Triangle triangle
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	glUseProgram(0);
 }
+
+
+void PRISM_Painter::DrawInterpolatedTriangle3D(PRISM_Window* window, PRISM_Triangle triangle, PRISM_Color color_a, PRISM_Color color_b, PRISM_Color color_c) {
+	if (!window || !window->isRunning()) {
+		return;
+	}
+
+	PRISM_GL_fColor gl_color_a = Math::convertToGlColor(color_a);
+	PRISM_GL_fColor gl_color_b = Math::convertToGlColor(color_b);
+	PRISM_GL_fColor gl_color_c = Math::convertToGlColor(color_c);
+
+	SDL_GL_MakeCurrent(window->GetSDLWindow(), window->GetGLContext());
+
+	// Инициализация VAO и VBO, если они ещё не созданы
+	if (window->shaderManager.VAO == 0 || window->shaderManager.VBO == 0) {
+		glGenVertexArrays(1, &window->shaderManager.VAO);
+		glGenBuffers(1, &window->shaderManager.VBO);
+
+		glBindVertexArray(window->shaderManager.VAO);
+		glBindBuffer(GL_ARRAY_BUFFER, window->shaderManager.VBO);
+
+		// Резервируем память под буфер
+		glBufferData(GL_ARRAY_BUFFER, sizeof(float) * 18, nullptr, GL_DYNAMIC_DRAW);
+
+		// Позиция вершин
+		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+		glEnableVertexAttribArray(0);
+
+		// Цвет вершин
+		glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+		glEnableVertexAttribArray(1);
+
+		glBindBuffer(GL_ARRAY_BUFFER, 0);
+		glBindVertexArray(0);
+	}
+
+	// Данные для треугольника
+	float vertices[] = {
+		triangle.a.x, triangle.a.y, triangle.a.z, gl_color_a.r, gl_color_a.g, gl_color_a.b,
+		triangle.b.x, triangle.b.y, triangle.b.z, gl_color_b.r, gl_color_b.g, gl_color_b.b,
+		triangle.c.x, triangle.c.y, triangle.c.z, gl_color_c.r, gl_color_c.g, gl_color_c.b
+	};
+
+	// Обновляем только содержимое буфера
+	glBindBuffer(GL_ARRAY_BUFFER, window->shaderManager.VBO);
+	glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(vertices), vertices);
+
+	glBindVertexArray(window->shaderManager.VAO);
+
+	glUseProgram(window->shaderManager.shaderProgram);
+	glDrawArrays(GL_TRIANGLES, 0, 3);
+
+	glBindVertexArray(0);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glUseProgram(0);
+}

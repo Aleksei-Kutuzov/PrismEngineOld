@@ -51,20 +51,43 @@ void AbstractObject3D::PrintInfo()
 
 PRISM_Triangle AbstractObject3D::RotateTriangle(struct PRISM_Triangle Triangle_) {
 	struct PRISM_Triangle TriangleRotatedZ, TriangleRotatedZX, TriangleRotatedZXY;
-	// Rotate in Z-Axis
+	// Rotate vectors in Z-Axis
 	Math::MultiplyMatrixVector(Triangle_.a, TriangleRotatedZ.a, matrixRotZ);
 	Math::MultiplyMatrixVector(Triangle_.b, TriangleRotatedZ.b, matrixRotZ);
 	Math::MultiplyMatrixVector(Triangle_.c, TriangleRotatedZ.c, matrixRotZ);
 	
-	// Rotate in X-Axis
+	// Rotate vectors in X-Axis
 	Math::MultiplyMatrixVector(TriangleRotatedZ.a, TriangleRotatedZX.a, matrixRotX);
 	Math::MultiplyMatrixVector(TriangleRotatedZ.b, TriangleRotatedZX.b, matrixRotX);
 	Math::MultiplyMatrixVector(TriangleRotatedZ.c, TriangleRotatedZX.c, matrixRotX);
 	
-	// Rotate in Y-Axis
+	// Rotate vectors in Y-Axis
 	Math::MultiplyMatrixVector(TriangleRotatedZX.a, TriangleRotatedZXY.a, matrixRotY);
 	Math::MultiplyMatrixVector(TriangleRotatedZX.b, TriangleRotatedZXY.b, matrixRotY);
 	Math::MultiplyMatrixVector(TriangleRotatedZX.c, TriangleRotatedZXY.c, matrixRotY);
+
+	struct PRISM_Vector3d NormalRotatedZ_a, NormalRotatedZX_a, NormalRotatedZXY_a,
+						  NormalRotatedZ_b, NormalRotatedZX_b, NormalRotatedZXY_b,
+						  NormalRotatedZ_c, NormalRotatedZX_c, NormalRotatedZXY_c;
+	// Rotate normal_a in Z-Axis
+	Math::MultiplyMatrixVector(Triangle_.a_normal, NormalRotatedZ_a, matrixRotZ);
+	Math::MultiplyMatrixVector(Triangle_.b_normal, NormalRotatedZ_b, matrixRotZ);
+	Math::MultiplyMatrixVector(Triangle_.c_normal, NormalRotatedZ_c, matrixRotZ);
+
+	// Rotate normal_a in X-Axis
+	Math::MultiplyMatrixVector(NormalRotatedZ_a, NormalRotatedZX_a, matrixRotX);
+	Math::MultiplyMatrixVector(NormalRotatedZ_b, NormalRotatedZX_b, matrixRotX);
+	Math::MultiplyMatrixVector(NormalRotatedZ_c, NormalRotatedZX_c, matrixRotX);
+
+	// Rotate normal_a in Y-Axis
+	Math::MultiplyMatrixVector(NormalRotatedZX_a, NormalRotatedZXY_a, matrixRotY);
+	Math::MultiplyMatrixVector(NormalRotatedZX_b, NormalRotatedZXY_b, matrixRotY);
+	Math::MultiplyMatrixVector(NormalRotatedZX_c, NormalRotatedZXY_c, matrixRotY);
+
+	TriangleRotatedZXY.a_normal = NormalRotatedZXY_a;
+	TriangleRotatedZXY.b_normal = NormalRotatedZXY_b;
+	TriangleRotatedZXY.c_normal = NormalRotatedZXY_c;
+
 	return TriangleRotatedZXY;
 }
 
@@ -73,6 +96,10 @@ PRISM_Triangle AbstractObject3D::TranslateTriangle(struct PRISM_Triangle Triangl
 	Math::MultiplyMatrixVector(Triangle_.a, TriangleTranslated.a, matrixTranslate);
 	Math::MultiplyMatrixVector(Triangle_.b, TriangleTranslated.b, matrixTranslate);
 	Math::MultiplyMatrixVector(Triangle_.c, TriangleTranslated.c, matrixTranslate);
+
+	TriangleTranslated.a_normal = Triangle_.a_normal;
+	TriangleTranslated.b_normal = Triangle_.b_normal;
+	TriangleTranslated.c_normal = Triangle_.c_normal;
 	
 	return TriangleTranslated;
 }
@@ -83,6 +110,10 @@ PRISM_Triangle AbstractObject3D::ScaleTriangle(struct PRISM_Triangle Triangle_) 
 	Math::MultiplyMatrixVector(Triangle_.b, TriangleScaled.b, matrixScale);
 	Math::MultiplyMatrixVector(Triangle_.c, TriangleScaled.c, matrixScale);
 	
+	TriangleScaled.a_normal = Triangle_.a_normal;
+	TriangleScaled.b_normal = Triangle_.b_normal;
+	TriangleScaled.c_normal = Triangle_.c_normal;
+
 	return TriangleScaled;
 }
 
@@ -91,6 +122,10 @@ PRISM_Triangle AbstractObject3D::ViewTriangle(struct PRISM_Triangle Triangle_) {
 	Math::MultiplyMatrixVector(Triangle_.a, TriangleViewed.a, Camera.matrixView);
 	Math::MultiplyMatrixVector(Triangle_.b, TriangleViewed.b, Camera.matrixView);
 	Math::MultiplyMatrixVector(Triangle_.c, TriangleViewed.c, Camera.matrixView);
+
+	TriangleViewed.a_normal = Triangle_.a_normal;
+	TriangleViewed.b_normal = Triangle_.b_normal;
+	TriangleViewed.c_normal = Triangle_.c_normal;
 	
 	return TriangleViewed;
 }
@@ -136,61 +171,6 @@ PRISM_Color AbstractObject3D::CalculatePhongShadingColor(const PRISM_Vector3d& n
 	return result;
 }
 
-
-//		Vector3d CalculateVertexNormal(std::vector<Vector3d>& normals, Vector3d vertex, SDL_Renderer* renderer) {
-//			SDL_Log("normals vector SIZE: %d", normals.size());
-//			for (int i = 0; i < normals.size(); i++) {
-//				SDL_Log("normal <%f ,%f ,%f>", normals.at(i).x, normals.at(i).y, normals.at(i).z);
-//			}
-//
-//			Vector3d normalSum = {0, 0, 0};
-//				int count = 0;
-//				for (Vector3d& normal : normals) {
-//					if (normal.x * (vertex.x - CoordinateCamera.x) + //НЕЗАБУДЬ ПОМЕНЯТЬ ВЫРООЖЕНИЕ КОГДА КАМЕРУ ДЕЛАТЬ БУДЕШ СЕЙЧАС ТО ОНА НА НУЛЕ
-//						normal.y * (vertex.y - CoordinateCamera.y) +
-//						normal.z * (vertex.z - CoordinateCamera.z) < 0.0f) {
-//							normalSum = normalSum + normal;
-//							count++;
-//					}
-//				}
-//				SDL_Log("count: %d", count);
-//				if (count > 0) {
-//					normalSum = normalSum * (1.0f / count);
-//					normalSum = Vector_Normalise(normalSum);
-//				}
-//
-//				SDL_Log("normalSum: @<%f, %f, %f>@", normalSum.x, normalSum.y, normalSum.z);
-//				Vector3d center = vertex;
-//
-//				// Calculate end point of the normal
-//				Vector3d normalEnd = {
-//				center.x + normalSum.x, // Adjust length as needed
-//				center.y + normalSum.y,
-//				center.z + normalSum.z
-//				};
-//
-//				SDL_Log("normalEnd: @<%f, %f, %f>@", normalEnd.x, normalEnd.y, normalEnd.z);
-//
-//				// Project the center and normal end points
-//				Vector3d centerProjected, normalEndProjected;
-//
-//				MultiplyMatrixVector(center, centerProjected, ProjectionMatrix);
-//				MultiplyMatrixVector(normalEnd, normalEndProjected, ProjectionMatrix);
-//
-//				centerProjected.x = (centerProjected.x + 1.0f) * 0.5f * (float)ScreenW;
-//				centerProjected.y = (centerProjected.y + 1.0f) * 0.5f * (float)ScreenH;
-//				normalEndProjected.x = (normalEndProjected.x + 1.0f) * 0.5f * (float)ScreenW;
-//				normalEndProjected.y = (normalEndProjected.y + 1.0f) * 0.5f * (float)ScreenH;
-//				// Draw the normal
-//				SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255); // Red color for the normal
-//
-//				SDL_Log("centerProjected: @<%f, %f, %f>@", centerProjected.x, centerProjected.y, centerProjected.z);
-//				SDL_Log("centerProjected: @<%f, %f, %f>@", normalSum.x, normalSum.y, normalSum.z);
-//				SDL_RenderDrawLine(renderer, (int)centerProjected.x, (int)centerProjected.y,
-//				(int)normalEndProjected.x, (int)normalEndProjected.y);
-//
-//				return normalSum;
-//		}
 
 void AbstractObject3D::DrawMeshTriangles(SDL_Renderer* renderer, PRISM_RenderMode rm) {
 	for (auto Triangle_ : mesh.tris) {

@@ -205,12 +205,12 @@ int main(int argc, char* argv[])
     Scene scene;
     AbstractCamera3D MainCamera(0.1, 1000.0f, 90.0f,
         window.GetW(), window.GetH());
-    MainCamera.SetPosition({ 0, 0, -2 }, { 0, 0, 0 }, { 0, 0, 1 });
+    MainCamera.SetPosition({ 0, 0, -4 }, { 0, 0, 0 }, { 0, 0, 1 });
     
     AbstractObject3D object{ {0,0,0},{0,0,0},{1,1,1},MainCamera };
 
-    object.SetMesh(MeshLoader::LoadOBJ("test_res/objs/Tesla Laser.obj", MainCamera));
-    object.SetMesh(MeshLoader::LoadOBJ("test_res/objs/planet.obj", MainCamera));
+    object.SetMesh(MeshLoader::LoadOBJ("test_res/objs/cube.obj", MainCamera));
+    //object.SetMesh(MeshLoader::LoadOBJ("test_res/objs/cube.obj", MainCamera));
     
     //object.mesh.print();
 

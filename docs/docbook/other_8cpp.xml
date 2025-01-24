@@ -1,5 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_other_8cpp" xml:lang="ru">
-<title>Файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/other.cpp</title>
-<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/other.cpp</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &lt;cmath&gt;<?linebreak?>#include &quot;other.h&quot;<?linebreak?></programlisting></section>

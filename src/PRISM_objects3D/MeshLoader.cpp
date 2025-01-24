@@ -2,6 +2,31 @@
 #include "../PRISM_math/other.h"
 #include "OBJ_Loader.h"
 
+#include <iostream>
+
+// Вывод содержимого loadedMesh
+void PrintMeshInfo(const objl::Mesh& loadedMesh) {
+    // Вывод названия меша
+    std::cout << "Mesh Name: " << loadedMesh.MeshName << std::endl;
+
+    // Вывод индексов
+    std::cout << "Indices: ";
+    for (size_t i = 0; i < loadedMesh.Indices.size(); ++i) {
+        std::cout << loadedMesh.Indices[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Вывод вершин
+    std::cout << "Vertices: " << std::endl;
+    for (size_t i = 0; i < loadedMesh.Vertices.size(); ++i) {
+        const objl::Vertex& vertex = loadedMesh.Vertices[i];
+        std::cout << "Vertex " << i << ": "
+            << "Position(" << vertex.Position.X << ", " << vertex.Position.Y << ", " << vertex.Position.Z << ") "
+            << "Normal(" << vertex.Normal.X << ", " << vertex.Normal.Y << ", " << vertex.Normal.Z << ")" << std::endl;
+    }
+}
+
+
 PRISM_Mesh MeshLoader::LoadOBJ(const char* filename, AbstractCamera3D camera) {
     PRISM_Mesh mesh = {};
 
@@ -74,9 +99,9 @@ PRISM_Mesh MeshLoader::LoadOBJ(const char* filename, AbstractCamera3D camera) {
             tri.c = vertices[loadedMesh.Indices[i + 2]];
 
             // Нормали треугольника
-            tri.a_norlmal = normals[loadedMesh.Indices[i]];
-            tri.b_norlmal = normals[loadedMesh.Indices[i + 1]];
-            tri.c_norlmal = normals[loadedMesh.Indices[i + 2]];
+            tri.a_normal = normals[loadedMesh.Indices[i]];
+            tri.b_normal = normals[loadedMesh.Indices[i + 1]];
+            tri.c_normal = normals[loadedMesh.Indices[i + 2]];
 
             // Цвета треугольника
             tri.diffuseColor = diffuseColor;
@@ -85,6 +110,7 @@ PRISM_Mesh MeshLoader::LoadOBJ(const char* filename, AbstractCamera3D camera) {
 
             // Добавляем треугольник в меш
             mesh.tris.push_back(tri);
+
         }
     }
 

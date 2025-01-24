@@ -37,8 +37,8 @@ public:
 	/// <param name="originalСolor">Исходный цвет пикселя.</param>
 	/// <param name="obj">Объект, к которому принадлежит пиксель.</param>
 	/// <returns>Цвет пикселя с учётом окружающего освещения.</returns>
-	PRISM_Color CalculatePixelAmbient(PRISM_Color originalСolor, AbstractObject3D obj, PRISM_Triangle triangle) const; // Окружающее освещение (ambient lighting) симулирует свет, равномерно распространяющийся в пространстве. Оно добавляет объекту базовую освещённость, даже если на него напрямую не падает свет.
-	
+	PRISM_Color CalculatePixelAmbient(PRISM_Color originalСolor, PRISM_Triangle triangle) const; // Окружающее освещение (ambient lighting) симулирует свет, равномерно распространяющийся в пространстве. Оно добавляет объекту базовую освещённость, даже если на него напрямую не падает свет.
+
 	/// <summary>
 	/// Рассчитывает конечный цвет пикселя с учётом диффузного освещения (diffuse lighting).
 	/// </summary>
@@ -47,7 +47,7 @@ public:
 	/// <param name="obj">Объект, к которому принадлежит пиксель.</param>
 	/// <param name="triangle">Треугольник, к которому принадлежит пиксель.</param>
 	/// <returns>Цвет пикселя с учётом диффузного освещения.</returns>
-	PRISM_Color CalculatePixelDiffuse(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle); // Диффузное освещение моделирует рассеивание света на матовой поверхности.
+	PRISM_Color* CalculatePixelDiffuse(PRISM_Color originalСolor, PRISM_Light light, PRISM_Triangle triangle) const; // Диффузное освещение моделирует рассеивание света на матовой поверхности.
 	
 	/// <summary>
 	/// Рассчитывает конечный цвет пикселя с учётом зеркального отражения (specular lighting).
@@ -58,7 +58,7 @@ public:
 	/// <param name="triangle">Треугольник, к которому принадлежит пиксель.</param>
 	/// <param name="cameraCoordinate">Координаты камеры.</param>
 	/// <returns>Цвет пикселя с учётом зеркального отражения.</returns>
-	PRISM_Color CalculatePixelSpecular(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle, PRISM_Vector3d cameraCoordinate);
+	PRISM_Color CalculatePixelSpecular(PRISM_Color originalСolor, PRISM_Light light, PRISM_Triangle triangle, PRISM_Vector3d cameraCoordinate) const;
 	
 	void UpdateVertexAmbient(PRISM_Window* window, PRISM_Color originalСolor, PRISM_Triangle triangle) const; // Окружающее освещение (ambient lighting) симулирует свет, равномерно распространяющийся в пространстве. Оно добавляет объекту базовую освещённость, даже если на него напрямую не падает свет.
 
