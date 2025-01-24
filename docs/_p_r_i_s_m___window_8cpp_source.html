@@ -99,15 +99,15 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#add5cb291c2ea0bae7ef26948cdae0418">    6</a></span><a class="code hl_function" href="class_p_r_i_s_m___window.html#add5cb291c2ea0bae7ef26948cdae0418">PRISM_Window::PRISM_Window</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keyword">const</span> <span class="keywordtype">char</span>* title)</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>                  : window(nullptr), glContext(nullptr), <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a36f7b6be7108281af77939ceaec42fd6">running</a>(true)</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#aa4bca0420152ccd9b80907696e5bf8b4">    6</a></span><a class="code hl_function" href="class_p_r_i_s_m___window.html#aa4bca0420152ccd9b80907696e5bf8b4">PRISM_Window::PRISM_Window</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keyword">const</span> <span class="keywordtype">char</span>* title)</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>                  : window(nullptr), glContext(nullptr), <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c">running</a>(true)</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    this-&gt;w = width;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    this-&gt;h = height;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="comment">// Инициализация SDL</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">if</span> (SDL_Init(SDL_INIT_VIDEO) &lt; 0) {</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        SDL_LogError(SDL_LOG_PRIORITY_ERROR, <span class="stringliteral">&quot;SDL could not initialize! SDL_Error: %s&quot;</span>, SDL_GetError());</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a36f7b6be7108281af77939ceaec42fd6">running</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c">running</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
@@ -133,7 +133,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span> (!window) {</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        SDL_LogError(SDL_LOG_PRIORITY_ERROR, <span class="stringliteral">&quot;Window could not be created! SDL_Error: %s&quot;</span>, SDL_GetError());</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a36f7b6be7108281af77939ceaec42fd6">running</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c">running</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
@@ -141,7 +141,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    glContext = SDL_GL_CreateContext(window);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">if</span> (!glContext) {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        SDL_LogError(SDL_LOG_PRIORITY_ERROR, <span class="stringliteral">&quot;OpenGL context could not be created! SDL_Error: %s&quot;</span>, SDL_GetError());</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a36f7b6be7108281af77939ceaec42fd6">running</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c">running</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
@@ -174,20 +174,20 @@ $(function(){ initResizable(false); });
 </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#ac10e0c992234806a5104c9a7fcdd3dc4">   79</a></span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="class_p_r_i_s_m___window.html#ac10e0c992234806a5104c9a7fcdd3dc4">PRISM_Window::GetTitle</a>() {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a0bf2d6387875a9fd97d55afec43ee10b">   79</a></span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="class_p_r_i_s_m___window.html#a0bf2d6387875a9fd97d55afec43ee10b">PRISM_Window::GetTitle</a>() {</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> SDL_GetWindowTitle(window);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a00fd7a839dcf3f9f45db028664ab99dc">   83</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a00fd7a839dcf3f9f45db028664ab99dc">PRISM_Window::SetTitle</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* t)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#aa407997dfba9a8787d932c45130554ac">   83</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#aa407997dfba9a8787d932c45130554ac">PRISM_Window::SetTitle</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* t)</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    SDL_SetWindowTitle(window, t);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
 </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a55ac7c597be8e471ad18e44201bcf772">   88</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a00fd7a839dcf3f9f45db028664ab99dc">PRISM_Window::SetTitle</a>(<span class="keyword">const</span> std::string&amp; t) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#aa88feac118afd66d16d1907e1180e275">   88</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#aa407997dfba9a8787d932c45130554ac">PRISM_Window::SetTitle</a>(<span class="keyword">const</span> std::string&amp; t) {</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    SDL_SetWindowTitle(window, t.c_str());</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
 </div>
@@ -196,18 +196,18 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#af2823855876c4407cc6004de3031230c">   95</a></span><a class="code hl_function" href="class_p_r_i_s_m___window.html#af2823855876c4407cc6004de3031230c">PRISM_Window::~PRISM_Window</a>()</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#ae43664eea8fe702ab86e9e4c010064e6">   95</a></span><a class="code hl_function" href="class_p_r_i_s_m___window.html#ae43664eea8fe702ab86e9e4c010064e6">PRISM_Window::~PRISM_Window</a>()</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>{</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_function" href="class_p_r_i_s_m___window.html#ae900b054a1598c54acaa67902f87185d">cleanUp</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_function" href="class_p_r_i_s_m___window.html#a86c2b01d4de98415057642e6afaa079e">cleanUp</a>();</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
 </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a6795895f8393ec3671ac25157173672d">  100</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a6795895f8393ec3671ac25157173672d">PRISM_Window::handleEvents</a>() {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a7a0ec756f1b8273491aca92c3b776993">  100</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a7a0ec756f1b8273491aca92c3b776993">PRISM_Window::handleEvents</a>() {</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    SDL_Event e;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">while</span> (SDL_PollEvent(&amp;e)) {</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">if</span> (e.type == SDL_QUIT) {</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a36f7b6be7108281af77939ceaec42fd6">running</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c">running</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        }</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (e.type == SDL_WINDOWEVENT &amp;&amp; e.window.event == SDL_WINDOWEVENT_RESIZED) {</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keywordtype">int</span> newWidth = e.window.data1;</div>
@@ -230,7 +230,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#ac5c54df7ed3b930268c8d7752c101725">  125</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#ac5c54df7ed3b930268c8d7752c101725">PRISM_Window::update</a>() {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a2b1aa5dd51131b0178aa29ae70ebedea">  125</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a2b1aa5dd51131b0178aa29ae70ebedea">PRISM_Window::update</a>() {</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="comment">// Обновление экрана</span></div>
@@ -241,14 +241,14 @@ $(function(){ initResizable(false); });
 </div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
 <div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#ac8bb3912a3ce86b15842e79d0b421204">  134</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#ac8bb3912a3ce86b15842e79d0b421204">PRISM_Window::clear</a>()</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#ae87126811e3a83596cba115b41473868">  134</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#ae87126811e3a83596cba115b41473868">PRISM_Window::clear</a>()</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>{</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
 </div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
 <div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#ae900b054a1598c54acaa67902f87185d">  139</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#ae900b054a1598c54acaa67902f87185d">PRISM_Window::cleanUp</a>() {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a86c2b01d4de98415057642e6afaa079e">  139</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a86c2b01d4de98415057642e6afaa079e">PRISM_Window::cleanUp</a>() {</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordflow">if</span> (glContext) {</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        SDL_GL_DeleteContext(glContext);</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        SDL_LogInfo(SDL_LOG_PRIORITY_INFO, <span class="stringliteral">&quot;OpenGL context deleted.&quot;</span>);</div>
@@ -262,15 +262,15 @@ $(function(){ initResizable(false); });
 </div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
 <div class="ttc" id="a_p_r_i_s_m___window_8h_html"><div class="ttname"><a href="_p_r_i_s_m___window_8h.html">PRISM_Window.h</a></div></div>
-<div class="ttc" id="aclass_p_r_i_s_m___window_html_a00fd7a839dcf3f9f45db028664ab99dc"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a00fd7a839dcf3f9f45db028664ab99dc">PRISM_Window::SetTitle</a></div><div class="ttdeci">void SetTitle(const char *)</div><div class="ttdef"><b>Определения</b> <a href="#l00083">PRISM_Window.cpp:83</a></div></div>
-<div class="ttc" id="aclass_p_r_i_s_m___window_html_a36f7b6be7108281af77939ceaec42fd6"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a36f7b6be7108281af77939ceaec42fd6">PRISM_Window::running</a></div><div class="ttdeci">bool running</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8h_source.html#l00016">PRISM_Window.h:16</a></div></div>
-<div class="ttc" id="aclass_p_r_i_s_m___window_html_a6795895f8393ec3671ac25157173672d"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a6795895f8393ec3671ac25157173672d">PRISM_Window::handleEvents</a></div><div class="ttdeci">void handleEvents()</div><div class="ttdef"><b>Определения</b> <a href="#l00100">PRISM_Window.cpp:100</a></div></div>
-<div class="ttc" id="aclass_p_r_i_s_m___window_html_ac10e0c992234806a5104c9a7fcdd3dc4"><div class="ttname"><a href="class_p_r_i_s_m___window.html#ac10e0c992234806a5104c9a7fcdd3dc4">PRISM_Window::GetTitle</a></div><div class="ttdeci">const char * GetTitle()</div><div class="ttdef"><b>Определения</b> <a href="#l00079">PRISM_Window.cpp:79</a></div></div>
-<div class="ttc" id="aclass_p_r_i_s_m___window_html_ac5c54df7ed3b930268c8d7752c101725"><div class="ttname"><a href="class_p_r_i_s_m___window.html#ac5c54df7ed3b930268c8d7752c101725">PRISM_Window::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Определения</b> <a href="#l00125">PRISM_Window.cpp:125</a></div></div>
-<div class="ttc" id="aclass_p_r_i_s_m___window_html_ac8bb3912a3ce86b15842e79d0b421204"><div class="ttname"><a href="class_p_r_i_s_m___window.html#ac8bb3912a3ce86b15842e79d0b421204">PRISM_Window::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Определения</b> <a href="#l00134">PRISM_Window.cpp:134</a></div></div>
-<div class="ttc" id="aclass_p_r_i_s_m___window_html_add5cb291c2ea0bae7ef26948cdae0418"><div class="ttname"><a href="class_p_r_i_s_m___window.html#add5cb291c2ea0bae7ef26948cdae0418">PRISM_Window::PRISM_Window</a></div><div class="ttdeci">PRISM_Window(int w, int h, const char *title)</div><div class="ttdef"><b>Определения</b> <a href="#l00006">PRISM_Window.cpp:6</a></div></div>
-<div class="ttc" id="aclass_p_r_i_s_m___window_html_ae900b054a1598c54acaa67902f87185d"><div class="ttname"><a href="class_p_r_i_s_m___window.html#ae900b054a1598c54acaa67902f87185d">PRISM_Window::cleanUp</a></div><div class="ttdeci">void cleanUp()</div><div class="ttdef"><b>Определения</b> <a href="#l00139">PRISM_Window.cpp:139</a></div></div>
-<div class="ttc" id="aclass_p_r_i_s_m___window_html_af2823855876c4407cc6004de3031230c"><div class="ttname"><a href="class_p_r_i_s_m___window.html#af2823855876c4407cc6004de3031230c">PRISM_Window::~PRISM_Window</a></div><div class="ttdeci">~PRISM_Window()</div><div class="ttdef"><b>Определения</b> <a href="#l00095">PRISM_Window.cpp:95</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a0bf2d6387875a9fd97d55afec43ee10b"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a0bf2d6387875a9fd97d55afec43ee10b">PRISM_Window::GetTitle</a></div><div class="ttdeci">const char * GetTitle()</div><div class="ttdoc">Получает заголовок окна.</div><div class="ttdef"><b>Определения</b> <a href="#l00079">PRISM_Window.cpp:79</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a2b1aa5dd51131b0178aa29ae70ebedea"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a2b1aa5dd51131b0178aa29ae70ebedea">PRISM_Window::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Обновляет содержимое окна.</div><div class="ttdef"><b>Определения</b> <a href="#l00125">PRISM_Window.cpp:125</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a7624796096d0fa9650c866e15f3d750c"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c">PRISM_Window::running</a></div><div class="ttdeci">bool running</div><div class="ttdoc">Указывает, выполняется ли приложение.</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8h_source.html#l00030">PRISM_Window.h:30</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a7a0ec756f1b8273491aca92c3b776993"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a7a0ec756f1b8273491aca92c3b776993">PRISM_Window::handleEvents</a></div><div class="ttdeci">void handleEvents()</div><div class="ttdoc">Обрабатывает события окна (например, ввод с клавиатуры или мыши).</div><div class="ttdef"><b>Определения</b> <a href="#l00100">PRISM_Window.cpp:100</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a86c2b01d4de98415057642e6afaa079e"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a86c2b01d4de98415057642e6afaa079e">PRISM_Window::cleanUp</a></div><div class="ttdeci">void cleanUp()</div><div class="ttdoc">Освобождает ресурсы и завершает работу окна.</div><div class="ttdef"><b>Определения</b> <a href="#l00139">PRISM_Window.cpp:139</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_aa407997dfba9a8787d932c45130554ac"><div class="ttname"><a href="class_p_r_i_s_m___window.html#aa407997dfba9a8787d932c45130554ac">PRISM_Window::SetTitle</a></div><div class="ttdeci">void SetTitle(const char *)</div><div class="ttdoc">Устанавливает новый заголовок окна.</div><div class="ttdef"><b>Определения</b> <a href="#l00083">PRISM_Window.cpp:83</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_aa4bca0420152ccd9b80907696e5bf8b4"><div class="ttname"><a href="class_p_r_i_s_m___window.html#aa4bca0420152ccd9b80907696e5bf8b4">PRISM_Window::PRISM_Window</a></div><div class="ttdeci">PRISM_Window(int w, int h, const char *title)</div><div class="ttdoc">Конструктор окна PRISM_Window.</div><div class="ttdef"><b>Определения</b> <a href="#l00006">PRISM_Window.cpp:6</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_ae43664eea8fe702ab86e9e4c010064e6"><div class="ttname"><a href="class_p_r_i_s_m___window.html#ae43664eea8fe702ab86e9e4c010064e6">PRISM_Window::~PRISM_Window</a></div><div class="ttdeci">~PRISM_Window()</div><div class="ttdoc">Деструктор окна PRISM_Window. Освобождает выделенные ресурсы.</div><div class="ttdef"><b>Определения</b> <a href="#l00095">PRISM_Window.cpp:95</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_ae87126811e3a83596cba115b41473868"><div class="ttname"><a href="class_p_r_i_s_m___window.html#ae87126811e3a83596cba115b41473868">PRISM_Window::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Очищает содержимое окна.</div><div class="ttdef"><b>Определения</b> <a href="#l00134">PRISM_Window.cpp:134</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

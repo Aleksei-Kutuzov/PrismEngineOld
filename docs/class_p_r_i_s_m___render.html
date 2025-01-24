@@ -93,40 +93,51 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Класс <a class="el" href="class_p_r_i_s_m___render.html" title="Класс PRISM_Render предоставляет функциональность для обработки рендеринга объектов,...">PRISM_Render</a> предоставляет функциональность для обработки рендеринга объектов, освещения и управления параметрами сцены.  
+ <a href="#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="render_8h_source.html">render.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a44df9b94b16fb1df310c02257c125490" id="r_a44df9b94b16fb1df310c02257c125490"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44df9b94b16fb1df310c02257c125490">CalculatePixelAmbient</a> (<a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> obj) const</td></tr>
-<tr class="separator:a44df9b94b16fb1df310c02257c125490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31b9c243cb644531d85af023366e50d4" id="r_a31b9c243cb644531d85af023366e50d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31b9c243cb644531d85af023366e50d4">CalculatePixelDiffuse</a> (<a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> obj, <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> triangle)</td></tr>
-<tr class="separator:a31b9c243cb644531d85af023366e50d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4baae358af056a50be03ace21ff0883d" id="r_a4baae358af056a50be03ace21ff0883d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4baae358af056a50be03ace21ff0883d">CalculatePixelSpecular</a> (<a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> obj, <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> triangle, <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> <a class="el" href="#aadcdf339262ba7e6274d5695634c5b5f">cameraCoordinate</a>)</td></tr>
-<tr class="separator:a4baae358af056a50be03ace21ff0883d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a493a4aba911acb932c66030f15a90" id="r_a49a493a4aba911acb932c66030f15a90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49a493a4aba911acb932c66030f15a90">Rendering</a> (<a class="el" href="class_p_r_i_s_m___window.html">PRISM_Window</a> *window, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *obj)</td></tr>
-<tr class="separator:a49a493a4aba911acb932c66030f15a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac16499f92f48f29237b02a6294b52e31" id="r_ac16499f92f48f29237b02a6294b52e31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac16499f92f48f29237b02a6294b52e31">SetScreenSize</a> (int w, int h)</td></tr>
-<tr class="separator:ac16499f92f48f29237b02a6294b52e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80544cdf54b7345d6ed5ec78a37e534" id="r_aa80544cdf54b7345d6ed5ec78a37e534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa80544cdf54b7345d6ed5ec78a37e534">CalculatePixelAmbient</a> (<a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> obj) const</td></tr>
+<tr class="memdesc:aa80544cdf54b7345d6ed5ec78a37e534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитывает конечный цвет пикселя с учётом окружающего освещения (ambient lighting).  <br /></td></tr>
+<tr class="separator:aa80544cdf54b7345d6ed5ec78a37e534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1234552a7c78a632e944a73a5c7919d0" id="r_a1234552a7c78a632e944a73a5c7919d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1234552a7c78a632e944a73a5c7919d0">CalculatePixelDiffuse</a> (<a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> obj, <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> triangle)</td></tr>
+<tr class="memdesc:a1234552a7c78a632e944a73a5c7919d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитывает конечный цвет пикселя с учётом диффузного освещения (diffuse lighting).  <br /></td></tr>
+<tr class="separator:a1234552a7c78a632e944a73a5c7919d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4757d3d9f109f7c4f8426eabaed04b2e" id="r_a4757d3d9f109f7c4f8426eabaed04b2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4757d3d9f109f7c4f8426eabaed04b2e">CalculatePixelSpecular</a> (<a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> originalСolor, <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> obj, <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> triangle, <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> <a class="el" href="#a02b21d4b84ea87d6422653a48f225384">cameraCoordinate</a>)</td></tr>
+<tr class="memdesc:a4757d3d9f109f7c4f8426eabaed04b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитывает конечный цвет пикселя с учётом зеркального отражения (specular lighting).  <br /></td></tr>
+<tr class="separator:a4757d3d9f109f7c4f8426eabaed04b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47805e4cb43de8a06140b3c1171f8252" id="r_a47805e4cb43de8a06140b3c1171f8252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47805e4cb43de8a06140b3c1171f8252">Rendering</a> (<a class="el" href="class_p_r_i_s_m___window.html">PRISM_Window</a> *window, <a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *obj)</td></tr>
+<tr class="memdesc:a47805e4cb43de8a06140b3c1171f8252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет рендеринг указанного объекта в заданном окне.  <br /></td></tr>
+<tr class="separator:a47805e4cb43de8a06140b3c1171f8252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8c83f0e8eb2346665bfa59e701c70c" id="r_a1e8c83f0e8eb2346665bfa59e701c70c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e8c83f0e8eb2346665bfa59e701c70c">SetScreenSize</a> (int w, int h)</td></tr>
+<tr class="memdesc:a1e8c83f0e8eb2346665bfa59e701c70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает размеры экрана для рендеринга.  <br /></td></tr>
+<tr class="separator:a1e8c83f0e8eb2346665bfa59e701c70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:aadcdf339262ba7e6274d5695634c5b5f" id="r_aadcdf339262ba7e6274d5695634c5b5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadcdf339262ba7e6274d5695634c5b5f">cameraCoordinate</a> = {0, 0, 0}</td></tr>
-<tr class="separator:aadcdf339262ba7e6274d5695634c5b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae1eaaa76fb0cea54f764c0fd1e1f820" id="r_aae1eaaa76fb0cea54f764c0fd1e1f820"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae1eaaa76fb0cea54f764c0fd1e1f820">lightAmbient</a> = { 0.1f, 0.1f, 0.1f }</td></tr>
-<tr class="separator:aae1eaaa76fb0cea54f764c0fd1e1f820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b21d4b84ea87d6422653a48f225384" id="r_a02b21d4b84ea87d6422653a48f225384"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02b21d4b84ea87d6422653a48f225384">cameraCoordinate</a> = {0, 0, 0}</td></tr>
+<tr class="memdesc:a02b21d4b84ea87d6422653a48f225384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Координаты камеры в пространстве.  <br /></td></tr>
+<tr class="separator:a02b21d4b84ea87d6422653a48f225384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2057e7c050689a7c6d03cb1bf5044bd" id="r_af2057e7c050689a7c6d03cb1bf5044bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2057e7c050689a7c6d03cb1bf5044bd">lightAmbient</a> = { 0.1f, 0.1f, 0.1f }</td></tr>
+<tr class="memdesc:af2057e7c050689a7c6d03cb1bf5044bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интенсивность окружающего света в сцене. Определяет базовую освещённость пространства. Так же является коэфицентом дифузного освещения  <br /></td></tr>
+<tr class="separator:af2057e7c050689a7c6d03cb1bf5044bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="render_8h_source.html">render.h</a> строка <a class="el" href="render_8h_source.html#l00016">16</a></p>
+<div class="textblock"><p>Класс <a class="el" href="class_p_r_i_s_m___render.html" title="Класс PRISM_Render предоставляет функциональность для обработки рендеринга объектов,...">PRISM_Render</a> предоставляет функциональность для обработки рендеринга объектов, освещения и управления параметрами сцены. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="render_8h_source.html">render.h</a> строка <a class="el" href="render_8h_source.html#l00020">20</a></p>
 </div><h2 class="groupheader">Методы</h2>
-<a id="a44df9b94b16fb1df310c02257c125490" name="a44df9b94b16fb1df310c02257c125490"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44df9b94b16fb1df310c02257c125490">&#9670;&#160;</a></span>CalculatePixelAmbient()</h2>
+<a id="aa80544cdf54b7345d6ed5ec78a37e534" name="aa80544cdf54b7345d6ed5ec78a37e534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa80544cdf54b7345d6ed5ec78a37e534">&#9670;&#160;</a></span>CalculatePixelAmbient()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> CalculatePixelAmbient </td>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> PRISM_Render::CalculatePixelAmbient </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a></td>          <td class="paramname"><span class="paramname"><em>originalСolor</em></span>, </td>
         </tr>
@@ -138,18 +149,28 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
+<p>Рассчитывает конечный цвет пикселя с учётом окружающего освещения (ambient lighting). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">originalСolor</td><td>Исходный цвет пикселя.</td></tr>
+    <tr><td class="paramname">obj</td><td>Объект, к которому принадлежит пиксель.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Цвет пикселя с учётом окружающего освещения.</dd></dl>
+
 <p class="definition">См. определение в файле <a class="el" href="render_8cpp_source.html">render.cpp</a> строка <a class="el" href="render_8cpp_source.html#l00003">3</a></p>
 
 </div>
 </div>
-<a id="a31b9c243cb644531d85af023366e50d4" name="a31b9c243cb644531d85af023366e50d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31b9c243cb644531d85af023366e50d4">&#9670;&#160;</a></span>CalculatePixelDiffuse()</h2>
+<a id="a1234552a7c78a632e944a73a5c7919d0" name="a1234552a7c78a632e944a73a5c7919d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1234552a7c78a632e944a73a5c7919d0">&#9670;&#160;</a></span>CalculatePixelDiffuse()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> CalculatePixelDiffuse </td>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> PRISM_Render::CalculatePixelDiffuse </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a></td>          <td class="paramname"><span class="paramname"><em>originalСolor</em></span>, </td>
         </tr>
@@ -171,18 +192,30 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
+<p>Рассчитывает конечный цвет пикселя с учётом диффузного освещения (diffuse lighting). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">originalСolor</td><td>Исходный цвет пикселя.</td></tr>
+    <tr><td class="paramname">light</td><td>Источник света.</td></tr>
+    <tr><td class="paramname">obj</td><td>Объект, к которому принадлежит пиксель.</td></tr>
+    <tr><td class="paramname">triangle</td><td>Треугольник, к которому принадлежит пиксель.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Цвет пикселя с учётом диффузного освещения.</dd></dl>
+
 <p class="definition">См. определение в файле <a class="el" href="render_8cpp_source.html">render.cpp</a> строка <a class="el" href="render_8cpp_source.html#l00012">12</a></p>
 
 </div>
 </div>
-<a id="a4baae358af056a50be03ace21ff0883d" name="a4baae358af056a50be03ace21ff0883d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4baae358af056a50be03ace21ff0883d">&#9670;&#160;</a></span>CalculatePixelSpecular()</h2>
+<a id="a4757d3d9f109f7c4f8426eabaed04b2e" name="a4757d3d9f109f7c4f8426eabaed04b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4757d3d9f109f7c4f8426eabaed04b2e">&#9670;&#160;</a></span>CalculatePixelSpecular()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> CalculatePixelSpecular </td>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> PRISM_Render::CalculatePixelSpecular </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a></td>          <td class="paramname"><span class="paramname"><em>originalСolor</em></span>, </td>
         </tr>
@@ -209,18 +242,31 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
+<p>Рассчитывает конечный цвет пикселя с учётом зеркального отражения (specular lighting). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">originalСolor</td><td>Исходный цвет пикселя.</td></tr>
+    <tr><td class="paramname">light</td><td>Источник света.</td></tr>
+    <tr><td class="paramname">obj</td><td>Объект, к которому принадлежит пиксель.</td></tr>
+    <tr><td class="paramname">triangle</td><td>Треугольник, к которому принадлежит пиксель.</td></tr>
+    <tr><td class="paramname">cameraCoordinate</td><td>Координаты камеры.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Цвет пикселя с учётом зеркального отражения.</dd></dl>
+
 <p class="definition">См. определение в файле <a class="el" href="render_8cpp_source.html">render.cpp</a> строка <a class="el" href="render_8cpp_source.html#l00034">34</a></p>
 
 </div>
 </div>
-<a id="a49a493a4aba911acb932c66030f15a90" name="a49a493a4aba911acb932c66030f15a90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49a493a4aba911acb932c66030f15a90">&#9670;&#160;</a></span>Rendering()</h2>
+<a id="a47805e4cb43de8a06140b3c1171f8252" name="a47805e4cb43de8a06140b3c1171f8252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47805e4cb43de8a06140b3c1171f8252">&#9670;&#160;</a></span>Rendering()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Rendering </td>
+          <td class="memname">void PRISM_Render::Rendering </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_p_r_i_s_m___window.html">PRISM_Window</a> *</td>          <td class="paramname"><span class="paramname"><em>window</em></span>, </td>
         </tr>
@@ -232,18 +278,27 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
+<p>Выполняет рендеринг указанного объекта в заданном окне. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Указатель на объект окна, в котором происходит рендеринг.</td></tr>
+    <tr><td class="paramname">obj</td><td>Объект для рендеринга.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">См. определение в файле <a class="el" href="render_8cpp_source.html">render.cpp</a> строка <a class="el" href="render_8cpp_source.html#l00060">60</a></p>
 
 </div>
 </div>
-<a id="ac16499f92f48f29237b02a6294b52e31" name="ac16499f92f48f29237b02a6294b52e31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac16499f92f48f29237b02a6294b52e31">&#9670;&#160;</a></span>SetScreenSize()</h2>
+<a id="a1e8c83f0e8eb2346665bfa59e701c70c" name="a1e8c83f0e8eb2346665bfa59e701c70c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8c83f0e8eb2346665bfa59e701c70c">&#9670;&#160;</a></span>SetScreenSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SetScreenSize </td>
+          <td class="memname">void PRISM_Render::SetScreenSize </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
         </tr>
@@ -255,40 +310,53 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
+<p>Устанавливает размеры экрана для рендеринга. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>Ширина экрана.</td></tr>
+    <tr><td class="paramname">h</td><td>Высота экрана.</td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">См. определение в файле <a class="el" href="render_8cpp_source.html">render.cpp</a> строка <a class="el" href="render_8cpp_source.html#l00113">113</a></p>
 
 </div>
 </div>
 <h2 class="groupheader">Поля</h2>
-<a id="aadcdf339262ba7e6274d5695634c5b5f" name="aadcdf339262ba7e6274d5695634c5b5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadcdf339262ba7e6274d5695634c5b5f">&#9670;&#160;</a></span>cameraCoordinate</h2>
+<a id="a02b21d4b84ea87d6422653a48f225384" name="a02b21d4b84ea87d6422653a48f225384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b21d4b84ea87d6422653a48f225384">&#9670;&#160;</a></span>cameraCoordinate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> cameraCoordinate = {0, 0, 0}</td>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> PRISM_Render::cameraCoordinate = {0, 0, 0}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="render_8h_source.html">render.h</a> строка <a class="el" href="render_8h_source.html#l00018">18</a></p>
+<p>Координаты камеры в пространстве. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="render_8h_source.html">render.h</a> строка <a class="el" href="render_8h_source.html#l00025">25</a></p>
 
 </div>
 </div>
-<a id="aae1eaaa76fb0cea54f764c0fd1e1f820" name="aae1eaaa76fb0cea54f764c0fd1e1f820"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae1eaaa76fb0cea54f764c0fd1e1f820">&#9670;&#160;</a></span>lightAmbient</h2>
+<a id="af2057e7c050689a7c6d03cb1bf5044bd" name="af2057e7c050689a7c6d03cb1bf5044bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2057e7c050689a7c6d03cb1bf5044bd">&#9670;&#160;</a></span>lightAmbient</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> lightAmbient = { 0.1f, 0.1f, 0.1f }</td>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> PRISM_Render::lightAmbient = { 0.1f, 0.1f, 0.1f }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="render_8h_source.html">render.h</a> строка <a class="el" href="render_8h_source.html#l00019">19</a></p>
+<p>Интенсивность окружающего света в сцене. Определяет базовую освещённость пространства. Так же является коэфицентом дифузного освещения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="render_8h_source.html">render.h</a> строка <a class="el" href="render_8h_source.html#l00032">32</a></p>
 
 </div>
 </div>

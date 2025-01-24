@@ -92,19 +92,24 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Класс для загрузки 3D-моделей из файлов.  
+ <a href="#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_mesh_loader_8h_source.html">MeshLoader.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Открытые статические члены</h2></td></tr>
-<tr class="memitem:aa69666419dbf06517d48bc6250f17916" id="r_aa69666419dbf06517d48bc6250f17916"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___mesh.html">PRISM_Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa69666419dbf06517d48bc6250f17916">LoadOBJ</a> (const char *filename, <a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> camera)</td></tr>
-<tr class="separator:aa69666419dbf06517d48bc6250f17916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83749742a8608607c59bd2198fb8a69" id="r_ab83749742a8608607c59bd2198fb8a69"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_p_r_i_s_m___mesh.html">PRISM_Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab83749742a8608607c59bd2198fb8a69">LoadOBJ</a> (const char *filename, <a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> camera)</td></tr>
+<tr class="memdesc:ab83749742a8608607c59bd2198fb8a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загружает 3D-модель из файла в формате OBJ.  <br /></td></tr>
+<tr class="separator:ab83749742a8608607c59bd2198fb8a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="_mesh_loader_8h_source.html">MeshLoader.h</a> строка <a class="el" href="_mesh_loader_8h_source.html#l00004">4</a></p>
+<div class="textblock"><p>Класс для загрузки 3D-моделей из файлов. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_mesh_loader_8h_source.html">MeshLoader.h</a> строка <a class="el" href="_mesh_loader_8h_source.html#l00006">6</a></p>
 </div><h2 class="groupheader">Методы</h2>
-<a id="aa69666419dbf06517d48bc6250f17916" name="aa69666419dbf06517d48bc6250f17916"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa69666419dbf06517d48bc6250f17916">&#9670;&#160;</a></span>LoadOBJ()</h2>
+<a id="ab83749742a8608607c59bd2198fb8a69" name="ab83749742a8608607c59bd2198fb8a69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83749742a8608607c59bd2198fb8a69">&#9670;&#160;</a></span>LoadOBJ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,7 +118,7 @@ $(function(){ initResizable(false); });
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_p_r_i_s_m___mesh.html">PRISM_Mesh</a> LoadOBJ </td>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___mesh.html">PRISM_Mesh</a> MeshLoader::LoadOBJ </td>
           <td>(</td>
           <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
         </tr>
@@ -129,6 +134,17 @@ $(function(){ initResizable(false); });
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Загружает 3D-модель из файла в формате OBJ. </p>
+<p>Формат OBJ поддерживает только геометрию (вершины, нормали, текстурные координаты). Материалы (MTL) не обрабатываются этим методом, и информация о текстурах игнорируется. Так-же в данный момент поддерживается только информация о вершинах, треугольниках и нормалях вершин. Если файл не найден или имеет неверный формат, метод может вернуть пустую или некорректную сетку. Если вы экспортируете из blender поставьте галочки на Triangulated Mesh (чтобы сетка загрузилась корректно) и Normals (если нужно освещение по Фонгу и похожие системы освещенияя) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Путь к файлу OBJ для загрузки.</td></tr>
+    <tr><td class="paramname">camera</td><td>Камера, которая будет использоваться для преобразования модели.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Объект типа <code><a class="el" href="struct_p_r_i_s_m___mesh.html" title="Структура, представляющая 3D-меш, состоящий из набора треугольников. Используется для моделирования о...">PRISM_Mesh</a></code>, содержащий данные загруженной модели.</dd></dl>
 
 <p class="definition">См. определение в файле <a class="el" href="_mesh_loader_8cpp_source.html">MeshLoader.cpp</a> строка <a class="el" href="_mesh_loader_8cpp_source.html#l00005">5</a></p>
 

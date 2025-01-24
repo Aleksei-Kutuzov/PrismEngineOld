@@ -100,7 +100,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Конструктор</span></div>
 <div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_z___buffer.html#a00b98023cc45ef0097d2dced362728c8">    7</a></span><a class="code hl_function" href="class_z___buffer.html#a00b98023cc45ef0097d2dced362728c8">Z_Buffer::Z_Buffer</a>(<span class="keywordtype">int</span> screenW, <span class="keywordtype">int</span> screenH) : ScreenW(screenW), ScreenH(screenH),</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_z___buffer.html#a119bc475d39b60781f4eb91744632016">    7</a></span><a class="code hl_function" href="class_z___buffer.html#a119bc475d39b60781f4eb91744632016">Z_Buffer::Z_Buffer</a>(<span class="keywordtype">int</span> screenW, <span class="keywordtype">int</span> screenH) : ScreenW(screenW), ScreenH(screenH),</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>                   zMatrix(screenW * screenH, std::numeric_limits&lt;int&gt;::max()),</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>                   zMatrixСleared(screenW * screenH, std::numeric_limits&lt;int&gt;::max()) {}</div>
 </div>
@@ -114,7 +114,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// Метод для получения значения Z-буфера</span></div>
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_z___buffer.html#a7c0d937857543bccbcd49027556e8545">   19</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_z___buffer.html#a7c0d937857543bccbcd49027556e8545">Z_Buffer::get</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_z___buffer.html#ab8eda1f41c53368d007228932ba8485d">   19</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="class_z___buffer.html#ab8eda1f41c53368d007228932ba8485d">Z_Buffer::get</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">if</span> (x &gt;= 0 &amp;&amp; x &lt; ScreenW &amp;&amp; y &gt;= 0 &amp;&amp; y &lt; ScreenH) {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">return</span> zMatrix[x + y * ScreenW];</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        }</div>
@@ -123,15 +123,15 @@ $(function(){ initResizable(false); });
 </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_z___buffer.html#a30e6880d1e5a38506410342f7ee92595">   26</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_z___buffer.html#a30e6880d1e5a38506410342f7ee92595">Z_Buffer::clear</a>(SDL_Renderer * renderer){</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_z___buffer.html#a62121a0d7856576e8cd592e9d7de51e9">   26</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_z___buffer.html#a62121a0d7856576e8cd592e9d7de51e9">Z_Buffer::clear</a>(SDL_Renderer * renderer){</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        std::fill(zMatrix.begin(), zMatrix.end(), std::numeric_limits&lt;int&gt;::max());</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//        SDL_Log(&quot;Clear z_buffer&quot;);</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
 </div>
-<div class="ttc" id="aclass_z___buffer_html_a00b98023cc45ef0097d2dced362728c8"><div class="ttname"><a href="class_z___buffer.html#a00b98023cc45ef0097d2dced362728c8">Z_Buffer::Z_Buffer</a></div><div class="ttdeci">Z_Buffer(int screenW, int screenH)</div><div class="ttdef"><b>Определения</b> <a href="#l00007">zbuffer.cpp:7</a></div></div>
-<div class="ttc" id="aclass_z___buffer_html_a30e6880d1e5a38506410342f7ee92595"><div class="ttname"><a href="class_z___buffer.html#a30e6880d1e5a38506410342f7ee92595">Z_Buffer::clear</a></div><div class="ttdeci">void clear(SDL_Renderer *renderer)</div><div class="ttdef"><b>Определения</b> <a href="#l00026">zbuffer.cpp:26</a></div></div>
-<div class="ttc" id="aclass_z___buffer_html_a7c0d937857543bccbcd49027556e8545"><div class="ttname"><a href="class_z___buffer.html#a7c0d937857543bccbcd49027556e8545">Z_Buffer::get</a></div><div class="ttdeci">int get(int x, int y) const</div><div class="ttdef"><b>Определения</b> <a href="#l00019">zbuffer.cpp:19</a></div></div>
+<div class="ttc" id="aclass_z___buffer_html_a119bc475d39b60781f4eb91744632016"><div class="ttname"><a href="class_z___buffer.html#a119bc475d39b60781f4eb91744632016">Z_Buffer::Z_Buffer</a></div><div class="ttdeci">Z_Buffer(int screenW, int screenH)</div><div class="ttdef"><b>Определения</b> <a href="#l00007">zbuffer.cpp:7</a></div></div>
+<div class="ttc" id="aclass_z___buffer_html_a62121a0d7856576e8cd592e9d7de51e9"><div class="ttname"><a href="class_z___buffer.html#a62121a0d7856576e8cd592e9d7de51e9">Z_Buffer::clear</a></div><div class="ttdeci">void clear(SDL_Renderer *renderer)</div><div class="ttdef"><b>Определения</b> <a href="#l00026">zbuffer.cpp:26</a></div></div>
+<div class="ttc" id="aclass_z___buffer_html_ab8eda1f41c53368d007228932ba8485d"><div class="ttname"><a href="class_z___buffer.html#ab8eda1f41c53368d007228932ba8485d">Z_Buffer::get</a></div><div class="ttdeci">int get(int x, int y) const</div><div class="ttdef"><b>Определения</b> <a href="#l00019">zbuffer.cpp:19</a></div></div>
 <div class="ttc" id="azbuffer_8h_html"><div class="ttname"><a href="zbuffer_8h.html">zbuffer.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

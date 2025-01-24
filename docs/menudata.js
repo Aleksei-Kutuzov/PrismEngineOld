@@ -24,6 +24,7 @@
 */
 var menudata={children:[
 {text:"Титульная страница",url:"index.html"},
+{text:"Описания",url:"pages.html"},
 {text:"Структуры данных",url:"annotated.html",children:[
 {text:"Структуры данных",url:"annotated.html"},
 {text:"Алфавитный указатель структур данных",url:"classes.html"},
@@ -93,17 +94,7 @@ var menudata={children:[
 {text:"Файлы",url:"files.html",children:[
 {text:"Файлы",url:"files.html"},
 {text:"Список членов всех файлов",url:"globals.html",children:[
-{text:"Указатель",url:"globals.html",children:[
-{text:"d",url:"globals.html#index_d"},
-{text:"g",url:"globals.html#index_g"},
-{text:"h",url:"globals.html#index_h"},
-{text:"i",url:"globals.html#index_i"},
-{text:"l",url:"globals.html#index_l"},
-{text:"p",url:"globals.html#index_p"},
-{text:"r",url:"globals.html#index_r"},
-{text:"s",url:"globals.html#index_s"},
-{text:"t",url:"globals.html#index_t"},
-{text:"u",url:"globals.html#index_u"}]},
+{text:"Указатель",url:"globals.html"},
 {text:"Функции",url:"globals_func.html"},
 {text:"Макросы",url:"globals_defs.html"}]}]},
 {text:"GitHub",url:"^https://github.com/Aleksei-Kutuzov/PrismEngine.git"}]}

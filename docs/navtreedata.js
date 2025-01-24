@@ -42,14 +42,14 @@ var NAVTREE =
         [ "Макросы", "globals_defs.html", null ]
       ] ]
     ] ],
-    [ "Google", "^http://www.google.com", null ]
+    [ "GitHub", "^https://github.com/Aleksei-Kutuzov/PrismEngine.git", null ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
 "_abstract_camera3_d_8cpp.html",
-"struct_p_r_i_s_m___render_mode.html#a67ac102d6eb0c8710546034f2d117609"
+"struct_p_r_i_s_m___render_mode.html#a6c3fb3675cefdc39aebb339a4b0eebfb"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

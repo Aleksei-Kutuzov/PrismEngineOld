@@ -92,103 +92,131 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Класс, представляющий 3D-сцену, содержащую камеры, объекты и параметры освещения.  
+ <a href="#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_scene_8h_source.html">Scene.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:aaffca5c1fbe2171ad39fd6585c314b63" id="r_aaffca5c1fbe2171ad39fd6585c314b63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaffca5c1fbe2171ad39fd6585c314b63">Scene</a> ()</td></tr>
-<tr class="separator:aaffca5c1fbe2171ad39fd6585c314b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27f0d53a3c22e7fd44cdd3b113942061" id="r_a27f0d53a3c22e7fd44cdd3b113942061"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27f0d53a3c22e7fd44cdd3b113942061">~Scene</a> ()</td></tr>
-<tr class="separator:a27f0d53a3c22e7fd44cdd3b113942061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad74807dbbd8649d4af8e40db5eaf650d" id="r_ad74807dbbd8649d4af8e40db5eaf650d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad74807dbbd8649d4af8e40db5eaf650d">AddObject</a> (<a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *obj)</td></tr>
-<tr class="separator:ad74807dbbd8649d4af8e40db5eaf650d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedd6a3b590968a6def9d87b61582f909" id="r_aedd6a3b590968a6def9d87b61582f909"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedd6a3b590968a6def9d87b61582f909">AddObject</a> (<a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *obj)</td></tr>
-<tr class="separator:aedd6a3b590968a6def9d87b61582f909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6708e2caac2103b428428ceaa7667313" id="r_a6708e2caac2103b428428ceaa7667313"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6708e2caac2103b428428ceaa7667313">DelObject</a> (<a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *obj)</td></tr>
-<tr class="separator:a6708e2caac2103b428428ceaa7667313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d6e0ecb6d83bfde21dd20ce24295c4c" id="r_a1d6e0ecb6d83bfde21dd20ce24295c4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d6e0ecb6d83bfde21dd20ce24295c4c">DelObject</a> (<a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *obj)</td></tr>
-<tr class="separator:a1d6e0ecb6d83bfde21dd20ce24295c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41d0a75667c7fe1e67defd8689fc4e73" id="r_a41d0a75667c7fe1e67defd8689fc4e73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41d0a75667c7fe1e67defd8689fc4e73">PrintInfo</a> ()</td></tr>
-<tr class="separator:a41d0a75667c7fe1e67defd8689fc4e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14870e77342c55a1589b20d668b672e3" id="r_a14870e77342c55a1589b20d668b672e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14870e77342c55a1589b20d668b672e3">SetCamera</a> (<a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *obj)</td></tr>
-<tr class="separator:a14870e77342c55a1589b20d668b672e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc77b69d3456cd14ba78bdcf5fe95cb6" id="r_acc77b69d3456cd14ba78bdcf5fe95cb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc77b69d3456cd14ba78bdcf5fe95cb6">SetLightAmbient</a> (<a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> L_Ambient)</td></tr>
-<tr class="separator:acc77b69d3456cd14ba78bdcf5fe95cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7215b52add9a647d6861151446c34a7" id="r_af7215b52add9a647d6861151446c34a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7215b52add9a647d6861151446c34a7">GetLightAmbient</a> () const</td></tr>
-<tr class="separator:af7215b52add9a647d6861151446c34a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105e799fd09fe9622ecec55c2ef57ec5" id="r_a105e799fd09fe9622ecec55c2ef57ec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a105e799fd09fe9622ecec55c2ef57ec5">Render</a> (<a class="el" href="class_p_r_i_s_m___window.html">PRISM_Window</a> *win)</td></tr>
-<tr class="separator:a105e799fd09fe9622ecec55c2ef57ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10176d75a9cc0da56626f682d083507" id="r_ad10176d75a9cc0da56626f682d083507"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad10176d75a9cc0da56626f682d083507">Scene</a> ()</td></tr>
+<tr class="memdesc:ad10176d75a9cc0da56626f682d083507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию.  <br /></td></tr>
+<tr class="separator:ad10176d75a9cc0da56626f682d083507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8cec2e32546713915f8c6303c951f1" id="r_a3b8cec2e32546713915f8c6303c951f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b8cec2e32546713915f8c6303c951f1">~Scene</a> ()</td></tr>
+<tr class="memdesc:a3b8cec2e32546713915f8c6303c951f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор сцены. Очищает все объекты и камеры, добавленные в сцену.  <br /></td></tr>
+<tr class="separator:a3b8cec2e32546713915f8c6303c951f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f74ff40411bdcf075fc19a12476109e" id="r_a7f74ff40411bdcf075fc19a12476109e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f74ff40411bdcf075fc19a12476109e">AddObject</a> (<a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *obj)</td></tr>
+<tr class="memdesc:a7f74ff40411bdcf075fc19a12476109e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет камеру в сцену.  <br /></td></tr>
+<tr class="separator:a7f74ff40411bdcf075fc19a12476109e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe087b088e1cf2e51612dcd901ecfa18" id="r_afe087b088e1cf2e51612dcd901ecfa18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe087b088e1cf2e51612dcd901ecfa18">AddObject</a> (<a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *obj)</td></tr>
+<tr class="memdesc:afe087b088e1cf2e51612dcd901ecfa18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет 3D-объект в сцену.  <br /></td></tr>
+<tr class="separator:afe087b088e1cf2e51612dcd901ecfa18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c559e65393d483023aaa542585fa25" id="r_a38c559e65393d483023aaa542585fa25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38c559e65393d483023aaa542585fa25">DelObject</a> (<a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *obj)</td></tr>
+<tr class="memdesc:a38c559e65393d483023aaa542585fa25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет камеру из сцены.  <br /></td></tr>
+<tr class="separator:a38c559e65393d483023aaa542585fa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbbe43f76945e70f59c871ec05b02437" id="r_abbbe43f76945e70f59c871ec05b02437"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbbe43f76945e70f59c871ec05b02437">DelObject</a> (<a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *obj)</td></tr>
+<tr class="memdesc:abbbe43f76945e70f59c871ec05b02437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет 3D-объект из сцены.  <br /></td></tr>
+<tr class="separator:abbbe43f76945e70f59c871ec05b02437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa204ec1e3c8920474aabfa94b8d36b3b" id="r_aa204ec1e3c8920474aabfa94b8d36b3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa204ec1e3c8920474aabfa94b8d36b3b">PrintInfo</a> ()</td></tr>
+<tr class="memdesc:aa204ec1e3c8920474aabfa94b8d36b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит информацию о сцене.  <br /></td></tr>
+<tr class="separator:aa204ec1e3c8920474aabfa94b8d36b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b1a4cc7ca8ea2e2e873d523130f6e1" id="r_af6b1a4cc7ca8ea2e2e873d523130f6e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6b1a4cc7ca8ea2e2e873d523130f6e1">SetCamera</a> (<a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *obj)</td></tr>
+<tr class="memdesc:af6b1a4cc7ca8ea2e2e873d523130f6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает активную камеру для рендера сцены.  <br /></td></tr>
+<tr class="separator:af6b1a4cc7ca8ea2e2e873d523130f6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af3ccfbaf48963d0125d20f4be4ce0a" id="r_a0af3ccfbaf48963d0125d20f4be4ce0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0af3ccfbaf48963d0125d20f4be4ce0a">SetLightAmbient</a> (<a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> L_Ambient)</td></tr>
+<tr class="memdesc:a0af3ccfbaf48963d0125d20f4be4ce0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает окружающий свет (ambient light) а также коэффициент дифузного света (diffuse light) для сцены (это один коэффициент для двух частей освещения).  <br /></td></tr>
+<tr class="separator:a0af3ccfbaf48963d0125d20f4be4ce0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f334f0b651eb6587d08e2996253ccf" id="r_aa8f334f0b651eb6587d08e2996253ccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8f334f0b651eb6587d08e2996253ccf">GetLightAmbient</a> () const</td></tr>
+<tr class="memdesc:aa8f334f0b651eb6587d08e2996253ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает текущие настройки окружающего света (ambient light) или дифузного света (diffuse light) сцены (это один коэффициент для двух частей освещения).  <br /></td></tr>
+<tr class="separator:aa8f334f0b651eb6587d08e2996253ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2df4fdc1fe6b5e830f693419a6c4d26" id="r_af2df4fdc1fe6b5e830f693419a6c4d26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2df4fdc1fe6b5e830f693419a6c4d26">Render</a> (<a class="el" href="class_p_r_i_s_m___window.html">PRISM_Window</a> *win)</td></tr>
+<tr class="memdesc:af2df4fdc1fe6b5e830f693419a6c4d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет рендер сцены.  <br /></td></tr>
+<tr class="separator:af2df4fdc1fe6b5e830f693419a6c4d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="_scene_8h_source.html">Scene.h</a> строка <a class="el" href="_scene_8h_source.html#l00009">9</a></p>
+<div class="textblock"><p>Класс, представляющий 3D-сцену, содержащую камеры, объекты и параметры освещения. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_scene_8h_source.html">Scene.h</a> строка <a class="el" href="_scene_8h_source.html#l00011">11</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
-<a id="aaffca5c1fbe2171ad39fd6585c314b63" name="aaffca5c1fbe2171ad39fd6585c314b63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaffca5c1fbe2171ad39fd6585c314b63">&#9670;&#160;</a></span>Scene()</h2>
+<a id="ad10176d75a9cc0da56626f682d083507" name="ad10176d75a9cc0da56626f682d083507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10176d75a9cc0da56626f682d083507">&#9670;&#160;</a></span>Scene()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_scene.html">Scene</a> </td>
+          <td class="memname">Scene::Scene </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Конструктор по умолчанию. </p>
 
 <p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00005">5</a></p>
 
 </div>
 </div>
-<a id="a27f0d53a3c22e7fd44cdd3b113942061" name="a27f0d53a3c22e7fd44cdd3b113942061"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27f0d53a3c22e7fd44cdd3b113942061">&#9670;&#160;</a></span>~Scene()</h2>
+<a id="a3b8cec2e32546713915f8c6303c951f1" name="a3b8cec2e32546713915f8c6303c951f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b8cec2e32546713915f8c6303c951f1">&#9670;&#160;</a></span>~Scene()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">~<a class="el" href="class_scene.html">Scene</a> </td>
+          <td class="memname">Scene::~Scene </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Деструктор сцены. Очищает все объекты и камеры, добавленные в сцену. </p>
 
 <p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00009">9</a></p>
 
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
-<a id="ad74807dbbd8649d4af8e40db5eaf650d" name="ad74807dbbd8649d4af8e40db5eaf650d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad74807dbbd8649d4af8e40db5eaf650d">&#9670;&#160;</a></span>AddObject() <span class="overload">[1/2]</span></h2>
+<a id="a7f74ff40411bdcf075fc19a12476109e" name="a7f74ff40411bdcf075fc19a12476109e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f74ff40411bdcf075fc19a12476109e">&#9670;&#160;</a></span>AddObject() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> * AddObject </td>
+          <td class="memname"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> * Scene::AddObject </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Добавляет камеру в сцену. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>Указатель на объект камеры, который нужно добавить.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на добавленную камеру.</dd></dl>
 
 <p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00024">24</a></p>
 
 </div>
 </div>
-<a id="aedd6a3b590968a6def9d87b61582f909" name="aedd6a3b590968a6def9d87b61582f909"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedd6a3b590968a6def9d87b61582f909">&#9670;&#160;</a></span>AddObject() <span class="overload">[2/2]</span></h2>
+<a id="afe087b088e1cf2e51612dcd901ecfa18" name="afe087b088e1cf2e51612dcd901ecfa18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe087b088e1cf2e51612dcd901ecfa18">&#9670;&#160;</a></span>AddObject() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> * AddObject </td>
+          <td class="memname"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> * Scene::AddObject </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
           <td></td>
@@ -196,18 +224,27 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
+<p>Добавляет 3D-объект в сцену. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>Указатель на объект, который нужно добавить.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на добавленный объект.</dd></dl>
+
 <p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00030">30</a></p>
 
 </div>
 </div>
-<a id="a6708e2caac2103b428428ceaa7667313" name="a6708e2caac2103b428428ceaa7667313"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6708e2caac2103b428428ceaa7667313">&#9670;&#160;</a></span>DelObject() <span class="overload">[1/2]</span></h2>
+<a id="a38c559e65393d483023aaa542585fa25" name="a38c559e65393d483023aaa542585fa25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38c559e65393d483023aaa542585fa25">&#9670;&#160;</a></span>DelObject() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> * DelObject </td>
+          <td class="memname"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> * Scene::DelObject </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
           <td></td>
@@ -215,18 +252,27 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
+<p>Удаляет камеру из сцены. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>Указатель на объект камеры, который нужно удалить.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на удалённую камеру или nullptr, если камера не найдена.</dd></dl>
+
 <p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00036">36</a></p>
 
 </div>
 </div>
-<a id="a1d6e0ecb6d83bfde21dd20ce24295c4c" name="a1d6e0ecb6d83bfde21dd20ce24295c4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d6e0ecb6d83bfde21dd20ce24295c4c">&#9670;&#160;</a></span>DelObject() <span class="overload">[2/2]</span></h2>
+<a id="abbbe43f76945e70f59c871ec05b02437" name="abbbe43f76945e70f59c871ec05b02437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbbe43f76945e70f59c871ec05b02437">&#9670;&#160;</a></span>DelObject() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> * DelObject </td>
+          <td class="memname"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> * Scene::DelObject </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_abstract_object3_d.html">AbstractObject3D</a> *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
           <td></td>
@@ -234,18 +280,27 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
+<p>Удаляет 3D-объект из сцены. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>Указатель на объект, который нужно удалить.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на удалённый объект или nullptr, если объект не найден.</dd></dl>
+
 <p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00042">42</a></p>
 
 </div>
 </div>
-<a id="af7215b52add9a647d6861151446c34a7" name="af7215b52add9a647d6861151446c34a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7215b52add9a647d6861151446c34a7">&#9670;&#160;</a></span>GetLightAmbient()</h2>
+<a id="aa8f334f0b651eb6587d08e2996253ccf" name="aa8f334f0b651eb6587d08e2996253ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f334f0b651eb6587d08e2996253ccf">&#9670;&#160;</a></span>GetLightAmbient()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> GetLightAmbient </td>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> Scene::GetLightAmbient </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -253,18 +308,21 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00069">69</a></p>
+<p>Возвращает текущие настройки окружающего света (ambient light) или дифузного света (diffuse light) сцены (это один коэффициент для двух частей освещения). </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Вектор с коэффициентами освещения для R, G и B каналов.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00070">70</a></p>
 
 </div>
 </div>
-<a id="a41d0a75667c7fe1e67defd8689fc4e73" name="a41d0a75667c7fe1e67defd8689fc4e73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41d0a75667c7fe1e67defd8689fc4e73">&#9670;&#160;</a></span>PrintInfo()</h2>
+<a id="aa204ec1e3c8920474aabfa94b8d36b3b" name="aa204ec1e3c8920474aabfa94b8d36b3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa204ec1e3c8920474aabfa94b8d36b3b">&#9670;&#160;</a></span>PrintInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PrintInfo </td>
+          <td class="memname">void Scene::PrintInfo </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -272,18 +330,20 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
+<p>Выводит информацию о сцене. </p>
+
 <p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00049">49</a></p>
 
 </div>
 </div>
-<a id="a105e799fd09fe9622ecec55c2ef57ec5" name="a105e799fd09fe9622ecec55c2ef57ec5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a105e799fd09fe9622ecec55c2ef57ec5">&#9670;&#160;</a></span>Render()</h2>
+<a id="af2df4fdc1fe6b5e830f693419a6c4d26" name="af2df4fdc1fe6b5e830f693419a6c4d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2df4fdc1fe6b5e830f693419a6c4d26">&#9670;&#160;</a></span>Render()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Render </td>
+          <td class="memname">void Scene::Render </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_p_r_i_s_m___window.html">PRISM_Window</a> *</td>          <td class="paramname"><span class="paramname"><em>win</em></span></td><td>)</td>
           <td></td>
@@ -291,18 +351,26 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00074">74</a></p>
+<p>Выполняет рендер сцены. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">win</td><td>Указатель на объект окна для рендера.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00075">75</a></p>
 
 </div>
 </div>
-<a id="a14870e77342c55a1589b20d668b672e3" name="a14870e77342c55a1589b20d668b672e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14870e77342c55a1589b20d668b672e3">&#9670;&#160;</a></span>SetCamera()</h2>
+<a id="af6b1a4cc7ca8ea2e2e873d523130f6e1" name="af6b1a4cc7ca8ea2e2e873d523130f6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b1a4cc7ca8ea2e2e873d523130f6e1">&#9670;&#160;</a></span>SetCamera()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> * SetCamera </td>
+          <td class="memname"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> * Scene::SetCamera </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
           <td></td>
@@ -310,18 +378,27 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00057">57</a></p>
+<p>Устанавливает активную камеру для рендера сцены. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>Указатель на камеру, которую нужно сделать активной.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на установленную активную камеру.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00058">58</a></p>
 
 </div>
 </div>
-<a id="acc77b69d3456cd14ba78bdcf5fe95cb6" name="acc77b69d3456cd14ba78bdcf5fe95cb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc77b69d3456cd14ba78bdcf5fe95cb6">&#9670;&#160;</a></span>SetLightAmbient()</h2>
+<a id="a0af3ccfbaf48963d0125d20f4be4ce0a" name="a0af3ccfbaf48963d0125d20f4be4ce0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0af3ccfbaf48963d0125d20f4be4ce0a">&#9670;&#160;</a></span>SetLightAmbient()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SetLightAmbient </td>
+          <td class="memname">void Scene::SetLightAmbient </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>L_Ambient</em></span></td><td>)</td>
           <td></td>
@@ -329,7 +406,15 @@ $(function(){ initResizable(false); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00064">64</a></p>
+<p>Устанавливает окружающий свет (ambient light) а также коэффициент дифузного света (diffuse light) для сцены (это один коэффициент для двух частей освещения). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">L_Ambient</td><td>Вектор с коэффициентами освещения для R, G и B каналов (значения от 0 до 1).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_scene_8cpp_source.html">Scene.cpp</a> строка <a class="el" href="_scene_8cpp_source.html#l00065">65</a></p>
 
 </div>
 </div>

@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "abcdfghijklmoprstuvwxyz~",
+  0: "abcdfghijklmoprstuvwxyz~иосу",
   1: "ajmpstz",
   2: "abjmoprsvz",
   3: "acdghilmoprstuvz~",
   4: "abcdfgiklmprstvwxyz",
-  5: "gpu"
+  5: "gpu",
+  6: "иосу"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "defines"
+  5: "defines",
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "Файлы",
   3: "Функции",
   4: "Переменные",
-  5: "Макросы"
+  5: "Макросы",
+  6: "Страницы"
 };
 
