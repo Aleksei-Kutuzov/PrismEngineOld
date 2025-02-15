@@ -1,6 +1,6 @@
 #include "render.h"
 
-PRISM_Color PRISM_Render::CalculatePixelAmbient(PRISM_Color originalСolor, AbstractObject3D obj, PRISM_Triangle triangle) const
+PRISM_Color PRISM_Render::CalculatePixelAmbient(PRISM_Color originalСolor, PRISM_Triangle triangle) const
 {
 	unsigned char r = (unsigned char)((float)originalСolor.r * triangle.ambientColor.x * lightAmbient.x);
 	unsigned char g = (unsigned char)((float)originalСolor.g * triangle.ambientColor.y * lightAmbient.y);
@@ -9,29 +9,44 @@ PRISM_Color PRISM_Render::CalculatePixelAmbient(PRISM_Color originalСolor, Abst
 	return PRISM_Color{r, g, b};
 }
 
-PRISM_Color PRISM_Render::CalculatePixelDiffuse(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle)
+
+PRISM_Color* PRISM_Render::CalculatePixelDiffuse(PRISM_Color originalСolor, PRISM_Light light, PRISM_Triangle triangle) const
 {
 	PRISM_Color lightDiffuse = light.color;
 	PRISM_Vector3d materialDiffuse = triangle.diffuseColor;
 	PRISM_Vector3d normal = Math::CalculateNormals(triangle);
-	PRISM_Vector3d lightDir = { .0f, .0f, -1.0f };
+	PRISM_Vector3d normal_a = triangle.a_normal; 	PRISM_Vector3d normal_b = triangle.b_normal;PRISM_Vector3d normal_c = triangle.c_normal;
 
 	PRISM_Vector3d centroid = { (triangle.a.x + triangle.b.x + triangle.c.x) / 3,
 								(triangle.a.y + triangle.b.y + triangle.c.y) / 3,
 								(triangle.a.z + triangle.b.z + triangle.c.z) / 3 };
 
-	lightDir = { light.position.x - centroid.x, light.position.y - centroid.y, light.position.z - centroid.z };
+	PRISM_Vector3d lightDir = { light.position.x - centroid.x, light.position.y - centroid.y, light.position.z - centroid.z };
 	lightDir = Math::Vector_Normalise(lightDir);
-	
 
+	PRISM_Vector3d lightDir_a = { light.position.x - triangle.a.x, light.position.y - triangle.a.y, light.position.z - triangle.a.z };
+	lightDir_a = Math::Vector_Normalise(lightDir_a);
+
+	PRISM_Vector3d lightDir_b = { light.position.x - triangle.b.x, light.position.y - triangle.b.y, light.position.z - triangle.b.z };
+	lightDir_b = Math::Vector_Normalise(lightDir_b);
+
+	PRISM_Vector3d lightDir_c = { light.position.x - triangle.c.x, light.position.y - triangle.c.y, light.position.z - triangle.c.z };
+	lightDir_c = Math::Vector_Normalise(lightDir_c);
+
+	float cosNL_a = std::max(0.f, Math::Vector_DotProduct(normal_a, lightDir_a)); float cosNL_b = std::max(0.f, Math::Vector_DotProduct(normal_b, lightDir_b)); float cosNL_c = std::max(0.f, Math::Vector_DotProduct(normal_c, lightDir_c));
 	float cosNL = std::max(0.f, Math::Vector_DotProduct(normal, lightDir)); // косинус угла между нормалью и направлением света, с отсечением отрицательных значений
 	
-	return PRISM_Color((unsigned char)(lightDiffuse.r * materialDiffuse.x * cosNL),
-					   (unsigned char)(lightDiffuse.g * materialDiffuse.y * cosNL),
-					   (unsigned char)(lightDiffuse.b * materialDiffuse.z * cosNL));
+	
+
+
+	
+	
+	return new PRISM_Color[3]{ PRISM_Color((unsigned char)(lightDiffuse.r * materialDiffuse.x * cosNL_a), (unsigned char)(lightDiffuse.g * materialDiffuse.y * cosNL_a), (unsigned char)(lightDiffuse.b * materialDiffuse.z * cosNL_a)),
+								PRISM_Color((unsigned char)(lightDiffuse.r * materialDiffuse.x * cosNL_b), (unsigned char)(lightDiffuse.g * materialDiffuse.y * cosNL_b), (unsigned char)(lightDiffuse.b * materialDiffuse.z * cosNL_b)),
+								PRISM_Color((unsigned char)(lightDiffuse.r * materialDiffuse.x * cosNL_c), (unsigned char)(lightDiffuse.g * materialDiffuse.y * cosNL_c), (unsigned char)(lightDiffuse.b * materialDiffuse.z * cosNL_c)) };
 }
 
-PRISM_Color PRISM_Render::CalculatePixelSpecular(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle, PRISM_Vector3d cameraCoordinate)
+PRISM_Color PRISM_Render::CalculatePixelSpecular(PRISM_Color originalСolor, PRISM_Light light, PRISM_Triangle triangle, PRISM_Vector3d cameraCoordinate) const
 {
 
 	PRISM_Vector3d normal = Math::CalculateNormals(triangle);
@@ -64,6 +79,7 @@ void PRISM_Render::UpdateVertexAmbient(PRISM_Window* window, PRISM_Color origina
 
 void PRISM_Render::Rendering(PRISM_Window* window, AbstractObject3D* obj)
 {
+	PRISM_Light light; light.color = { 255, 255, 255 }; light.position = { 0, 0, -15 };
 	for (auto& triangle : obj->mesh.tris) {
 		struct PRISM_Triangle TriangleRotated, TriangleTranslated, TriangleScaled, TriangleProjected, TriangleViewed;
 
@@ -94,22 +110,16 @@ void PRISM_Render::Rendering(PRISM_Window* window, AbstractObject3D* obj)
 										TriangleTranslated.b.z / 100,
 										TriangleTranslated.c.z / 100 };
 
-			TriangleProjected.a.z = Z_values.x; TriangleProjected.b.z = Z_values.y; TriangleProjected.c.z = Z_values.z;
+			//TriangleProjected.a.z = Z_values.x; TriangleProjected.b.z = Z_values.y; TriangleProjected.c.z = Z_values.z;
+			PRISM_Color collorAmbient = CalculatePixelAmbient({ 1, 1, 1 }, TriangleViewed);
+			PRISM_Color* colorDiffuse = CalculatePixelDiffuse({ 1, 1, 1 }, light, TriangleViewed);
+			PRISM_Color collorSpecular = CalculatePixelSpecular({ 1, 1, 1 }, light, TriangleViewed, cameraCoordinate);
+			PRISM_Color color_a = colorDiffuse[0]; PRISM_Color color_b = colorDiffuse[1]; PRISM_Color color_c = colorDiffuse[2];
 
-			PRISM_Light light; light.color = { 255, 255, 255 }; light.position = {0, 0, -2};
-			PRISM_Color colorDiffuse = CalculatePixelDiffuse({ 1, 1, 1 }, light, *obj, TriangleViewed);
-			//PRISM_Color color = CalculatePixelAmbient({ 255, 255, 255 }, *obj);
-			PRISM_Color collorAmbient = CalculatePixelAmbient({ 1, 1, 1 }, *obj, TriangleViewed);
-			PRISM_Color collorSpecular = CalculatePixelSpecular({ 1, 1, 1 }, light, *obj, TriangleViewed, cameraCoordinate);
-
-			
-
-			PRISM_Painter::DrawTriangle3D(window, TriangleProjected, { colorDiffuse.r + collorAmbient.r + collorSpecular.r,
-																	   colorDiffuse.g + collorAmbient.g + collorSpecular.g,
-																	   colorDiffuse.b + collorAmbient.b + collorSpecular.b });
+			PRISM_Painter::DrawInterpolatedTriangle3D(window, TriangleProjected, color_a + collorAmbient + collorSpecular,
+																				 color_b + collorAmbient + collorSpecular,
+				                                                                 color_c + collorAmbient + collorSpecular);
 		}
-
-
 	}
 }
 

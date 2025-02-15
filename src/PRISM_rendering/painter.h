@@ -180,6 +180,8 @@ public:
 	/// <param name="triangle">Объект типа PRISM_Triangle, содержащий вершины треугольника.</param>
 	/// <param name="color">Объект типа PRISM_Color, задающий цвет треугольника.</param>
 	static void DrawTriangle3D(PRISM_Window* window, PRISM_Triangle triangle, PRISM_Color color);
+
+	static void DrawInterpolatedTriangle3D(PRISM_Window* window, PRISM_Triangle triangle, PRISM_Color color_a, PRISM_Color color_b, PRISM_Color color_c);
 private:
 
 };
