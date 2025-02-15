@@ -62,6 +62,11 @@ AbstractCamera3D* Scene::SetCamera(AbstractCamera3D* obj)
 	return obj;
 }
 
+AbstractCamera3D* Scene::GetCamera()
+{
+	return Scene::enabledCamera;
+}
+
 void Scene::SetLightAmbient(PRISM_Vector3d L_Ambient)
 {
 	render.lightAmbient = L_Ambient;

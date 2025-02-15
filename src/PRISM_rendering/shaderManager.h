@@ -58,6 +58,38 @@ public:
     )";
 
     // Исходный код фрагментного шейдера
+    const char* _testFragmentShader = R"(
+#version 330 core
+out vec4 FragColor; // Выходной цвет
+
+in vec3 vertexColor; // Цвет вершины
+in vec2 fragCoord;   // Нормализованные координаты [0.0, 1.0]
+
+uniform float uTime; // Время для анимации
+
+void main()
+{
+    // Нормализуем координаты
+    vec2 uv = fragCoord;
+
+    // Создаем плавные цветовые переходы с использованием времени
+    float colorFactor = sin(uTime + uv.x * 5.0 + uv.y * 5.0) * 0.5 + 0.5;
+    vec3 baseColor = mix(vec3(0.1, 0.3, 0.8), vec3(0.8, 0.1, 0.3), colorFactor);
+
+    // Эффект "голограммы" (полосы)
+    float stripePattern = sin(uv.y * 10.0 + uTime * 2.0) * 0.5 + 0.5;
+    vec3 stripeColor = mix(baseColor, vec3(1.0), stripePattern);
+
+    // Эффект свечения (зависит от расстояния от центра)
+    float glow = smoothstep(0.5, 0.8, length(uv - vec2(0.5)));
+    vec3 glowColor = mix(stripeColor, vec3(1.0, 1.0, 1.0), glow);
+
+    // Итоговый цвет с учетом свечения
+    FragColor = vec4(glowColor, 1.0);
+}
+    )";
+
+    // Исходный код фрагментного шейдера
     const char* testFragmentShader = R"(
     #version 330 core
     in vec3 vertexColor;  // Цвет из вершины

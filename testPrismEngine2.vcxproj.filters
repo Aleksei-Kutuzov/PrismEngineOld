@@ -87,6 +87,15 @@
     <ClCompile Include="src\PRISM_rendering\ShaderManager.cpp">
       <Filter>Исходные файлы\PRISM_rendering</Filter>
     </ClCompile>
+    <ClCompile Include="Test_1.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_2.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_3.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\PRISM_math\vector3D.h">

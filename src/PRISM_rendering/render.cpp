@@ -90,9 +90,9 @@ void PRISM_Render::Rendering(PRISM_Window* window, AbstractObject3D* obj)
 			TriangleViewed.specularColor = triangle.specularColor;
 			
 
-			PRISM_Vector3d Z_values = { TriangleTranslated.a.z,
-										TriangleTranslated.b.z,
-										TriangleTranslated.c.z  };
+			PRISM_Vector3d Z_values = { TriangleTranslated.a.z / 100,
+										TriangleTranslated.b.z / 100,
+										TriangleTranslated.c.z / 100 };
 
 			TriangleProjected.a.z = Z_values.x; TriangleProjected.b.z = Z_values.y; TriangleProjected.c.z = Z_values.z;
 

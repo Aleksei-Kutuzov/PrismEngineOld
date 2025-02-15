@@ -62,6 +62,8 @@ public:
 	/// <returns>Указатель на установленную активную камеру.</returns>
 	AbstractCamera3D* SetCamera(AbstractCamera3D* obj);
 
+	AbstractCamera3D* GetCamera();
+
 	/// <summary>
 	/// Устанавливает окружающий свет (ambient light) а также коэффициент дифузного света (diffuse light) для сцены (это один коэффициент для двух частей освещения).
 	/// </summary>

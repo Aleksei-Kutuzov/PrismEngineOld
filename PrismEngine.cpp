@@ -1,10 +1,13 @@
 ﻿#include "src/PrismEngine.h"
-#define _CRTDBG_MAP_ALLOC
 #include <cstdlib>
 #include <crtdbg.h>
+#include "Test_1.cpp"
+#include "Test_2.cpp"
+#include "Test_3.cpp"
 
-
-
+int main(int argc, char* argv[]) {
+    return test_3();
+}
 
 class AbstractObject3D_demo {
 private:
@@ -159,9 +162,8 @@ public:
 };
 
 
-int main(int argc, char* argv[])
+int __main(int argc, char* argv[])
 {
-    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
     //test_Zbuff();
     //main_();
@@ -205,12 +207,12 @@ int main(int argc, char* argv[])
     Scene scene;
     AbstractCamera3D MainCamera(0.1, 1000.0f, 90.0f,
         window.GetW(), window.GetH());
-    MainCamera.SetPosition({ 0, 0, -2 }, { 0, 0, 0 }, { 0, 0, 1 });
+    MainCamera.SetPosition({ 0, 0, -4 }, { 0, 0, 0 }, { 0, 0, 1 });
     
     AbstractObject3D object{ {0,0,0},{0,0,0},{1,1,1},MainCamera };
 
-    object.SetMesh(MeshLoader::LoadOBJ("test_res/objs/Tesla Laser.obj", MainCamera));
-    object.SetMesh(MeshLoader::LoadOBJ("test_res/objs/planet.obj", MainCamera));
+    object.SetMesh(MeshLoader::LoadOBJ("test_res/objs/sphere.obj", MainCamera));
+    //object.SetMesh(MeshLoader::LoadOBJ("test_res/objs/planet.obj", MainCamera));
     
     //object.mesh.print();
 
@@ -232,7 +234,6 @@ int main(int argc, char* argv[])
          //Отрисовка сцены
         window.clear();
         scene.Render(&window);
-        object.Rotation.x += 0.1;
         object.Rotation.y += 0.1;
         object.SetRotateXYZ(object.Rotation);
         //painter.DrawTriangle3D(&window,
@@ -280,7 +281,7 @@ int _main(int argc, char* argv[])
         //Отрисовка сцены
         window.clear();
         //window.shaderManager.render();
-        float LO = -1.f; float HI = 1.f;
+
         painter.DrawTriangle3D(&window, -0.2f, -0.4f, 0.f,
                                          -0.1f, 0.5f, 0.f,
                                          0.5f, -0.5f, 0.2f, 255, 0, 0);

@@ -25,6 +25,8 @@ public:
 	/// <param name="title">Заголовок окна.</param>
 	PRISM_Window(int w, int h, const char* title);
 
+	PRISM_Window(int width, int height, const char* title, const char* vertexShaderSource, const char* fragmentShaderSource);
+
 	/// <summary>
 	/// Указывает, выполняется ли приложение.
 	/// </summary>
@@ -58,6 +60,13 @@ public:
 	/// Обрабатывает события окна (например, ввод с клавиатуры или мыши).
 	/// </summary>
 	void handleEvents();
+
+	/// <summary>
+	/// Обрабатывает события окна (например, ввод с клавиатуры или мыши) как handleEvents() но принимает функцию которая будет вызываться в момент события.
+	/// <param name="event_foo">Функция принимающая событие</param>
+	/// </summary>
+	void handleEvents(void(*event_foo)(SDL_Event));
+
 	
 	/// <summary>
 	/// Обновляет содержимое окна.
