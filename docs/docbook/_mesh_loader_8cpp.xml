@@ -1,5 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__mesh_loader_8cpp" xml:lang="ru">
-<title>Файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_objects3D/MeshLoader.cpp</title>
-<indexterm><primary>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_objects3D/MeshLoader.cpp</primary></indexterm>
-<programlisting linenumbering="unnumbered">#include &quot;MeshLoader.h&quot;<?linebreak?>#include &quot;../PRISM_math/other.h&quot;<?linebreak?></programlisting></section>
