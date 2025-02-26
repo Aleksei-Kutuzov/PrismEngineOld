@@ -1,0 +1,577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRISM_ENGINE: Структура PRISM_Color</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoprism.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">PRISM_ENGINE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">docs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Поля данных</a>  </div>
+  <div class="headertitle"><div class="title">Структура PRISM_Color</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Структура, представляющая цвет в формате RGBA (красный, зелёный, синий, альфа). Поддерживает различные форматы ввода: целочисленные и вещественные значения.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="other_8h_source.html">other.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a5ae825f7c0bc159009b10b58dfbafb5f" id="r_a5ae825f7c0bc159009b10b58dfbafb5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ae825f7c0bc159009b10b58dfbafb5f">print</a> ()</td></tr>
+<tr class="memdesc:a5ae825f7c0bc159009b10b58dfbafb5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит цвет в формате RGBA в консоль.  <br /></td></tr>
+<tr class="separator:a5ae825f7c0bc159009b10b58dfbafb5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab45345b145a9f42f86cedc0d26c1ee8" id="r_aab45345b145a9f42f86cedc0d26c1ee8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab45345b145a9f42f86cedc0d26c1ee8">PRISM_Color</a> (unsigned char <a class="el" href="#a678d977a735f983625d2ce2f858c7912">r</a>, unsigned char <a class="el" href="#adb7f506541b5cdb0eb859b3373b927c6">g</a>, unsigned char <a class="el" href="#a5782223d711fad27c2ad0d60a2b3ecb9">b</a>)</td></tr>
+<tr class="memdesc:aab45345b145a9f42f86cedc0d26c1ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для создания цвета из целых чисел.  <br /></td></tr>
+<tr class="separator:aab45345b145a9f42f86cedc0d26c1ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e3e620f30bec9013018004f726469f" id="r_a22e3e620f30bec9013018004f726469f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22e3e620f30bec9013018004f726469f">PRISM_Color</a> (unsigned char <a class="el" href="#a678d977a735f983625d2ce2f858c7912">r</a>, unsigned char <a class="el" href="#adb7f506541b5cdb0eb859b3373b927c6">g</a>, unsigned char <a class="el" href="#a5782223d711fad27c2ad0d60a2b3ecb9">b</a>, unsigned char <a class="el" href="#a2bcc0e701927cb9d0361f2ead212545a">a</a>)</td></tr>
+<tr class="memdesc:a22e3e620f30bec9013018004f726469f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для создания цвета из целых чисел с альфа-каналом.  <br /></td></tr>
+<tr class="separator:a22e3e620f30bec9013018004f726469f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94270adfdb58837e78ba903696a960b3" id="r_a94270adfdb58837e78ba903696a960b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94270adfdb58837e78ba903696a960b3">PRISM_Color</a> (float <a class="el" href="#a678d977a735f983625d2ce2f858c7912">r</a>, float <a class="el" href="#adb7f506541b5cdb0eb859b3373b927c6">g</a>, float <a class="el" href="#a5782223d711fad27c2ad0d60a2b3ecb9">b</a>)</td></tr>
+<tr class="memdesc:a94270adfdb58837e78ba903696a960b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для создания цвета из вещественных чисел (0.0f - 255.0f).  <br /></td></tr>
+<tr class="separator:a94270adfdb58837e78ba903696a960b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6ecf348e59b292a6bc27bda7e97cd8" id="r_a4a6ecf348e59b292a6bc27bda7e97cd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a6ecf348e59b292a6bc27bda7e97cd8">PRISM_Color</a> (float <a class="el" href="#a678d977a735f983625d2ce2f858c7912">r</a>, float <a class="el" href="#adb7f506541b5cdb0eb859b3373b927c6">g</a>, float <a class="el" href="#a5782223d711fad27c2ad0d60a2b3ecb9">b</a>, float <a class="el" href="#a2bcc0e701927cb9d0361f2ead212545a">a</a>)</td></tr>
+<tr class="memdesc:a4a6ecf348e59b292a6bc27bda7e97cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для создания цвета из вещественных чисел с альфа-каналом.  <br /></td></tr>
+<tr class="separator:a4a6ecf348e59b292a6bc27bda7e97cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90cca6dc464024650942d1d09084f18a" id="r_a90cca6dc464024650942d1d09084f18a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90cca6dc464024650942d1d09084f18a">PRISM_Color</a> (int <a class="el" href="#a678d977a735f983625d2ce2f858c7912">r</a>, int <a class="el" href="#adb7f506541b5cdb0eb859b3373b927c6">g</a>, int <a class="el" href="#a5782223d711fad27c2ad0d60a2b3ecb9">b</a>)</td></tr>
+<tr class="memdesc:a90cca6dc464024650942d1d09084f18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для создания цвета из целых чисел.  <br /></td></tr>
+<tr class="separator:a90cca6dc464024650942d1d09084f18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774471727269b02d71b1789d128c0937" id="r_a774471727269b02d71b1789d128c0937"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a774471727269b02d71b1789d128c0937">PRISM_Color</a> (int <a class="el" href="#a678d977a735f983625d2ce2f858c7912">r</a>, int <a class="el" href="#adb7f506541b5cdb0eb859b3373b927c6">g</a>, int <a class="el" href="#a5782223d711fad27c2ad0d60a2b3ecb9">b</a>, int <a class="el" href="#a2bcc0e701927cb9d0361f2ead212545a">a</a>)</td></tr>
+<tr class="memdesc:a774471727269b02d71b1789d128c0937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для создания цвета из целых чисел с альфа-каналом.  <br /></td></tr>
+<tr class="separator:a774471727269b02d71b1789d128c0937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619fcc9e49a151efefec166b3639688d" id="r_a619fcc9e49a151efefec166b3639688d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a619fcc9e49a151efefec166b3639688d">PRISM_Color</a> ()</td></tr>
+<tr class="memdesc:a619fcc9e49a151efefec166b3639688d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор по умолчанию. Создаёт чёрный цвет с непрозрачным альфа-каналом.  <br /></td></tr>
+<tr class="separator:a619fcc9e49a151efefec166b3639688d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Поля данных</h2></td></tr>
+<tr class="memitem:a678d977a735f983625d2ce2f858c7912" id="r_a678d977a735f983625d2ce2f858c7912"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a678d977a735f983625d2ce2f858c7912">r</a> =0</td></tr>
+<tr class="memdesc:a678d977a735f983625d2ce2f858c7912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Красная компонента цвета (0-255).  <br /></td></tr>
+<tr class="separator:a678d977a735f983625d2ce2f858c7912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7f506541b5cdb0eb859b3373b927c6" id="r_adb7f506541b5cdb0eb859b3373b927c6"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb7f506541b5cdb0eb859b3373b927c6">g</a> =0</td></tr>
+<tr class="memdesc:adb7f506541b5cdb0eb859b3373b927c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Красная компонента цвета (0-255).  <br /></td></tr>
+<tr class="separator:adb7f506541b5cdb0eb859b3373b927c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5782223d711fad27c2ad0d60a2b3ecb9" id="r_a5782223d711fad27c2ad0d60a2b3ecb9"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5782223d711fad27c2ad0d60a2b3ecb9">b</a> =0</td></tr>
+<tr class="memdesc:a5782223d711fad27c2ad0d60a2b3ecb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Синяя компонента цвета (0-255).  <br /></td></tr>
+<tr class="separator:a5782223d711fad27c2ad0d60a2b3ecb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bcc0e701927cb9d0361f2ead212545a" id="r_a2bcc0e701927cb9d0361f2ead212545a"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bcc0e701927cb9d0361f2ead212545a">a</a> =255</td></tr>
+<tr class="memdesc:a2bcc0e701927cb9d0361f2ead212545a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Альфа-канал (0-255), определяющий прозрачность. Значение по умолчанию: 255 (непрозрачный).  <br /></td></tr>
+<tr class="separator:a2bcc0e701927cb9d0361f2ead212545a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Структура, представляющая цвет в формате RGBA (красный, зелёный, синий, альфа). Поддерживает различные форматы ввода: целочисленные и вещественные значения. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00093">93</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aab45345b145a9f42f86cedc0d26c1ee8" name="aab45345b145a9f42f86cedc0d26c1ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab45345b145a9f42f86cedc0d26c1ee8">&#9670;&#160;</a></span>PRISM_Color() <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PRISM_Color::PRISM_Color </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор для создания цвета из целых чисел. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Красная компонента.</td></tr>
+    <tr><td class="paramname">g</td><td>Зелёная компонента.</td></tr>
+    <tr><td class="paramname">b</td><td>Синяя компонента.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a id="a22e3e620f30bec9013018004f726469f" name="a22e3e620f30bec9013018004f726469f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e3e620f30bec9013018004f726469f">&#9670;&#160;</a></span>PRISM_Color() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PRISM_Color::PRISM_Color </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char</td>          <td class="paramname"><span class="paramname"><em>a</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор для создания цвета из целых чисел с альфа-каналом. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Красная компонента.</td></tr>
+    <tr><td class="paramname">g</td><td>Зелёная компонента.</td></tr>
+    <tr><td class="paramname">b</td><td>Синяя компонента.</td></tr>
+    <tr><td class="paramname">a</td><td>Альфа-канал.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00135">135</a></p>
+
+</div>
+</div>
+<a id="a94270adfdb58837e78ba903696a960b3" name="a94270adfdb58837e78ba903696a960b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94270adfdb58837e78ba903696a960b3">&#9670;&#160;</a></span>PRISM_Color() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PRISM_Color::PRISM_Color </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор для создания цвета из вещественных чисел (0.0f - 255.0f). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Красная компонента.</td></tr>
+    <tr><td class="paramname">g</td><td>Зелёная компонента.</td></tr>
+    <tr><td class="paramname">b</td><td>Синяя компонента.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00143">143</a></p>
+
+</div>
+</div>
+<a id="a4a6ecf348e59b292a6bc27bda7e97cd8" name="a4a6ecf348e59b292a6bc27bda7e97cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a6ecf348e59b292a6bc27bda7e97cd8">&#9670;&#160;</a></span>PRISM_Color() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PRISM_Color::PRISM_Color </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>a</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор для создания цвета из вещественных чисел с альфа-каналом. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Красная компонента.</td></tr>
+    <tr><td class="paramname">g</td><td>Зелёная компонента.</td></tr>
+    <tr><td class="paramname">b</td><td>Синяя компонента.</td></tr>
+    <tr><td class="paramname">a</td><td>Альфа-канал.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00152">152</a></p>
+
+</div>
+</div>
+<a id="a90cca6dc464024650942d1d09084f18a" name="a90cca6dc464024650942d1d09084f18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90cca6dc464024650942d1d09084f18a">&#9670;&#160;</a></span>PRISM_Color() <span class="overload">[5/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PRISM_Color::PRISM_Color </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор для создания цвета из целых чисел. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Красная компонента (0-255).</td></tr>
+    <tr><td class="paramname">g</td><td>Зелёная компонента (0-255).</td></tr>
+    <tr><td class="paramname">b</td><td>Синяя компонента (0-255).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00160">160</a></p>
+
+</div>
+</div>
+<a id="a774471727269b02d71b1789d128c0937" name="a774471727269b02d71b1789d128c0937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774471727269b02d71b1789d128c0937">&#9670;&#160;</a></span>PRISM_Color() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PRISM_Color::PRISM_Color </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор для создания цвета из целых чисел с альфа-каналом. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Красная компонента (0-255).</td></tr>
+    <tr><td class="paramname">g</td><td>Зелёная компонента (0-255).</td></tr>
+    <tr><td class="paramname">b</td><td>Синяя компонента (0-255).</td></tr>
+    <tr><td class="paramname">a</td><td>Альфа-канал (0-255).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00169">169</a></p>
+
+</div>
+</div>
+<a id="a619fcc9e49a151efefec166b3639688d" name="a619fcc9e49a151efefec166b3639688d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a619fcc9e49a151efefec166b3639688d">&#9670;&#160;</a></span>PRISM_Color() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PRISM_Color::PRISM_Color </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор по умолчанию. Создаёт чёрный цвет с непрозрачным альфа-каналом. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00175">175</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a5ae825f7c0bc159009b10b58dfbafb5f" name="a5ae825f7c0bc159009b10b58dfbafb5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae825f7c0bc159009b10b58dfbafb5f">&#9670;&#160;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRISM_Color::print </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выводит цвет в формате RGBA в консоль. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8cpp_source.html">other.cpp</a> строка <a class="el" href="other_8cpp_source.html#l00020">20</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Поля</h2>
+<a id="a2bcc0e701927cb9d0361f2ead212545a" name="a2bcc0e701927cb9d0361f2ead212545a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bcc0e701927cb9d0361f2ead212545a">&#9670;&#160;</a></span>a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char PRISM_Color::a =255</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Альфа-канал (0-255), определяющий прозрачность. Значение по умолчанию: 255 (непрозрачный). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00113">113</a></p>
+
+</div>
+</div>
+<a id="a5782223d711fad27c2ad0d60a2b3ecb9" name="a5782223d711fad27c2ad0d60a2b3ecb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5782223d711fad27c2ad0d60a2b3ecb9">&#9670;&#160;</a></span>b</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char PRISM_Color::b =0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Синяя компонента цвета (0-255). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00107">107</a></p>
+
+</div>
+</div>
+<a id="adb7f506541b5cdb0eb859b3373b927c6" name="adb7f506541b5cdb0eb859b3373b927c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7f506541b5cdb0eb859b3373b927c6">&#9670;&#160;</a></span>g</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char PRISM_Color::g =0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Красная компонента цвета (0-255). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00102">102</a></p>
+
+</div>
+</div>
+<a id="a678d977a735f983625d2ce2f858c7912" name="a678d977a735f983625d2ce2f858c7912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a678d977a735f983625d2ce2f858c7912">&#9670;&#160;</a></span>r</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char PRISM_Color::r =0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Красная компонента цвета (0-255). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="other_8h_source.html">other.h</a> строка <a class="el" href="other_8h_source.html#l00097">97</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структур находятся в файлах:<ul>
+<li>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<a class="el" href="other_8h_source.html">other.h</a></li>
+<li>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_math/<a class="el" href="other_8cpp_source.html">other.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

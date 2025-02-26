@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRISM_ENGINE: Исходный файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_rendering/PRISM_Window.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoprism.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">PRISM_ENGINE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">docs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_25f6b753474fe0a28800c78721e14565.html">PrismEngine</a></li><li class="navelem"><a class="el" href="dir_d7b1fc5b76cd0aeac2c104334654f815.html">PrismEngine</a></li><li class="navelem"><a class="el" href="dir_b6dc6f7c2aabea0db434001f258fbc37.html">src</a></li><li class="navelem"><a class="el" href="dir_4554e836a3a5a35a1026141e54ec76fa.html">PRISM_rendering</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">PRISM_Window.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_p_r_i_s_m___window_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;GL\glew.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;GL/freeglut.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;SDL.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;SDL_opengl.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef GL_MULTISAMPLE </span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="_p_r_i_s_m___window_8h.html#aa2b6486ff7ecee8bf04e3371f197527a">    9</a></span><span class="preprocessor">#define GL_MULTISAMPLE 0x809D </span><span class="comment">// включаем сглаживание</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html">   16</a></span><span class="keyword">class </span><a class="code hl_function" href="class_p_r_i_s_m___window.html#aa4bca0420152ccd9b80907696e5bf8b4">PRISM_Window</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_function" href="class_p_r_i_s_m___window.html#aa4bca0420152ccd9b80907696e5bf8b4">PRISM_Window</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <span class="keyword">const</span> <span class="keywordtype">char</span>* title);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c">   30</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c">running</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="class_p_r_i_s_m___window.html#ae43664eea8fe702ab86e9e4c010064e6">~PRISM_Window</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a9e0c9e116388eff77df60e546a3424ea">   42</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a9e0c9e116388eff77df60e546a3424ea">isRunning</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c">running</a>; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#ad68fda71898fcd04eef99d5751273f9a">   48</a></span>    SDL_Window* <a class="code hl_function" href="class_p_r_i_s_m___window.html#ad68fda71898fcd04eef99d5751273f9a">GetSDLWindow</a>()<span class="keyword"> const </span>{  <span class="keywordflow">return</span> window;}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#abf4b2e2d815ba1cb8eea7c59088df476">   54</a></span>    SDL_GLContext <a class="code hl_function" href="class_p_r_i_s_m___window.html#abf4b2e2d815ba1cb8eea7c59088df476">GetGLContext</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> glContext; }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a7a0ec756f1b8273491aca92c3b776993">handleEvents</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a2b1aa5dd51131b0178aa29ae70ebedea">update</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#ae87126811e3a83596cba115b41473868">clear</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a86c2b01d4de98415057642e6afaa079e">cleanUp</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="class_p_r_i_s_m___window.html#a0bf2d6387875a9fd97d55afec43ee10b">GetTitle</a>();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#aa407997dfba9a8787d932c45130554ac">SetTitle</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>*);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#aa407997dfba9a8787d932c45130554ac">SetTitle</a>(<span class="keyword">const</span> std::string&amp; t);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a3eab23dad1226970fe93da5775b05d32">   98</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a3eab23dad1226970fe93da5775b05d32">GetX</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> x; }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a7be051ce1e24a9f49f6e83170c37b707">  104</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a7be051ce1e24a9f49f6e83170c37b707">GetY</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> y; }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#aa48098bef73a029b87021a74b564c459">  110</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#aa48098bef73a029b87021a74b564c459">GetW</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> w; }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="class_p_r_i_s_m___window.html#a1a642d7c06913245317a48db430b074b">  116</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_p_r_i_s_m___window.html#a1a642d7c06913245317a48db430b074b">GetH</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> h; }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">int</span> x;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordtype">int</span> y;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">int</span> w;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordtype">int</span> h;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    SDL_Window* window;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    SDL_GLContext glContext;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    GLuint shaderProgram;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    GLuint VAO;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>};</div>
+</div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a0bf2d6387875a9fd97d55afec43ee10b"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a0bf2d6387875a9fd97d55afec43ee10b">PRISM_Window::GetTitle</a></div><div class="ttdeci">const char * GetTitle()</div><div class="ttdoc">Получает заголовок окна.</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8cpp_source.html#l00079">PRISM_Window.cpp:79</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a1a642d7c06913245317a48db430b074b"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a1a642d7c06913245317a48db430b074b">PRISM_Window::GetH</a></div><div class="ttdeci">int GetH() const</div><div class="ttdoc">Получает текущую высоту окна.</div><div class="ttdef"><b>Определения</b> <a href="#l00116">PRISM_Window.h:116</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a2b1aa5dd51131b0178aa29ae70ebedea"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a2b1aa5dd51131b0178aa29ae70ebedea">PRISM_Window::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Обновляет содержимое окна.</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8cpp_source.html#l00125">PRISM_Window.cpp:125</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a3eab23dad1226970fe93da5775b05d32"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a3eab23dad1226970fe93da5775b05d32">PRISM_Window::GetX</a></div><div class="ttdeci">int GetX() const</div><div class="ttdoc">Получает текущую позицию окна по оси X.</div><div class="ttdef"><b>Определения</b> <a href="#l00098">PRISM_Window.h:98</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a7624796096d0fa9650c866e15f3d750c"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c">PRISM_Window::running</a></div><div class="ttdeci">bool running</div><div class="ttdoc">Указывает, выполняется ли приложение.</div><div class="ttdef"><b>Определения</b> <a href="#l00030">PRISM_Window.h:30</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a7a0ec756f1b8273491aca92c3b776993"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a7a0ec756f1b8273491aca92c3b776993">PRISM_Window::handleEvents</a></div><div class="ttdeci">void handleEvents()</div><div class="ttdoc">Обрабатывает события окна (например, ввод с клавиатуры или мыши).</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8cpp_source.html#l00100">PRISM_Window.cpp:100</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a7be051ce1e24a9f49f6e83170c37b707"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a7be051ce1e24a9f49f6e83170c37b707">PRISM_Window::GetY</a></div><div class="ttdeci">int GetY() const</div><div class="ttdoc">Получает текущую позицию окна по оси Y.</div><div class="ttdef"><b>Определения</b> <a href="#l00104">PRISM_Window.h:104</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a86c2b01d4de98415057642e6afaa079e"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a86c2b01d4de98415057642e6afaa079e">PRISM_Window::cleanUp</a></div><div class="ttdeci">void cleanUp()</div><div class="ttdoc">Освобождает ресурсы и завершает работу окна.</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8cpp_source.html#l00139">PRISM_Window.cpp:139</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a9e0c9e116388eff77df60e546a3424ea"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a9e0c9e116388eff77df60e546a3424ea">PRISM_Window::isRunning</a></div><div class="ttdeci">bool isRunning() const</div><div class="ttdoc">Проверяет, выполняется ли приложение.</div><div class="ttdef"><b>Определения</b> <a href="#l00042">PRISM_Window.h:42</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_aa407997dfba9a8787d932c45130554ac"><div class="ttname"><a href="class_p_r_i_s_m___window.html#aa407997dfba9a8787d932c45130554ac">PRISM_Window::SetTitle</a></div><div class="ttdeci">void SetTitle(const char *)</div><div class="ttdoc">Устанавливает новый заголовок окна.</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8cpp_source.html#l00083">PRISM_Window.cpp:83</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_aa48098bef73a029b87021a74b564c459"><div class="ttname"><a href="class_p_r_i_s_m___window.html#aa48098bef73a029b87021a74b564c459">PRISM_Window::GetW</a></div><div class="ttdeci">int GetW() const</div><div class="ttdoc">Получает текущую ширину окна.</div><div class="ttdef"><b>Определения</b> <a href="#l00110">PRISM_Window.h:110</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_aa4bca0420152ccd9b80907696e5bf8b4"><div class="ttname"><a href="class_p_r_i_s_m___window.html#aa4bca0420152ccd9b80907696e5bf8b4">PRISM_Window::PRISM_Window</a></div><div class="ttdeci">PRISM_Window(int w, int h, const char *title)</div><div class="ttdoc">Конструктор окна PRISM_Window.</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8cpp_source.html#l00006">PRISM_Window.cpp:6</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_abf4b2e2d815ba1cb8eea7c59088df476"><div class="ttname"><a href="class_p_r_i_s_m___window.html#abf4b2e2d815ba1cb8eea7c59088df476">PRISM_Window::GetGLContext</a></div><div class="ttdeci">SDL_GLContext GetGLContext() const</div><div class="ttdoc">Получает текущий OpenGL-контекст.</div><div class="ttdef"><b>Определения</b> <a href="#l00054">PRISM_Window.h:54</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_ad68fda71898fcd04eef99d5751273f9a"><div class="ttname"><a href="class_p_r_i_s_m___window.html#ad68fda71898fcd04eef99d5751273f9a">PRISM_Window::GetSDLWindow</a></div><div class="ttdeci">SDL_Window * GetSDLWindow() const</div><div class="ttdoc">Возвращяет контекст SDL_Window.</div><div class="ttdef"><b>Определения</b> <a href="#l00048">PRISM_Window.h:48</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_ae43664eea8fe702ab86e9e4c010064e6"><div class="ttname"><a href="class_p_r_i_s_m___window.html#ae43664eea8fe702ab86e9e4c010064e6">PRISM_Window::~PRISM_Window</a></div><div class="ttdeci">~PRISM_Window()</div><div class="ttdoc">Деструктор окна PRISM_Window. Освобождает выделенные ресурсы.</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8cpp_source.html#l00095">PRISM_Window.cpp:95</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_ae87126811e3a83596cba115b41473868"><div class="ttname"><a href="class_p_r_i_s_m___window.html#ae87126811e3a83596cba115b41473868">PRISM_Window::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Очищает содержимое окна.</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8cpp_source.html#l00134">PRISM_Window.cpp:134</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

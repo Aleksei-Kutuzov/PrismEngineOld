@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRISM_ENGINE: Исходный файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_objects3D/Scene.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoprism.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">PRISM_ENGINE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">docs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_25f6b753474fe0a28800c78721e14565.html">PrismEngine</a></li><li class="navelem"><a class="el" href="dir_d7b1fc5b76cd0aeac2c104334654f815.html">PrismEngine</a></li><li class="navelem"><a class="el" href="dir_b6dc6f7c2aabea0db434001f258fbc37.html">src</a></li><li class="navelem"><a class="el" href="dir_d7cbac5f5c8de61a629af2c89d6304ab.html">PRISM_objects3D</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Scene.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_scene_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_scene_8h.html">Scene.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="}">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_scene.html#ad10176d75a9cc0da56626f682d083507">    5</a></span><a class="code hl_function" href="class_scene.html#ad10176d75a9cc0da56626f682d083507">Scene::Scene</a>()</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>}</div>
+</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_scene.html#a3b8cec2e32546713915f8c6303c951f1">    9</a></span><a class="code hl_function" href="class_scene.html#a3b8cec2e32546713915f8c6303c951f1">Scene::~Scene</a>()</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{   </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordflow">for</span> (<a class="code hl_class" href="class_abstract_object3_d.html">AbstractObject3D</a>* <span class="keywordtype">object</span> : objects) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">if</span> (<span class="keywordtype">object</span>) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            <span class="comment">//delete object;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    objects.clear();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">for</span> (<a class="code hl_class" href="class_abstract_camera3_d.html">AbstractCamera3D</a>* camera : cameras) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="comment">//delete camera;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    cameras.clear();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_scene.html#a7f74ff40411bdcf075fc19a12476109e">   24</a></span><a class="code hl_class" href="class_abstract_camera3_d.html">AbstractCamera3D</a>* <a class="code hl_function" href="class_scene.html#a7f74ff40411bdcf075fc19a12476109e">Scene::AddObject</a>(<a class="code hl_class" href="class_abstract_camera3_d.html">AbstractCamera3D</a>* obj)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    cameras.push_back(obj);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> obj;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_scene.html#afe087b088e1cf2e51612dcd901ecfa18">   30</a></span><a class="code hl_class" href="class_abstract_object3_d.html">AbstractObject3D</a>* <a class="code hl_function" href="class_scene.html#a7f74ff40411bdcf075fc19a12476109e">Scene::AddObject</a>(<a class="code hl_class" href="class_abstract_object3_d.html">AbstractObject3D</a>* obj)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    objects.push_back(obj);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> obj;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_scene.html#a38c559e65393d483023aaa542585fa25">   36</a></span><a class="code hl_class" href="class_abstract_camera3_d.html">AbstractCamera3D</a>* <a class="code hl_function" href="class_scene.html#a38c559e65393d483023aaa542585fa25">Scene::DelObject</a>(<a class="code hl_class" href="class_abstract_camera3_d.html">AbstractCamera3D</a>* obj)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    cameras.erase(remove(cameras.begin(), cameras.end(), obj), cameras.end());</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> obj;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_scene.html#abbbe43f76945e70f59c871ec05b02437">   42</a></span><a class="code hl_class" href="class_abstract_object3_d.html">AbstractObject3D</a>* <a class="code hl_function" href="class_scene.html#a38c559e65393d483023aaa542585fa25">Scene::DelObject</a>(<a class="code hl_class" href="class_abstract_object3_d.html">AbstractObject3D</a>* obj)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    objects.erase(remove(objects.begin(), objects.end(), obj), objects.end());</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> obj;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_scene.html#aa204ec1e3c8920474aabfa94b8d36b3b">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_scene.html#aa204ec1e3c8920474aabfa94b8d36b3b">Scene::PrintInfo</a>()</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <span class="keywordtype">object</span> : objects) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        SDL_Log(<span class="stringliteral">&quot;objects in Scene:&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordtype">object</span>-&gt;PrintInfo();  </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_scene.html#af6b1a4cc7ca8ea2e2e873d523130f6e1">   58</a></span><a class="code hl_class" href="class_abstract_camera3_d.html">AbstractCamera3D</a>* <a class="code hl_function" href="class_scene.html#af6b1a4cc7ca8ea2e2e873d523130f6e1">Scene::SetCamera</a>(<a class="code hl_class" href="class_abstract_camera3_d.html">AbstractCamera3D</a>* obj)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    enabledCamera = obj;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    render.cameraCoordinate = obj-&gt;<a class="code hl_variable" href="class_abstract_camera3_d.html#aac731e1f3a2839e52487f593854a41e3">Translate</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> obj;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_scene.html#a0af3ccfbaf48963d0125d20f4be4ce0a">   65</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_scene.html#a0af3ccfbaf48963d0125d20f4be4ce0a">Scene::SetLightAmbient</a>(<a class="code hl_struct" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> L_Ambient)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    render.lightAmbient = L_Ambient;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_scene.html#aa8f334f0b651eb6587d08e2996253ccf">   70</a></span><a class="code hl_struct" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> <a class="code hl_function" href="class_scene.html#aa8f334f0b651eb6587d08e2996253ccf">Scene::GetLightAmbient</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> render.lightAmbient;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_scene.html#af2df4fdc1fe6b5e830f693419a6c4d26">   75</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_scene.html#af2df4fdc1fe6b5e830f693419a6c4d26">Scene::Render</a>(<a class="code hl_class" href="class_p_r_i_s_m___window.html">PRISM_Window</a>* win)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    render.SetScreenSize(win-&gt;<a class="code hl_function" href="class_p_r_i_s_m___window.html#aa48098bef73a029b87021a74b564c459">GetW</a>(), win-&gt;<a class="code hl_function" href="class_p_r_i_s_m___window.html#a1a642d7c06913245317a48db430b074b">GetH</a>());</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">for</span> (<a class="code hl_class" href="class_abstract_object3_d.html">AbstractObject3D</a>* <span class="keywordtype">object</span> :objects) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        render.Rendering(win, <span class="keywordtype">object</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="ttc" id="a_scene_8h_html"><div class="ttname"><a href="_scene_8h.html">Scene.h</a></div></div>
+<div class="ttc" id="aclass_abstract_camera3_d_html"><div class="ttname"><a href="class_abstract_camera3_d.html">AbstractCamera3D</a></div><div class="ttdoc">Класс, представляющий 3D-камеру для работы с виртуальной сценой.</div><div class="ttdef"><b>Определения</b> <a href="_abstract_camera3_d_8h_source.html#l00012">AbstractCamera3D.h:12</a></div></div>
+<div class="ttc" id="aclass_abstract_camera3_d_html_aac731e1f3a2839e52487f593854a41e3"><div class="ttname"><a href="class_abstract_camera3_d.html#aac731e1f3a2839e52487f593854a41e3">AbstractCamera3D::Translate</a></div><div class="ttdeci">struct PRISM_Vector3d Translate</div><div class="ttdoc">Положение камеры в пространстве.</div><div class="ttdef"><b>Определения</b> <a href="_abstract_camera3_d_8h_source.html#l00019">AbstractCamera3D.h:19</a></div></div>
+<div class="ttc" id="aclass_abstract_object3_d_html"><div class="ttname"><a href="class_abstract_object3_d.html">AbstractObject3D</a></div><div class="ttdoc">Класс AbstractObject3D представляет собой базовый класс для работы с 3D-объектами....</div><div class="ttdef"><b>Определения</b> <a href="_abstract_object3_d_8h_source.html#l00033">AbstractObject3D.h:33</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html"><div class="ttname"><a href="class_p_r_i_s_m___window.html">PRISM_Window</a></div><div class="ttdoc">Класс, представляющий окно PRISM_ENDINE.</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8h_source.html#l00016">PRISM_Window.h:17</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_a1a642d7c06913245317a48db430b074b"><div class="ttname"><a href="class_p_r_i_s_m___window.html#a1a642d7c06913245317a48db430b074b">PRISM_Window::GetH</a></div><div class="ttdeci">int GetH() const</div><div class="ttdoc">Получает текущую высоту окна.</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8h_source.html#l00116">PRISM_Window.h:116</a></div></div>
+<div class="ttc" id="aclass_p_r_i_s_m___window_html_aa48098bef73a029b87021a74b564c459"><div class="ttname"><a href="class_p_r_i_s_m___window.html#aa48098bef73a029b87021a74b564c459">PRISM_Window::GetW</a></div><div class="ttdeci">int GetW() const</div><div class="ttdoc">Получает текущую ширину окна.</div><div class="ttdef"><b>Определения</b> <a href="_p_r_i_s_m___window_8h_source.html#l00110">PRISM_Window.h:110</a></div></div>
+<div class="ttc" id="aclass_scene_html_a0af3ccfbaf48963d0125d20f4be4ce0a"><div class="ttname"><a href="class_scene.html#a0af3ccfbaf48963d0125d20f4be4ce0a">Scene::SetLightAmbient</a></div><div class="ttdeci">void SetLightAmbient(PRISM_Vector3d L_Ambient)</div><div class="ttdoc">Устанавливает окружающий свет (ambient light) а также коэффициент дифузного света (diffuse light) для...</div><div class="ttdef"><b>Определения</b> <a href="#l00065">Scene.cpp:65</a></div></div>
+<div class="ttc" id="aclass_scene_html_a38c559e65393d483023aaa542585fa25"><div class="ttname"><a href="class_scene.html#a38c559e65393d483023aaa542585fa25">Scene::DelObject</a></div><div class="ttdeci">AbstractCamera3D * DelObject(AbstractCamera3D *obj)</div><div class="ttdoc">Удаляет камеру из сцены.</div><div class="ttdef"><b>Определения</b> <a href="#l00036">Scene.cpp:36</a></div></div>
+<div class="ttc" id="aclass_scene_html_a3b8cec2e32546713915f8c6303c951f1"><div class="ttname"><a href="class_scene.html#a3b8cec2e32546713915f8c6303c951f1">Scene::~Scene</a></div><div class="ttdeci">~Scene()</div><div class="ttdoc">Деструктор сцены. Очищает все объекты и камеры, добавленные в сцену.</div><div class="ttdef"><b>Определения</b> <a href="#l00009">Scene.cpp:9</a></div></div>
+<div class="ttc" id="aclass_scene_html_a7f74ff40411bdcf075fc19a12476109e"><div class="ttname"><a href="class_scene.html#a7f74ff40411bdcf075fc19a12476109e">Scene::AddObject</a></div><div class="ttdeci">AbstractCamera3D * AddObject(AbstractCamera3D *obj)</div><div class="ttdoc">Добавляет камеру в сцену.</div><div class="ttdef"><b>Определения</b> <a href="#l00024">Scene.cpp:24</a></div></div>
+<div class="ttc" id="aclass_scene_html_aa204ec1e3c8920474aabfa94b8d36b3b"><div class="ttname"><a href="class_scene.html#aa204ec1e3c8920474aabfa94b8d36b3b">Scene::PrintInfo</a></div><div class="ttdeci">void PrintInfo()</div><div class="ttdoc">Выводит информацию о сцене.</div><div class="ttdef"><b>Определения</b> <a href="#l00049">Scene.cpp:49</a></div></div>
+<div class="ttc" id="aclass_scene_html_aa8f334f0b651eb6587d08e2996253ccf"><div class="ttname"><a href="class_scene.html#aa8f334f0b651eb6587d08e2996253ccf">Scene::GetLightAmbient</a></div><div class="ttdeci">PRISM_Vector3d GetLightAmbient() const</div><div class="ttdoc">Возвращает текущие настройки окружающего света (ambient light) или дифузного света (diffuse light) сц...</div><div class="ttdef"><b>Определения</b> <a href="#l00070">Scene.cpp:70</a></div></div>
+<div class="ttc" id="aclass_scene_html_ad10176d75a9cc0da56626f682d083507"><div class="ttname"><a href="class_scene.html#ad10176d75a9cc0da56626f682d083507">Scene::Scene</a></div><div class="ttdeci">Scene()</div><div class="ttdoc">Конструктор по умолчанию.</div><div class="ttdef"><b>Определения</b> <a href="#l00005">Scene.cpp:5</a></div></div>
+<div class="ttc" id="aclass_scene_html_af2df4fdc1fe6b5e830f693419a6c4d26"><div class="ttname"><a href="class_scene.html#af2df4fdc1fe6b5e830f693419a6c4d26">Scene::Render</a></div><div class="ttdeci">void Render(PRISM_Window *win)</div><div class="ttdoc">Выполняет рендер сцены.</div><div class="ttdef"><b>Определения</b> <a href="#l00075">Scene.cpp:75</a></div></div>
+<div class="ttc" id="aclass_scene_html_af6b1a4cc7ca8ea2e2e873d523130f6e1"><div class="ttname"><a href="class_scene.html#af6b1a4cc7ca8ea2e2e873d523130f6e1">Scene::SetCamera</a></div><div class="ttdeci">AbstractCamera3D * SetCamera(AbstractCamera3D *obj)</div><div class="ttdoc">Устанавливает активную камеру для рендера сцены.</div><div class="ttdef"><b>Определения</b> <a href="#l00058">Scene.cpp:58</a></div></div>
+<div class="ttc" id="astruct_p_r_i_s_m___vector3d_html"><div class="ttname"><a href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></div><div class="ttdoc">Структура PRISM_Vector3d предназначена для представления трёхмерного вектора с дополнительным четвёрт...</div><div class="ttdef"><b>Определения</b> <a href="vector3_d_8h_source.html#l00019">vector3D.h:20</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

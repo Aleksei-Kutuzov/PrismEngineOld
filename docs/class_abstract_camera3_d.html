@@ -1,0 +1,578 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRISM_ENGINE: Класс AbstractCamera3D</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoprism.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">PRISM_ENGINE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">docs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Поля данных</a>  </div>
+  <div class="headertitle"><div class="title">Класс AbstractCamera3D</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс, представляющий 3D-камеру для работы с виртуальной сценой.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a41acfba5d32d33e317cc407c5cc88635" id="r_a41acfba5d32d33e317cc407c5cc88635"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41acfba5d32d33e317cc407c5cc88635">AbstractCamera3D</a> (float Near=0.1f, float Far=1000.0f, float Fov=90.0f, int displW=800, int displH=480)</td></tr>
+<tr class="memdesc:a41acfba5d32d33e317cc407c5cc88635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор камеры с заданными параметрами.  <br /></td></tr>
+<tr class="separator:a41acfba5d32d33e317cc407c5cc88635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a831e9d47383b29640dd450b9f7b50557" id="r_a831e9d47383b29640dd450b9f7b50557"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a831e9d47383b29640dd450b9f7b50557">~AbstractCamera3D</a> ()</td></tr>
+<tr class="memdesc:a831e9d47383b29640dd450b9f7b50557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор камеры.  <br /></td></tr>
+<tr class="separator:a831e9d47383b29640dd450b9f7b50557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78201de343d0dd663c29588ce9aa619" id="r_ae78201de343d0dd663c29588ce9aa619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae78201de343d0dd663c29588ce9aa619">SetPosition</a> (struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> Coord, struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> Rot, struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> viewDir_)</td></tr>
+<tr class="memdesc:ae78201de343d0dd663c29588ce9aa619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает положение камеры, её вращение и направление взгляда.  <br /></td></tr>
+<tr class="separator:ae78201de343d0dd663c29588ce9aa619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0887c2e6b05af6040188a15223f6576" id="r_ab0887c2e6b05af6040188a15223f6576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0887c2e6b05af6040188a15223f6576">SetView</a> (struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> viewDirVect, struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> upDirVect)</td></tr>
+<tr class="memdesc:ab0887c2e6b05af6040188a15223f6576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает матрицу взгляда камеры и вектор "вверх".  <br /></td></tr>
+<tr class="separator:ab0887c2e6b05af6040188a15223f6576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918ef8aaa118844503df999ec5338eda" id="r_a918ef8aaa118844503df999ec5338eda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a918ef8aaa118844503df999ec5338eda">ClearZ_Buffer</a> (SDL_Renderer *renderer)</td></tr>
+<tr class="memdesc:a918ef8aaa118844503df999ec5338eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очищает Z-буфер.  <br /></td></tr>
+<tr class="separator:a918ef8aaa118844503df999ec5338eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Поля данных</h2></td></tr>
+<tr class="memitem:aac731e1f3a2839e52487f593854a41e3" id="r_aac731e1f3a2839e52487f593854a41e3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac731e1f3a2839e52487f593854a41e3">Translate</a></td></tr>
+<tr class="memdesc:aac731e1f3a2839e52487f593854a41e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Положение камеры в пространстве.  <br /></td></tr>
+<tr class="separator:aac731e1f3a2839e52487f593854a41e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fdd7209747c278ecbef122454fad349" id="r_a2fdd7209747c278ecbef122454fad349"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fdd7209747c278ecbef122454fad349">Rotation</a></td></tr>
+<tr class="memdesc:a2fdd7209747c278ecbef122454fad349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Угол вращения камеры (в градусах) относительно осей.  <br /></td></tr>
+<tr class="separator:a2fdd7209747c278ecbef122454fad349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83eec5cecd0f3eaa5fe235afc549027f" id="r_a83eec5cecd0f3eaa5fe235afc549027f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83eec5cecd0f3eaa5fe235afc549027f">FNear</a></td></tr>
+<tr class="memdesc:a83eec5cecd0f3eaa5fe235afc549027f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расстояние до ближней плоскости отсечения.  <br /></td></tr>
+<tr class="separator:a83eec5cecd0f3eaa5fe235afc549027f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f27ed08e8a5d527d228fe2f2be03921" id="r_a4f27ed08e8a5d527d228fe2f2be03921"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f27ed08e8a5d527d228fe2f2be03921">FFar</a></td></tr>
+<tr class="memdesc:a4f27ed08e8a5d527d228fe2f2be03921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расстояние до дальней плоскости отсечения.  <br /></td></tr>
+<tr class="separator:a4f27ed08e8a5d527d228fe2f2be03921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adffb74be97c46f8621e024d327e1aa6b" id="r_adffb74be97c46f8621e024d327e1aa6b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adffb74be97c46f8621e024d327e1aa6b">FFov</a></td></tr>
+<tr class="memdesc:adffb74be97c46f8621e024d327e1aa6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Угол поля зрения камеры (в градусах).  <br /></td></tr>
+<tr class="separator:adffb74be97c46f8621e024d327e1aa6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d690019eba1168ac421fed819ded860" id="r_a8d690019eba1168ac421fed819ded860"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d690019eba1168ac421fed819ded860">FAspectRatio</a></td></tr>
+<tr class="memdesc:a8d690019eba1168ac421fed819ded860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Соотношение сторон экрана (ширина/высота).  <br /></td></tr>
+<tr class="separator:a8d690019eba1168ac421fed819ded860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5488c3a1e1432941f47126cb5d08f7bf" id="r_a5488c3a1e1432941f47126cb5d08f7bf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5488c3a1e1432941f47126cb5d08f7bf">FFovRad</a></td></tr>
+<tr class="memdesc:a5488c3a1e1432941f47126cb5d08f7bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значение угла поля зрения в радианах (вычисляется автоматически).  <br /></td></tr>
+<tr class="separator:a5488c3a1e1432941f47126cb5d08f7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5feca547ada074119a1f8e75c8a971bb" id="r_a5feca547ada074119a1f8e75c8a971bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5feca547ada074119a1f8e75c8a971bb">ScreenW</a></td></tr>
+<tr class="memdesc:a5feca547ada074119a1f8e75c8a971bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ширина экрана в пикселях.  <br /></td></tr>
+<tr class="separator:a5feca547ada074119a1f8e75c8a971bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86b24a24ada32e41c0b6654b8e45b00" id="r_af86b24a24ada32e41c0b6654b8e45b00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af86b24a24ada32e41c0b6654b8e45b00">ScreenH</a></td></tr>
+<tr class="memdesc:af86b24a24ada32e41c0b6654b8e45b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Высота экрана в пикселях.  <br /></td></tr>
+<tr class="separator:af86b24a24ada32e41c0b6654b8e45b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875113715d05b2c30fab1ed6c641fe5c" id="r_a875113715d05b2c30fab1ed6c641fe5c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a875113715d05b2c30fab1ed6c641fe5c">viewDir</a></td></tr>
+<tr class="memdesc:a875113715d05b2c30fab1ed6c641fe5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Направление взгляда камеры.  <br /></td></tr>
+<tr class="separator:a875113715d05b2c30fab1ed6c641fe5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864779875a82f1d521758280af5b9e3a" id="r_a864779875a82f1d521758280af5b9e3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_z___buffer.html">Z_Buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a864779875a82f1d521758280af5b9e3a">z_buffer</a></td></tr>
+<tr class="memdesc:a864779875a82f1d521758280af5b9e3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Z-буфер для хранения глубины каждого пикселя.  <br /></td></tr>
+<tr class="separator:a864779875a82f1d521758280af5b9e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6519bb68517da1d74360b2a52288a7c7" id="r_a6519bb68517da1d74360b2a52288a7c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6519bb68517da1d74360b2a52288a7c7">matrixView</a></td></tr>
+<tr class="memdesc:a6519bb68517da1d74360b2a52288a7c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Матрица вида, представляющая трансформацию камеры.  <br /></td></tr>
+<tr class="separator:a6519bb68517da1d74360b2a52288a7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс, представляющий 3D-камеру для работы с виртуальной сценой. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00012">12</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a41acfba5d32d33e317cc407c5cc88635" name="a41acfba5d32d33e317cc407c5cc88635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41acfba5d32d33e317cc407c5cc88635">&#9670;&#160;</a></span>AbstractCamera3D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AbstractCamera3D::AbstractCamera3D </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Near</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.1f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Far</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1000.0f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>Fov</em></span><span class="paramdefsep"> = </span><span class="paramdefval">90.0f</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>displW</em></span><span class="paramdefsep"> = </span><span class="paramdefval">800</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>displH</em></span><span class="paramdefsep"> = </span><span class="paramdefval">480</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор камеры с заданными параметрами. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Near</td><td>Расстояние до ближней плоскости отсечения (по умолчанию 0.1).</td></tr>
+    <tr><td class="paramname">Far</td><td>Расстояние до дальней плоскости отсечения (по умолчанию 1000.0).</td></tr>
+    <tr><td class="paramname">Fov</td><td>Угол поля зрения (по умолчанию 90.0 градусов).</td></tr>
+    <tr><td class="paramname">displW</td><td>Ширина экрана в пикселях (по умолчанию 800).</td></tr>
+    <tr><td class="paramname">displH</td><td>Высота экрана в пикселях (по умолчанию 480).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00085">85</a></p>
+
+</div>
+</div>
+<a id="a831e9d47383b29640dd450b9f7b50557" name="a831e9d47383b29640dd450b9f7b50557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a831e9d47383b29640dd450b9f7b50557">&#9670;&#160;</a></span>~AbstractCamera3D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AbstractCamera3D::~AbstractCamera3D </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Деструктор камеры. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00095">95</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a918ef8aaa118844503df999ec5338eda" name="a918ef8aaa118844503df999ec5338eda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918ef8aaa118844503df999ec5338eda">&#9670;&#160;</a></span>ClearZ_Buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractCamera3D::ClearZ_Buffer </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Renderer *</td>          <td class="paramname"><span class="paramname"><em>renderer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очищает Z-буфер. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderer</td><td>Указатель на SDL_Renderer для рендеринга.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Уст.</a></b></dt><dd>Не используется на устройствах с поддержкой GPU </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8cpp_source.html">AbstractCamera3D.cpp</a> строка <a class="el" href="_abstract_camera3_d_8cpp_source.html#l00027">27</a></p>
+
+</div>
+</div>
+<a id="ae78201de343d0dd663c29588ce9aa619" name="ae78201de343d0dd663c29588ce9aa619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78201de343d0dd663c29588ce9aa619">&#9670;&#160;</a></span>SetPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractCamera3D::SetPosition </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>Coord</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>Rot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>viewDir_</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает положение камеры, её вращение и направление взгляда. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Coord</td><td>Положение камеры в пространстве.</td></tr>
+    <tr><td class="paramname">Rot</td><td>Углы вращения камеры.</td></tr>
+    <tr><td class="paramname">viewDir_</td><td>Направление взгляда камеры.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8cpp_source.html">AbstractCamera3D.cpp</a> строка <a class="el" href="_abstract_camera3_d_8cpp_source.html#l00004">4</a></p>
+
+</div>
+</div>
+<a id="ab0887c2e6b05af6040188a15223f6576" name="ab0887c2e6b05af6040188a15223f6576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0887c2e6b05af6040188a15223f6576">&#9670;&#160;</a></span>SetView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractCamera3D::SetView </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>viewDirVect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>upDirVect</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает матрицу взгляда камеры и вектор "вверх". </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewDirVect</td><td>Вектор направления взгляда.</td></tr>
+    <tr><td class="paramname">upDirVect</td><td>Вектор "вверх".</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8cpp_source.html">AbstractCamera3D.cpp</a> строка <a class="el" href="_abstract_camera3_d_8cpp_source.html#l00021">21</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Поля</h2>
+<a id="a8d690019eba1168ac421fed819ded860" name="a8d690019eba1168ac421fed819ded860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d690019eba1168ac421fed819ded860">&#9670;&#160;</a></span>FAspectRatio</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AbstractCamera3D::FAspectRatio</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Соотношение сторон экрана (ширина/высота). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00044">44</a></p>
+
+</div>
+</div>
+<a id="a4f27ed08e8a5d527d228fe2f2be03921" name="a4f27ed08e8a5d527d228fe2f2be03921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f27ed08e8a5d527d228fe2f2be03921">&#9670;&#160;</a></span>FFar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AbstractCamera3D::FFar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Расстояние до дальней плоскости отсечения. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00034">34</a></p>
+
+</div>
+</div>
+<a id="adffb74be97c46f8621e024d327e1aa6b" name="adffb74be97c46f8621e024d327e1aa6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adffb74be97c46f8621e024d327e1aa6b">&#9670;&#160;</a></span>FFov</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AbstractCamera3D::FFov</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Угол поля зрения камеры (в градусах). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00039">39</a></p>
+
+</div>
+</div>
+<a id="a5488c3a1e1432941f47126cb5d08f7bf" name="a5488c3a1e1432941f47126cb5d08f7bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5488c3a1e1432941f47126cb5d08f7bf">&#9670;&#160;</a></span>FFovRad</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AbstractCamera3D::FFovRad</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Значение угла поля зрения в радианах (вычисляется автоматически). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00049">49</a></p>
+
+</div>
+</div>
+<a id="a83eec5cecd0f3eaa5fe235afc549027f" name="a83eec5cecd0f3eaa5fe235afc549027f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83eec5cecd0f3eaa5fe235afc549027f">&#9670;&#160;</a></span>FNear</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AbstractCamera3D::FNear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Расстояние до ближней плоскости отсечения. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00029">29</a></p>
+
+</div>
+</div>
+<a id="a6519bb68517da1d74360b2a52288a7c7" name="a6519bb68517da1d74360b2a52288a7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6519bb68517da1d74360b2a52288a7c7">&#9670;&#160;</a></span>matrixView</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> AbstractCamera3D::matrixView</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Матрица вида, представляющая трансформацию камеры. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00075">75</a></p>
+
+</div>
+</div>
+<a id="a2fdd7209747c278ecbef122454fad349" name="a2fdd7209747c278ecbef122454fad349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fdd7209747c278ecbef122454fad349">&#9670;&#160;</a></span>Rotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> AbstractCamera3D::Rotation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Угол вращения камеры (в градусах) относительно осей. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00024">24</a></p>
+
+</div>
+</div>
+<a id="af86b24a24ada32e41c0b6654b8e45b00" name="af86b24a24ada32e41c0b6654b8e45b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af86b24a24ada32e41c0b6654b8e45b00">&#9670;&#160;</a></span>ScreenH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AbstractCamera3D::ScreenH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Высота экрана в пикселях. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00059">59</a></p>
+
+</div>
+</div>
+<a id="a5feca547ada074119a1f8e75c8a971bb" name="a5feca547ada074119a1f8e75c8a971bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5feca547ada074119a1f8e75c8a971bb">&#9670;&#160;</a></span>ScreenW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AbstractCamera3D::ScreenW</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ширина экрана в пикселях. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00054">54</a></p>
+
+</div>
+</div>
+<a id="aac731e1f3a2839e52487f593854a41e3" name="aac731e1f3a2839e52487f593854a41e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac731e1f3a2839e52487f593854a41e3">&#9670;&#160;</a></span>Translate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> AbstractCamera3D::Translate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Положение камеры в пространстве. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<a id="a875113715d05b2c30fab1ed6c641fe5c" name="a875113715d05b2c30fab1ed6c641fe5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a875113715d05b2c30fab1ed6c641fe5c">&#9670;&#160;</a></span>viewDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> AbstractCamera3D::viewDir</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Направление взгляда камеры. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00064">64</a></p>
+
+</div>
+</div>
+<a id="a864779875a82f1d521758280af5b9e3a" name="a864779875a82f1d521758280af5b9e3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a864779875a82f1d521758280af5b9e3a">&#9670;&#160;</a></span>z_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_z___buffer.html">Z_Buffer</a> AbstractCamera3D::z_buffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Z-буфер для хранения глубины каждого пикселя. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Уст.</a></b></dt><dd>Не используется на устройствах с поддержкой GPU </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a> строка <a class="el" href="_abstract_camera3_d_8h_source.html#l00070">70</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_objects3D/<a class="el" href="_abstract_camera3_d_8h_source.html">AbstractCamera3D.h</a></li>
+<li>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_objects3D/<a class="el" href="_abstract_camera3_d_8cpp_source.html">AbstractCamera3D.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

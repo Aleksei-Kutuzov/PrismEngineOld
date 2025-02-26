@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRISM_ENGINE: Исходный файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_UI/button.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoprism.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">PRISM_ENGINE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">docs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_25f6b753474fe0a28800c78721e14565.html">PrismEngine</a></li><li class="navelem"><a class="el" href="dir_d7b1fc5b76cd0aeac2c104334654f815.html">PrismEngine</a></li><li class="navelem"><a class="el" href="dir_b6dc6f7c2aabea0db434001f258fbc37.html">src</a></li><li class="navelem"><a class="el" href="dir_5fcc1279df0279394065d7500bf93a07.html">PRISM_UI</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">button.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="button_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef BUTTON_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define BUTTON_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;SDL.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;SDL_image.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;SDL_ttf.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;SDL2_gfxPrimitives.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="struct_toggle_button.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_toggle_button.html">ToggleButton</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_toggle_button.html#a89c578ea40203dee07874c3e85a06f0a">   11</a></span>    SDL_Texture *<a class="code hl_variable" href="struct_toggle_button.html#a89c578ea40203dee07874c3e85a06f0a">image</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_toggle_button.html#a0b266ebc454371cb3187996af8c275bd">   12</a></span>    SDL_Renderer *<a class="code hl_variable" href="struct_toggle_button.html#a0b266ebc454371cb3187996af8c275bd">renderer</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_toggle_button.html#a61c424a8908e71a60009455f44d3fd8a">   13</a></span>    SDL_Rect <a class="code hl_variable" href="struct_toggle_button.html#a61c424a8908e71a60009455f44d3fd8a">rect</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_toggle_button.html#a0b567c45cabdc81162a8f462f41a2f45">   14</a></span>    std::string <a class="code hl_variable" href="struct_toggle_button.html#a0b567c45cabdc81162a8f462f41a2f45">text</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_toggle_button.html#afa7234c6ff69faa485067961cf877ee6">   15</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_toggle_button.html#afa7234c6ff69faa485067961cf877ee6">FD</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_toggle_button.html#a1b0885b1e0b0a1d3395b794cc6d16749">   16</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_toggle_button.html#a1b0885b1e0b0a1d3395b794cc6d16749">active</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> <a class="code hl_function" href="button_8h.html#ae271d5f10bebbb049e579a7f21b2e824">InitToggleButton</a>(<a class="code hl_struct" href="struct_toggle_button.html">ToggleButton</a> &amp;toggle_button, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                      <span class="keywordtype">bool</span> IsActive, SDL_Renderer *renderer);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> <a class="code hl_function" href="button_8h.html#af240adf133032879058c1da5581078ea">SetToggleButtonTexture</a>(<a class="code hl_struct" href="struct_toggle_button.html">ToggleButton</a> &amp;toggle_button, <span class="keyword">const</span> <span class="keywordtype">char</span> *filename);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>SDL_Texture* <a class="code hl_function" href="button_8h.html#afb2808ed98eb6542a559aa75d35efe0d">renderText</a>(<span class="keyword">const</span> std::string &amp;message, <span class="keyword">const</span> std::string &amp;fontFile,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        SDL_Color color, <span class="keywordtype">int</span> fontSize, SDL_Renderer *renderer);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span> <a class="code hl_function" href="button_8h.html#a8fe13d21334ce808fdf5450cace9a629">SetToggleButtonText</a>(<a class="code hl_struct" href="struct_toggle_button.html">ToggleButton</a> &amp;toggle_button, <span class="keyword">const</span> std::string text,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                         <span class="keyword">const</span> std::string &amp;fontFile, SDL_Color color, <span class="keywordtype">int</span> fontSize);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">void</span> <a class="code hl_function" href="button_8h.html#aa02858010549847e5f40bed0b7aa8bcb">ToggleButtonInput</a>(<a class="code hl_struct" href="struct_toggle_button.html">ToggleButton</a> &amp;toggle_button, SDL_Event &amp;e);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="button_8h.html#a1ab311ff9dab6e1ac74f7fde026bf427">renderTexture</a>(SDL_Texture *tex, SDL_Renderer *ren, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">void</span> <a class="code hl_function" href="button_8h.html#a82caed73e3dcecce469a3ba5f9890908">RenderToggleButton</a>(<a class="code hl_struct" href="struct_toggle_button.html">ToggleButton</a> &amp;toggle_button);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abutton_8h_html_a1ab311ff9dab6e1ac74f7fde026bf427"><div class="ttname"><a href="button_8h.html#a1ab311ff9dab6e1ac74f7fde026bf427">renderTexture</a></div><div class="ttdeci">void renderTexture(SDL_Texture *tex, SDL_Renderer *ren, int x, int y, int w, int h)</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00031">joystick.cpp:31</a></div></div>
+<div class="ttc" id="abutton_8h_html_a82caed73e3dcecce469a3ba5f9890908"><div class="ttname"><a href="button_8h.html#a82caed73e3dcecce469a3ba5f9890908">RenderToggleButton</a></div><div class="ttdeci">void RenderToggleButton(ToggleButton &amp;toggle_button)</div><div class="ttdef"><b>Определения</b> <a href="button_8cpp_source.html#l00108">button.cpp:108</a></div></div>
+<div class="ttc" id="abutton_8h_html_a8fe13d21334ce808fdf5450cace9a629"><div class="ttname"><a href="button_8h.html#a8fe13d21334ce808fdf5450cace9a629">SetToggleButtonText</a></div><div class="ttdeci">void SetToggleButtonText(ToggleButton &amp;toggle_button, const std::string text, const std::string &amp;fontFile, SDL_Color color, int fontSize)</div><div class="ttdef"><b>Определения</b> <a href="button_8cpp_source.html#l00100">button.cpp:100</a></div></div>
+<div class="ttc" id="abutton_8h_html_aa02858010549847e5f40bed0b7aa8bcb"><div class="ttname"><a href="button_8h.html#aa02858010549847e5f40bed0b7aa8bcb">ToggleButtonInput</a></div><div class="ttdeci">void ToggleButtonInput(ToggleButton &amp;toggle_button, SDL_Event &amp;e)</div><div class="ttdef"><b>Определения</b> <a href="button_8cpp_source.html#l00035">button.cpp:35</a></div></div>
+<div class="ttc" id="abutton_8h_html_ae271d5f10bebbb049e579a7f21b2e824"><div class="ttname"><a href="button_8h.html#ae271d5f10bebbb049e579a7f21b2e824">InitToggleButton</a></div><div class="ttdeci">void InitToggleButton(ToggleButton &amp;toggle_button, int x, int y, int w, int h, bool IsActive, SDL_Renderer *renderer)</div><div class="ttdef"><b>Определения</b> <a href="button_8cpp_source.html#l00004">button.cpp:4</a></div></div>
+<div class="ttc" id="abutton_8h_html_af240adf133032879058c1da5581078ea"><div class="ttname"><a href="button_8h.html#af240adf133032879058c1da5581078ea">SetToggleButtonTexture</a></div><div class="ttdeci">void SetToggleButtonTexture(ToggleButton &amp;toggle_button, const char *filename)</div><div class="ttdef"><b>Определения</b> <a href="button_8cpp_source.html#l00024">button.cpp:24</a></div></div>
+<div class="ttc" id="abutton_8h_html_afb2808ed98eb6542a559aa75d35efe0d"><div class="ttname"><a href="button_8h.html#afb2808ed98eb6542a559aa75d35efe0d">renderText</a></div><div class="ttdeci">SDL_Texture * renderText(const std::string &amp;message, const std::string &amp;fontFile, SDL_Color color, int fontSize, SDL_Renderer *renderer)</div><div class="ttdef"><b>Определения</b> <a href="button_8cpp_source.html#l00072">button.cpp:72</a></div></div>
+<div class="ttc" id="astruct_toggle_button_html"><div class="ttname"><a href="struct_toggle_button.html">ToggleButton</a></div><div class="ttdef"><b>Определения</b> <a href="#l00010">button.h:10</a></div></div>
+<div class="ttc" id="astruct_toggle_button_html_a0b266ebc454371cb3187996af8c275bd"><div class="ttname"><a href="struct_toggle_button.html#a0b266ebc454371cb3187996af8c275bd">ToggleButton::renderer</a></div><div class="ttdeci">SDL_Renderer * renderer</div><div class="ttdef"><b>Определения</b> <a href="#l00012">button.h:12</a></div></div>
+<div class="ttc" id="astruct_toggle_button_html_a0b567c45cabdc81162a8f462f41a2f45"><div class="ttname"><a href="struct_toggle_button.html#a0b567c45cabdc81162a8f462f41a2f45">ToggleButton::text</a></div><div class="ttdeci">std::string text</div><div class="ttdef"><b>Определения</b> <a href="#l00014">button.h:14</a></div></div>
+<div class="ttc" id="astruct_toggle_button_html_a1b0885b1e0b0a1d3395b794cc6d16749"><div class="ttname"><a href="struct_toggle_button.html#a1b0885b1e0b0a1d3395b794cc6d16749">ToggleButton::active</a></div><div class="ttdeci">bool active</div><div class="ttdef"><b>Определения</b> <a href="#l00016">button.h:16</a></div></div>
+<div class="ttc" id="astruct_toggle_button_html_a61c424a8908e71a60009455f44d3fd8a"><div class="ttname"><a href="struct_toggle_button.html#a61c424a8908e71a60009455f44d3fd8a">ToggleButton::rect</a></div><div class="ttdeci">SDL_Rect rect</div><div class="ttdef"><b>Определения</b> <a href="#l00013">button.h:13</a></div></div>
+<div class="ttc" id="astruct_toggle_button_html_a89c578ea40203dee07874c3e85a06f0a"><div class="ttname"><a href="struct_toggle_button.html#a89c578ea40203dee07874c3e85a06f0a">ToggleButton::image</a></div><div class="ttdeci">SDL_Texture * image</div><div class="ttdef"><b>Определения</b> <a href="#l00011">button.h:11</a></div></div>
+<div class="ttc" id="astruct_toggle_button_html_afa7234c6ff69faa485067961cf877ee6"><div class="ttname"><a href="struct_toggle_button.html#afa7234c6ff69faa485067961cf877ee6">ToggleButton::FD</a></div><div class="ttdeci">bool FD</div><div class="ttdef"><b>Определения</b> <a href="#l00015">button.h:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,1320 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a2bcc0e701927cb9d0361f2ead212545a"><param name="Name" value="a"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a2bcc0e701927cb9d0361f2ead212545a"><param name="Name" value="PRISM_Color"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a6aa4dc898fb37c18932c3c285038fe04"><param name="Name" value="a"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a6aa4dc898fb37c18932c3c285038fe04"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a277082bc4dff6ece29bee64f9b234826"><param name="Name" value="a_norlmal"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a41acfba5d32d33e317cc407c5cc88635"><param name="Name" value="AbstractCamera3D(float Near=0.1f, float Far=1000.0f, float Fov=90.0f, int displW=800, int displH=480)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a41acfba5d32d33e317cc407c5cc88635"><param name="Name" value="AbstractCamera3D(float Near=0.1f, float Far=1000.0f, float Fov=90.0f, int displW=800, int displH=480)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a918ef8aaa118844503df999ec5338eda"><param name="Name" value="ClearZ_Buffer(SDL_Renderer *renderer)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#ae109bef65bc789131cac05be9dd72d9a"><param name="Name" value="Coordinate"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a8d690019eba1168ac421fed819ded860"><param name="Name" value="FAspectRatio"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a4f27ed08e8a5d527d228fe2f2be03921"><param name="Name" value="FFar"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#adffb74be97c46f8621e024d327e1aa6b"><param name="Name" value="FFov"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a5488c3a1e1432941f47126cb5d08f7bf"><param name="Name" value="FFovRad"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a83eec5cecd0f3eaa5fe235afc549027f"><param name="Name" value="FNear"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a6519bb68517da1d74360b2a52288a7c7"><param name="Name" value="matrixView"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a7b5dde2b2d17be31f411328f817f87e6"><param name="Name" value="operator=(AbstractCamera3D camera)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a2fdd7209747c278ecbef122454fad349"><param name="Name" value="Rotation"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#af86b24a24ada32e41c0b6654b8e45b00"><param name="Name" value="ScreenH"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a5feca547ada074119a1f8e75c8a971bb"><param name="Name" value="ScreenW"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#ae78201de343d0dd663c29588ce9aa619"><param name="Name" value="SetPosition(struct PRISM_Vector3d Coord, struct PRISM_Vector3d Rot, struct PRISM_Vector3d viewDir_)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#ab0887c2e6b05af6040188a15223f6576"><param name="Name" value="SetView(struct PRISM_Vector3d viewDirVect, struct PRISM_Vector3d upDirVect)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a875113715d05b2c30fab1ed6c641fe5c"><param name="Name" value="viewDir"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a864779875a82f1d521758280af5b9e3a"><param name="Name" value="z_buffer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a831e9d47383b29640dd450b9f7b50557"><param name="Name" value="~AbstractCamera3D()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a79a1de5870dc76154dc4536460431303"><param name="Name" value="AbstractObject3D(struct PRISM_Vector3d Coord, struct PRISM_Vector3d Rot, struct PRISM_Vector3d Sc, AbstractCamera3D &amp;camera)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a79a1de5870dc76154dc4536460431303"><param name="Name" value="AbstractObject3D(struct PRISM_Vector3d Coord, struct PRISM_Vector3d Rot, struct PRISM_Vector3d Sc, AbstractCamera3D &amp;camera)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a5eda99e016319ff277325ba1c7391700"><param name="Name" value="CalculatePhongShadingColor(const PRISM_Vector3d &amp;normal, const PRISM_Vector3d &amp;viewDir, const PRISM_Light &amp;light, const PRISM_Vector3d &amp;fragPos)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#aa04e797230429e4db695e77adb873147"><param name="Name" value="Camera"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a21fa225d7e9c9f92a942257f07966ba6"><param name="Name" value="ComputeBarycentricCoords(float x, float y, const PRISM_Vector3d &amp;v0, const PRISM_Vector3d &amp;v1, const PRISM_Vector3d &amp;v2, float &amp;u, float &amp;v, float &amp;w)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a878510e286a77decb7bb9f82fe1b820c"><param name="Name" value="Coordinate"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ac9e137b574e6fadad8008725f3b264f6"><param name="Name" value="DrawMeshTriangles(SDL_Renderer *renderer, PRISM_RenderMode rm)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a1bb327fabd2f8af859158fcbc582e90a"><param name="Name" value="GetMesh()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ac0c7db31586699087e13936dcff05bf5"><param name="Name" value="InitProjection(AbstractCamera3D camera)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a9f3c7daf743ac24a94b1bbf4c3bcdbc8"><param name="Name" value="kSpecular"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a815f976f754632dccb53fe785a51f8e5"><param name="Name" value="materialAmbient"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a7e54cbd7c8a4c00385f4cf694b6d02df"><param name="Name" value="mesh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#adb99f761bfbef6e2afb04d22badb9fb3"><param name="Name" value="OldRasterisation(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a3c0a851b734c16dbf5a48c1d7e944acd"><param name="Name" value="OptimizedEdgeRasterization(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ac0e98ea988e83153287ae1469abc3170"><param name="Name" value="PrintInfo()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a29f5e1540bd4c494c4cd62f48a599437"><param name="Name" value="ProjectionMatrix"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#aef8c9a62d66a742b6ae47cde6ebd4dd4"><param name="Name" value="Rasterisation(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a177ac239d3e19ef1ac0c7ba36528002d"><param name="Name" value="RasterizeTile(int minX, int maxX, int minY, int maxY, const PRISM_Vector3d &amp;v0, const PRISM_Vector3d &amp;v1, const PRISM_Vector3d &amp;v2, SDL_Renderer *SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode, std::vector&lt; SDL_Surface * &gt; &amp;surfaces)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ac89d30c674388cff30e4709bdc95e294"><param name="Name" value="RotateTriangle(struct PRISM_Triangle Triangle_)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a6f61c122f10035fd20bd802c6141c164"><param name="Name" value="Rotation"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ab4252555119db0a3d5ced1e2afc0811b"><param name="Name" value="Scale"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a4a3d329334a2b9d418e45f9533fb33fa"><param name="Name" value="ScaleTriangle(struct PRISM_Triangle Triangle_)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a0f941e155d7fa253b9a2944735059062"><param name="Name" value="ScreenH"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ab4064eb036f54e3ac2c0628d00ee5c8b"><param name="Name" value="ScreenW"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#aea22ac8c43900580e8b8ffd35607d870"><param name="Name" value="SetMesh(struct PRISM_Mesh m)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a1ef857f5a43829d695b372f16c10b21c"><param name="Name" value="SetMoveXYZ(struct PRISM_Vector3d moveVect)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ab35a97b42aea7ba1f2e39c71144f8b76"><param name="Name" value="SetRotateXYZ(struct PRISM_Vector3d rotVect)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#afa89fd114cd5df811297a1740290e044"><param name="Name" value="SetScaleXYZ(struct PRISM_Vector3d scaleVect)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ad33da4091a2984a27e066d5f96320529"><param name="Name" value="TileRasterisation(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#acdd9fdf5d9e2c7910362e3f556db58d9"><param name="Name" value="TranslateTriangle(struct PRISM_Triangle Triangle_)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a85c2b9d0b75c0f4378a72b07f55d9824"><param name="Name" value="ViewTriangle(struct PRISM_Triangle Triangle_)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html"><param name="Name" value="AbstractObject3D"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a1117e1b3f39fcabb17ffb3afe24ff990"><param name="Name" value="~AbstractObject3D()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#aa78a0d7d4f721aab554d4dc8fba476e2"><param name="Name" value="active"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#aa78a0d7d4f721aab554d4dc8fba476e2"><param name="Name" value="Joystick"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a1b0885b1e0b0a1d3395b794cc6d16749"><param name="Name" value="active"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a1b0885b1e0b0a1d3395b794cc6d16749"><param name="Name" value="ToggleButton"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#a7f74ff40411bdcf075fc19a12476109e"><param name="Name" value="AddObject(AbstractCamera3D *obj)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#afe087b088e1cf2e51612dcd901ecfa18"><param name="Name" value="AddObject(AbstractObject3D *obj)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a5782223d711fad27c2ad0d60a2b3ecb9"><param name="Name" value="b"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a5782223d711fad27c2ad0d60a2b3ecb9"><param name="Name" value="PRISM_Color"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html#a54a80e0423ee957ad939497606913eb1"><param name="Name" value="b"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html#a54a80e0423ee957ad939497606913eb1"><param name="Name" value="PRISM_GL_fColor"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a499e0a6d9a2b9dbee2ea9941c55894f9"><param name="Name" value="b"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a499e0a6d9a2b9dbee2ea9941c55894f9"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#af0d0bc51194731a931f1b3690dc2b63c"><param name="Name" value="b_norlmal"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#af266144b3a0451048cb0718eaf1c6936"><param name="Name" value="background"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#a38f3edcfc5a0c3a8e7eeeceb18678f17"><param name="Name" value="base_rect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html"><param name="Name" value="button.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#ae271d5f10bebbb049e579a7f21b2e824"><param name="Name" value="InitToggleButton(ToggleButton &amp;toggle_button, int x, int y, int w, int h, bool IsActive, SDL_Renderer *renderer)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html"><param name="Name" value="button.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#afb2808ed98eb6542a559aa75d35efe0d"><param name="Name" value="renderText(const std::string &amp;message, const std::string &amp;fontFile, SDL_Color color, int fontSize, SDL_Renderer *renderer)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html"><param name="Name" value="button.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#a82caed73e3dcecce469a3ba5f9890908"><param name="Name" value="RenderToggleButton(ToggleButton &amp;toggle_button)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html"><param name="Name" value="button.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#a8fe13d21334ce808fdf5450cace9a629"><param name="Name" value="SetToggleButtonText(ToggleButton &amp;toggle_button, const std::string text, const std::string &amp;fontFile, SDL_Color color, int fontSize)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html"><param name="Name" value="button.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#af240adf133032879058c1da5581078ea"><param name="Name" value="SetToggleButtonTexture(ToggleButton &amp;toggle_button, const char *filename)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html"><param name="Name" value="button.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#aa02858010549847e5f40bed0b7aa8bcb"><param name="Name" value="ToggleButtonInput(ToggleButton &amp;toggle_button, SDL_Event &amp;e)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html"><param name="Name" value="button.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#ae271d5f10bebbb049e579a7f21b2e824"><param name="Name" value="InitToggleButton(ToggleButton &amp;toggle_button, int x, int y, int w, int h, bool IsActive, SDL_Renderer *renderer)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html"><param name="Name" value="button.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#afb2808ed98eb6542a559aa75d35efe0d"><param name="Name" value="renderText(const std::string &amp;message, const std::string &amp;fontFile, SDL_Color color, int fontSize, SDL_Renderer *renderer)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html"><param name="Name" value="button.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#a1ab311ff9dab6e1ac74f7fde026bf427"><param name="Name" value="renderTexture(SDL_Texture *tex, SDL_Renderer *ren, int x, int y, int w, int h)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html"><param name="Name" value="button.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#a82caed73e3dcecce469a3ba5f9890908"><param name="Name" value="RenderToggleButton(ToggleButton &amp;toggle_button)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html"><param name="Name" value="button.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#a8fe13d21334ce808fdf5450cace9a629"><param name="Name" value="SetToggleButtonText(ToggleButton &amp;toggle_button, const std::string text, const std::string &amp;fontFile, SDL_Color color, int fontSize)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html"><param name="Name" value="button.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#af240adf133032879058c1da5581078ea"><param name="Name" value="SetToggleButtonTexture(ToggleButton &amp;toggle_button, const char *filename)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html"><param name="Name" value="button.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#aa02858010549847e5f40bed0b7aa8bcb"><param name="Name" value="ToggleButtonInput(ToggleButton &amp;toggle_button, SDL_Event &amp;e)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#ae1a599e0152e0463ba218500cd5684a8"><param name="Name" value="c"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a54b84d4c24595627a0cb659ec954c4d6"><param name="Name" value="c_norlmal"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aa0f7e7411e0d91ecc6ec8a5c89842db7"><param name="Name" value="CalculateNormals(struct PRISM_Triangle triang)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a5eda99e016319ff277325ba1c7391700"><param name="Name" value="CalculatePhongShadingColor(const PRISM_Vector3d &amp;normal, const PRISM_Vector3d &amp;viewDir, const PRISM_Light &amp;light, const PRISM_Vector3d &amp;fragPos)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#aa80544cdf54b7345d6ed5ec78a37e534"><param name="Name" value="CalculatePixelAmbient(PRISM_Color originalСolor, AbstractObject3D obj) const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#a1234552a7c78a632e944a73a5c7919d0"><param name="Name" value="CalculatePixelDiffuse(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#a4757d3d9f109f7c4f8426eabaed04b2e"><param name="Name" value="CalculatePixelSpecular(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle, PRISM_Vector3d cameraCoordinate)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#aa04e797230429e4db695e77adb873147"><param name="Name" value="Camera"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#a02b21d4b84ea87d6422653a48f225384"><param name="Name" value="cameraCoordinate"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#abe04fa86d3a94f546e53ed9934ae150a"><param name="Name" value="center"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a86c2b01d4de98415057642e6afaa079e"><param name="Name" value="cleanUp()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#ae87126811e3a83596cba115b41473868"><param name="Name" value="clear()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html#a62121a0d7856576e8cd592e9d7de51e9"><param name="Name" value="clear(SDL_Renderer *renderer)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a918ef8aaa118844503df999ec5338eda"><param name="Name" value="ClearZ_Buffer(SDL_Renderer *renderer)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html#a54f71f7376aca2e91eb886731cf01ef1"><param name="Name" value="color"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classshader_manager.html#a0d30f79a17e6f053d9d797b83d6c34e4"><param name="Name" value="compileShader(GLenum type, const char *source)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a21fa225d7e9c9f92a942257f07966ba6"><param name="Name" value="ComputeBarycentricCoords(float x, float y, const PRISM_Vector3d &amp;v0, const PRISM_Vector3d &amp;v1, const PRISM_Vector3d &amp;v2, float &amp;u, float &amp;v, float &amp;w)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#aa1fcd4d31c6dce0287a46f530666056b"><param name="Name" value="ContourWidth"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a9ecca2aa31ba62cb9715678cba96d4c6"><param name="Name" value="convertToGlColor(const PRISM_Color &amp;color)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#ae109bef65bc789131cac05be9dd72d9a"><param name="Name" value="Coordinate"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#ae109bef65bc789131cac05be9dd72d9a"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a878510e286a77decb7bb9f82fe1b820c"><param name="Name" value="Coordinate"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a878510e286a77decb7bb9f82fe1b820c"><param name="Name" value="AbstractObject3D"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#ad9716ab7cdb9c4ced72a021df5645bfd"><param name="Name" value="degToRad(float degrees)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#a38c559e65393d483023aaa542585fa25"><param name="Name" value="DelObject(AbstractCamera3D *obj)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#abbbe43f76945e70f59c871ec05b02437"><param name="Name" value="DelObject(AbstractObject3D *obj)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#ac891825930e1ac206ddaca9d47271dae"><param name="Name" value="DisplayDimming1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a9e099a5e43e905cd280f890d2f8b8aa1"><param name="Name" value="DisplayDimming2"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#aed719caff970ac14f679303fcb1c965e"><param name="Name" value="DisplayTriangleContours"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ac9e137b574e6fadad8008725f3b264f6"><param name="Name" value="DrawMeshTriangles(SDL_Renderer *renderer, PRISM_RenderMode rm)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a1a9ab5f10f1ed46821be9fad0cc72304"><param name="Name" value="DrawPoint(PRISM_Window *window, int x, int y)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a9a0c7ceaa268997a67b8507b32c8ec1f"><param name="Name" value="DrawPoint(PRISM_Window *window, int x, int y, int r, int g, int b)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a9024e97d8440917d0e8dc489440eb9d5"><param name="Name" value="DrawRectangle(PRISM_Window *window, int x1, int y1, int x2, int y2)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a78251e36d48eb3859b799cdc49748fbb"><param name="Name" value="DrawRectangle(PRISM_Window *window, int x1, int y1, int x2, int y2, int r, int g, int b)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a1a9b908def1f13bc4da7d9b3033f0f21"><param name="Name" value="DrawThickLine(PRISM_Window *window, int x1, int y1, int x2, int y2, int thickness)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a2254c6774f17cd6c4a598846200ba179"><param name="Name" value="DrawThickLine(PRISM_Window *window, int x1, int y1, int x2, int y2, int thickness, int r, int g, int b)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a2b46e88e894a40e96cc6d7c4ef27200d"><param name="Name" value="DrawThickLine(SDL_Renderer *renderer, int x1, int y1, int x2, int y2, int thickness)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#af239c4f1165c26db5ce9e36b04254805"><param name="Name" value="DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3, SDL_Renderer *SDL_renderer, short rgba[4], int thickness)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a36f42851f1789297de93bb913d799850"><param name="Name" value="DrawTriangle(PRISM_Window *window, int x1, int y1, int x2, int y2, int x3, int y3)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a2f46e4411d42eeac69fe0a99726ce4f4"><param name="Name" value="DrawTriangle(PRISM_Window *window, int x1, int y1, int x2, int y2, int x3, int y3, int r, int g, int b)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#aa71d50c522998c6f10e5cf5b6a40596d"><param name="Name" value="DrawTriangle3D(PRISM_Window *window, float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, float r, float g, float b)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#ac934f365cd85870c682a8cb2d37b7235"><param name="Name" value="DrawTriangle3D(PRISM_Window *window, PRISM_Triangle triangle, float r, float g, float b)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a824c3f24f8a22b1b4f2d734ad6dcbf7f"><param name="Name" value="DrawTriangle3D(PRISM_Window *window, PRISM_Triangle triangle, PRISM_Color color)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8cpp.html#ae7dab1843865a8aee7e85bc972d68b9f"><param name="Name" value="drawTriangleWithOpenGL(Vector3d v1, Vector3d v2, Vector3d v3, GLuint shaderProgram, GLuint vbo)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8cpp.html#ae7dab1843865a8aee7e85bc972d68b9f"><param name="Name" value="SDL_GLRenderer.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8h.html#ae7dab1843865a8aee7e85bc972d68b9f"><param name="Name" value="drawTriangleWithOpenGL(Vector3d v1, Vector3d v2, Vector3d v3, GLuint shaderProgram, GLuint vbo)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8h.html#ae7dab1843865a8aee7e85bc972d68b9f"><param name="Name" value="SDL_GLRenderer.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a8d690019eba1168ac421fed819ded860"><param name="Name" value="FAspectRatio"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#afa7234c6ff69faa485067961cf877ee6"><param name="Name" value="FD"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a4f27ed08e8a5d527d228fe2f2be03921"><param name="Name" value="FFar"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#adffb74be97c46f8621e024d327e1aa6b"><param name="Name" value="FFov"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a5488c3a1e1432941f47126cb5d08f7bf"><param name="Name" value="FFovRad"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a6c3fb3675cefdc39aebb339a4b0eebfb"><param name="Name" value="FillMesh"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#aff6445748a07c1133d3fca2196a78a2a"><param name="Name" value="fingerId"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a83eec5cecd0f3eaa5fe235afc549027f"><param name="Name" value="FNear"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#adb7f506541b5cdb0eb859b3373b927c6"><param name="Name" value="g"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#adb7f506541b5cdb0eb859b3373b927c6"><param name="Name" value="PRISM_Color"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html#a685af9063f084cf7a150b8e54e1a28c7"><param name="Name" value="g"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html#a685af9063f084cf7a150b8e54e1a28c7"><param name="Name" value="PRISM_GL_fColor"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html#ab8eda1f41c53368d007228932ba8485d"><param name="Name" value="get(int x, int y) const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#abf4b2e2d815ba1cb8eea7c59088df476"><param name="Name" value="GetGLContext() const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a1a642d7c06913245317a48db430b074b"><param name="Name" value="GetH() const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a7534f3c6e672027f7dd62624e1859cfd"><param name="Name" value="GetJoystickPosition(Joystick &amp;joystick, float &amp;norm_x, float &amp;norm_y)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a7534f3c6e672027f7dd62624e1859cfd"><param name="Name" value="joystick.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a7534f3c6e672027f7dd62624e1859cfd"><param name="Name" value="GetJoystickPosition(Joystick &amp;joystick, float &amp;norm_x, float &amp;norm_y)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a7534f3c6e672027f7dd62624e1859cfd"><param name="Name" value="joystick.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#aa8f334f0b651eb6587d08e2996253ccf"><param name="Name" value="GetLightAmbient() const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a1bb327fabd2f8af859158fcbc582e90a"><param name="Name" value="GetMesh()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#ad68fda71898fcd04eef99d5751273f9a"><param name="Name" value="GetSDLWindow() const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a0bf2d6387875a9fd97d55afec43ee10b"><param name="Name" value="GetTitle()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#aa48098bef73a029b87021a74b564c459"><param name="Name" value="GetW() const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a3eab23dad1226970fe93da5775b05d32"><param name="Name" value="GetX() const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a7be051ce1e24a9f49f6e83170c37b707"><param name="Name" value="GetY() const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_p_r_i_s_m___window_8h.html#aa2b6486ff7ecee8bf04e3371f197527a"><param name="Name" value="GL_MULTISAMPLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a7a0ec756f1b8273491aca92c3b776993"><param name="Name" value="handleEvents()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a9109c20080d8804029bd7b78607e5684"><param name="Name" value="HandleInput(SDL_Event &amp;e, std::vector&lt; Joystick &gt; &amp;joysticks, int window_width, int window_height)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a9109c20080d8804029bd7b78607e5684"><param name="Name" value="joystick.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a9109c20080d8804029bd7b78607e5684"><param name="Name" value="HandleInput(SDL_Event &amp;e, std::vector&lt; Joystick &gt; &amp;joysticks, int window_width, int window_height)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a9109c20080d8804029bd7b78607e5684"><param name="Name" value="joystick.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#a92a1e15872f6938f02904a3359a52e18"><param name="Name" value="image"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#a92a1e15872f6938f02904a3359a52e18"><param name="Name" value="Joystick"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a89c578ea40203dee07874c3e85a06f0a"><param name="Name" value="image"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a89c578ea40203dee07874c3e85a06f0a"><param name="Name" value="ToggleButton"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a4b2d658e2a5f833b21572512b008c5d1"><param name="Name" value="InitJoystick(Joystick &amp;joystick, int x, int y, int base_size, int stick_size, SDL_Renderer *renderer)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a4b2d658e2a5f833b21572512b008c5d1"><param name="Name" value="joystick.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a4b2d658e2a5f833b21572512b008c5d1"><param name="Name" value="InitJoystick(Joystick &amp;joystick, int x, int y, int base_size, int stick_size, SDL_Renderer *renderer)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a4b2d658e2a5f833b21572512b008c5d1"><param name="Name" value="joystick.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8cpp.html#abe3051b82756a48b48a38a1ff2e8789d"><param name="Name" value="initOpenGL(GLuint shaderProgram, GLuint vbo)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8cpp.html#abe3051b82756a48b48a38a1ff2e8789d"><param name="Name" value="SDL_GLRenderer.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8h.html#abe3051b82756a48b48a38a1ff2e8789d"><param name="Name" value="initOpenGL(GLuint shaderProgram, GLuint vbo)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8h.html#abe3051b82756a48b48a38a1ff2e8789d"><param name="Name" value="SDL_GLRenderer.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ac0c7db31586699087e13936dcff05bf5"><param name="Name" value="InitProjection(AbstractCamera3D camera)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#ae271d5f10bebbb049e579a7f21b2e824"><param name="Name" value="InitToggleButton(ToggleButton &amp;toggle_button, int x, int y, int w, int h, bool IsActive, SDL_Renderer *renderer)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#ae271d5f10bebbb049e579a7f21b2e824"><param name="Name" value="button.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#ae271d5f10bebbb049e579a7f21b2e824"><param name="Name" value="InitToggleButton(ToggleButton &amp;toggle_button, int x, int y, int w, int h, bool IsActive, SDL_Renderer *renderer)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#ae271d5f10bebbb049e579a7f21b2e824"><param name="Name" value="button.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a9e0c9e116388eff77df60e546a3424ea"><param name="Name" value="isRunning() const"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html"><param name="Name" value="Joystick"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html"><param name="Name" value="joystick.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a7534f3c6e672027f7dd62624e1859cfd"><param name="Name" value="GetJoystickPosition(Joystick &amp;joystick, float &amp;norm_x, float &amp;norm_y)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html"><param name="Name" value="joystick.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a9109c20080d8804029bd7b78607e5684"><param name="Name" value="HandleInput(SDL_Event &amp;e, std::vector&lt; Joystick &gt; &amp;joysticks, int window_width, int window_height)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html"><param name="Name" value="joystick.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a4b2d658e2a5f833b21572512b008c5d1"><param name="Name" value="InitJoystick(Joystick &amp;joystick, int x, int y, int base_size, int stick_size, SDL_Renderer *renderer)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html"><param name="Name" value="joystick.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#acf5539d8288ea0a8cefe87981aa31b43"><param name="Name" value="loadTexture(const char *file, SDL_Renderer *renderer)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html"><param name="Name" value="joystick.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a6ac973c9890e1d44508a8c00a582cd01"><param name="Name" value="RenderJoystick(SDL_Renderer *renderer, Joystick &amp;joystick)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html"><param name="Name" value="joystick.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a1ab311ff9dab6e1ac74f7fde026bf427"><param name="Name" value="renderTexture(SDL_Texture *tex, SDL_Renderer *ren, int x, int y, int w, int h)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html"><param name="Name" value="joystick.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a0e0547a969ffec6e4bf52581a1083df7"><param name="Name" value="UpdateJoystick(Joystick &amp;joystick, int x, int y)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html"><param name="Name" value="joystick.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a7534f3c6e672027f7dd62624e1859cfd"><param name="Name" value="GetJoystickPosition(Joystick &amp;joystick, float &amp;norm_x, float &amp;norm_y)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html"><param name="Name" value="joystick.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a9109c20080d8804029bd7b78607e5684"><param name="Name" value="HandleInput(SDL_Event &amp;e, std::vector&lt; Joystick &gt; &amp;joysticks, int window_width, int window_height)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html"><param name="Name" value="joystick.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a4b2d658e2a5f833b21572512b008c5d1"><param name="Name" value="InitJoystick(Joystick &amp;joystick, int x, int y, int base_size, int stick_size, SDL_Renderer *renderer)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html"><param name="Name" value="joystick.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a6ac973c9890e1d44508a8c00a582cd01"><param name="Name" value="RenderJoystick(SDL_Renderer *renderer, Joystick &amp;joystick)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html"><param name="Name" value="joystick.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a0e0547a969ffec6e4bf52581a1083df7"><param name="Name" value="UpdateJoystick(Joystick &amp;joystick, int x, int y)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html"><param name="Name" value="Joystick"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#aa78a0d7d4f721aab554d4dc8fba476e2"><param name="Name" value="active"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html"><param name="Name" value="Joystick"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#af266144b3a0451048cb0718eaf1c6936"><param name="Name" value="background"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html"><param name="Name" value="Joystick"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#a38f3edcfc5a0c3a8e7eeeceb18678f17"><param name="Name" value="base_rect"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html"><param name="Name" value="Joystick"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#abe04fa86d3a94f546e53ed9934ae150a"><param name="Name" value="center"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html"><param name="Name" value="Joystick"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#aff6445748a07c1133d3fca2196a78a2a"><param name="Name" value="fingerId"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html"><param name="Name" value="Joystick"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#a92a1e15872f6938f02904a3359a52e18"><param name="Name" value="image"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html"><param name="Name" value="Joystick"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#a5efdaf552d0cfb883131dbfb9d984611"><param name="Name" value="max_distance"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html"><param name="Name" value="Joystick"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#ad4262d6e7663a1d8674b6ce001eefdd6"><param name="Name" value="stick_rect"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a9f3c7daf743ac24a94b1bbf4c3bcdbc8"><param name="Name" value="kSpecular"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#af2057e7c050689a7c6d03cb1bf5044bd"><param name="Name" value="lightAmbient"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html#aa1590fd9fc495c82e921e557c046ab71"><param name="Name" value="lightIntensity"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_mesh_loader.html#ab83749742a8608607c59bd2198fb8a69"><param name="Name" value="LoadOBJ(const char *filename, AbstractCamera3D camera)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#acf5539d8288ea0a8cefe87981aa31b43"><param name="Name" value="loadTexture(const char *file, SDL_Renderer *renderer)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html#a66fc20be76b77d56f5c67a5f2e894b15"><param name="Name" value="m[4][4]"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a815f976f754632dccb53fe785a51f8e5"><param name="Name" value="materialAmbient"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="math_8cpp.html#a5a5d3f389b27f06573665824891be241"><param name="Name" value="math.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="math_8h.html#aee5d1992c3f64b469e4b66a88074db3a"><param name="Name" value="math.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aa0f7e7411e0d91ecc6ec8a5c89842db7"><param name="Name" value="CalculateNormals(struct PRISM_Triangle triang)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a9ecca2aa31ba62cb9715678cba96d4c6"><param name="Name" value="convertToGlColor(const PRISM_Color &amp;color)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#ad9716ab7cdb9c4ced72a021df5645bfd"><param name="Name" value="degToRad(float degrees)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a4a21a3dae7b254dcf4a51c47aefcff83"><param name="Name" value="Matrix_MakeIdentity()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a52baee56d13c919797de7e32504e3e9d"><param name="Name" value="Matrix_MakeProjection(float fFovDegrees, float fAspectRatio, float fNear, float fFar)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aad4d1850fbc260d0fa8ab0029d6b3bf2"><param name="Name" value="Matrix_MakeRotationX(float fAngleRad)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a2a76f38cf5a3bae28e1fc2f9ba675de2"><param name="Name" value="Matrix_MakeRotationY(float fAngleRad)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aa2df8e52bbecd8a4e15d02d504dd64a0"><param name="Name" value="Matrix_MakeRotationZ(float fAngleRad)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aec9539c841fca4c4d2da952f87d38c26"><param name="Name" value="Matrix_MakeScale(float x, float y, float z)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#ac109ed68a46fc0877fdb3a8726f44c1a"><param name="Name" value="Matrix_MakeTranslation(float x, float y, float z)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a9db82f237b36f800fbbb28bd6d723677"><param name="Name" value="Matrix_MultiplyMatrix(PRISM_Matrix_4X4 &amp;m1, PRISM_Matrix_4X4 &amp;m2)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aacc271aae468f5ef62bc4590c3b2dc7b"><param name="Name" value="Matrix_PointAt(PRISM_Vector3d &amp;pos, PRISM_Vector3d &amp;target, PRISM_Vector3d &amp;up)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a326822cb33523892718592b494d2049f"><param name="Name" value="Matrix_QuickInverse(PRISM_Matrix_4X4 &amp;m)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aeecaea1fcb356204adc78b192b17e09d"><param name="Name" value="MultiplyMatrixVector(PRISM_Vector3d &amp;i, PRISM_Vector3d &amp;o, PRISM_Matrix_4X4 &amp;m)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a57ef9185de06f08882da599bd19f6cc2"><param name="Name" value="Vector_CrossProduct(PRISM_Vector3d &amp;v1, PRISM_Vector3d &amp;v2)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a80b6fba2680d8db9e77e7534ebbc9958"><param name="Name" value="Vector_DotProduct(PRISM_Vector3d &amp;v1, PRISM_Vector3d &amp;v2)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#adc164fdf73b2388b2f44c93f3dc868d9"><param name="Name" value="Vector_IntersectPlane(PRISM_Vector3d &amp;plane_p, PRISM_Vector3d &amp;plane_n, PRISM_Vector3d &amp;lineStart, PRISM_Vector3d &amp;lineEnd)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a1759214289708ed4467dda1245b0473b"><param name="Name" value="Vector_Length(PRISM_Vector3d &amp;v)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html"><param name="Name" value="Math"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a5662ea8914da90736571b3886fc25d0f"><param name="Name" value="Vector_Normalise(PRISM_Vector3d &amp;v)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a4a21a3dae7b254dcf4a51c47aefcff83"><param name="Name" value="Matrix_MakeIdentity()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a52baee56d13c919797de7e32504e3e9d"><param name="Name" value="Matrix_MakeProjection(float fFovDegrees, float fAspectRatio, float fNear, float fFar)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aad4d1850fbc260d0fa8ab0029d6b3bf2"><param name="Name" value="Matrix_MakeRotationX(float fAngleRad)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a2a76f38cf5a3bae28e1fc2f9ba675de2"><param name="Name" value="Matrix_MakeRotationY(float fAngleRad)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aa2df8e52bbecd8a4e15d02d504dd64a0"><param name="Name" value="Matrix_MakeRotationZ(float fAngleRad)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aec9539c841fca4c4d2da952f87d38c26"><param name="Name" value="Matrix_MakeScale(float x, float y, float z)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#ac109ed68a46fc0877fdb3a8726f44c1a"><param name="Name" value="Matrix_MakeTranslation(float x, float y, float z)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a9db82f237b36f800fbbb28bd6d723677"><param name="Name" value="Matrix_MultiplyMatrix(PRISM_Matrix_4X4 &amp;m1, PRISM_Matrix_4X4 &amp;m2)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aacc271aae468f5ef62bc4590c3b2dc7b"><param name="Name" value="Matrix_PointAt(PRISM_Vector3d &amp;pos, PRISM_Vector3d &amp;target, PRISM_Vector3d &amp;up)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a326822cb33523892718592b494d2049f"><param name="Name" value="Matrix_QuickInverse(PRISM_Matrix_4X4 &amp;m)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a6519bb68517da1d74360b2a52288a7c7"><param name="Name" value="matrixView"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#a5efdaf552d0cfb883131dbfb9d984611"><param name="Name" value="max_distance"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a7e54cbd7c8a4c00385f4cf694b6d02df"><param name="Name" value="mesh"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_mesh_loader.html"><param name="Name" value="MeshLoader"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_mesh_loader.html"><param name="Name" value="MeshLoader"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_mesh_loader.html#ab83749742a8608607c59bd2198fb8a69"><param name="Name" value="LoadOBJ(const char *filename, AbstractCamera3D camera)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#aeecaea1fcb356204adc78b192b17e09d"><param name="Name" value="MultiplyMatrixVector(PRISM_Vector3d &amp;i, PRISM_Vector3d &amp;o, PRISM_Matrix_4X4 &amp;m)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#adb99f761bfbef6e2afb04d22badb9fb3"><param name="Name" value="OldRasterisation(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a8f7523f00fd2771d218864ef64423fcd"><param name="Name" value="operator*(float k)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a9a024602f2f7c652d5db5f6b1ceb36aa"><param name="Name" value="operator+(PRISM_Vector3d &amp;other)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#ab2e26555e6f1344e40d4332c74997872"><param name="Name" value="operator-(PRISM_Vector3d &amp;other)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a0ca1144513d2930b92345269688ce142"><param name="Name" value="operator/(float k)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a7b5dde2b2d17be31f411328f817f87e6"><param name="Name" value="operator=(AbstractCamera3D camera)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html#ad68409940fc2557c41322f6c59036bb4"><param name="Name" value="operator==(PRISM_Matrix_4X4 &amp;other)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a8a2e8fcd2b80dffca29c483448605c0b"><param name="Name" value="operator==(PRISM_Vector3d &amp;other)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html#aacce19ddb6f7cd9a133a46218d6680ff"><param name="Name" value="operator[](int index)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html#aacce19ddb6f7cd9a133a46218d6680ff"><param name="Name" value="PRISM_Matrix_4X4"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a72c3e1e2b953c29ead62323f8400a588"><param name="Name" value="operator[](int index)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a72c3e1e2b953c29ead62323f8400a588"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a3c0a851b734c16dbf5a48c1d7e944acd"><param name="Name" value="OptimizedEdgeRasterization(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="other_8h.html#a16b52b40e9adac02dd34f3898a293b4d"><param name="Name" value="other.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html#a9cd48db2729a1a3676583beb5fbaf583"><param name="Name" value="position"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a5ae825f7c0bc159009b10b58dfbafb5f"><param name="Name" value="print()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a5ae825f7c0bc159009b10b58dfbafb5f"><param name="Name" value="PRISM_Color"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html#a1d07077d7491bd1d1f1014e8e851d14c"><param name="Name" value="print()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html#a1d07077d7491bd1d1f1014e8e851d14c"><param name="Name" value="PRISM_Light"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html#ad9e3ff4fffba32705c081a660ce5d6c5"><param name="Name" value="print()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html#ad9e3ff4fffba32705c081a660ce5d6c5"><param name="Name" value="PRISM_Matrix_4X4"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___mesh.html#a74a643c5e166b73723a2fc3ab4eebbb9"><param name="Name" value="print()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___mesh.html#a74a643c5e166b73723a2fc3ab4eebbb9"><param name="Name" value="PRISM_Mesh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a4d2edcbf4652c7f015c64b7017d6764f"><param name="Name" value="print()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a4d2edcbf4652c7f015c64b7017d6764f"><param name="Name" value="PRISM_RenderMode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a6dac4f75ea85b23047877f631dd066d2"><param name="Name" value="print()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a6dac4f75ea85b23047877f631dd066d2"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a34b332a433d816d032e181990343a60e"><param name="Name" value="print()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a34b332a433d816d032e181990343a60e"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ac0e98ea988e83153287ae1469abc3170"><param name="Name" value="PrintInfo()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ac0e98ea988e83153287ae1469abc3170"><param name="Name" value="AbstractObject3D"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#aa204ec1e3c8920474aabfa94b8d36b3b"><param name="Name" value="PrintInfo()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#aa204ec1e3c8920474aabfa94b8d36b3b"><param name="Name" value="Scene"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a619fcc9e49a151efefec166b3639688d"><param name="Name" value="PRISM_Color()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a94270adfdb58837e78ba903696a960b3"><param name="Name" value="PRISM_Color(float r, float g, float b)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a4a6ecf348e59b292a6bc27bda7e97cd8"><param name="Name" value="PRISM_Color(float r, float g, float b, float a)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a90cca6dc464024650942d1d09084f18a"><param name="Name" value="PRISM_Color(int r, int g, int b)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a774471727269b02d71b1789d128c0937"><param name="Name" value="PRISM_Color(int r, int g, int b, int a)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#aab45345b145a9f42f86cedc0d26c1ee8"><param name="Name" value="PRISM_Color(unsigned char r, unsigned char g, unsigned char b)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a22e3e620f30bec9013018004f726469f"><param name="Name" value="PRISM_Color(unsigned char r, unsigned char g, unsigned char b, unsigned char a)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a2bcc0e701927cb9d0361f2ead212545a"><param name="Name" value="a"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a5782223d711fad27c2ad0d60a2b3ecb9"><param name="Name" value="b"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#adb7f506541b5cdb0eb859b3373b927c6"><param name="Name" value="g"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a5ae825f7c0bc159009b10b58dfbafb5f"><param name="Name" value="print()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a619fcc9e49a151efefec166b3639688d"><param name="Name" value="PRISM_Color()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a94270adfdb58837e78ba903696a960b3"><param name="Name" value="PRISM_Color(float r, float g, float b)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a4a6ecf348e59b292a6bc27bda7e97cd8"><param name="Name" value="PRISM_Color(float r, float g, float b, float a)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a90cca6dc464024650942d1d09084f18a"><param name="Name" value="PRISM_Color(int r, int g, int b)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a774471727269b02d71b1789d128c0937"><param name="Name" value="PRISM_Color(int r, int g, int b, int a)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#aab45345b145a9f42f86cedc0d26c1ee8"><param name="Name" value="PRISM_Color(unsigned char r, unsigned char g, unsigned char b)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a22e3e620f30bec9013018004f726469f"><param name="Name" value="PRISM_Color(unsigned char r, unsigned char g, unsigned char b, unsigned char a)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html"><param name="Name" value="PRISM_Color"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a678d977a735f983625d2ce2f858c7912"><param name="Name" value="r"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html"><param name="Name" value="PRISM_GL_fColor"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html"><param name="Name" value="PRISM_GL_fColor"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html#a54a80e0423ee957ad939497606913eb1"><param name="Name" value="b"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html"><param name="Name" value="PRISM_GL_fColor"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html#a685af9063f084cf7a150b8e54e1a28c7"><param name="Name" value="g"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html"><param name="Name" value="PRISM_GL_fColor"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html#a99e2f66b663dc3cab2e01e8a503927e0"><param name="Name" value="r"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html"><param name="Name" value="PRISM_Light"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html"><param name="Name" value="PRISM_Light"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html#a54f71f7376aca2e91eb886731cf01ef1"><param name="Name" value="color"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html"><param name="Name" value="PRISM_Light"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html#aa1590fd9fc495c82e921e557c046ab71"><param name="Name" value="lightIntensity"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html"><param name="Name" value="PRISM_Light"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html#a9cd48db2729a1a3676583beb5fbaf583"><param name="Name" value="position"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html"><param name="Name" value="PRISM_Light"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___light.html#a1d07077d7491bd1d1f1014e8e851d14c"><param name="Name" value="print()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="math_8h.html#aee5d1992c3f64b469e4b66a88074db3a"><param name="Name" value="PRISM_MATH_H"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html"><param name="Name" value="PRISM_Matrix_4X4"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html"><param name="Name" value="PRISM_Matrix_4X4"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html#a66fc20be76b77d56f5c67a5f2e894b15"><param name="Name" value="m[4][4]"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html"><param name="Name" value="PRISM_Matrix_4X4"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html#ad68409940fc2557c41322f6c59036bb4"><param name="Name" value="operator==(PRISM_Matrix_4X4 &amp;other)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html"><param name="Name" value="PRISM_Matrix_4X4"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html#aacce19ddb6f7cd9a133a46218d6680ff"><param name="Name" value="operator[](int index)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html"><param name="Name" value="PRISM_Matrix_4X4"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___matrix__4_x4.html#ad9e3ff4fffba32705c081a660ce5d6c5"><param name="Name" value="print()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___mesh.html"><param name="Name" value="PRISM_Mesh"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___mesh.html"><param name="Name" value="PRISM_Mesh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___mesh.html#a74a643c5e166b73723a2fc3ab4eebbb9"><param name="Name" value="print()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___mesh.html"><param name="Name" value="PRISM_Mesh"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___mesh.html#a9e4484402c1a601a29f4442b4c49704f"><param name="Name" value="tris"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a1a9ab5f10f1ed46821be9fad0cc72304"><param name="Name" value="DrawPoint(PRISM_Window *window, int x, int y)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a9a0c7ceaa268997a67b8507b32c8ec1f"><param name="Name" value="DrawPoint(PRISM_Window *window, int x, int y, int r, int g, int b)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a9024e97d8440917d0e8dc489440eb9d5"><param name="Name" value="DrawRectangle(PRISM_Window *window, int x1, int y1, int x2, int y2)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a78251e36d48eb3859b799cdc49748fbb"><param name="Name" value="DrawRectangle(PRISM_Window *window, int x1, int y1, int x2, int y2, int r, int g, int b)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a1a9b908def1f13bc4da7d9b3033f0f21"><param name="Name" value="DrawThickLine(PRISM_Window *window, int x1, int y1, int x2, int y2, int thickness)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a2254c6774f17cd6c4a598846200ba179"><param name="Name" value="DrawThickLine(PRISM_Window *window, int x1, int y1, int x2, int y2, int thickness, int r, int g, int b)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a2b46e88e894a40e96cc6d7c4ef27200d"><param name="Name" value="DrawThickLine(SDL_Renderer *renderer, int x1, int y1, int x2, int y2, int thickness)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#af239c4f1165c26db5ce9e36b04254805"><param name="Name" value="DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3, SDL_Renderer *SDL_renderer, short rgba[4], int thickness)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a36f42851f1789297de93bb913d799850"><param name="Name" value="DrawTriangle(PRISM_Window *window, int x1, int y1, int x2, int y2, int x3, int y3)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a2f46e4411d42eeac69fe0a99726ce4f4"><param name="Name" value="DrawTriangle(PRISM_Window *window, int x1, int y1, int x2, int y2, int x3, int y3, int r, int g, int b)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#aa71d50c522998c6f10e5cf5b6a40596d"><param name="Name" value="DrawTriangle3D(PRISM_Window *window, float x1, float y1, float z1, float x2, float y2, float z2, float x3, float y3, float z3, float r, float g, float b)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#ac934f365cd85870c682a8cb2d37b7235"><param name="Name" value="DrawTriangle3D(PRISM_Window *window, PRISM_Triangle triangle, float r, float g, float b)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html"><param name="Name" value="PRISM_Painter"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___painter.html#a824c3f24f8a22b1b4f2d734ad6dcbf7f"><param name="Name" value="DrawTriangle3D(PRISM_Window *window, PRISM_Triangle triangle, PRISM_Color color)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html"><param name="Name" value="PRISM_Render"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html"><param name="Name" value="PRISM_Render"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#aa80544cdf54b7345d6ed5ec78a37e534"><param name="Name" value="CalculatePixelAmbient(PRISM_Color originalСolor, AbstractObject3D obj) const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html"><param name="Name" value="PRISM_Render"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#a1234552a7c78a632e944a73a5c7919d0"><param name="Name" value="CalculatePixelDiffuse(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html"><param name="Name" value="PRISM_Render"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#a4757d3d9f109f7c4f8426eabaed04b2e"><param name="Name" value="CalculatePixelSpecular(PRISM_Color originalСolor, PRISM_Light light, AbstractObject3D obj, PRISM_Triangle triangle, PRISM_Vector3d cameraCoordinate)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html"><param name="Name" value="PRISM_Render"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#a02b21d4b84ea87d6422653a48f225384"><param name="Name" value="cameraCoordinate"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html"><param name="Name" value="PRISM_Render"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#af2057e7c050689a7c6d03cb1bf5044bd"><param name="Name" value="lightAmbient"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html"><param name="Name" value="PRISM_Render"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#a47805e4cb43de8a06140b3c1171f8252"><param name="Name" value="Rendering(PRISM_Window *window, AbstractObject3D *obj)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html"><param name="Name" value="PRISM_Render"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#a1e8c83f0e8eb2346665bfa59e701c70c"><param name="Name" value="SetScreenSize(int w, int h)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html"><param name="Name" value="PRISM_RenderMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html"><param name="Name" value="PRISM_RenderMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#aa1fcd4d31c6dce0287a46f530666056b"><param name="Name" value="ContourWidth"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html"><param name="Name" value="PRISM_RenderMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#ac891825930e1ac206ddaca9d47271dae"><param name="Name" value="DisplayDimming1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html"><param name="Name" value="PRISM_RenderMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a9e099a5e43e905cd280f890d2f8b8aa1"><param name="Name" value="DisplayDimming2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html"><param name="Name" value="PRISM_RenderMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#aed719caff970ac14f679303fcb1c965e"><param name="Name" value="DisplayTriangleContours"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html"><param name="Name" value="PRISM_RenderMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a6c3fb3675cefdc39aebb339a4b0eebfb"><param name="Name" value="FillMesh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html"><param name="Name" value="PRISM_RenderMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a4d2edcbf4652c7f015c64b7017d6764f"><param name="Name" value="print()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html"><param name="Name" value="PRISM_RenderMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a844914244a0c9abe3af6878bbc76469f"><param name="Name" value="ShowBackMesh"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html"><param name="Name" value="PRISM_RenderMode"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a67ac102d6eb0c8710546034f2d117609"><param name="Name" value="Z_Buffer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a80db2e764912a6eba49d3763f176706d"><param name="Name" value="PRISM_Triangle(PRISM_Vector3d a_={0.0f, 0.0f, 0.0f}, PRISM_Vector3d b_={0.0f, 0.0f, 0.0f}, PRISM_Vector3d c_={0.0f, 0.0f, 0.0f})"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a6aa4dc898fb37c18932c3c285038fe04"><param name="Name" value="a"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a277082bc4dff6ece29bee64f9b234826"><param name="Name" value="a_norlmal"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a499e0a6d9a2b9dbee2ea9941c55894f9"><param name="Name" value="b"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#af0d0bc51194731a931f1b3690dc2b63c"><param name="Name" value="b_norlmal"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#ae1a599e0152e0463ba218500cd5684a8"><param name="Name" value="c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a54b84d4c24595627a0cb659ec954c4d6"><param name="Name" value="c_norlmal"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a6dac4f75ea85b23047877f631dd066d2"><param name="Name" value="print()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html"><param name="Name" value="PRISM_Triangle"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___triangle.html#a80db2e764912a6eba49d3763f176706d"><param name="Name" value="PRISM_Triangle(PRISM_Vector3d a_={0.0f, 0.0f, 0.0f}, PRISM_Vector3d b_={0.0f, 0.0f, 0.0f}, PRISM_Vector3d c_={0.0f, 0.0f, 0.0f})"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a1f83dfba1cd09be3caa45942161586aa"><param name="Name" value="PRISM_Vector3d()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a595c57867f65442aea5285bf4bacd5d7"><param name="Name" value="PRISM_Vector3d(float x, float y, float z, float w=1.0f)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a8f7523f00fd2771d218864ef64423fcd"><param name="Name" value="operator*(float k)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a9a024602f2f7c652d5db5f6b1ceb36aa"><param name="Name" value="operator+(PRISM_Vector3d &amp;other)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#ab2e26555e6f1344e40d4332c74997872"><param name="Name" value="operator-(PRISM_Vector3d &amp;other)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a0ca1144513d2930b92345269688ce142"><param name="Name" value="operator/(float k)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a8a2e8fcd2b80dffca29c483448605c0b"><param name="Name" value="operator==(PRISM_Vector3d &amp;other)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a72c3e1e2b953c29ead62323f8400a588"><param name="Name" value="operator[](int index)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a34b332a433d816d032e181990343a60e"><param name="Name" value="print()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a1f83dfba1cd09be3caa45942161586aa"><param name="Name" value="PRISM_Vector3d()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a595c57867f65442aea5285bf4bacd5d7"><param name="Name" value="PRISM_Vector3d(float x, float y, float z, float w=1.0f)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a34f726533208c042372ca449a0f7687b"><param name="Name" value="w"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a42f6313b6f209111bc1c523480ad017d"><param name="Name" value="x"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#af896720396c0d2ca12bacee1cb3bd19f"><param name="Name" value="y"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html"><param name="Name" value="PRISM_Vector3d"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#ae597a7467357a5de719d6e5f1ed3d935"><param name="Name" value="z"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#aa4bca0420152ccd9b80907696e5bf8b4"><param name="Name" value="PRISM_Window(int w, int h, const char *title)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_p_r_i_s_m___window_8h.html#aa2b6486ff7ecee8bf04e3371f197527a"><param name="Name" value="PRISM_Window.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a86c2b01d4de98415057642e6afaa079e"><param name="Name" value="cleanUp()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#ae87126811e3a83596cba115b41473868"><param name="Name" value="clear()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#abf4b2e2d815ba1cb8eea7c59088df476"><param name="Name" value="GetGLContext() const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a1a642d7c06913245317a48db430b074b"><param name="Name" value="GetH() const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#ad68fda71898fcd04eef99d5751273f9a"><param name="Name" value="GetSDLWindow() const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a0bf2d6387875a9fd97d55afec43ee10b"><param name="Name" value="GetTitle()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#aa48098bef73a029b87021a74b564c459"><param name="Name" value="GetW() const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a3eab23dad1226970fe93da5775b05d32"><param name="Name" value="GetX() const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a7be051ce1e24a9f49f6e83170c37b707"><param name="Name" value="GetY() const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a7a0ec756f1b8273491aca92c3b776993"><param name="Name" value="handleEvents()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a9e0c9e116388eff77df60e546a3424ea"><param name="Name" value="isRunning() const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#aa4bca0420152ccd9b80907696e5bf8b4"><param name="Name" value="PRISM_Window(int w, int h, const char *title)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c"><param name="Name" value="running"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#aa407997dfba9a8787d932c45130554ac"><param name="Name" value="SetTitle(const char *)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#aa88feac118afd66d16d1907e1180e275"><param name="Name" value="SetTitle(const std::string &amp;t)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a2b1aa5dd51131b0178aa29ae70ebedea"><param name="Name" value="update()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html"><param name="Name" value="PRISM_Window"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#ae43664eea8fe702ab86e9e4c010064e6"><param name="Name" value="~PRISM_Window()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a29f5e1540bd4c494c4cd62f48a599437"><param name="Name" value="ProjectionMatrix"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a678d977a735f983625d2ce2f858c7912"><param name="Name" value="r"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___color.html#a678d977a735f983625d2ce2f858c7912"><param name="Name" value="PRISM_Color"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html#a99e2f66b663dc3cab2e01e8a503927e0"><param name="Name" value="r"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___g_l__f_color.html#a99e2f66b663dc3cab2e01e8a503927e0"><param name="Name" value="PRISM_GL_fColor"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#aef8c9a62d66a742b6ae47cde6ebd4dd4"><param name="Name" value="Rasterisation(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a177ac239d3e19ef1ac0c7ba36528002d"><param name="Name" value="RasterizeTile(int minX, int maxX, int minY, int maxY, const PRISM_Vector3d &amp;v0, const PRISM_Vector3d &amp;v1, const PRISM_Vector3d &amp;v2, SDL_Renderer *SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode, std::vector&lt; SDL_Surface * &gt; &amp;surfaces)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a61c424a8908e71a60009455f44d3fd8a"><param name="Name" value="rect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#af2df4fdc1fe6b5e830f693419a6c4d26"><param name="Name" value="Render(PRISM_Window *win)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a0b266ebc454371cb3187996af8c275bd"><param name="Name" value="renderer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#a47805e4cb43de8a06140b3c1171f8252"><param name="Name" value="Rendering(PRISM_Window *window, AbstractObject3D *obj)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a6ac973c9890e1d44508a8c00a582cd01"><param name="Name" value="RenderJoystick(SDL_Renderer *renderer, Joystick &amp;joystick)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a6ac973c9890e1d44508a8c00a582cd01"><param name="Name" value="joystick.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a6ac973c9890e1d44508a8c00a582cd01"><param name="Name" value="RenderJoystick(SDL_Renderer *renderer, Joystick &amp;joystick)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a6ac973c9890e1d44508a8c00a582cd01"><param name="Name" value="joystick.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#afb2808ed98eb6542a559aa75d35efe0d"><param name="Name" value="renderText(const std::string &amp;message, const std::string &amp;fontFile, SDL_Color color, int fontSize, SDL_Renderer *renderer)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#afb2808ed98eb6542a559aa75d35efe0d"><param name="Name" value="button.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#afb2808ed98eb6542a559aa75d35efe0d"><param name="Name" value="renderText(const std::string &amp;message, const std::string &amp;fontFile, SDL_Color color, int fontSize, SDL_Renderer *renderer)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#afb2808ed98eb6542a559aa75d35efe0d"><param name="Name" value="button.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#a1ab311ff9dab6e1ac74f7fde026bf427"><param name="Name" value="renderTexture(SDL_Texture *tex, SDL_Renderer *ren, int x, int y, int w, int h)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#a1ab311ff9dab6e1ac74f7fde026bf427"><param name="Name" value="button.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a1ab311ff9dab6e1ac74f7fde026bf427"><param name="Name" value="renderTexture(SDL_Texture *tex, SDL_Renderer *ren, int x, int y, int w, int h)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a1ab311ff9dab6e1ac74f7fde026bf427"><param name="Name" value="joystick.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#a82caed73e3dcecce469a3ba5f9890908"><param name="Name" value="RenderToggleButton(ToggleButton &amp;toggle_button)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#a82caed73e3dcecce469a3ba5f9890908"><param name="Name" value="button.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#a82caed73e3dcecce469a3ba5f9890908"><param name="Name" value="RenderToggleButton(ToggleButton &amp;toggle_button)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#a82caed73e3dcecce469a3ba5f9890908"><param name="Name" value="button.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ac89d30c674388cff30e4709bdc95e294"><param name="Name" value="RotateTriangle(struct PRISM_Triangle Triangle_)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a2fdd7209747c278ecbef122454fad349"><param name="Name" value="Rotation"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a2fdd7209747c278ecbef122454fad349"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a6f61c122f10035fd20bd802c6141c164"><param name="Name" value="Rotation"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a6f61c122f10035fd20bd802c6141c164"><param name="Name" value="AbstractObject3D"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a7624796096d0fa9650c866e15f3d750c"><param name="Name" value="running"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="other_8h.html#a16b52b40e9adac02dd34f3898a293b4d"><param name="Name" value="save_texture(const char *file_name, SDL_Renderer *renderer, SDL_Texture *texture)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ab4252555119db0a3d5ced1e2afc0811b"><param name="Name" value="Scale"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a4a3d329334a2b9d418e45f9533fb33fa"><param name="Name" value="ScaleTriangle(struct PRISM_Triangle Triangle_)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#ad10176d75a9cc0da56626f682d083507"><param name="Name" value="Scene()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#a7f74ff40411bdcf075fc19a12476109e"><param name="Name" value="AddObject(AbstractCamera3D *obj)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#afe087b088e1cf2e51612dcd901ecfa18"><param name="Name" value="AddObject(AbstractObject3D *obj)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#a38c559e65393d483023aaa542585fa25"><param name="Name" value="DelObject(AbstractCamera3D *obj)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#abbbe43f76945e70f59c871ec05b02437"><param name="Name" value="DelObject(AbstractObject3D *obj)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#aa8f334f0b651eb6587d08e2996253ccf"><param name="Name" value="GetLightAmbient() const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#aa204ec1e3c8920474aabfa94b8d36b3b"><param name="Name" value="PrintInfo()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#af2df4fdc1fe6b5e830f693419a6c4d26"><param name="Name" value="Render(PRISM_Window *win)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#ad10176d75a9cc0da56626f682d083507"><param name="Name" value="Scene()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#af6b1a4cc7ca8ea2e2e873d523130f6e1"><param name="Name" value="SetCamera(AbstractCamera3D *obj)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#a0af3ccfbaf48963d0125d20f4be4ce0a"><param name="Name" value="SetLightAmbient(PRISM_Vector3d L_Ambient)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html"><param name="Name" value="Scene"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#a3b8cec2e32546713915f8c6303c951f1"><param name="Name" value="~Scene()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#af86b24a24ada32e41c0b6654b8e45b00"><param name="Name" value="ScreenH"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#af86b24a24ada32e41c0b6654b8e45b00"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a0f941e155d7fa253b9a2944735059062"><param name="Name" value="ScreenH"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a0f941e155d7fa253b9a2944735059062"><param name="Name" value="AbstractObject3D"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a5feca547ada074119a1f8e75c8a971bb"><param name="Name" value="ScreenW"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a5feca547ada074119a1f8e75c8a971bb"><param name="Name" value="AbstractCamera3D"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ab4064eb036f54e3ac2c0628d00ee5c8b"><param name="Name" value="ScreenW"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ab4064eb036f54e3ac2c0628d00ee5c8b"><param name="Name" value="AbstractObject3D"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8cpp.html"><param name="Name" value="SDL_GLRenderer.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8cpp.html#ae7dab1843865a8aee7e85bc972d68b9f"><param name="Name" value="drawTriangleWithOpenGL(Vector3d v1, Vector3d v2, Vector3d v3, GLuint shaderProgram, GLuint vbo)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8cpp.html"><param name="Name" value="SDL_GLRenderer.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8cpp.html#abe3051b82756a48b48a38a1ff2e8789d"><param name="Name" value="initOpenGL(GLuint shaderProgram, GLuint vbo)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8h.html"><param name="Name" value="SDL_GLRenderer.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8h.html#ae7dab1843865a8aee7e85bc972d68b9f"><param name="Name" value="drawTriangleWithOpenGL(Vector3d v1, Vector3d v2, Vector3d v3, GLuint shaderProgram, GLuint vbo)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8h.html"><param name="Name" value="SDL_GLRenderer.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_s_d_l___g_l_renderer_8h.html#abe3051b82756a48b48a38a1ff2e8789d"><param name="Name" value="initOpenGL(GLuint shaderProgram, GLuint vbo)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#af6b1a4cc7ca8ea2e2e873d523130f6e1"><param name="Name" value="SetCamera(AbstractCamera3D *obj)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#a0af3ccfbaf48963d0125d20f4be4ce0a"><param name="Name" value="SetLightAmbient(PRISM_Vector3d L_Ambient)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#aea22ac8c43900580e8b8ffd35607d870"><param name="Name" value="SetMesh(struct PRISM_Mesh m)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a1ef857f5a43829d695b372f16c10b21c"><param name="Name" value="SetMoveXYZ(struct PRISM_Vector3d moveVect)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#ae78201de343d0dd663c29588ce9aa619"><param name="Name" value="SetPosition(struct PRISM_Vector3d Coord, struct PRISM_Vector3d Rot, struct PRISM_Vector3d viewDir_)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ab35a97b42aea7ba1f2e39c71144f8b76"><param name="Name" value="SetRotateXYZ(struct PRISM_Vector3d rotVect)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#afa89fd114cd5df811297a1740290e044"><param name="Name" value="SetScaleXYZ(struct PRISM_Vector3d scaleVect)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___render.html#a1e8c83f0e8eb2346665bfa59e701c70c"><param name="Name" value="SetScreenSize(int w, int h)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#aa407997dfba9a8787d932c45130554ac"><param name="Name" value="SetTitle(const char *)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#aa88feac118afd66d16d1907e1180e275"><param name="Name" value="SetTitle(const std::string &amp;t)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#a8fe13d21334ce808fdf5450cace9a629"><param name="Name" value="SetToggleButtonText(ToggleButton &amp;toggle_button, const std::string text, const std::string &amp;fontFile, SDL_Color color, int fontSize)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#a8fe13d21334ce808fdf5450cace9a629"><param name="Name" value="button.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#a8fe13d21334ce808fdf5450cace9a629"><param name="Name" value="SetToggleButtonText(ToggleButton &amp;toggle_button, const std::string text, const std::string &amp;fontFile, SDL_Color color, int fontSize)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#a8fe13d21334ce808fdf5450cace9a629"><param name="Name" value="button.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#af240adf133032879058c1da5581078ea"><param name="Name" value="SetToggleButtonTexture(ToggleButton &amp;toggle_button, const char *filename)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#af240adf133032879058c1da5581078ea"><param name="Name" value="button.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#af240adf133032879058c1da5581078ea"><param name="Name" value="SetToggleButtonTexture(ToggleButton &amp;toggle_button, const char *filename)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#af240adf133032879058c1da5581078ea"><param name="Name" value="button.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#ab0887c2e6b05af6040188a15223f6576"><param name="Name" value="SetView(struct PRISM_Vector3d viewDirVect, struct PRISM_Vector3d upDirVect)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classshader_manager.html"><param name="Name" value="shaderManager"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classshader_manager.html"><param name="Name" value="shaderManager"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classshader_manager.html#a0d30f79a17e6f053d9d797b83d6c34e4"><param name="Name" value="compileShader(GLenum type, const char *source)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a844914244a0c9abe3af6878bbc76469f"><param name="Name" value="ShowBackMesh"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_joystick.html#ad4262d6e7663a1d8674b6ce001eefdd6"><param name="Name" value="stick_rect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a0b567c45cabdc81162a8f462f41a2f45"><param name="Name" value="text"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#ad33da4091a2984a27e066d5f96320529"><param name="Name" value="TileRasterisation(int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, PRISM_Light light, short rgba[4], PRISM_RenderMode RendMode)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html"><param name="Name" value="ToggleButton"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html"><param name="Name" value="ToggleButton"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a1b0885b1e0b0a1d3395b794cc6d16749"><param name="Name" value="active"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html"><param name="Name" value="ToggleButton"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#afa7234c6ff69faa485067961cf877ee6"><param name="Name" value="FD"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html"><param name="Name" value="ToggleButton"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a89c578ea40203dee07874c3e85a06f0a"><param name="Name" value="image"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html"><param name="Name" value="ToggleButton"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a61c424a8908e71a60009455f44d3fd8a"><param name="Name" value="rect"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html"><param name="Name" value="ToggleButton"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a0b266ebc454371cb3187996af8c275bd"><param name="Name" value="renderer"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html"><param name="Name" value="ToggleButton"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_toggle_button.html#a0b567c45cabdc81162a8f462f41a2f45"><param name="Name" value="text"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#aa02858010549847e5f40bed0b7aa8bcb"><param name="Name" value="ToggleButtonInput(ToggleButton &amp;toggle_button, SDL_Event &amp;e)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8cpp.html#aa02858010549847e5f40bed0b7aa8bcb"><param name="Name" value="button.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#aa02858010549847e5f40bed0b7aa8bcb"><param name="Name" value="ToggleButtonInput(ToggleButton &amp;toggle_button, SDL_Event &amp;e)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="button_8h.html#aa02858010549847e5f40bed0b7aa8bcb"><param name="Name" value="button.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#acdd9fdf5d9e2c7910362e3f556db58d9"><param name="Name" value="TranslateTriangle(struct PRISM_Triangle Triangle_)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___mesh.html#a9e4484402c1a601a29f4442b4c49704f"><param name="Name" value="tris"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#a2b1aa5dd51131b0178aa29ae70ebedea"><param name="Name" value="update()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html#a96a40b8ea7714ab56e199717d14c567d"><param name="Name" value="update(int x, int y, int z)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a0e0547a969ffec6e4bf52581a1083df7"><param name="Name" value="UpdateJoystick(Joystick &amp;joystick, int x, int y)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8cpp.html#a0e0547a969ffec6e4bf52581a1083df7"><param name="Name" value="joystick.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a0e0547a969ffec6e4bf52581a1083df7"><param name="Name" value="UpdateJoystick(Joystick &amp;joystick, int x, int y)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="joystick_8h.html#a0e0547a969ffec6e4bf52581a1083df7"><param name="Name" value="joystick.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="math_8cpp.html#a5a5d3f389b27f06573665824891be241"><param name="Name" value="useHardwareZbuffer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a57ef9185de06f08882da599bd19f6cc2"><param name="Name" value="Vector_CrossProduct(PRISM_Vector3d &amp;v1, PRISM_Vector3d &amp;v2)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a80b6fba2680d8db9e77e7534ebbc9958"><param name="Name" value="Vector_DotProduct(PRISM_Vector3d &amp;v1, PRISM_Vector3d &amp;v2)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#adc164fdf73b2388b2f44c93f3dc868d9"><param name="Name" value="Vector_IntersectPlane(PRISM_Vector3d &amp;plane_p, PRISM_Vector3d &amp;plane_n, PRISM_Vector3d &amp;lineStart, PRISM_Vector3d &amp;lineEnd)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a1759214289708ed4467dda1245b0473b"><param name="Name" value="Vector_Length(PRISM_Vector3d &amp;v)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_math.html#a5662ea8914da90736571b3886fc25d0f"><param name="Name" value="Vector_Normalise(PRISM_Vector3d &amp;v)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a875113715d05b2c30fab1ed6c641fe5c"><param name="Name" value="viewDir"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a85c2b9d0b75c0f4378a72b07f55d9824"><param name="Name" value="ViewTriangle(struct PRISM_Triangle Triangle_)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a34f726533208c042372ca449a0f7687b"><param name="Name" value="w"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#a42f6313b6f209111bc1c523480ad017d"><param name="Name" value="x"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#af896720396c0d2ca12bacee1cb3bd19f"><param name="Name" value="y"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___vector3d.html#ae597a7467357a5de719d6e5f1ed3d935"><param name="Name" value="z"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html"><param name="Name" value="Z_Buffer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html#a119bc475d39b60781f4eb91744632016"><param name="Name" value="Z_Buffer(int screenW, int screenH)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a864779875a82f1d521758280af5b9e3a"><param name="Name" value="z_buffer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html"><param name="Name" value="Z_Buffer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html#a62121a0d7856576e8cd592e9d7de51e9"><param name="Name" value="clear(SDL_Renderer *renderer)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html"><param name="Name" value="Z_Buffer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html#ab8eda1f41c53368d007228932ba8485d"><param name="Name" value="get(int x, int y) const"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a67ac102d6eb0c8710546034f2d117609"><param name="Name" value="Z_Buffer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_p_r_i_s_m___render_mode.html#a67ac102d6eb0c8710546034f2d117609"><param name="Name" value="PRISM_RenderMode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html"><param name="Name" value="Z_Buffer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html#a96a40b8ea7714ab56e199717d14c567d"><param name="Name" value="update(int x, int y, int z)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html"><param name="Name" value="Z_Buffer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html#a119bc475d39b60781f4eb91744632016"><param name="Name" value="Z_Buffer(int screenW, int screenH)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html"><param name="Name" value="Z_Buffer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html#a1727e40a15a9128df353d7f055be7e11"><param name="Name" value="~Z_Buffer()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_camera3_d.html#a831e9d47383b29640dd450b9f7b50557"><param name="Name" value="~AbstractCamera3D()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_abstract_object3_d.html#a1117e1b3f39fcabb17ffb3afe24ff990"><param name="Name" value="~AbstractObject3D()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_p_r_i_s_m___window.html#ae43664eea8fe702ab86e9e4c010064e6"><param name="Name" value="~PRISM_Window()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_scene.html#a3b8cec2e32546713915f8c6303c951f1"><param name="Name" value="~Scene()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_z___buffer.html#a1727e40a15a9128df353d7f055be7e11"><param name="Name" value="~Z_Buffer()"></OBJECT>
+</UL>
+</BODY>
+</HTML>

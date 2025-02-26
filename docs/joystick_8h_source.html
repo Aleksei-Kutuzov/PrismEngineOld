@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRISM_ENGINE: Исходный файл C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_UI/joystick.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoprism.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">PRISM_ENGINE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">docs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_25f6b753474fe0a28800c78721e14565.html">PrismEngine</a></li><li class="navelem"><a class="el" href="dir_d7b1fc5b76cd0aeac2c104334654f815.html">PrismEngine</a></li><li class="navelem"><a class="el" href="dir_b6dc6f7c2aabea0db434001f258fbc37.html">src</a></li><li class="navelem"><a class="el" href="dir_5fcc1279df0279394065d7500bf93a07.html">PRISM_UI</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">joystick.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="joystick_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef JOYSTICK_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define JOYSTICK_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_joystick.html">Joystick</a> {</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    SDL_Rect <a class="code hl_variable" href="struct_joystick.html#a38f3edcfc5a0c3a8e7eeeceb18678f17">base_rect</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    SDL_Rect <a class="code hl_variable" href="struct_joystick.html#ad4262d6e7663a1d8674b6ce001eefdd6">stick_rect</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    SDL_Point <a class="code hl_variable" href="struct_joystick.html#abe04fa86d3a94f546e53ed9934ae150a">center</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_joystick.html#a5efdaf552d0cfb883131dbfb9d984611">max_distance</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_joystick.html#aa78a0d7d4f721aab554d4dc8fba476e2">active</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">//  SDL_Texture *texture;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    SDL_Texture *<a class="code hl_variable" href="struct_joystick.html#af266144b3a0451048cb0718eaf1c6936">background</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    SDL_Texture *<a class="code hl_variable" href="struct_joystick.html#a92a1e15872f6938f02904a3359a52e18">image</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>};</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">void</span> <a class="code hl_function" href="joystick_8h.html#a4b2d658e2a5f833b21572512b008c5d1">InitJoystick</a>(<a class="code hl_struct" href="struct_joystick.html">Joystick</a> &amp;joystick, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> base_size, <span class="keywordtype">int</span> stick_size, SDL_Renderer *renderer);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">void</span> <a class="code hl_function" href="joystick_8h.html#a0e0547a969ffec6e4bf52581a1083df7">UpdateJoystick</a>(<a class="code hl_struct" href="struct_joystick.html">Joystick</a> &amp;joystick, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> <a class="code hl_function" href="joystick_8h.html#a9109c20080d8804029bd7b78607e5684">HandleInput</a>(SDL_Event &amp;e, std::vector&lt;Joystick&gt; &amp;joysticks, <span class="keywordtype">int</span> window_width, <span class="keywordtype">int</span> window_height);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> <a class="code hl_function" href="joystick_8h.html#a7534f3c6e672027f7dd62624e1859cfd">GetJoystickPosition</a>(<a class="code hl_struct" href="struct_joystick.html">Joystick</a> &amp;joystick, <span class="keywordtype">float</span> &amp;norm_x, <span class="keywordtype">float</span> &amp;norm_y);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> <a class="code hl_function" href="joystick_8h.html#a6ac973c9890e1d44508a8c00a582cd01">RenderJoystick</a>(SDL_Renderer *renderer, <a class="code hl_struct" href="struct_joystick.html">Joystick</a> &amp;joystick);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="ajoystick_8h_html_a0e0547a969ffec6e4bf52581a1083df7"><div class="ttname"><a href="joystick_8h.html#a0e0547a969ffec6e4bf52581a1083df7">UpdateJoystick</a></div><div class="ttdeci">void UpdateJoystick(Joystick &amp;joystick, int x, int y)</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00074">joystick.cpp:74</a></div></div>
+<div class="ttc" id="ajoystick_8h_html_a4b2d658e2a5f833b21572512b008c5d1"><div class="ttname"><a href="joystick_8h.html#a4b2d658e2a5f833b21572512b008c5d1">InitJoystick</a></div><div class="ttdeci">void InitJoystick(Joystick &amp;joystick, int x, int y, int base_size, int stick_size, SDL_Renderer *renderer)</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00041">joystick.cpp:41</a></div></div>
+<div class="ttc" id="ajoystick_8h_html_a6ac973c9890e1d44508a8c00a582cd01"><div class="ttname"><a href="joystick_8h.html#a6ac973c9890e1d44508a8c00a582cd01">RenderJoystick</a></div><div class="ttdeci">void RenderJoystick(SDL_Renderer *renderer, Joystick &amp;joystick)</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00136">joystick.cpp:136</a></div></div>
+<div class="ttc" id="ajoystick_8h_html_a7534f3c6e672027f7dd62624e1859cfd"><div class="ttname"><a href="joystick_8h.html#a7534f3c6e672027f7dd62624e1859cfd">GetJoystickPosition</a></div><div class="ttdeci">void GetJoystickPosition(Joystick &amp;joystick, float &amp;norm_x, float &amp;norm_y)</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00065">joystick.cpp:65</a></div></div>
+<div class="ttc" id="ajoystick_8h_html_a9109c20080d8804029bd7b78607e5684"><div class="ttname"><a href="joystick_8h.html#a9109c20080d8804029bd7b78607e5684">HandleInput</a></div><div class="ttdeci">void HandleInput(SDL_Event &amp;e, std::vector&lt; Joystick &gt; &amp;joysticks, int window_width, int window_height)</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00090">joystick.cpp:90</a></div></div>
+<div class="ttc" id="astruct_joystick_html"><div class="ttname"><a href="struct_joystick.html">Joystick</a></div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00007">joystick.cpp:7</a></div></div>
+<div class="ttc" id="astruct_joystick_html_a38f3edcfc5a0c3a8e7eeeceb18678f17"><div class="ttname"><a href="struct_joystick.html#a38f3edcfc5a0c3a8e7eeeceb18678f17">Joystick::base_rect</a></div><div class="ttdeci">SDL_Rect base_rect</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00008">joystick.cpp:8</a></div></div>
+<div class="ttc" id="astruct_joystick_html_a5efdaf552d0cfb883131dbfb9d984611"><div class="ttname"><a href="struct_joystick.html#a5efdaf552d0cfb883131dbfb9d984611">Joystick::max_distance</a></div><div class="ttdeci">int max_distance</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00011">joystick.cpp:11</a></div></div>
+<div class="ttc" id="astruct_joystick_html_a92a1e15872f6938f02904a3359a52e18"><div class="ttname"><a href="struct_joystick.html#a92a1e15872f6938f02904a3359a52e18">Joystick::image</a></div><div class="ttdeci">SDL_Texture * image</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00015">joystick.cpp:15</a></div></div>
+<div class="ttc" id="astruct_joystick_html_aa78a0d7d4f721aab554d4dc8fba476e2"><div class="ttname"><a href="struct_joystick.html#aa78a0d7d4f721aab554d4dc8fba476e2">Joystick::active</a></div><div class="ttdeci">bool active</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00013">joystick.cpp:13</a></div></div>
+<div class="ttc" id="astruct_joystick_html_abe04fa86d3a94f546e53ed9934ae150a"><div class="ttname"><a href="struct_joystick.html#abe04fa86d3a94f546e53ed9934ae150a">Joystick::center</a></div><div class="ttdeci">SDL_Point center</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00010">joystick.cpp:10</a></div></div>
+<div class="ttc" id="astruct_joystick_html_ad4262d6e7663a1d8674b6ce001eefdd6"><div class="ttname"><a href="struct_joystick.html#ad4262d6e7663a1d8674b6ce001eefdd6">Joystick::stick_rect</a></div><div class="ttdeci">SDL_Rect stick_rect</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00009">joystick.cpp:9</a></div></div>
+<div class="ttc" id="astruct_joystick_html_af266144b3a0451048cb0718eaf1c6936"><div class="ttname"><a href="struct_joystick.html#af266144b3a0451048cb0718eaf1c6936">Joystick::background</a></div><div class="ttdeci">SDL_Texture * background</div><div class="ttdef"><b>Определения</b> <a href="joystick_8cpp_source.html#l00014">joystick.cpp:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

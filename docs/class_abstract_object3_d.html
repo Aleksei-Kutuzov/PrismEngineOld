@@ -1,0 +1,1407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PRISM_ENGINE: Класс AbstractObject3D</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logoprism.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">PRISM_ENGINE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">docs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Поля данных</a>  </div>
+  <div class="headertitle"><div class="title">Класс AbstractObject3D</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс <a class="el" href="class_abstract_object3_d.html" title="Класс AbstractObject3D представляет собой базовый класс для работы с 3D-объектами....">AbstractObject3D</a> представляет собой базовый класс для работы с 3D-объектами. Предоставляет функционал для управления трансформациями, работы с сеткой (mesh) и освещением.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a79a1de5870dc76154dc4536460431303" id="r_a79a1de5870dc76154dc4536460431303"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79a1de5870dc76154dc4536460431303">AbstractObject3D</a> (struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> Coord, struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> Rot, struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> Sc, <a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> &amp;camera)</td></tr>
+<tr class="memdesc:a79a1de5870dc76154dc4536460431303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор объекта.  <br /></td></tr>
+<tr class="separator:a79a1de5870dc76154dc4536460431303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1117e1b3f39fcabb17ffb3afe24ff990" id="r_a1117e1b3f39fcabb17ffb3afe24ff990"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1117e1b3f39fcabb17ffb3afe24ff990">~AbstractObject3D</a> ()</td></tr>
+<tr class="memdesc:a1117e1b3f39fcabb17ffb3afe24ff990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор объекта.  <br /></td></tr>
+<tr class="separator:a1117e1b3f39fcabb17ffb3afe24ff990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea22ac8c43900580e8b8ffd35607d870" id="r_aea22ac8c43900580e8b8ffd35607d870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea22ac8c43900580e8b8ffd35607d870">SetMesh</a> (struct <a class="el" href="struct_p_r_i_s_m___mesh.html">PRISM_Mesh</a> m)</td></tr>
+<tr class="memdesc:aea22ac8c43900580e8b8ffd35607d870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает сетку (mesh) для объекта.  <br /></td></tr>
+<tr class="separator:aea22ac8c43900580e8b8ffd35607d870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb327fabd2f8af859158fcbc582e90a" id="r_a1bb327fabd2f8af859158fcbc582e90a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_p_r_i_s_m___mesh.html">PRISM_Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bb327fabd2f8af859158fcbc582e90a">GetMesh</a> ()</td></tr>
+<tr class="memdesc:a1bb327fabd2f8af859158fcbc582e90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает сетку объекта.  <br /></td></tr>
+<tr class="separator:a1bb327fabd2f8af859158fcbc582e90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c7db31586699087e13936dcff05bf5" id="r_ac0c7db31586699087e13936dcff05bf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0c7db31586699087e13936dcff05bf5">InitProjection</a> (<a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> camera)</td></tr>
+<tr class="memdesc:ac0c7db31586699087e13936dcff05bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализирует матрицу проекции с использованием камеры.  <br /></td></tr>
+<tr class="separator:ac0c7db31586699087e13936dcff05bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35a97b42aea7ba1f2e39c71144f8b76" id="r_ab35a97b42aea7ba1f2e39c71144f8b76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab35a97b42aea7ba1f2e39c71144f8b76">SetRotateXYZ</a> (struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> rotVect)</td></tr>
+<tr class="memdesc:ab35a97b42aea7ba1f2e39c71144f8b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает углы поворота объекта.  <br /></td></tr>
+<tr class="separator:ab35a97b42aea7ba1f2e39c71144f8b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef857f5a43829d695b372f16c10b21c" id="r_a1ef857f5a43829d695b372f16c10b21c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ef857f5a43829d695b372f16c10b21c">SetMoveXYZ</a> (struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> moveVect)</td></tr>
+<tr class="memdesc:a1ef857f5a43829d695b372f16c10b21c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает координаты объекта.  <br /></td></tr>
+<tr class="separator:a1ef857f5a43829d695b372f16c10b21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa89fd114cd5df811297a1740290e044" id="r_afa89fd114cd5df811297a1740290e044"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa89fd114cd5df811297a1740290e044">SetScaleXYZ</a> (struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> scaleVect)</td></tr>
+<tr class="memdesc:afa89fd114cd5df811297a1740290e044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает масштаб объекта.  <br /></td></tr>
+<tr class="separator:afa89fd114cd5df811297a1740290e044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e98ea988e83153287ae1469abc3170" id="r_ac0e98ea988e83153287ae1469abc3170"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0e98ea988e83153287ae1469abc3170">PrintInfo</a> ()</td></tr>
+<tr class="memdesc:ac0e98ea988e83153287ae1469abc3170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Печатает информацию об объекте.  <br /></td></tr>
+<tr class="separator:ac0e98ea988e83153287ae1469abc3170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac89d30c674388cff30e4709bdc95e294" id="r_ac89d30c674388cff30e4709bdc95e294"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac89d30c674388cff30e4709bdc95e294">RotateTriangle</a> (struct <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> Triangle_)</td></tr>
+<tr class="memdesc:ac89d30c674388cff30e4709bdc95e294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет вращение треугольника.  <br /></td></tr>
+<tr class="separator:ac89d30c674388cff30e4709bdc95e294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd9fdf5d9e2c7910362e3f556db58d9" id="r_acdd9fdf5d9e2c7910362e3f556db58d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdd9fdf5d9e2c7910362e3f556db58d9">TranslateTriangle</a> (struct <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> Triangle_)</td></tr>
+<tr class="memdesc:acdd9fdf5d9e2c7910362e3f556db58d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет перенос треугольника.  <br /></td></tr>
+<tr class="separator:acdd9fdf5d9e2c7910362e3f556db58d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3d329334a2b9d418e45f9533fb33fa" id="r_a4a3d329334a2b9d418e45f9533fb33fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a3d329334a2b9d418e45f9533fb33fa">ScaleTriangle</a> (struct <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> Triangle_)</td></tr>
+<tr class="memdesc:a4a3d329334a2b9d418e45f9533fb33fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет масштабирование треугольника.  <br /></td></tr>
+<tr class="separator:a4a3d329334a2b9d418e45f9533fb33fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c2b9d0b75c0f4378a72b07f55d9824" id="r_a85c2b9d0b75c0f4378a72b07f55d9824"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85c2b9d0b75c0f4378a72b07f55d9824">ViewTriangle</a> (struct <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> Triangle_)</td></tr>
+<tr class="memdesc:a85c2b9d0b75c0f4378a72b07f55d9824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразует треугольник в координаты вида.  <br /></td></tr>
+<tr class="separator:a85c2b9d0b75c0f4378a72b07f55d9824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eda99e016319ff277325ba1c7391700" id="r_a5eda99e016319ff277325ba1c7391700"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5eda99e016319ff277325ba1c7391700">CalculatePhongShadingColor</a> (const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;normal, const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;viewDir, const <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> &amp;light, const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;fragPos)</td></tr>
+<tr class="memdesc:a5eda99e016319ff277325ba1c7391700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет цвет с использованием модели освещения Фонга.  <br /></td></tr>
+<tr class="separator:a5eda99e016319ff277325ba1c7391700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21fa225d7e9c9f92a942257f07966ba6" id="r_a21fa225d7e9c9f92a942257f07966ba6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21fa225d7e9c9f92a942257f07966ba6">ComputeBarycentricCoords</a> (float x, float y, const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v0, const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v1, const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v2, float &amp;u, float &amp;v, float &amp;w)</td></tr>
+<tr class="memdesc:a21fa225d7e9c9f92a942257f07966ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисляет барицентрические координаты.  <br /></td></tr>
+<tr class="separator:a21fa225d7e9c9f92a942257f07966ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e137b574e6fadad8008725f3b264f6" id="r_ac9e137b574e6fadad8008725f3b264f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9e137b574e6fadad8008725f3b264f6">DrawMeshTriangles</a> (SDL_Renderer *renderer, <a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a> rm)</td></tr>
+<tr class="memdesc:ac9e137b574e6fadad8008725f3b264f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовывает треугольники сетки объекта.  <br /></td></tr>
+<tr class="separator:ac9e137b574e6fadad8008725f3b264f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb99f761bfbef6e2afb04d22badb9fb3" id="r_adb99f761bfbef6e2afb04d22badb9fb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb99f761bfbef6e2afb04d22badb9fb3">OldRasterisation</a> (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, short rgba[4], <a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a> RendMode)</td></tr>
+<tr class="memdesc:adb99f761bfbef6e2afb04d22badb9fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Однопоточный, медленный метод для растеризации треугольника.  <br /></td></tr>
+<tr class="separator:adb99f761bfbef6e2afb04d22badb9fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0a851b734c16dbf5a48c1d7e944acd" id="r_a3c0a851b734c16dbf5a48c1d7e944acd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c0a851b734c16dbf5a48c1d7e944acd">OptimizedEdgeRasterization</a> (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, short rgba[4], <a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a> RendMode)</td></tr>
+<tr class="memdesc:a3c0a851b734c16dbf5a48c1d7e944acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оптимизированный метод растеризации треугольника с использованием рёбер.  <br /></td></tr>
+<tr class="separator:a3c0a851b734c16dbf5a48c1d7e944acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177ac239d3e19ef1ac0c7ba36528002d" id="r_a177ac239d3e19ef1ac0c7ba36528002d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a177ac239d3e19ef1ac0c7ba36528002d">RasterizeTile</a> (int minX, int maxX, int minY, int maxY, const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v0, const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v1, const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;v2, SDL_Renderer *SDL_renderer, <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, short rgba[4], <a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a> RendMode, std::vector&lt; SDL_Surface * &gt; &amp;surfaces)</td></tr>
+<tr class="memdesc:a177ac239d3e19ef1ac0c7ba36528002d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Растеризация треугольника для слабых мобильных устройств.  <br /></td></tr>
+<tr class="separator:a177ac239d3e19ef1ac0c7ba36528002d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8c9a62d66a742b6ae47cde6ebd4dd4" id="r_aef8c9a62d66a742b6ae47cde6ebd4dd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef8c9a62d66a742b6ae47cde6ebd4dd4">Rasterisation</a> (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, short rgba[4], <a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a> RendMode)</td></tr>
+<tr class="memdesc:aef8c9a62d66a742b6ae47cde6ebd4dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устаревший метод растеризации треугольника.  <br /></td></tr>
+<tr class="separator:aef8c9a62d66a742b6ae47cde6ebd4dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33da4091a2984a27e066d5f96320529" id="r_ad33da4091a2984a27e066d5f96320529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad33da4091a2984a27e066d5f96320529">TileRasterisation</a> (int x1, int y1, int x2, int y2, int x3, int y3, float z1, float z2, float z3, SDL_Renderer *SDL_renderer, <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> light, short rgba[4], <a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a> RendMode)</td></tr>
+<tr class="memdesc:ad33da4091a2984a27e066d5f96320529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод растеризации с использованием плиток для оптимизации.  <br /></td></tr>
+<tr class="separator:ad33da4091a2984a27e066d5f96320529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Поля данных</h2></td></tr>
+<tr class="memitem:a29f5e1540bd4c494c4cd62f48a599437" id="r_a29f5e1540bd4c494c4cd62f48a599437"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29f5e1540bd4c494c4cd62f48a599437">ProjectionMatrix</a></td></tr>
+<tr class="memdesc:a29f5e1540bd4c494c4cd62f48a599437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Матрица проекции объекта.  <br /></td></tr>
+<tr class="separator:a29f5e1540bd4c494c4cd62f48a599437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bafbe6fb8dc6719a0a112b2c2abe2d4" id="r_a3bafbe6fb8dc6719a0a112b2c2abe2d4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bafbe6fb8dc6719a0a112b2c2abe2d4">Translate</a></td></tr>
+<tr class="memdesc:a3bafbe6fb8dc6719a0a112b2c2abe2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Координаты объекта.  <br /></td></tr>
+<tr class="separator:a3bafbe6fb8dc6719a0a112b2c2abe2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f61c122f10035fd20bd802c6141c164" id="r_a6f61c122f10035fd20bd802c6141c164"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f61c122f10035fd20bd802c6141c164">Rotation</a></td></tr>
+<tr class="memdesc:a6f61c122f10035fd20bd802c6141c164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Углы поворота объекта (в градусах).  <br /></td></tr>
+<tr class="separator:a6f61c122f10035fd20bd802c6141c164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4252555119db0a3d5ced1e2afc0811b" id="r_ab4252555119db0a3d5ced1e2afc0811b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4252555119db0a3d5ced1e2afc0811b">Scale</a></td></tr>
+<tr class="memdesc:ab4252555119db0a3d5ced1e2afc0811b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масштаб объекта.  <br /></td></tr>
+<tr class="separator:ab4252555119db0a3d5ced1e2afc0811b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e54cbd7c8a4c00385f4cf694b6d02df" id="r_a7e54cbd7c8a4c00385f4cf694b6d02df"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_p_r_i_s_m___mesh.html">PRISM_Mesh</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e54cbd7c8a4c00385f4cf694b6d02df">mesh</a></td></tr>
+<tr class="memdesc:a7e54cbd7c8a4c00385f4cf694b6d02df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сетка (mesh) объекта.  <br /></td></tr>
+<tr class="separator:a7e54cbd7c8a4c00385f4cf694b6d02df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815f976f754632dccb53fe785a51f8e5" id="r_a815f976f754632dccb53fe785a51f8e5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a815f976f754632dccb53fe785a51f8e5">materialAmbient</a> ={0.5f, 0.5f, 0.5f}</td></tr>
+<tr class="memdesc:a815f976f754632dccb53fe785a51f8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент отражения материала для окружающего света (в пределах от 0 до 1 для каждого цветового канала RGB). Ещё используется как коэфициэнт для дифузного света.  <br /></td></tr>
+<tr class="separator:a815f976f754632dccb53fe785a51f8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3c7daf743ac24a94b1bbf4c3bcdbc8" id="r_a9f3c7daf743ac24a94b1bbf4c3bcdbc8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f3c7daf743ac24a94b1bbf4c3bcdbc8">kSpecular</a> = 0.5</td></tr>
+<tr class="memdesc:a9f3c7daf743ac24a94b1bbf4c3bcdbc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Коэффициент зеркального отражения материала (от 0 для матовых поверхностей до 1 для блестящих).  <br /></td></tr>
+<tr class="separator:a9f3c7daf743ac24a94b1bbf4c3bcdbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4064eb036f54e3ac2c0628d00ee5c8b" id="r_ab4064eb036f54e3ac2c0628d00ee5c8b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4064eb036f54e3ac2c0628d00ee5c8b">ScreenW</a></td></tr>
+<tr class="memdesc:ab4064eb036f54e3ac2c0628d00ee5c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ширина экрана.  <br /></td></tr>
+<tr class="separator:ab4064eb036f54e3ac2c0628d00ee5c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f941e155d7fa253b9a2944735059062" id="r_a0f941e155d7fa253b9a2944735059062"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f941e155d7fa253b9a2944735059062">ScreenH</a></td></tr>
+<tr class="memdesc:a0f941e155d7fa253b9a2944735059062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Высота экрана.  <br /></td></tr>
+<tr class="separator:a0f941e155d7fa253b9a2944735059062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04e797230429e4db695e77adb873147" id="r_aa04e797230429e4db695e77adb873147"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa04e797230429e4db695e77adb873147">Camera</a></td></tr>
+<tr class="memdesc:aa04e797230429e4db695e77adb873147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ссылка на камеру, связанную с объектом.  <br /></td></tr>
+<tr class="separator:aa04e797230429e4db695e77adb873147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс <a class="el" href="class_abstract_object3_d.html" title="Класс AbstractObject3D представляет собой базовый класс для работы с 3D-объектами....">AbstractObject3D</a> представляет собой базовый класс для работы с 3D-объектами. Предоставляет функционал для управления трансформациями, работы с сеткой (mesh) и освещением. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00033">33</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a79a1de5870dc76154dc4536460431303" name="a79a1de5870dc76154dc4536460431303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79a1de5870dc76154dc4536460431303">&#9670;&#160;</a></span>AbstractObject3D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AbstractObject3D::AbstractObject3D </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>Coord</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>Rot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>Sc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор объекта. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Coord</td><td>Начальные координаты объекта.</td></tr>
+    <tr><td class="paramname">Rot</td><td>Начальные углы поворота.</td></tr>
+    <tr><td class="paramname">Sc</td><td>Начальный масштаб.</td></tr>
+    <tr><td class="paramname">camera</td><td>Ссылка на объект камеры.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00124">124</a></p>
+
+</div>
+</div>
+<a id="a1117e1b3f39fcabb17ffb3afe24ff990" name="a1117e1b3f39fcabb17ffb3afe24ff990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1117e1b3f39fcabb17ffb3afe24ff990">&#9670;&#160;</a></span>~AbstractObject3D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AbstractObject3D::~AbstractObject3D </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Деструктор объекта. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00138">138</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a5eda99e016319ff277325ba1c7391700" name="a5eda99e016319ff277325ba1c7391700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eda99e016319ff277325ba1c7391700">&#9670;&#160;</a></span>CalculatePhongShadingColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___color.html">PRISM_Color</a> AbstractObject3D::CalculatePhongShadingColor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>normal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>viewDir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>light</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>fragPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисляет цвет с использованием модели освещения Фонга. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Уст.</a></b></dt><dd>Этот метод больше не рекомендуется к использованию. Используйте класс render для затемнений. <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normal</td><td>Нормаль к поверхности.</td></tr>
+    <tr><td class="paramname">viewDir</td><td>Направление взгляда.</td></tr>
+    <tr><td class="paramname">light</td><td>Источник света.</td></tr>
+    <tr><td class="paramname">fragPos</td><td>Позиция фрагмента.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Цвет в формате <a class="el" href="struct_p_r_i_s_m___color.html" title="Структура, представляющая цвет в формате RGBA (красный, зелёный, синий, альфа). Поддерживает различны...">PRISM_Color</a>.</dd></dl>
+</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00100">100</a></p>
+
+</div>
+</div>
+<a id="a21fa225d7e9c9f92a942257f07966ba6" name="a21fa225d7e9c9f92a942257f07966ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21fa225d7e9c9f92a942257f07966ba6">&#9670;&#160;</a></span>ComputeBarycentricCoords()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AbstractObject3D::ComputeBarycentricCoords </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>u</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;</td>          <td class="paramname"><span class="paramname"><em>w</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисляет барицентрические координаты. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>X-координата точки.</td></tr>
+    <tr><td class="paramname">y</td><td>Y-координата точки.</td></tr>
+    <tr><td class="paramname">v0</td><td>Вершина треугольника 0.</td></tr>
+    <tr><td class="paramname">v1</td><td>Вершина треугольника 1.</td></tr>
+    <tr><td class="paramname">v2</td><td>Вершина треугольника 2.</td></tr>
+    <tr><td class="paramname">u</td><td>Результат для координаты u.</td></tr>
+    <tr><td class="paramname">v</td><td>Результат для координаты v.</td></tr>
+    <tr><td class="paramname">w</td><td>Результат для координаты w.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если координаты вычислены успешно.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00291">291</a></p>
+
+</div>
+</div>
+<a id="ac9e137b574e6fadad8008725f3b264f6" name="ac9e137b574e6fadad8008725f3b264f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e137b574e6fadad8008725f3b264f6">&#9670;&#160;</a></span>DrawMeshTriangles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::DrawMeshTriangles </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Renderer *</td>          <td class="paramname"><span class="paramname"><em>renderer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a></td>          <td class="paramname"><span class="paramname"><em>rm</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отрисовывает треугольники сетки объекта. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderer</td><td>Указатель на SDL_Renderer для рендеринга.</td></tr>
+    <tr><td class="paramname">rm</td><td>Режим рендеринга (линии, заполнение и т.д.).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00195">195</a></p>
+
+</div>
+</div>
+<a id="a1bb327fabd2f8af859158fcbc582e90a" name="a1bb327fabd2f8af859158fcbc582e90a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb327fabd2f8af859158fcbc582e90a">&#9670;&#160;</a></span>GetMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_p_r_i_s_m___mesh.html">PRISM_Mesh</a> AbstractObject3D::GetMesh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает сетку объекта. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Сетка объекта.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00008">8</a></p>
+
+</div>
+</div>
+<a id="ac0c7db31586699087e13936dcff05bf5" name="ac0c7db31586699087e13936dcff05bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c7db31586699087e13936dcff05bf5">&#9670;&#160;</a></span>InitProjection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::InitProjection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a></td>          <td class="paramname"><span class="paramname"><em>camera</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализирует матрицу проекции с использованием камеры. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera</td><td>Объект камеры.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00012">12</a></p>
+
+</div>
+</div>
+<a id="adb99f761bfbef6e2afb04d22badb9fb3" name="adb99f761bfbef6e2afb04d22badb9fb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb99f761bfbef6e2afb04d22badb9fb3">&#9670;&#160;</a></span>OldRasterisation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::OldRasterisation </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *</td>          <td class="paramname"><span class="paramname"><em>SDL_renderer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a></td>          <td class="paramname"><span class="paramname"><em>light</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short</td>          <td class="paramname"><span class="paramname"><em>rgba</em></span>[4], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a></td>          <td class="paramname"><span class="paramname"><em>RendMode</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Однопоточный, медленный метод для растеризации треугольника. </p>
+<p>Используйте вместо этого TileRasterisation или Rasterisation. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Уст.</a></b></dt><dd>Этот метод больше не рекомендуется к использованию. Используйте класс render для отрисовки. <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>Координата X первой точки треугольника.</td></tr>
+    <tr><td class="paramname">y1</td><td>Координата Y первой точки треугольника.</td></tr>
+    <tr><td class="paramname">x2</td><td>Координата X второй точки треугольника.</td></tr>
+    <tr><td class="paramname">y2</td><td>Координата Y второй точки треугольника.</td></tr>
+    <tr><td class="paramname">x3</td><td>Координата X третьей точки треугольника.</td></tr>
+    <tr><td class="paramname">y3</td><td>Координата Y третьей точки треугольника.</td></tr>
+    <tr><td class="paramname">z1</td><td>Глубина (Z-координата) первой точки.</td></tr>
+    <tr><td class="paramname">z2</td><td>Глубина (Z-координата) второй точки.</td></tr>
+    <tr><td class="paramname">z3</td><td>Глубина (Z-координата) третьей точки.</td></tr>
+    <tr><td class="paramname">SDL_renderer</td><td>Указатель на SDL_Renderer для рендеринга.</td></tr>
+    <tr><td class="paramname">light</td><td>Параметры освещения.</td></tr>
+    <tr><td class="paramname">rgba</td><td>Цвет в формате RGBA.</td></tr>
+    <tr><td class="paramname">RendMode</td><td>Режим рендеринга.</td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00300">300</a></p>
+
+</div>
+</div>
+<a id="a3c0a851b734c16dbf5a48c1d7e944acd" name="a3c0a851b734c16dbf5a48c1d7e944acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0a851b734c16dbf5a48c1d7e944acd">&#9670;&#160;</a></span>OptimizedEdgeRasterization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::OptimizedEdgeRasterization </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *</td>          <td class="paramname"><span class="paramname"><em>SDL_renderer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a></td>          <td class="paramname"><span class="paramname"><em>light</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short</td>          <td class="paramname"><span class="paramname"><em>rgba</em></span>[4], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a></td>          <td class="paramname"><span class="paramname"><em>RendMode</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оптимизированный метод растеризации треугольника с использованием рёбер. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Уст.</a></b></dt><dd>Этот метод больше не рекомендуется к использованию. Используйте класс render для отрисовки. <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>Координата X первой точки треугольника.</td></tr>
+    <tr><td class="paramname">y1</td><td>Координата Y первой точки треугольника.</td></tr>
+    <tr><td class="paramname">x2</td><td>Координата X второй точки треугольника.</td></tr>
+    <tr><td class="paramname">y2</td><td>Координата Y второй точки треугольника.</td></tr>
+    <tr><td class="paramname">x3</td><td>Координата X третьей точки треугольника.</td></tr>
+    <tr><td class="paramname">y3</td><td>Координата Y третьей точки треугольника.</td></tr>
+    <tr><td class="paramname">z1</td><td>Глубина (Z-координата) первой точки.</td></tr>
+    <tr><td class="paramname">z2</td><td>Глубина (Z-координата) второй точки.</td></tr>
+    <tr><td class="paramname">z3</td><td>Глубина (Z-координата) третьей точки.</td></tr>
+    <tr><td class="paramname">SDL_renderer</td><td>Указатель на SDL_Renderer для рендеринга.</td></tr>
+    <tr><td class="paramname">light</td><td>Параметры освещения.</td></tr>
+    <tr><td class="paramname">rgba</td><td>Цвет в формате RGBA.</td></tr>
+    <tr><td class="paramname">RendMode</td><td>Режим рендеринга.</td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00356">356</a></p>
+
+</div>
+</div>
+<a id="ac0e98ea988e83153287ae1469abc3170" name="ac0e98ea988e83153287ae1469abc3170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e98ea988e83153287ae1469abc3170">&#9670;&#160;</a></span>PrintInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::PrintInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Печатает информацию об объекте. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00045">45</a></p>
+
+</div>
+</div>
+<a id="aef8c9a62d66a742b6ae47cde6ebd4dd4" name="aef8c9a62d66a742b6ae47cde6ebd4dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8c9a62d66a742b6ae47cde6ebd4dd4">&#9670;&#160;</a></span>Rasterisation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::Rasterisation </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *</td>          <td class="paramname"><span class="paramname"><em>SDL_renderer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a></td>          <td class="paramname"><span class="paramname"><em>light</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short</td>          <td class="paramname"><span class="paramname"><em>rgba</em></span>[4], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a></td>          <td class="paramname"><span class="paramname"><em>RendMode</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устаревший метод растеризации треугольника. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Уст.</a></b></dt><dd>Этот метод больше не рекомендуется к использованию. Используйте класс render для отрисовки. </dd></dl>
+<p>Используйте TileRasterisation для большей производительности. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>Координата X первой точки треугольника.</td></tr>
+    <tr><td class="paramname">y1</td><td>Координата Y первой точки треугольника.</td></tr>
+    <tr><td class="paramname">x2</td><td>Координата X второй точки треугольника.</td></tr>
+    <tr><td class="paramname">y2</td><td>Координата Y второй точки треугольника.</td></tr>
+    <tr><td class="paramname">x3</td><td>Координата X третьей точки треугольника.</td></tr>
+    <tr><td class="paramname">y3</td><td>Координата Y третьей точки треугольника.</td></tr>
+    <tr><td class="paramname">z1</td><td>Глубина (Z-координата) первой точки.</td></tr>
+    <tr><td class="paramname">z2</td><td>Глубина (Z-координата) второй точки.</td></tr>
+    <tr><td class="paramname">z3</td><td>Глубина (Z-координата) третьей точки.</td></tr>
+    <tr><td class="paramname">SDL_renderer</td><td>Указатель на SDL_Renderer для рендеринга.</td></tr>
+    <tr><td class="paramname">light</td><td>Параметры освещения.</td></tr>
+    <tr><td class="paramname">rgba</td><td>Цвет в формате RGBA.</td></tr>
+    <tr><td class="paramname">RendMode</td><td>Режим рендеринга.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00452">452</a></p>
+
+</div>
+</div>
+<a id="a177ac239d3e19ef1ac0c7ba36528002d" name="a177ac239d3e19ef1ac0c7ba36528002d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a177ac239d3e19ef1ac0c7ba36528002d">&#9670;&#160;</a></span>RasterizeTile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::RasterizeTile </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>minX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>minY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *</td>          <td class="paramname"><span class="paramname"><em>SDL_renderer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a></td>          <td class="paramname"><span class="paramname"><em>light</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short</td>          <td class="paramname"><span class="paramname"><em>rgba</em></span>[4], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a></td>          <td class="paramname"><span class="paramname"><em>RendMode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; SDL_Surface * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>surfaces</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Растеризация треугольника для слабых мобильных устройств. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Уст.</a></b></dt><dd>Этот метод больше не рекомендуется к использованию. Используйте класс render для отрисовки. <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minX</td><td>Минимальное значение X плитки.</td></tr>
+    <tr><td class="paramname">maxX</td><td>Максимальное значение X плитки.</td></tr>
+    <tr><td class="paramname">minY</td><td>Минимальное значение Y плитки.</td></tr>
+    <tr><td class="paramname">maxY</td><td>Максимальное значение Y плитки.</td></tr>
+    <tr><td class="paramname">v0</td><td>Вершина треугольника 1.</td></tr>
+    <tr><td class="paramname">v1</td><td>Вершина треугольника 2.</td></tr>
+    <tr><td class="paramname">v2</td><td>Вершина треугольника 3.</td></tr>
+    <tr><td class="paramname">SDL_renderer</td><td>Указатель на SDL_Renderer для рендеринга.</td></tr>
+    <tr><td class="paramname">light</td><td>Параметры освещения.</td></tr>
+    <tr><td class="paramname">rgba</td><td>Цвет в формате RGBA.</td></tr>
+    <tr><td class="paramname">RendMode</td><td>Режим рендеринга.</td></tr>
+    <tr><td class="paramname">surfaces</td><td>Список SDL_Surface для буферизации.</td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00402">402</a></p>
+
+</div>
+</div>
+<a id="ac89d30c674388cff30e4709bdc95e294" name="ac89d30c674388cff30e4709bdc95e294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac89d30c674388cff30e4709bdc95e294">&#9670;&#160;</a></span>RotateTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> AbstractObject3D::RotateTriangle </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a></td>          <td class="paramname"><span class="paramname"><em>Triangle_</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет вращение треугольника. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Triangle_</td><td>Треугольник.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Вращенный треугольник.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00052">52</a></p>
+
+</div>
+</div>
+<a id="a4a3d329334a2b9d418e45f9533fb33fa" name="a4a3d329334a2b9d418e45f9533fb33fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a3d329334a2b9d418e45f9533fb33fa">&#9670;&#160;</a></span>ScaleTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> AbstractObject3D::ScaleTriangle </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a></td>          <td class="paramname"><span class="paramname"><em>Triangle_</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет масштабирование треугольника. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Triangle_</td><td>Треугольник.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Масштабированный треугольник.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00080">80</a></p>
+
+</div>
+</div>
+<a id="aea22ac8c43900580e8b8ffd35607d870" name="aea22ac8c43900580e8b8ffd35607d870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea22ac8c43900580e8b8ffd35607d870">&#9670;&#160;</a></span>SetMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::SetMesh </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___mesh.html">PRISM_Mesh</a></td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает сетку (mesh) для объекта. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Полигональная сетка.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00004">4</a></p>
+
+</div>
+</div>
+<a id="a1ef857f5a43829d695b372f16c10b21c" name="a1ef857f5a43829d695b372f16c10b21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ef857f5a43829d695b372f16c10b21c">&#9670;&#160;</a></span>SetMoveXYZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::SetMoveXYZ </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>moveVect</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает координаты объекта. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">moveVect</td><td>Вектор координат.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00035">35</a></p>
+
+</div>
+</div>
+<a id="ab35a97b42aea7ba1f2e39c71144f8b76" name="ab35a97b42aea7ba1f2e39c71144f8b76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35a97b42aea7ba1f2e39c71144f8b76">&#9670;&#160;</a></span>SetRotateXYZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::SetRotateXYZ </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>rotVect</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает углы поворота объекта. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotVect</td><td>Вектор углов поворота.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<a id="afa89fd114cd5df811297a1740290e044" name="afa89fd114cd5df811297a1740290e044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa89fd114cd5df811297a1740290e044">&#9670;&#160;</a></span>SetScaleXYZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::SetScaleXYZ </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a></td>          <td class="paramname"><span class="paramname"><em>scaleVect</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает масштаб объекта. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scaleVect</td><td>Вектор масштаба.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00040">40</a></p>
+
+</div>
+</div>
+<a id="ad33da4091a2984a27e066d5f96320529" name="ad33da4091a2984a27e066d5f96320529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33da4091a2984a27e066d5f96320529">&#9670;&#160;</a></span>TileRasterisation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractObject3D::TileRasterisation </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>z3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *</td>          <td class="paramname"><span class="paramname"><em>SDL_renderer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___light.html">PRISM_Light</a></td>          <td class="paramname"><span class="paramname"><em>light</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short</td>          <td class="paramname"><span class="paramname"><em>rgba</em></span>[4], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_p_r_i_s_m___render_mode.html">PRISM_RenderMode</a></td>          <td class="paramname"><span class="paramname"><em>RendMode</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод растеризации с использованием плиток для оптимизации. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Уст.</a></b></dt><dd>Этот метод больше не рекомендуется к использованию. Используйте класс render для отрисовки. <dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>Координата X первой точки треугольника.</td></tr>
+    <tr><td class="paramname">y1</td><td>Координата Y первой точки треугольника.</td></tr>
+    <tr><td class="paramname">x2</td><td>Координата X второй точки треугольника.</td></tr>
+    <tr><td class="paramname">y2</td><td>Координата Y второй точки треугольника.</td></tr>
+    <tr><td class="paramname">x3</td><td>Координата X третьей точки треугольника.</td></tr>
+    <tr><td class="paramname">y3</td><td>Координата Y третьей точки треугольника.</td></tr>
+    <tr><td class="paramname">z1</td><td>Глубина (Z-координата) первой точки.</td></tr>
+    <tr><td class="paramname">z2</td><td>Глубина (Z-координата) второй точки.</td></tr>
+    <tr><td class="paramname">z3</td><td>Глубина (Z-координата) третьей точки.</td></tr>
+    <tr><td class="paramname">SDL_renderer</td><td>Указатель на SDL_Renderer для рендеринга.</td></tr>
+    <tr><td class="paramname">light</td><td>Параметры освещения.</td></tr>
+    <tr><td class="paramname">rgba</td><td>Цвет в формате RGBA.</td></tr>
+    <tr><td class="paramname">RendMode</td><td>Режим рендеринга.</td></tr>
+  </table>
+  </dd>
+</dl>
+</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00520">520</a></p>
+
+</div>
+</div>
+<a id="acdd9fdf5d9e2c7910362e3f556db58d9" name="acdd9fdf5d9e2c7910362e3f556db58d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd9fdf5d9e2c7910362e3f556db58d9">&#9670;&#160;</a></span>TranslateTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> AbstractObject3D::TranslateTriangle </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a></td>          <td class="paramname"><span class="paramname"><em>Triangle_</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет перенос треугольника. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Triangle_</td><td>Треугольник.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Перемещенный треугольник.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00071">71</a></p>
+
+</div>
+</div>
+<a id="a85c2b9d0b75c0f4378a72b07f55d9824" name="a85c2b9d0b75c0f4378a72b07f55d9824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85c2b9d0b75c0f4378a72b07f55d9824">&#9670;&#160;</a></span>ViewTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a> AbstractObject3D::ViewTriangle </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_p_r_i_s_m___triangle.html">PRISM_Triangle</a></td>          <td class="paramname"><span class="paramname"><em>Triangle_</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразует треугольник в координаты вида. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Triangle_</td><td>Треугольник.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Треугольник в координатах вида.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a> строка <a class="el" href="_abstract_object3_d_8cpp_source.html#l00089">89</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Поля</h2>
+<a id="aa04e797230429e4db695e77adb873147" name="aa04e797230429e4db695e77adb873147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa04e797230429e4db695e77adb873147">&#9670;&#160;</a></span>Camera</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_abstract_camera3_d.html">AbstractCamera3D</a>&amp; AbstractObject3D::Camera</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ссылка на камеру, связанную с объектом. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00115">115</a></p>
+
+</div>
+</div>
+<a id="a9f3c7daf743ac24a94b1bbf4c3bcdbc8" name="a9f3c7daf743ac24a94b1bbf4c3bcdbc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f3c7daf743ac24a94b1bbf4c3bcdbc8">&#9670;&#160;</a></span>kSpecular</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AbstractObject3D::kSpecular = 0.5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Коэффициент зеркального отражения материала (от 0 для матовых поверхностей до 1 для блестящих). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00100">100</a></p>
+
+</div>
+</div>
+<a id="a815f976f754632dccb53fe785a51f8e5" name="a815f976f754632dccb53fe785a51f8e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815f976f754632dccb53fe785a51f8e5">&#9670;&#160;</a></span>materialAmbient</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> AbstractObject3D::materialAmbient ={0.5f, 0.5f, 0.5f}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Коэффициент отражения материала для окружающего света (в пределах от 0 до 1 для каждого цветового канала RGB). Ещё используется как коэфициэнт для дифузного света. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00095">95</a></p>
+
+</div>
+</div>
+<a id="a7e54cbd7c8a4c00385f4cf694b6d02df" name="a7e54cbd7c8a4c00385f4cf694b6d02df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e54cbd7c8a4c00385f4cf694b6d02df">&#9670;&#160;</a></span>mesh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_p_r_i_s_m___mesh.html">PRISM_Mesh</a> AbstractObject3D::mesh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Сетка (mesh) объекта. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00088">88</a></p>
+
+</div>
+</div>
+<a id="a29f5e1540bd4c494c4cd62f48a599437" name="a29f5e1540bd4c494c4cd62f48a599437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f5e1540bd4c494c4cd62f48a599437">&#9670;&#160;</a></span>ProjectionMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_p_r_i_s_m___matrix__4_x4.html">PRISM_Matrix_4X4</a> AbstractObject3D::ProjectionMatrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Матрица проекции объекта. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00068">68</a></p>
+
+</div>
+</div>
+<a id="a6f61c122f10035fd20bd802c6141c164" name="a6f61c122f10035fd20bd802c6141c164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f61c122f10035fd20bd802c6141c164">&#9670;&#160;</a></span>Rotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> AbstractObject3D::Rotation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Углы поворота объекта (в градусах). </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00078">78</a></p>
+
+</div>
+</div>
+<a id="ab4252555119db0a3d5ced1e2afc0811b" name="ab4252555119db0a3d5ced1e2afc0811b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4252555119db0a3d5ced1e2afc0811b">&#9670;&#160;</a></span>Scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> AbstractObject3D::Scale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Масштаб объекта. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00083">83</a></p>
+
+</div>
+</div>
+<a id="a0f941e155d7fa253b9a2944735059062" name="a0f941e155d7fa253b9a2944735059062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f941e155d7fa253b9a2944735059062">&#9670;&#160;</a></span>ScreenH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AbstractObject3D::ScreenH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Высота экрана. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00110">110</a></p>
+
+</div>
+</div>
+<a id="ab4064eb036f54e3ac2c0628d00ee5c8b" name="ab4064eb036f54e3ac2c0628d00ee5c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4064eb036f54e3ac2c0628d00ee5c8b">&#9670;&#160;</a></span>ScreenW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AbstractObject3D::ScreenW</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ширина экрана. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00105">105</a></p>
+
+</div>
+</div>
+<a id="a3bafbe6fb8dc6719a0a112b2c2abe2d4" name="a3bafbe6fb8dc6719a0a112b2c2abe2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bafbe6fb8dc6719a0a112b2c2abe2d4">&#9670;&#160;</a></span>Translate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_p_r_i_s_m___vector3d.html">PRISM_Vector3d</a> AbstractObject3D::Translate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Координаты объекта. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a> строка <a class="el" href="_abstract_object3_d_8h_source.html#l00073">73</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_objects3D/<a class="el" href="_abstract_object3_d_8h_source.html">AbstractObject3D.h</a></li>
+<li>C:/Users/Admin/Desktop/PrismEngine/PrismEngine/src/PRISM_objects3D/<a class="el" href="_abstract_object3_d_8cpp_source.html">AbstractObject3D.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
